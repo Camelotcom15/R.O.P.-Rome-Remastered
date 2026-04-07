@@ -1,0 +1,9 @@
+;; Last updated by jburnett on 2021/05/25
+;; DESCR file generated via RTW Amber pack editor
+
+"soundbank_battle_music_transition":
+{
+	"entries":
+	[
+	],
+}, ;;soundbank_battle_music_transition

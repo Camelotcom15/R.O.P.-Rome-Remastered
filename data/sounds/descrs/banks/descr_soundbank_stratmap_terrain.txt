@@ -1,0 +1,919 @@
+;; Last updated by jburnett on 2021/07/14
+;; DESCR file generated via RTW Amber pack editor
+
+"default sound parameters":
+{
+	"3d": true,					;;is the sound 3D (DO NOT CHANGE THIS)
+	"Probability": 100.0,		;;the chance the sound will play when triggered
+	"Volume": 65,				;;the volume of the sample as a percentage of the base file's
+	"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+	"Max pitch": 100.0,			
+	"Priority": 0,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+	"Fade in": 0.499,			;;the time, in seconds, for the sound to fade in and out
+	"Fade out": 2.994,			
+	"Looped": false,			;;should the sound loop?
+	"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+	"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+	"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+	"Pref type": "SFX",			;;the slider the sound should be attached to
+	"Ignore pause": false,		;;should this sound ignore being paused?
+	"Min dist": 6.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+	"Max dist": -1.0,			;;setting max dist to -1 will mean the sound will autocalculate the max dist
+	"Dist priority": -1.0,		;;how much should the priority be reduced per meter of distance
+	"Prob radius": 0.0,			;;the range within which the probability will be overridden to be 100%
+	"Effect level": 0.0,		;;??? I think this has something to do with the EAX parameters?
+},
+
+"soundbank_stratmap_terrain":
+{
+	"global parameters":
+	{
+		;; distance from the camera the sounds should trigger
+		"sound distance":
+		{
+			"min": 0.0,
+			"max": 20.0,
+		},
+
+		;; the delay between sounds
+		"delay":
+		{
+			"min": 0.0,
+			"max": 0.0,
+		},
+
+		;; the number of soundchannels to use for ambient sounds
+		"num ambient channels": 10,
+
+		;; the minimum number of tiles in a region needed to assign a looped sound
+		"min region size": 7,
+	},
+	"entries":
+	[
+		{
+			;;the seasons this should apply to
+			"seasons":
+				[ "summer", ],
+
+			;;the strat terrain type and climate of the tile (for ambient)
+			;;the most numerous strat terrain type and climate of the region (for looped)
+			"terrain":
+				[ "fertile_low", ],
+			"climates":
+				[ "sandy_desert", "rocky_desert", ],
+
+			;;should this play looped within a region or as an ambient one shot around the camera
+			"type": "ambient",
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/weather/wind_gusts_10.wav",
+				"data/sounds/SFX/environment/weather/wind_gusts_09.wav",
+				"data/sounds/SFX/environment/weather/wind_gusts_08.wav",
+				"data/sounds/SFX/environment/weather/wind_gusts_07.wav",
+				"data/sounds/SFX/environment/weather/wind_gusts_06.wav",
+				"data/sounds/SFX/environment/weather/wind_gusts_05.wav",
+				"data/sounds/SFX/environment/weather/wind_gusts_04.wav",
+				"data/sounds/SFX/environment/weather/wind_gusts_03.wav",
+				"data/sounds/SFX/environment/weather/Wind_Gusts_02.wav",
+				"data/sounds/SFX/environment/weather/Wind_Gusts_01.wav",
+				{
+					"Probability": 20.0,		;;the chance the sound will play when triggered
+					"Volume": 40,				;;the volume of the sample as a percentage of the base file's
+					"Min dist": 4.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+				"data/sounds/SFX/environment/Animals/eagle02.wav",
+				"data/sounds/SFX/environment/Animals/eagle01.wav",
+				{
+					"Probability": 4.706,		;;the chance the sound will play when triggered
+					"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+					"Random delay": 2.994,		;;the maximum random delay added to the constant delay
+					"Min dist": 2.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Effect level": 1.0,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the seasons this should apply to
+			"seasons":
+				[ "summer", ],
+
+			;;the strat terrain type and climate of the tile (for ambient)
+			;;the most numerous strat terrain type and climate of the region (for looped)
+			"terrain":
+				[ "fertile_low", ],
+			"climates":
+				[ "sandy_desert", "rocky_desert", ],
+
+			;;should this play looped within a region or as an ambient one shot around the camera
+			"type": "looped",
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/weather/wind_calm_loop_04.wav",
+				"data/sounds/SFX/environment/weather/wind_calm_loop_03.wav",
+				"data/sounds/SFX/environment/weather/wind_calm_loop_02.wav",
+				"data/sounds/SFX/environment/weather/wind_calm_loop_01.wav",
+				{
+					"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+				},
+			],
+		},
+		{
+			;;the seasons this should apply to
+			"seasons":
+				[ "summer", ],
+
+			;;the strat terrain type and climate of the tile (for ambient)
+			;;the most numerous strat terrain type and climate of the region (for looped)
+			"terrain":
+				[ "mountains_high", ],
+			"climates":
+				[ "all", ],
+
+			;;should this play looped within a region or as an ambient one shot around the camera
+			"type": "ambient",
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/weather/Wind_Calm_02.wav",
+				"data/sounds/SFX/environment/weather/Wind_Calm_01.wav",
+				{
+					"Probability": 4.706,		;;the chance the sound will play when triggered
+					"Volume": 55,				;;the volume of the sample as a percentage of the base file's
+					"Min dist": 3.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;the seasons this should apply to
+			"seasons":
+				[ "summer", ],
+
+			;;the strat terrain type and climate of the tile (for ambient)
+			;;the most numerous strat terrain type and climate of the region (for looped)
+			"terrain":
+				[ "mountains_high", ],
+			"climates":
+				[ "all", ],
+
+			;;should this play looped within a region or as an ambient one shot around the camera
+			"type": "looped",
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/weather/wind_calm_loop_04.wav",
+				"data/sounds/SFX/environment/weather/wind_calm_loop_03.wav",
+				"data/sounds/SFX/environment/weather/wind_calm_loop_02.wav",
+				"data/sounds/SFX/environment/weather/wind_calm_loop_01.wav",
+				{
+					"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+				},
+			],
+		},
+		{
+			;;the seasons this should apply to
+			"seasons":
+				[ "summer", ],
+
+			;;the strat terrain type and climate of the tile (for ambient)
+			;;the most numerous strat terrain type and climate of the region (for looped)
+			"terrain":
+				[ "forest_dense", ],
+			"climates":
+				[ "all", ],
+
+			;;should this play looped within a region or as an ambient one shot around the camera
+			"type": "ambient",
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/Animals/water_bird.wav",
+				"data/sounds/SFX/environment/Animals/tree_birds_09.wav",
+				"data/sounds/SFX/environment/Animals/tree_birds_08.wav",
+				"data/sounds/SFX/environment/Animals/tree_birds_07.wav",
+				"data/sounds/SFX/environment/Animals/tree_birds_06.wav",
+				"data/sounds/SFX/environment/Animals/tree_birds_05.wav",
+				"data/sounds/SFX/environment/Animals/tree_birds_04.wav",
+				"data/sounds/SFX/environment/Animals/tree_birds_03.wav",
+				"data/sounds/SFX/environment/Animals/tree_birds_02.wav",
+				"data/sounds/SFX/environment/Animals/tree_birds_01.wav",
+				"data/sounds/SFX/environment/Animals/forest_birds_16.wav",
+				"data/sounds/SFX/environment/Animals/forest_birds_15.wav",
+				"data/sounds/SFX/environment/Animals/forest_birds_14.wav",
+				"data/sounds/SFX/environment/Animals/forest_birds_13.wav",
+				"data/sounds/SFX/environment/Animals/forest_birds_12.wav",
+				"data/sounds/SFX/environment/Animals/forest_birds_11.wav",
+				"data/sounds/SFX/environment/Animals/forest_birds_10.wav",
+				{
+					"Probability": 40.0,		;;the chance the sound will play when triggered
+					"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+					"Start delay": 0.998,		;;the constant delay before the sound should play when triggered
+					"Random delay": 1.996,		;;the maximum random delay added to the constant delay
+					"Min dist": 3.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Effect level": 1.0,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the seasons this should apply to
+			"seasons":
+				[ "summer", ],
+
+			;;the strat terrain type and climate of the tile (for ambient)
+			;;the most numerous strat terrain type and climate of the region (for looped)
+			"terrain":
+				[ "forest_dense", ],
+			"climates":
+				[ "all", ],
+
+			;;should this play looped within a region or as an ambient one shot around the camera
+			"type": "looped",
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/ambience/Jungle.wav",
+				{
+					"Probability": 8.235,		;;the chance the sound will play when triggered
+					"Volume": 40,				;;the volume of the sample as a percentage of the base file's
+					"Min dist": 3.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+				"data/sounds/SFX/environment/ambience/Forest_Loop_5.wav",
+				"data/sounds/SFX/environment/ambience/Forest_Loop_2.wav",
+				{
+					"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+				},
+			],
+		},
+		{
+			;;the seasons this should apply to
+			"seasons":
+				[ "summer", ],
+
+			;;the strat terrain type and climate of the tile (for ambient)
+			;;the most numerous strat terrain type and climate of the region (for looped)
+			"terrain":
+				[ "forest_sparse", ],
+			"climates":
+				[ "all", ],
+
+			;;should this play looped within a region or as an ambient one shot around the camera
+			"type": "ambient",
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/Animals/forest_birds_16.wav",
+				"data/sounds/SFX/environment/Animals/forest_birds_15.wav",
+				"data/sounds/SFX/environment/Animals/forest_birds_14.wav",
+				"data/sounds/SFX/environment/Animals/forest_birds_13.wav",
+				"data/sounds/SFX/environment/Animals/forest_birds_12.wav",
+				"data/sounds/SFX/environment/Animals/forest_birds_11.wav",
+				"data/sounds/SFX/environment/Animals/forest_birds_10.wav",
+				"data/sounds/SFX/environment/Animals/forest_birds_08.wav",
+				"data/sounds/SFX/environment/Animals/forest_birds_07.wav",
+				"data/sounds/SFX/environment/Animals/forest_birds_06.wav",
+				"data/sounds/SFX/environment/Animals/forest_birds_05.wav",
+				"data/sounds/SFX/environment/Animals/forest_birds_04.wav",
+				"data/sounds/SFX/environment/Animals/forest_birds_03.wav",
+				"data/sounds/SFX/environment/Animals/forest_birds_02.wav",
+				"data/sounds/SFX/environment/Animals/forest_birds_01.wav",
+				{
+					"Probability": 28.235,		;;the chance the sound will play when triggered
+					"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+					"Start delay": 1.996,		;;the constant delay before the sound should play when triggered
+					"Random delay": 2.994,		;;the maximum random delay added to the constant delay
+					"Min dist": 4.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Effect level": 1.0,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the seasons this should apply to
+			"seasons":
+				[ "summer", ],
+
+			;;the strat terrain type and climate of the tile (for ambient)
+			;;the most numerous strat terrain type and climate of the region (for looped)
+			"terrain":
+				[ "forest_sparse", ],
+			"climates":
+				[ "all", ],
+
+			;;should this play looped within a region or as an ambient one shot around the camera
+			"type": "looped",
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/ambience/Forest_Loop_1.wav",
+				{
+					"Probability": 20.0,		;;the chance the sound will play when triggered
+					"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+				},
+				"data/sounds/SFX/environment/ambience/Forest_Loop_5.wav",
+				"data/sounds/SFX/environment/ambience/Forest_Loop_2.wav",
+				{
+					"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+				},
+			],
+		},
+		{
+			;;the seasons this should apply to
+			"seasons":
+				[ "summer", ],
+
+			;;the strat terrain type and climate of the tile (for ambient)
+			;;the most numerous strat terrain type and climate of the region (for looped)
+			"terrain":
+				[ "swamp", ],
+			"climates":
+				[ "all", ],
+
+			;;should this play looped within a region or as an ambient one shot around the camera
+			"type": "looped",
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/ambience/swamp.wav",
+				{
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;the seasons this should apply to
+			"seasons":
+				[ "summer", ],
+
+			;;the strat terrain type and climate of the tile (for ambient)
+			;;the most numerous strat terrain type and climate of the region (for looped)
+			"terrain":
+				[ "ocean", "sea_deep", ],
+			"climates":
+				[ "all", ],
+
+			;;should this play looped within a region or as an ambient one shot around the camera
+			"type": "ambient",
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/water/ocean_wave_9.wav",
+				"data/sounds/SFX/environment/water/ocean_wave_8.wav",
+				"data/sounds/SFX/environment/water/ocean_wave_7.wav",
+				"data/sounds/SFX/environment/water/ocean_wave_6.wav",
+				"data/sounds/SFX/environment/water/ocean_wave_5.wav",
+				"data/sounds/SFX/environment/water/ocean_wave_4.wav",
+				"data/sounds/SFX/environment/water/ocean_wave_3.wav",
+				"data/sounds/SFX/environment/water/ocean_wave_2.wav",
+				"data/sounds/SFX/environment/water/ocean_wave_1.wav",
+				{
+					"Probability": 20.0,		;;the chance the sound will play when triggered
+					"Volume": 70,				;;the volume of the sample as a percentage of the base file's
+					"Random delay": 2.994,		;;the maximum random delay added to the constant delay
+					"Min dist": 4.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;the seasons this should apply to
+			"seasons":
+				[ "summer", ],
+
+			;;the strat terrain type and climate of the tile (for ambient)
+			;;the most numerous strat terrain type and climate of the region (for looped)
+			"terrain":
+				[ "ocean", "sea_deep", ],
+			"climates":
+				[ "all", ],
+
+			;;should this play looped within a region or as an ambient one shot around the camera
+			"type": "looped",
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/water/ocean_distant_2.wav",
+				"data/sounds/SFX/environment/water/ocean_distant_1.wav",
+				{
+					"Volume": 50,				;;the volume of the sample as a percentage of the base file's
+				},
+			],
+		},
+		{
+			;;the seasons this should apply to
+			"seasons":
+				[ "summer", ],
+
+			;;the strat terrain type and climate of the tile (for ambient)
+			;;the most numerous strat terrain type and climate of the region (for looped)
+			"terrain":
+				[ "sea_shallow", ],
+			"climates":
+				[ "all", ],
+
+			;;should this play looped within a region or as an ambient one shot around the camera
+			"type": "ambient",
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/water/beach_wave_15.wav",
+				"data/sounds/SFX/environment/water/beach_wave_14.wav",
+				"data/sounds/SFX/environment/water/beach_wave_13.wav",
+				"data/sounds/SFX/environment/water/beach_wave_12.wav",
+				"data/sounds/SFX/environment/water/beach_wave_11.wav",
+				"data/sounds/SFX/environment/water/beach_wave_10.wav",
+				"data/sounds/SFX/environment/water/beach_wave_9.wav",
+				"data/sounds/SFX/environment/water/beach_wave_8.wav",
+				"data/sounds/SFX/environment/water/beach_wave_7.wav",
+				"data/sounds/SFX/environment/water/beach_wave_6.wav",
+				"data/sounds/SFX/environment/water/beach_wave_5.wav",
+				"data/sounds/SFX/environment/water/beach_wave_4.wav",
+				"data/sounds/SFX/environment/water/beach_wave_3.wav",
+				"data/sounds/SFX/environment/water/beach_wave_2.wav",
+				"data/sounds/SFX/environment/water/beach_wave_1.wav",
+				{
+					"Probability": 8.235,		;;the chance the sound will play when triggered
+					"Random delay": 2.994,		;;the maximum random delay added to the constant delay
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+				"data/sounds/SFX/environment/Animals/seagull_08.wav",
+				"data/sounds/SFX/environment/Animals/seagull_07.wav",
+				"data/sounds/SFX/environment/Animals/seagull_06.wav",
+				"data/sounds/SFX/environment/Animals/seagull_05.wav",
+				"data/sounds/SFX/environment/Animals/gull_04.wav",
+				"data/sounds/SFX/environment/Animals/gull_03.wav",
+				"data/sounds/SFX/environment/Animals/gull_02.wav",
+				"data/sounds/SFX/environment/Animals/gull_01.wav",
+				"data/sounds/SFX/environment/Animals/seagull04.wav",
+				"data/sounds/SFX/environment/Animals/seagull03.wav",
+				"data/sounds/SFX/environment/Animals/seagull02.wav",
+				"data/sounds/SFX/environment/Animals/seagull01.wav",
+				{
+					"Probability": 8.235,		;;the chance the sound will play when triggered
+					"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+					"Random delay": 2.994,		;;the maximum random delay added to the constant delay
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Effect level": 1.0,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the seasons this should apply to
+			"seasons":
+				[ "summer", ],
+
+			;;the strat terrain type and climate of the tile (for ambient)
+			;;the most numerous strat terrain type and climate of the region (for looped)
+			"terrain":
+				[ "sea_shallow", ],
+			"climates":
+				[ "all", ],
+
+			;;should this play looped within a region or as an ambient one shot around the camera
+			"type": "looped",
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/water/wave_2.wav",
+				"data/sounds/SFX/environment/water/wave_1.wav",
+				{
+					"Volume": 70,				;;the volume of the sample as a percentage of the base file's
+					"Min dist": 3.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;the seasons this should apply to
+			"seasons":
+				[ "winter", ],
+
+			;;the strat terrain type and climate of the tile (for ambient)
+			;;the most numerous strat terrain type and climate of the region (for looped)
+			"terrain":
+				[ "fertile_low", "fertile_medium", "fertile_high", "wilderness", ],
+			"climates":
+				[ "sandy_desert", "rocky_desert", ],
+
+			;;should this play looped within a region or as an ambient one shot around the camera
+			"type": "ambient",
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/weather/wind_gusts_10.wav",
+				"data/sounds/SFX/environment/weather/wind_gusts_09.wav",
+				"data/sounds/SFX/environment/weather/wind_gusts_08.wav",
+				"data/sounds/SFX/environment/weather/wind_gusts_07.wav",
+				"data/sounds/SFX/environment/weather/wind_gusts_06.wav",
+				"data/sounds/SFX/environment/weather/wind_gusts_05.wav",
+				"data/sounds/SFX/environment/weather/wind_gusts_04.wav",
+				"data/sounds/SFX/environment/weather/wind_gusts_03.wav",
+				"data/sounds/SFX/environment/weather/Wind_Gusts_02.wav",
+				"data/sounds/SFX/environment/weather/Wind_Gusts_01.wav",
+				{
+					"Probability": 20.0,		;;the chance the sound will play when triggered
+					"Volume": 40,				;;the volume of the sample as a percentage of the base file's
+					"Min dist": 3.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;the seasons this should apply to
+			"seasons":
+				[ "winter", ],
+
+			;;the strat terrain type and climate of the tile (for ambient)
+			;;the most numerous strat terrain type and climate of the region (for looped)
+			"terrain":
+				[ "fertile_low", "fertile_medium", "fertile_high", "wilderness", ],
+			"climates":
+				[ "sandy_desert", "rocky_desert", ],
+
+			;;should this play looped within a region or as an ambient one shot around the camera
+			"type": "looped",
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/weather/wind_calm_loop_04.wav",
+				"data/sounds/SFX/environment/weather/wind_calm_loop_03.wav",
+				"data/sounds/SFX/environment/weather/wind_calm_loop_02.wav",
+				"data/sounds/SFX/environment/weather/wind_calm_loop_01.wav",
+				{
+					"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+				},
+			],
+		},
+		{
+			;;the seasons this should apply to
+			"seasons":
+				[ "winter", ],
+
+			;;the strat terrain type and climate of the tile (for ambient)
+			;;the most numerous strat terrain type and climate of the region (for looped)
+			"terrain":
+				[ "mountains_high", ],
+			"climates":
+				[ "all", ],
+
+			;;should this play looped within a region or as an ambient one shot around the camera
+			"type": "ambient",
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/Animals/wolf04.wav",
+				"data/sounds/SFX/environment/Animals/wolf03.wav",
+				"data/sounds/SFX/environment/Animals/wolf02.wav",
+				"data/sounds/SFX/environment/Animals/wolf01.wav",
+				"data/sounds/SFX/environment/Animals/hawk01.wav",
+				"data/sounds/SFX/environment/Animals/eagle02.wav",
+				"data/sounds/SFX/environment/Animals/eagle01.wav",
+				{
+					"Probability": 1.961,		;;the chance the sound will play when triggered
+					"Random delay": 2.994,		;;the maximum random delay added to the constant delay
+					"Min dist": 2.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Effect level": 0.800000011920929,;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the seasons this should apply to
+			"seasons":
+				[ "winter", ],
+
+			;;the strat terrain type and climate of the tile (for ambient)
+			;;the most numerous strat terrain type and climate of the region (for looped)
+			"terrain":
+				[ "mountains_high", ],
+			"climates":
+				[ "all", ],
+
+			;;should this play looped within a region or as an ambient one shot around the camera
+			"type": "looped",
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/weather/wind_winter_light_04.wav",
+				"data/sounds/SFX/environment/weather/wind_winter_light_03.wav",
+				"data/sounds/SFX/environment/weather/Wind_Winter_Light_02.wav",
+				"data/sounds/SFX/environment/weather/Wind_Winter_Light_01.wav",
+				{
+					"Volume": 50,				;;the volume of the sample as a percentage of the base file's
+				},
+			],
+		},
+		{
+			;;the seasons this should apply to
+			"seasons":
+				[ "winter", ],
+
+			;;the strat terrain type and climate of the tile (for ambient)
+			;;the most numerous strat terrain type and climate of the region (for looped)
+			"terrain":
+				[ "forest_dense", ],
+			"climates":
+				[ "test_climate", "sandy_desert", "rocky_desert", "swamp", "semi_arid", ],
+
+			;;should this play looped within a region or as an ambient one shot around the camera
+			"type": "ambient",
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/weather/wind_winter_04.wav",
+				"data/sounds/SFX/environment/weather/wind_winter_03.wav",
+				"data/sounds/SFX/environment/weather/wind_winter_02.wav",
+				"data/sounds/SFX/environment/weather/wind_winter_01.wav",
+				{
+					"Probability": 8.235,		;;the chance the sound will play when triggered
+					"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+					"Min dist": 3.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;the seasons this should apply to
+			"seasons":
+				[ "winter", ],
+
+			;;the strat terrain type and climate of the tile (for ambient)
+			;;the most numerous strat terrain type and climate of the region (for looped)
+			"terrain":
+				[ "forest_dense", ],
+			"climates":
+				[ "test_climate", "sandy_desert", "rocky_desert", "swamp", "semi_arid", ],
+
+			;;should this play looped within a region or as an ambient one shot around the camera
+			"type": "looped",
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/ambience/Jungle.wav",
+				{
+					"Probability": 8.235,		;;the chance the sound will play when triggered
+					"Volume": 40,				;;the volume of the sample as a percentage of the base file's
+				},
+				"data/sounds/SFX/environment/ambience/Forest_Loop_5.wav",
+				"data/sounds/SFX/environment/ambience/Forest_Loop_2.wav",
+				{
+					"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+				},
+			],
+		},
+		{
+			;;the seasons this should apply to
+			"seasons":
+				[ "winter", ],
+
+			;;the strat terrain type and climate of the tile (for ambient)
+			;;the most numerous strat terrain type and climate of the region (for looped)
+			"terrain":
+				[ "forest_sparse", ],
+			"climates":
+				[ "test_climate", "sandy_desert", "rocky_desert", "swamp", "semi_arid", ],
+
+			;;should this play looped within a region or as an ambient one shot around the camera
+			"type": "ambient",
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/weather/wind_winter_04.wav",
+				"data/sounds/SFX/environment/weather/wind_winter_03.wav",
+				"data/sounds/SFX/environment/weather/wind_winter_02.wav",
+				"data/sounds/SFX/environment/weather/wind_winter_01.wav",
+				{
+					"Probability": 8.235,		;;the chance the sound will play when triggered
+					"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+					"Min dist": 3.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;the seasons this should apply to
+			"seasons":
+				[ "winter", ],
+
+			;;the strat terrain type and climate of the tile (for ambient)
+			;;the most numerous strat terrain type and climate of the region (for looped)
+			"terrain":
+				[ "forest_sparse", ],
+			"climates":
+				[ "test_climate", "sandy_desert", "rocky_desert", "swamp", "semi_arid", ],
+
+			;;should this play looped within a region or as an ambient one shot around the camera
+			"type": "looped",
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/ambience/Forest_Loop_1.wav",
+				{
+					"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+				},
+				"data/sounds/SFX/environment/ambience/Forest_Loop_5.wav",
+				"data/sounds/SFX/environment/ambience/Forest_Loop_2.wav",
+				{
+					"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+				},
+			],
+		},
+		{
+			;;the seasons this should apply to
+			"seasons":
+				[ "winter", ],
+
+			;;the strat terrain type and climate of the tile (for ambient)
+			;;the most numerous strat terrain type and climate of the region (for looped)
+			"terrain":
+				[ "forest_sparse", ],
+			"climates":
+				[ "all", "-test_climate", "-sandy_desert", "-rocky_desert", "-swamp", "-semi_arid", ],
+
+			;;should this play looped within a region or as an ambient one shot around the camera
+			"type": "ambient",
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/Animals/owl_02.wav",
+				"data/sounds/SFX/environment/Animals/owl_01.wav",
+				"data/sounds/SFX/environment/Animals/wolf04.wav",
+				"data/sounds/SFX/environment/Animals/wolf03.wav",
+				"data/sounds/SFX/environment/Animals/wolf02.wav",
+				"data/sounds/SFX/environment/Animals/wolf01.wav",
+				"data/sounds/SFX/environment/Animals/hawk01.wav",
+				{
+					"Probability": 1.961,		;;the chance the sound will play when triggered
+					"Random delay": 2.994,		;;the maximum random delay added to the constant delay
+					"Min dist": 2.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Effect level": 1.0,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the seasons this should apply to
+			"seasons":
+				[ "winter", ],
+
+			;;the strat terrain type and climate of the tile (for ambient)
+			;;the most numerous strat terrain type and climate of the region (for looped)
+			"terrain":
+				[ "forest_sparse", ],
+			"climates":
+				[ "all", "-test_climate", "-sandy_desert", "-rocky_desert", "-swamp", "-semi_arid", ],
+
+			;;should this play looped within a region or as an ambient one shot around the camera
+			"type": "looped",
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/weather/wind_winter_light_04.wav",
+				"data/sounds/SFX/environment/weather/wind_winter_light_03.wav",
+				"data/sounds/SFX/environment/weather/Wind_Winter_Light_02.wav",
+				"data/sounds/SFX/environment/weather/Wind_Winter_Light_01.wav",
+				{
+					"Volume": 40,				;;the volume of the sample as a percentage of the base file's
+					"Effect level": 0.5,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the seasons this should apply to
+			"seasons":
+				[ "winter", ],
+
+			;;the strat terrain type and climate of the tile (for ambient)
+			;;the most numerous strat terrain type and climate of the region (for looped)
+			"terrain":
+				[ "swamp", ],
+			"climates":
+				[ "test_climate", "sandy_desert", "rocky_desert", "swamp", "semi_arid", ],
+
+			;;should this play looped within a region or as an ambient one shot around the camera
+			"type": "looped",
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/ambience/swamp.wav",
+				{
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;the seasons this should apply to
+			"seasons":
+				[ "winter", ],
+
+			;;the strat terrain type and climate of the tile (for ambient)
+			;;the most numerous strat terrain type and climate of the region (for looped)
+			"terrain":
+				[ "ocean", "sea_deep", ],
+			"climates":
+				[ "all", ],
+
+			;;should this play looped within a region or as an ambient one shot around the camera
+			"type": "ambient",
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/water/ocean_wave_9.wav",
+				"data/sounds/SFX/environment/water/ocean_wave_8.wav",
+				"data/sounds/SFX/environment/water/ocean_wave_7.wav",
+				"data/sounds/SFX/environment/water/ocean_wave_6.wav",
+				"data/sounds/SFX/environment/water/ocean_wave_5.wav",
+				"data/sounds/SFX/environment/water/ocean_wave_4.wav",
+				"data/sounds/SFX/environment/water/ocean_wave_3.wav",
+				"data/sounds/SFX/environment/water/ocean_wave_2.wav",
+				"data/sounds/SFX/environment/water/ocean_wave_1.wav",
+				{
+					"Probability": 20.0,		;;the chance the sound will play when triggered
+					"Volume": 70,				;;the volume of the sample as a percentage of the base file's
+					"Random delay": 2.994,		;;the maximum random delay added to the constant delay
+					"Min dist": 4.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;the seasons this should apply to
+			"seasons":
+				[ "winter", ],
+
+			;;the strat terrain type and climate of the tile (for ambient)
+			;;the most numerous strat terrain type and climate of the region (for looped)
+			"terrain":
+				[ "ocean", "sea_deep", ],
+			"climates":
+				[ "all", ],
+
+			;;should this play looped within a region or as an ambient one shot around the camera
+			"type": "looped",
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/water/ocean_distant_2.wav",
+				"data/sounds/SFX/environment/water/ocean_distant_1.wav",
+				{
+					"Volume": 50,				;;the volume of the sample as a percentage of the base file's
+				},
+			],
+		},
+		{
+			;;the seasons this should apply to
+			"seasons":
+				[ "winter", ],
+
+			;;the strat terrain type and climate of the tile (for ambient)
+			;;the most numerous strat terrain type and climate of the region (for looped)
+			"terrain":
+				[ "sea_shallow", ],
+			"climates":
+				[ "all", ],
+
+			;;should this play looped within a region or as an ambient one shot around the camera
+			"type": "ambient",
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/water/beach_wave_15.wav",
+				"data/sounds/SFX/environment/water/beach_wave_14.wav",
+				"data/sounds/SFX/environment/water/beach_wave_13.wav",
+				"data/sounds/SFX/environment/water/beach_wave_12.wav",
+				"data/sounds/SFX/environment/water/beach_wave_11.wav",
+				"data/sounds/SFX/environment/water/beach_wave_10.wav",
+				"data/sounds/SFX/environment/water/beach_wave_9.wav",
+				"data/sounds/SFX/environment/water/beach_wave_8.wav",
+				"data/sounds/SFX/environment/water/beach_wave_7.wav",
+				"data/sounds/SFX/environment/water/beach_wave_6.wav",
+				"data/sounds/SFX/environment/water/beach_wave_5.wav",
+				"data/sounds/SFX/environment/water/beach_wave_4.wav",
+				"data/sounds/SFX/environment/water/beach_wave_3.wav",
+				"data/sounds/SFX/environment/water/beach_wave_2.wav",
+				"data/sounds/SFX/environment/water/beach_wave_1.wav",
+				{
+					"Probability": 8.235,		;;the chance the sound will play when triggered
+					"Random delay": 2.994,		;;the maximum random delay added to the constant delay
+					"Min dist": 2.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;the seasons this should apply to
+			"seasons":
+				[ "winter", ],
+
+			;;the strat terrain type and climate of the tile (for ambient)
+			;;the most numerous strat terrain type and climate of the region (for looped)
+			"terrain":
+				[ "sea_shallow", ],
+			"climates":
+				[ "all", ],
+
+			;;should this play looped within a region or as an ambient one shot around the camera
+			"type": "looped",
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/water/wave_2.wav",
+				"data/sounds/SFX/environment/water/wave_1.wav",
+				{
+					"Volume": 70,				;;the volume of the sample as a percentage of the base file's
+					"Min dist": 3.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+	],
+}, ;;soundbank_stratmap_terrain

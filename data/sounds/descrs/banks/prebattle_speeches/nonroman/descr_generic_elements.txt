@@ -1,0 +1,373 @@
+;; Last updated by jburnett on 2021/07/14
+;; DESCR file generated via RTW Amber pack editor
+
+"default sound parameters":
+{
+	"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+	"Probability": 100.0,		;;the chance the sound will play when triggered
+	"Volume": 35,				;;the volume of the sample as a percentage of the base file's
+	"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+	"Max pitch": 100.0,			
+	"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+	"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+	"Fade out": 0.998,			
+	"Looped": false,			;;should the sound loop?
+	"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+	"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+	"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+	"Pref type": "Speech",		;;the slider the sound should be attached to
+	"Ignore pause": false,		;;should this sound ignore being paused?
+	"Streamed": true,			;;should this sound be streamed from disk?
+	"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+	"Dry level": 1.0,			;; ???
+	"Wet level": 1.0,			;; ???
+},
+
+"soundbank_prebattle_speech":
+{
+	"entries":
+	[
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "greek", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait opener",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Greek_Generic_21.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Greek_Generic_20.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Greek_Generic_19.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Greek_Generic_18.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Greek_Generic_17.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Greek_Generic_16.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Greek_Generic_15.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Greek_Generic_14.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Greek_Generic_13.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Greek_Generic_12.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Greek_Generic_11.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Greek_Generic_10.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Greek_Generic_09.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Greek_Generic_08.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Greek_Generic_07.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Greek_Generic_06.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Greek_Generic_05.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Greek_Generic_04.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Greek_Generic_03.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Greek_Generic_02.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Greek_Generic_01.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "greek", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait closer",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Greek_Extros_2_15.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Greek_Extros_2_14.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Greek_Extros_2_13.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Greek_Extros_2_12.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Greek_Extros_2_11.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Greek_Extros_2_10.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Greek_Extros_2_09.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Greek_Extros_2_08.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Greek_Extros_2_07.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Greek_Extros_2_06.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Greek_Extros_2_05.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Greek_Extros_2_04.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Greek_Extros_2_03.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Greek_Extros_2_02.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Greek_Extros_2_01.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "barbarian", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait opener",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_21.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_20.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_19.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_18.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_17.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_16.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_15.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_14.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_13.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_12.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_11.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_10.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_09.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_08.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_07.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_06.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_05.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_04.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_03.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_02.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Generic_01.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "barbarian", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait closer",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Extros_2_15.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Extros_2_14.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Extros_2_13.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Extros_2_12.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Extros_2_11.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Extros_2_10.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Extros_2_09.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Extros_2_08.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Extros_2_07.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Extros_2_06.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Extros_2_05.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Extros_2_04.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Extros_2_03.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Extros_2_02.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Barb_Extros_2_01.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "all", "-barbarian", "-greek", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait opener",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_21.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_20.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_19.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_18.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_17.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_16.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_15.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_14.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_13.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_12.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_11.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_10.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_09.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_08.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_07.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_06.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_05.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_04.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_03.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_02.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Generic_01.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "all", "-barbarian", "-greek", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait closer",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Extros_2_15.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Extros_2_14.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Extros_2_13.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Extros_2_12.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Extros_2_11.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Extros_2_10.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Extros_2_09.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Extros_2_08.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Extros_2_07.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Extros_2_06.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Extros_2_05.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Extros_2_04.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Extros_2_03.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Extros_2_02.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Arab_Extros_2_01.opus",
+					{
+					},
+				],
+			],
+		},
+	],
+}, ;;soundbank_prebattle_speech

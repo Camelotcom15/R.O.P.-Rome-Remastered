@@ -1,0 +1,491 @@
+;; Last updated by jburnett on 2021/07/14
+;; DESCR file generated via RTW Amber pack editor
+
+"default sound parameters":
+{
+	"3d": true,					;;is the sound 3D (DO NOT CHANGE THIS)
+	"Probability": 100.0,		;;the chance the sound will play when triggered
+	"Volume": 70,				;;the volume of the sample as a percentage of the base file's
+	"Min pitch": 89.999,		;;the random pitch of the sample (0-200%)
+	"Max pitch": 100.0,			
+	"Priority": 130,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+	"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+	"Fade out": 0.0,			
+	"Looped": false,			;;should the sound loop?
+	"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+	"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+	"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+	"Pref type": "SFX",			;;the slider the sound should be attached to
+	"Ignore pause": false,		;;should this sound ignore being paused?
+	"Min dist": 3.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+	"Max dist": -1.0,			;;setting max dist to -1 will mean the sound will autocalculate the max dist
+	"Dist priority": -2.0,		;;how much should the priority be reduced per meter of distance
+	"Prob radius": 7.0,			;;the range within which the probability will be overridden to be 100%
+	"Effect level": 0.75,		;;??? I think this has something to do with the EAX parameters?
+},
+
+"soundbank_animal_anims":
+{
+	"entries":
+	[
+		{
+			;;the ID of this sound event
+			"sound ID": "attack",
+
+			;;which animal types is this valid for
+			"animal types":
+				[ "elephant", ],
+
+			;;the specific IDs of animals
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Animal/Elephant/Elephant_Attack_12.wav",
+				"data/sounds/Voice/Animal/Elephant/Elephant_Attack_11.wav",
+				"data/sounds/Voice/Animal/Elephant/Elephant_Attack_10.wav",
+				"data/sounds/Voice/Animal/Elephant/Elephant_Attack_09.wav",
+				"data/sounds/Voice/Animal/Elephant/Elephant_Attack_08.wav",
+				"data/sounds/Voice/Animal/Elephant/Elephant_Attack_07.wav",
+				"data/sounds/Voice/Animal/Elephant/Elephant_Attack_06.wav",
+				"data/sounds/Voice/Animal/Elephant/Elephant_Attack_05.wav",
+				"data/sounds/Voice/Animal/Elephant/Elephant_Attack_04.wav",
+				"data/sounds/Voice/Animal/Elephant/Elephant_Attack_02.wav",
+				{
+					"Probability": 48.235,		;;the chance the sound will play when triggered
+					"Random volume": -30,		;;the random adjustment applied to the volume (must be negative)
+					"Min dist": 10.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "attack",
+
+			;;which animal types is this valid for
+			"animal types":
+				[ "wardog", "hound", ],
+
+			;;the specific IDs of animals
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Animal/Wardog/Wardog_Attack_08.wav",
+				"data/sounds/Voice/Animal/Wardog/Wardog_Attack_07.wav",
+				"data/sounds/Voice/Animal/Wardog/Wardog_Attack_06.wav",
+				"data/sounds/Voice/Animal/Wardog/Wardog_Attack_05.wav",
+				{
+					"Probability": 29.804,		;;the chance the sound will play when triggered
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "attack",
+
+			;;which animal types is this valid for
+			"animal types":
+				[ "pig", ],
+
+			;;the specific IDs of animals
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Animal/Pig/pig_attack_09.wav",
+				"data/sounds/Voice/Animal/Pig/pig_Attack_07.wav",
+				"data/sounds/Voice/Animal/Pig/pig_Attack_06.wav",
+				"data/sounds/Voice/Animal/Pig/pig_Attack_04.wav",
+				"data/sounds/Voice/Animal/Pig/pig_Attack_03.wav",
+				"data/sounds/Voice/Animal/Pig/pig_Attack_02.wav",
+				{
+					"Probability": 20.0,		;;the chance the sound will play when triggered
+					"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "attack",
+
+			;;which animal types is this valid for
+			"animal types":
+				[ "horse", ],
+
+			;;the specific IDs of animals
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Animal/Horse/horse_nay_18.wav",
+				"data/sounds/Voice/Animal/Horse/horse_nay_17.wav",
+				"data/sounds/Voice/Animal/Horse/horse_nay_16.wav",
+				"data/sounds/Voice/Animal/Horse/horse_nay_14.wav",
+				"data/sounds/Voice/Animal/Horse/horse_nay_13.wav",
+				"data/sounds/Voice/Animal/Horse/horse_nay_08.wav",
+				"data/sounds/Voice/Animal/Horse/horse_nay_05.wav",
+				"data/sounds/Voice/Animal/Horse/horse_nay_04.wav",
+				"data/sounds/Voice/Animal/Horse/horse_nay_03.wav",
+				"data/sounds/Voice/Animal/Horse/horse_nay_02.wav",
+				{
+					"Probability": 14.902,		;;the chance the sound will play when triggered
+					"Volume": 50,				;;the volume of the sample as a percentage of the base file's
+					"Random volume": -15,		;;the random adjustment applied to the volume (must be negative)
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "attack",
+
+			;;which animal types is this valid for
+			"animal types":
+				[ "camel", ],
+
+			;;the specific IDs of animals
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Animal/Camel/Camel_Roar_09.wav",
+				"data/sounds/Voice/Animal/Camel/Camel_Roar_08.wav",
+				"data/sounds/Voice/Animal/Camel/Camel_Roar_07.wav",
+				"data/sounds/Voice/Animal/Camel/Camel_Roar_06.wav",
+				"data/sounds/Voice/Animal/Camel/Camel_Roar_05.wav",
+				"data/sounds/Voice/Animal/Camel/Camel_Roar_04.wav",
+				"data/sounds/Voice/Animal/Camel/Camel_Roar_03.wav",
+				"data/sounds/Voice/Animal/Camel/Camel_Roar_02.wav",
+				"data/sounds/Voice/Animal/Camel/Camel_Roar_01.wav",
+				{
+					"Probability": 48.235,		;;the chance the sound will play when triggered
+					"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+					"Random volume": -20,		;;the random adjustment applied to the volume (must be negative)
+					"Min dist": 4.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "burn",
+
+			;;which animal types is this valid for
+			"animal types":
+				[ "pig", ],
+
+			;;the specific IDs of animals
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Misc/Flaming_Pig_06c.wav",
+				"data/sounds/SFX/individual/Misc/Flaming_Pig_06b.wav",
+				"data/sounds/SFX/individual/Misc/Flaming_Pig_06a.wav",
+				{
+					"Probability": 48.235,		;;the chance the sound will play when triggered
+					"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+					"Min pitch": 74.999,		;;the random pitch of the sample (0-200%)
+					"Priority": 90,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Fade in": 0.998,			;;the time, in seconds, for the sound to fade in and out
+					"Fade out": 0.998,			
+					"Looped": true,				;;should the sound loop?
+					"Random volume": -30,		;;the random adjustment applied to the volume (must be negative)
+					"Random delay": 0.233,		;;the maximum random delay added to the constant delay
+					"Dist priority": -3.0,		;;how much should the priority be reduced per meter of distance
+					"Effect level": 0.699999988079071,;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "death",
+
+			;;which animal types is this valid for
+			"animal types":
+				[ "wardog", "hound", ],
+
+			;;the specific IDs of animals
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Animal/Wardog/Wardog_Death_04.wav",
+				"data/sounds/Voice/Animal/Wardog/Wardog_Death_03.wav",
+				"data/sounds/Voice/Animal/Wardog/Wardog_Death_02.wav",
+				"data/sounds/Voice/Animal/Wardog/Wardog_Death_01.wav",
+				{
+					"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+					"Min pitch": 59.999,		;;the random pitch of the sample (0-200%)
+					"Max pitch": 79.998,		
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "death",
+
+			;;which animal types is this valid for
+			"animal types":
+				[ "pig", ],
+
+			;;the specific IDs of animals
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Animal/Pig/pig_Death_05.wav",
+				"data/sounds/Voice/Animal/Pig/pig_Death_04.wav",
+				"data/sounds/Voice/Animal/Pig/pig_Death_03.wav",
+				"data/sounds/Voice/Animal/Pig/pig_Death_02.wav",
+				"data/sounds/Voice/Animal/Pig/pig_death_01.wav",
+				{
+					"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "death",
+
+			;;which animal types is this valid for
+			"animal types":
+				[ "chariot", "scorpion_cart", ],
+
+			;;the specific IDs of animals
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Melee/Chariot/Chariot_Destroyed_03.wav",
+				"data/sounds/SFX/individual/Melee/Chariot/Chariot_Destroyed_02.wav",
+				"data/sounds/SFX/individual/Melee/Chariot/Chariot_Destroyed_01.wav",
+				{
+					"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+					"Priority": 210,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Random volume": -40,		;;the random adjustment applied to the volume (must be negative)
+					"Min dist": 4.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "death",
+
+			;;which animal types is this valid for
+			"animal types":
+				[ "elephant", ],
+
+			;;the specific IDs of animals
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Animal/Elephant/Elephant_Death_08.wav",
+				"data/sounds/Voice/Animal/Elephant/Elephant_Death_07.wav",
+				"data/sounds/Voice/Animal/Elephant/Elephant_Death_06.wav",
+				"data/sounds/Voice/Animal/Elephant/Elephant_Death_05.wav",
+				"data/sounds/Voice/Animal/Elephant/Elephant_Death_04.wav",
+				"data/sounds/Voice/Animal/Elephant/Elephant_Death_03.wav",
+				"data/sounds/Voice/Animal/Elephant/Elephant_Death_02.wav",
+				"data/sounds/Voice/Animal/Elephant/Elephant_Death_01.wav",
+				{
+					"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+					"Random volume": -50,		;;the random adjustment applied to the volume (must be negative)
+					"Min dist": 10.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "death",
+
+			;;which animal types is this valid for
+			"animal types":
+				[ "camel", ],
+
+			;;the specific IDs of animals
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Animal/Camel/Camel_Death_07.wav",
+				"data/sounds/Voice/Animal/Camel/Camel_Death_06.wav",
+				"data/sounds/Voice/Animal/Camel/Camel_Death_05.wav",
+				"data/sounds/Voice/Animal/Camel/Camel_Death_04.wav",
+				"data/sounds/Voice/Animal/Camel/Camel_Death_03.wav",
+				"data/sounds/Voice/Animal/Camel/Camel_Death_02.wav",
+				"data/sounds/Voice/Animal/Camel/Camel_Death_01.wav",
+				{
+					"Random volume": -20,		;;the random adjustment applied to the volume (must be negative)
+					"Min dist": 4.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "death",
+
+			;;which animal types is this valid for
+			"animal types":
+				[ "horse", ],
+
+			;;the specific IDs of animals
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Animal/Horse/horse_death_12.wav",
+				"data/sounds/Voice/Animal/Horse/horse_death_11.wav",
+				"data/sounds/Voice/Animal/Horse/horse_death_10.wav",
+				"data/sounds/Voice/Animal/Horse/horse_death_09.wav",
+				"data/sounds/Voice/Animal/Horse/horse_death_08.wav",
+				"data/sounds/Voice/Animal/Horse/horse_death_07.wav",
+				"data/sounds/Voice/Animal/Horse/horse_death_06.wav",
+				"data/sounds/Voice/Animal/Horse/horse_death_05.wav",
+				"data/sounds/Voice/Animal/Horse/horse_death_03.wav",
+				"data/sounds/Voice/Animal/Horse/horse_death_01.wav",
+				{
+					"Probability": 69.804,		;;the chance the sound will play when triggered
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "ram",
+
+			;;which animal types is this valid for
+			"animal types":
+				[ "elephant", ],
+
+			;;the specific IDs of animals
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/siege_engines/elephant/siege_elephant_hit_wood.wav",
+				{
+					"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+					"Priority": 210,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Random volume": -30,		;;the random adjustment applied to the volume (must be negative)
+					"Min dist": 7.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "speak",
+
+			;;which animal types is this valid for
+			"animal types":
+				[ "bird", ],
+
+			;;the specific IDs of animals
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/Animals/hawk01.wav",
+				"data/sounds/SFX/environment/Animals/eagle02.wav",
+				"data/sounds/SFX/environment/Animals/eagle01.wav",
+				"data/sounds/SFX/environment/Animals/crow02.wav",
+				"data/sounds/SFX/environment/Animals/crow01.wav",
+				{
+					"Probability": 0.784,		;;the chance the sound will play when triggered
+					"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+					"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+					"Priority": 50,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Fade in": 1.996,			;;the time, in seconds, for the sound to fade in and out
+					"Fade out": 2.994,			
+					"Random volume": -20,		;;the random adjustment applied to the volume (must be negative)
+					"Min dist": 20.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Prob radius": 0.0,			;;the range within which the probability will be overridden to be 100%
+					"Effect level": 1.0,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "speak",
+
+			;;which animal types is this valid for
+			"animal types":
+				[ "wardog", "hound", ],
+
+			;;the specific IDs of animals
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Animal/Wardog/wardog_bark_09.wav",
+				"data/sounds/Voice/Animal/Wardog/wardog_bark_08.wav",
+				"data/sounds/Voice/Animal/Wardog/wardog_bark_07.wav",
+				"data/sounds/Voice/Animal/Wardog/wardog_bark_06.wav",
+				"data/sounds/Voice/Animal/Wardog/wardog_bark_05.wav",
+				{
+					"Volume": 55,				;;the volume of the sample as a percentage of the base file's
+					"Random volume": -15,		;;the random adjustment applied to the volume (must be negative)
+					"Min dist": 4.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			;;the ID of this sound event
+			"sound ID": "speak",
+
+			;;which animal types is this valid for
+			"animal types":
+				[ "horse", ],
+
+			;;the specific IDs of animals
+			"IDs":
+			[
+			],
+
+			"sounds":
+			[
+				"data/sounds/Voice/Animal/Horse/horse_nay_08.wav",
+				"data/sounds/Voice/Animal/Horse/horse_nay_17.wav",
+				"data/sounds/Voice/Animal/Horse/horse_nay_13.wav",
+				"data/sounds/Voice/Animal/Horse/horse_nay_05.wav",
+				{
+					"Probability": 14.902,		;;the chance the sound will play when triggered
+					"Priority": 120,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Random volume": -15,		;;the random adjustment applied to the volume (must be negative)
+					"Prob radius": 8.0,			;;the range within which the probability will be overridden to be 100%
+				},
+			],
+		},
+	],
+}, ;;soundbank_animal_anims

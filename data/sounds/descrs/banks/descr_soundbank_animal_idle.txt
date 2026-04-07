@@ -1,0 +1,281 @@
+;; Last updated by jburnett on 2021/07/14
+;; DESCR file generated via RTW Amber pack editor
+
+"default sound parameters":
+{
+	"3d": true,					;;is the sound 3D (DO NOT CHANGE THIS)
+	"Probability": 9.804,		;;the chance the sound will play when triggered
+	"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+	"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+	"Max pitch": 100.0,			
+	"Priority": 60,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+	"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+	"Fade out": 0.0,			
+	"Looped": false,			;;should the sound loop?
+	"Random volume": -15,		;;the random adjustment applied to the volume (must be negative)
+	"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+	"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+	"Pref type": "SFX",			;;the slider the sound should be attached to
+	"Ignore pause": false,		;;should this sound ignore being paused?
+	"Min dist": 4.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+	"Max dist": -1.0,			;;setting max dist to -1 will mean the sound will autocalculate the max dist
+	"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+	"Prob radius": 0.0,			;;the range within which the probability will be overridden to be 100%
+	"Effect level": 0.5,		;;??? I think this has something to do with the EAX parameters?
+},
+
+"soundbank_animal_idle":
+{
+	"entries":
+	[
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "wardog", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "all", ],
+			},
+
+			"sounds":
+			[
+				"data/sounds/Voice/Animal/Wardog/wardog_pant_01.wav",
+				"data/sounds/Voice/Animal/Wardog/wardog_growl_04.wav",
+				"data/sounds/Voice/Animal/Wardog/wardog_growl_03.wav",
+				"data/sounds/Voice/Animal/Wardog/wardog_growl_02.wav",
+				"data/sounds/Voice/Animal/Wardog/wardog_growl_01.wav",
+				{
+					"Probability": 20.0,		;;the chance the sound will play when triggered
+				},
+			],
+		},
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "pig", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "all", ],
+			},
+
+			"sounds":
+			[
+				"data/sounds/Voice/Animal/Pig/pig_ambient_08.wav",
+				"data/sounds/Voice/Animal/Pig/pig_ambient_07.wav",
+				"data/sounds/Voice/Animal/Pig/pig_ambient_06.wav",
+				"data/sounds/Voice/Animal/Pig/pig_ambient_05.wav",
+				"data/sounds/Voice/Animal/Pig/pig_ambient_04.wav",
+				"data/sounds/Voice/Animal/Pig/pig_ambient_02.wav",
+				"data/sounds/Voice/Animal/Pig/pig_ambient_01.wav",
+				{
+					"Probability": 14.902,		;;the chance the sound will play when triggered
+					"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+				},
+			],
+		},
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "hound", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "all", ],
+			},
+
+			"sounds":
+			[
+				"data/sounds/Voice/Animal/Wardog/wardog_pant_01.wav",
+				"data/sounds/Voice/Animal/Wardog/wardog_growl_04.wav",
+				"data/sounds/Voice/Animal/Wardog/wardog_growl_03.wav",
+				"data/sounds/Voice/Animal/Wardog/wardog_growl_02.wav",
+				"data/sounds/Voice/Animal/Wardog/wardog_growl_01.wav",
+				{
+					"Probability": 20.0,		;;the chance the sound will play when triggered
+				},
+			],
+		},
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "camel", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "all", ],
+			},
+
+			"sounds":
+			[
+				"data/sounds/Voice/Animal/Camel/Camel_Groan_21.wav",
+				"data/sounds/Voice/Animal/Camel/Camel_Groan_20.wav",
+				"data/sounds/Voice/Animal/Camel/Camel_Groan_19.wav",
+				"data/sounds/Voice/Animal/Camel/Camel_Groan_11.wav",
+				"data/sounds/Voice/Animal/Camel/Camel_Groan_09.wav",
+				"data/sounds/Voice/Animal/Camel/Camel_Groan_06.wav",
+				"data/sounds/Voice/Animal/Camel/Camel_Groan_04.wav",
+				"data/sounds/Voice/Animal/Camel/Camel_Groan_03.wav",
+				"data/sounds/Voice/Animal/Camel/Camel_Groan_02.wav",
+				{
+					"Probability": 14.902,		;;the chance the sound will play when triggered
+				},
+			],
+		},
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "horse", "chariot", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "all", ],
+			},
+
+			"sounds":
+			[
+				"data/sounds/Voice/Animal/Horse/horse_nay_12.wav",
+				"data/sounds/Voice/Animal/Horse/horse_nay_11.wav",
+				"data/sounds/Voice/Animal/Horse/horse_nay_10.wav",
+				"data/sounds/Voice/Animal/Horse/horse_nay_09.wav",
+				"data/sounds/Voice/Animal/Horse/horse_nay_07.wav",
+				"data/sounds/Voice/Animal/Horse/horse_nay_06.wav",
+				"data/sounds/Voice/Animal/Horse/horse_nay_01.wav",
+				"data/sounds/Voice/Animal/Horse/horse_snort_04.wav",
+				"data/sounds/Voice/Animal/Horse/horse_snort_03.wav",
+				"data/sounds/Voice/Animal/Horse/horse_snort_02.wav",
+				"data/sounds/Voice/Animal/Horse/horse_snort_01.wav",
+				{
+					"Volume": 65,				;;the volume of the sample as a percentage of the base file's
+				},
+			],
+		},
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "scorpion_cart", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "all", ],
+			},
+
+			"sounds":
+			[
+			],
+		},
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "elephant", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "all", ],
+			},
+
+			"sounds":
+			[
+				"data/sounds/Voice/Animal/Elephant/Elephant_Snort_09.wav",
+				"data/sounds/Voice/Animal/Elephant/Elephant_Snort_08.wav",
+				"data/sounds/Voice/Animal/Elephant/Elephant_Snort_06.wav",
+				"data/sounds/Voice/Animal/Elephant/Elephant_Snort_05.wav",
+				"data/sounds/Voice/Animal/Elephant/Elephant_Snort_04.wav",
+				"data/sounds/Voice/Animal/Elephant/Elephant_Ambient_10.wav",
+				"data/sounds/Voice/Animal/Elephant/Elephant_Ambient_08.wav",
+				"data/sounds/Voice/Animal/Elephant/Elephant_Ambient_07.wav",
+				"data/sounds/Voice/Animal/Elephant/Elephant_Ambient_06.wav",
+				"data/sounds/Voice/Animal/Elephant/Elephant_Ambient_05.wav",
+				"data/sounds/Voice/Animal/Elephant/Elephant_Ambient_04.wav",
+				"data/sounds/Voice/Animal/Elephant/Elephant_Ambient_03.wav",
+				"data/sounds/Voice/Animal/Elephant/Elephant_Trumpet_42.wav",
+				"data/sounds/Voice/Animal/Elephant/Elephant_Trumpet_18.wav",
+				"data/sounds/Voice/Animal/Elephant/Elephant_Trumpet_15.wav",
+				"data/sounds/Voice/Animal/Elephant/Elephant_Trumpet_12.wav",
+				"data/sounds/Voice/Animal/Elephant/Elephant_Trumpet_11.wav",
+				{
+					"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+					"Min dist": 6.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+	],
+}, ;;soundbank_animal_idle

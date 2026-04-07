@@ -1,0 +1,1094 @@
+;; Last updated by jburnett on 2021/07/14
+;; DESCR file generated via RTW Amber pack editor
+
+"default sound parameters":
+{
+	"3d": true,					;;is the sound 3D (DO NOT CHANGE THIS)
+	"Probability": 100.0,		;;the chance the sound will play when triggered
+	"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+	"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+	"Max pitch": 100.0,			
+	"Priority": 100,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+	"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+	"Fade out": 0.0,			
+	"Looped": false,			;;should the sound loop?
+	"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+	"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+	"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+	"Pref type": "SFX",			;;the slider the sound should be attached to
+	"Ignore pause": false,		;;should this sound ignore being paused?
+	"Min dist": 30.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+	"Max dist": -1.0,			;;setting max dist to -1 will mean the sound will autocalculate the max dist
+	"Dist priority": -1.0,		;;how much should the priority be reduced per meter of distance
+	"Prob radius": 0.0,			;;the range within which the probability will be overridden to be 100%
+	"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+},
+
+"soundbank_building":
+{
+	"global parameters":
+	{
+		;; how close do we need to be to a building before we can hear the sounds
+		"building sound cutoff distance": 70.0,
+	},
+	"entries":
+	[
+		{
+			;;is this a sound when the building gets damaged, burns, or just plays ambiently
+			"sound type": "ambient",
+
+			;;the types of buildings this should apply to
+			"building types":
+				[ ],
+
+			;;specific buildings this should apply to
+			"building IDs":
+			[
+				"paddock",
+				"roman_farm_A",
+				"roman_farm_B",
+			],
+
+			;;should this sound play in battle or just in city view
+			"play in battle": true,
+
+			"sounds":
+			[
+				"lod":
+				{
+					;; health % of the building
+					"switch": 30,
+
+					"sounds":
+					[
+						"data/sounds/SFX/environment/structures/farm_animals_close_02.wav",
+						"data/sounds/SFX/environment/structures/farm_animals_close_01.wav",
+						{
+							"Min dist": 3.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+							"Max dist": 70.0,			;;setting max dist to -1 will mean the sound will autocalculate the max dist
+						},
+					],
+				},
+			],
+		},
+		{
+			;;is this a sound when the building gets damaged, burns, or just plays ambiently
+			"sound type": "ambient",
+
+			;;the types of buildings this should apply to
+			"building types":
+				[ ],
+
+			;;specific buildings this should apply to
+			"building IDs":
+			[
+				"egyptian_well",
+				"village_well",
+			],
+
+			;;should this sound play in battle or just in city view
+			"play in battle": true,
+
+			"sounds":
+			[
+				"lod":
+				{
+					;; health % of the building
+					"switch": 0,
+
+					"sounds":
+					[
+						"data/sounds/SFX/environment/structures/village_well_02.wav",
+						{
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			;;is this a sound when the building gets damaged, burns, or just plays ambiently
+			"sound type": "ambient",
+
+			;;the types of buildings this should apply to
+			"building types":
+				[ ],
+
+			;;specific buildings this should apply to
+			"building IDs":
+			[
+				"stove",
+			],
+
+			;;should this sound play in battle or just in city view
+			"play in battle": true,
+
+			"sounds":
+			[
+				"lod":
+				{
+					;; health % of the building
+					"switch": 0,
+
+					"sounds":
+					[
+						"data/sounds/SFX/environment/structures/stove_01.wav",
+						{
+							"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+							"Fade in": 0.499,			;;the time, in seconds, for the sound to fade in and out
+							"Fade out": 0.499,			
+							"Looped": true,				;;should the sound loop?
+							"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			;;is this a sound when the building gets damaged, burns, or just plays ambiently
+			"sound type": "ambient",
+
+			;;the types of buildings this should apply to
+			"building types":
+				[ ],
+
+			;;specific buildings this should apply to
+			"building IDs":
+			[
+				"henge",
+				"henge_half_built",
+			],
+
+			;;should this sound play in battle or just in city view
+			"play in battle": true,
+
+			"sounds":
+			[
+				"lod":
+				{
+					;; health % of the building
+					"switch": 0,
+
+					"sounds":
+					[
+						"data/sounds/SFX/environment/structures/henge_03.wav",
+						{
+							"Fade in": 0.499,			;;the time, in seconds, for the sound to fade in and out
+							"Fade out": 0.499,			
+							"Looped": true,				;;should the sound loop?
+							"Min dist": 3.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			;;is this a sound when the building gets damaged, burns, or just plays ambiently
+			"sound type": "ambient",
+
+			;;the types of buildings this should apply to
+			"building types":
+				[ ],
+
+			;;specific buildings this should apply to
+			"building IDs":
+			[
+				"barbarian_standalone_watchtower",
+				"barbarian_wooden_village_watchtower",
+				"roman_greek_standalone_watchtower",
+			],
+
+			;;should this sound play in battle or just in city view
+			"play in battle": true,
+
+			"sounds":
+			[
+				"lod":
+				{
+					;; health % of the building
+					"switch": 0,
+
+					"sounds":
+					[
+						"data/sounds/SFX/environment/structures/wood_watchtower_creak.wav",
+						{
+							"Min dist": 2.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			;;is this a sound when the building gets damaged, burns, or just plays ambiently
+			"sound type": "ambient",
+
+			;;the types of buildings this should apply to
+			"building types":
+				[ ],
+
+			;;specific buildings this should apply to
+			"building IDs":
+			[
+				"barbarian_park_building",
+				"eastern_park_building",
+				"eastern_park_pillar",
+				"egyptian_park_building",
+				"public_gardens",
+			],
+
+			;;should this sound play in battle or just in city view
+			"play in battle": true,
+
+			"sounds":
+			[
+				"lod":
+				{
+					;; health % of the building
+					"switch": 0,
+
+					"sounds":
+					[
+						"data/sounds/SFX/environment/structures/public_gardens_06w.wav",
+						"data/sounds/SFX/environment/structures/public_gardens_04w.wav",
+						{
+							"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+							"Fade in": 0.499,			;;the time, in seconds, for the sound to fade in and out
+							"Fade out": 0.499,			
+							"Looped": true,				;;should the sound loop?
+							"Min dist": 7.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			;;is this a sound when the building gets damaged, burns, or just plays ambiently
+			"sound type": "ambient",
+
+			;;the types of buildings this should apply to
+			"building types":
+				[ ],
+
+			;;specific buildings this should apply to
+			"building IDs":
+			[
+				"greek_amphitheatre",
+				"greek_theatre",
+				"greek_theatre_small",
+				"odeon_greek",
+				"stone_amphitheatre",
+				"theatre",
+				"theatre_greek",
+				"urban_amphitheatre",
+			],
+
+			;;should this sound play in battle or just in city view
+			"play in battle": false,
+
+			"sounds":
+			[
+				"lod":
+				{
+					;; health % of the building
+					"switch": 0,
+
+					"sounds":
+					[
+						"data/sounds/SFX/environment/structures/theatre.wav",
+						{
+							"Probability": 9.804,		;;the chance the sound will play when triggered
+							"Volume": 30,				;;the volume of the sample as a percentage of the base file's
+							"Fade in": 0.499,			;;the time, in seconds, for the sound to fade in and out
+							"Fade out": 0.499,			
+							"Min dist": 3.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			;;is this a sound when the building gets damaged, burns, or just plays ambiently
+			"sound type": "ambient",
+
+			;;the types of buildings this should apply to
+			"building types":
+				[ ],
+
+			;;specific buildings this should apply to
+			"building IDs":
+			[
+				"barbarian_stables",
+				"greek_elite_cavalry_stables",
+				"greek_royal_cavalry_stables",
+				"royal_cavalry_stables_eastern",
+				"royal_cavalry_stables_greek",
+				"stone_stables",
+				"warlords_stable",
+			],
+
+			;;should this sound play in battle or just in city view
+			"play in battle": true,
+
+			"sounds":
+			[
+				"lod":
+				{
+					;; health % of the building
+					"switch": 30,
+
+					"sounds":
+					[
+						"data/sounds/SFX/environment/structures/horse_stables.wav",
+						{
+							"Min dist": 4.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+							"Max dist": 70.0,			;;setting max dist to -1 will mean the sound will autocalculate the max dist
+						},
+					],
+				},
+			],
+		},
+		{
+			;;is this a sound when the building gets damaged, burns, or just plays ambiently
+			"sound type": "ambient",
+
+			;;the types of buildings this should apply to
+			"building types":
+				[ ],
+
+			;;specific buildings this should apply to
+			"building IDs":
+			[
+				"camel_stables",
+				"egyptian_camel_stables",
+			],
+
+			;;should this sound play in battle or just in city view
+			"play in battle": true,
+
+			"sounds":
+			[
+				"lod":
+				{
+					;; health % of the building
+					"switch": 30,
+
+					"sounds":
+					[
+						"data/sounds/SFX/environment/structures/camel_stables.wav",
+						{
+							"Min dist": 4.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+							"Max dist": 70.0,			;;setting max dist to -1 will mean the sound will autocalculate the max dist
+						},
+					],
+				},
+			],
+		},
+		{
+			;;is this a sound when the building gets damaged, burns, or just plays ambiently
+			"sound type": "ambient",
+
+			;;the types of buildings this should apply to
+			"building types":
+				[ ],
+
+			;;specific buildings this should apply to
+			"building IDs":
+			[
+				"egyptian_lake",
+				"egyptian_sacred_lake",
+				"large_lake2_water",
+				"roman_pool_A",
+				"small_lake2_water",
+			],
+
+			;;should this sound play in battle or just in city view
+			"play in battle": true,
+
+			"sounds":
+			[
+				"lod":
+				{
+					;; health % of the building
+					"switch": 0,
+
+					"sounds":
+					[
+						"data/sounds/SFX/environment/structures/lake.wav",
+						{
+							"Fade in": 0.499,			;;the time, in seconds, for the sound to fade in and out
+							"Fade out": 0.499,			
+							"Min dist": 5.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			;;is this a sound when the building gets damaged, burns, or just plays ambiently
+			"sound type": "ambient",
+
+			;;the types of buildings this should apply to
+			"building types":
+				[ ],
+
+			;;specific buildings this should apply to
+			"building IDs":
+			[
+				"barbarian_armourer",
+				"barbarian_blacksmith",
+				"eastern_armourer",
+				"eastern_blacksmith",
+				"eastern_foundry",
+				"egyptian_armourer",
+				"egyptian_blacksmith",
+				"egyptian_foundry",
+				"roman_armourer",
+				"roman_blacksmith",
+				"roman_foundry",
+			],
+
+			;;should this sound play in battle or just in city view
+			"play in battle": true,
+
+			"sounds":
+			[
+				"lod":
+				{
+					;; health % of the building
+					"switch": 30,
+
+					"sounds":
+					[
+						"data/sounds/SFX/environment/structures/blacksmith.wav",
+						{
+							"Min dist": 4.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			;;is this a sound when the building gets damaged, burns, or just plays ambiently
+			"sound type": "ambient",
+
+			;;the types of buildings this should apply to
+			"building types":
+				[ "decorative", ],
+
+			;;specific buildings this should apply to
+			"building IDs":
+			[
+			],
+
+			;;should this sound play in battle or just in city view
+			"play in battle": false,
+
+			"sounds":
+			[
+				"lod":
+				{
+					;; health % of the building
+					"switch": 0,
+
+					"sounds":
+					[
+						"data/sounds/SFX/structure/buildings/building_ambience_morning_06.wav",
+						"data/sounds/SFX/structure/buildings/building_ambience_morning_04.wav",
+						"data/sounds/SFX/structure/buildings/building_ambience_activity_birds_06.wav",
+						"data/sounds/SFX/structure/buildings/building_ambience_activity_birds_04.wav",
+						"data/sounds/SFX/structure/buildings/building_ambience_activity_04.wav",
+						"data/sounds/SFX/structure/buildings/building_ambience_activity_02.wav",
+						{
+							"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+							"Priority": 0,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Min dist": 4.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+							"Dist priority": -15.0,		;;how much should the priority be reduced per meter of distance
+						},
+					],
+				},
+			],
+		},
+		{
+			;;is this a sound when the building gets damaged, burns, or just plays ambiently
+			"sound type": "ambient",
+
+			;;the types of buildings this should apply to
+			"building types":
+				[ ],
+
+			;;specific buildings this should apply to
+			"building IDs":
+			[
+				"circus_maximus",
+				"eastern_hippodrome",
+				"egyptian_hippodrome",
+				"greek_hippodrome",
+				"hippodrome",
+			],
+
+			;;should this sound play in battle or just in city view
+			"play in battle": false,
+
+			"sounds":
+			[
+				"lod":
+				{
+					;; health % of the building
+					"switch": 30,
+
+					"sounds":
+					[
+						"data/sounds/SFX/environment/structures/horse_stables.wav",
+						{
+							"Min dist": 4.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			;;is this a sound when the building gets damaged, burns, or just plays ambiently
+			"sound type": "fire",
+
+			;;the types of buildings this should apply to
+			"building types":
+				[ "decorative", ],
+
+			;;specific buildings this should apply to
+			"building IDs":
+			[
+			],
+
+			;;should this sound play in battle or just in city view
+			"play in battle": true,
+
+			"sounds":
+			[
+				"lod":
+				{
+					;; health % of the building
+					"switch": 0,
+
+					"sounds":
+					[
+						"data/sounds/SFX/structure/buildings/building_on_fire_high.wav",
+						{
+							"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+							"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+							"Priority": 240,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Min dist": 10.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+							"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+						},
+					],
+				},
+			],
+		},
+		{
+			;;is this a sound when the building gets damaged, burns, or just plays ambiently
+			"sound type": "damage",
+
+			;;the types of buildings this should apply to
+			"building types":
+				[ "decorative", ],
+
+			;;specific buildings this should apply to
+			"building IDs":
+			[
+			],
+
+			;;should this sound play in battle or just in city view
+			"play in battle": true,
+
+			"sounds":
+			[
+				"lod":
+				{
+					;; damage level
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/structure/buildings/Building_Destroyed_03.wav",
+						"data/sounds/SFX/structure/buildings/Building_Destroyed_02.wav",
+						{
+							"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Min dist": 20.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+							"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+						},
+					],
+				},
+			],
+		},
+		{
+			;;is this a sound when the building gets damaged, burns, or just plays ambiently
+			"sound type": "fire",
+
+			;;the types of buildings this should apply to
+			"building types":
+				[ "major", ],
+
+			;;specific buildings this should apply to
+			"building IDs":
+			[
+			],
+
+			;;should this sound play in battle or just in city view
+			"play in battle": true,
+
+			"sounds":
+			[
+				"lod":
+				{
+					;; health % of the building
+					"switch": 0,
+
+					"sounds":
+					[
+						"data/sounds/SFX/structure/buildings/building_on_fire_high.wav",
+						{
+							"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+							"Priority": 240,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Min dist": 10.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+							"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+						},
+					],
+				},
+			],
+		},
+		{
+			;;is this a sound when the building gets damaged, burns, or just plays ambiently
+			"sound type": "fire",
+
+			;;the types of buildings this should apply to
+			"building types":
+				[ "gate", ],
+
+			;;specific buildings this should apply to
+			"building IDs":
+			[
+			],
+
+			;;should this sound play in battle or just in city view
+			"play in battle": true,
+
+			"sounds":
+			[
+				"lod":
+				{
+					;; health % of the building
+					"switch": 0,
+
+					"sounds":
+					[
+						"data/sounds/SFX/structure/buildings/building_on_fire_med.wav",
+						{
+							"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+							"Priority": 240,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Min dist": 10.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+							"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+						},
+					],
+				},
+			],
+		},
+		{
+			;;is this a sound when the building gets damaged, burns, or just plays ambiently
+			"sound type": "damage",
+
+			;;the types of buildings this should apply to
+			"building types":
+				[ ],
+
+			;;specific buildings this should apply to
+			"building IDs":
+			[
+				"roman_huge_city_wall_straight",
+			],
+
+			;;should this sound play in battle or just in city view
+			"play in battle": true,
+
+			"sounds":
+			[
+				"lod":
+				{
+					;; damage level
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/structure/Walls/Epic_Stone_Wall_Collapse_01.wav",
+						{
+							"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+						},
+					],
+				},
+				"lod":
+				{
+					;; damage level
+					"switch": 2,
+
+					"sounds":
+					[
+						"data/sounds/SFX/structure/Walls/Epic_Stone_Wall_Collapse_02.wav",
+						{
+							"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+						},
+					],
+				},
+				"lod":
+				{
+					;; damage level
+					"switch": 3,
+
+					"sounds":
+					[
+						"data/sounds/SFX/structure/Walls/Epic_Stone_Wall_Collapse_03.wav",
+						{
+							"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+						},
+					],
+				},
+				"lod":
+				{
+					;; damage level
+					"switch": 4,
+
+					"sounds":
+					[
+						"data/sounds/SFX/structure/Walls/Epic_Stone_Wall_Collapse_04.wav",
+						{
+							"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+						},
+					],
+				},
+				"lod":
+				{
+					;; damage level
+					"switch": 5,
+
+					"sounds":
+					[
+						"data/sounds/SFX/structure/Walls/Epic_Stone_Wall_Collapse_05.wav",
+						{
+							"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+						},
+					],
+				},
+			],
+		},
+		{
+			;;is this a sound when the building gets damaged, burns, or just plays ambiently
+			"sound type": "damage",
+
+			;;the types of buildings this should apply to
+			"building types":
+				[ "wall", ],
+
+			;;specific buildings this should apply to
+			"building IDs":
+			[
+			],
+
+			;;should this sound play in battle or just in city view
+			"play in battle": true,
+
+			"sounds":
+			[
+				"lod":
+				{
+					;; damage level
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/structure/Walls/Stone_Wall_Collapse_01.wav",
+						{
+							"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+						},
+					],
+				},
+				"lod":
+				{
+					;; damage level
+					"switch": 2,
+
+					"sounds":
+					[
+						"data/sounds/SFX/structure/Walls/Stone_Wall_Collapse_02.wav",
+						{
+							"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+						},
+					],
+				},
+				"lod":
+				{
+					;; damage level
+					"switch": 3,
+
+					"sounds":
+					[
+						"data/sounds/SFX/structure/Walls/Stone_Wall_Collapse_03.wav",
+						{
+							"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+						},
+					],
+				},
+				"lod":
+				{
+					;; damage level
+					"switch": 4,
+
+					"sounds":
+					[
+						"data/sounds/SFX/structure/Walls/Stone_Wall_Collapse_04.wav",
+						{
+							"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+						},
+					],
+				},
+				"lod":
+				{
+					;; damage level
+					"switch": 5,
+
+					"sounds":
+					[
+						"data/sounds/SFX/structure/Walls/stone_Wall_Collapse_05.wav",
+						{
+							"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+						},
+					],
+				},
+			],
+		},
+		{
+			;;is this a sound when the building gets damaged, burns, or just plays ambiently
+			"sound type": "damage",
+
+			;;the types of buildings this should apply to
+			"building types":
+				[ ],
+
+			;;specific buildings this should apply to
+			"building IDs":
+			[
+				"barbarian_town_wall_straight",
+				"wooden_short_wall_straight",
+				"wooden_tall_wall_straight",
+			],
+
+			;;should this sound play in battle or just in city view
+			"play in battle": true,
+
+			"sounds":
+			[
+				"lod":
+				{
+					;; damage level
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/structure/Walls/Wood_Wall_Collapse_01.wav",
+						{
+							"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+						},
+					],
+				},
+				"lod":
+				{
+					;; damage level
+					"switch": 2,
+
+					"sounds":
+					[
+						"data/sounds/SFX/structure/Walls/Wood_Wall_Collapse_02.wav",
+						{
+							"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+						},
+					],
+				},
+			],
+		},
+		{
+			;;is this a sound when the building gets damaged, burns, or just plays ambiently
+			"sound type": "damage",
+
+			;;the types of buildings this should apply to
+			"building types":
+				[ ],
+
+			;;specific buildings this should apply to
+			"building IDs":
+			[
+				"roman_huge_city_external_corner_watchtower",
+				"roman_huge_city_internal_corner_watchtower",
+				"roman_huge_city_wall_watchtower",
+			],
+
+			;;should this sound play in battle or just in city view
+			"play in battle": true,
+
+			"sounds":
+			[
+				"lod":
+				{
+					;; damage level
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/structure/towers/Epic_stone_tower_Collapse_01.wav",
+						{
+							"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+						},
+					],
+				},
+				"lod":
+				{
+					;; damage level
+					"switch": 2,
+
+					"sounds":
+					[
+						"data/sounds/SFX/structure/towers/Epic_stone_tower_Collapse_02.wav",
+						{
+							"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+						},
+					],
+				},
+				"lod":
+				{
+					;; damage level
+					"switch": 3,
+
+					"sounds":
+					[
+						"data/sounds/SFX/structure/towers/Epic_stone_tower_Collapse_03.wav",
+						{
+							"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+						},
+					],
+				},
+			],
+		},
+		{
+			;;is this a sound when the building gets damaged, burns, or just plays ambiently
+			"sound type": "damage",
+
+			;;the types of buildings this should apply to
+			"building types":
+				[ "tower", ],
+
+			;;specific buildings this should apply to
+			"building IDs":
+			[
+			],
+
+			;;should this sound play in battle or just in city view
+			"play in battle": true,
+
+			"sounds":
+			[
+				"lod":
+				{
+					;; damage level
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/structure/towers/tower_Collapse_01.wav",
+						{
+							"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+						},
+					],
+				},
+				"lod":
+				{
+					;; damage level
+					"switch": 2,
+
+					"sounds":
+					[
+						"data/sounds/SFX/structure/towers/tower_Collapse_02.wav",
+						{
+							"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+						},
+					],
+				},
+				"lod":
+				{
+					;; damage level
+					"switch": 3,
+
+					"sounds":
+					[
+						"data/sounds/SFX/structure/towers/tower_collapse_03.wav",
+						{
+							"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+						},
+					],
+				},
+			],
+		},
+		{
+			;;is this a sound when the building gets damaged, burns, or just plays ambiently
+			"sound type": "damage",
+
+			;;the types of buildings this should apply to
+			"building types":
+				[ ],
+
+			;;specific buildings this should apply to
+			"building IDs":
+			[
+				"barbarian_town_wall_watchtower",
+				"wooden_short_wall_external_corner_watchtower",
+				"wooden_short_wall_watchtower",
+				"wooden_tall_wall_external_corner_watchtower",
+				"wooden_tall_wall_watchtower",
+			],
+
+			;;should this sound play in battle or just in city view
+			"play in battle": true,
+
+			"sounds":
+			[
+				"lod":
+				{
+					;; damage level
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/structure/towers/Wood_Tower_Collapse_01.wav",
+						{
+							"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+						},
+					],
+				},
+			],
+		},
+	],
+}, ;;soundbank_building

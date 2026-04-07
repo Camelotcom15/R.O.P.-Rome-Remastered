@@ -1,0 +1,322 @@
+;; Last updated by jburnett on 2021/07/14
+;; DESCR file generated via RTW Amber pack editor
+
+"default sound parameters":
+{
+	"3d": true,					;;is the sound 3D (DO NOT CHANGE THIS)
+	"Probability": 100.0,		;;the chance the sound will play when triggered
+	"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+	"Min pitch": 89.999,		;;the random pitch of the sample (0-200%)
+	"Max pitch": 100.0,			
+	"Priority": 200,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+	"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+	"Fade out": 0.0,			
+	"Looped": false,			;;should the sound loop?
+	"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+	"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+	"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+	"Pref type": "SFX",			;;the slider the sound should be attached to
+	"Ignore pause": false,		;;should this sound ignore being paused?
+	"Min dist": 4.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+	"Max dist": -1.0,			;;setting max dist to -1 will mean the sound will autocalculate the max dist
+	"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+	"Prob radius": 7.0,			;;the range within which the probability will be overridden to be 100%
+	"Effect level": 0.0,		;;??? I think this has something to do with the EAX parameters?
+},
+
+"soundbank_animal_fall":
+{
+	"entries":
+	[
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "wardog", "pig", "hound", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "all", "-water", ],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Falls/Wardog/Fall_Wardog_Grass_02.wav",
+				"data/sounds/SFX/individual/Falls/Wardog/Fall_Wardog_Grass_01.wav",
+				{
+					"Priority": 120,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Min dist": 2.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Dist priority": -2.0,		;;how much should the priority be reduced per meter of distance
+				},
+			],
+		},
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "wardog", "pig", "hound", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "water", ],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Falls/Infantry/Fall_Infantry_Water_10.wav",
+				"data/sounds/SFX/individual/Falls/Infantry/Fall_Infantry_Water_03.wav",
+				"data/sounds/SFX/individual/Falls/Infantry/Fall_Infantry_Water_02.wav",
+				{
+					"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+					"Priority": 120,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Min dist": 2.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Dist priority": -2.0,		;;how much should the priority be reduced per meter of distance
+				},
+			],
+		},
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "camel", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "all", "-water", ],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Falls/Horse/Fall_horse_grass_05.wav",
+				"data/sounds/SFX/individual/Falls/Horse/Fall_horse_grass_02.wav",
+				"data/sounds/SFX/individual/Falls/Horse/Fall_horse_grass_01.wav",
+				"data/sounds/SFX/individual/Falls/Camel/Fall_camel_grass_03.wav",
+				"data/sounds/SFX/individual/Falls/Camel/Fall_camel_grass_02.wav",
+				"data/sounds/SFX/individual/Falls/Camel/Fall_camel_grass_01.wav",
+				{
+					"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+				},
+			],
+		},
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "camel", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "water", ],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Falls/Camel/Fall_camel_water_03.wav",
+				"data/sounds/SFX/individual/Falls/Camel/Fall_camel_water_02.wav",
+				"data/sounds/SFX/individual/Falls/Camel/Fall_camel_water_01.wav",
+				{
+				},
+			],
+		},
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "horse", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "all", "-water", ],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Falls/Camel/Fall_camel_grass_03.wav",
+				"data/sounds/SFX/individual/Falls/Camel/Fall_camel_grass_02.wav",
+				"data/sounds/SFX/individual/Falls/Camel/Fall_camel_grass_01.wav",
+				"data/sounds/SFX/individual/Falls/Horse/Fall_horse_grass_05.wav",
+				"data/sounds/SFX/individual/Falls/Horse/Fall_horse_grass_02.wav",
+				"data/sounds/SFX/individual/Falls/Horse/Fall_horse_grass_01.wav",
+				{
+					"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+				},
+			],
+		},
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "horse", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "water", ],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Falls/Camel/Fall_camel_water_03.wav",
+				"data/sounds/SFX/individual/Falls/Camel/Fall_camel_water_02.wav",
+				"data/sounds/SFX/individual/Falls/Camel/Fall_camel_water_01.wav",
+				{
+				},
+			],
+		},
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "elephant", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "all", "-water", ],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Falls/Elephant/Fall_elephant_grass_04a.wav",
+				"data/sounds/SFX/individual/Falls/Elephant/Fall_elephant_grass_03a.wav",
+				"data/sounds/SFX/individual/Falls/Elephant/Fall_elephant_grass_02a.wav",
+				"data/sounds/SFX/individual/Falls/Elephant/Fall_elephant_grass_01a.wav",
+				{
+					"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+					"Min dist": 12.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "elephant", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "water", ],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Falls/Elephant/Fall_elephant_water_04.wav",
+				"data/sounds/SFX/individual/Falls/Elephant/Fall_elephant_water_03.wav",
+				"data/sounds/SFX/individual/Falls/Elephant/Fall_elephant_water_02.wav",
+				"data/sounds/SFX/individual/Falls/Elephant/Fall_elephant_water_01.wav",
+				{
+					"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+					"Min dist": 12.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "chariot", "scorpion_cart", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "all", ],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Siege_Engines/Scorpion/Siege_Engine_Scorpion_Destroyed.wav",
+				"data/sounds/SFX/individual/Siege_Engines/Ballista/Siege_Engine_Ballista_Destroyed.wav",
+				{
+					"Min dist": 10.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+			],
+		},
+	],
+}, ;;soundbank_animal_fall

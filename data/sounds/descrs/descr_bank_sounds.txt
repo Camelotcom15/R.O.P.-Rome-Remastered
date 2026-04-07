@@ -1,0 +1,1593 @@
+;; Last updated by jburnett on 2021/05/24
+;; DESCR file generated via RTW Amber pack editor
+
+;;NOTE, the order of the keys in the format doesn't matter
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;                             unit move                             ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; used for unit group sounds that are related to the type of terrain the unit is standing on
+
+;;  FORMAT
+;;
+;;  {
+;;    "unit":
+;;    {
+;;      "categories":
+;;        [ infantry / cavalry / siege / non_combatant / ship (never practically used) / handler ],
+;;
+;;      "classes":
+;;        [ heavy / light / skirmish / spearmen / missile ],
+;;
+;;      "ID":
+;;        [ list of IDs of units that will use this regardless of the above ],
+;;
+;;      "animals": (only checked for cavalry and handlers)
+;;        [ horse / camel / elephant / chariot / scorpion_cart / wardog / pig / hound / bird ],
+;;    },
+;;
+;;    "terrain":
+;;    {
+;;      "seasons":
+;;        [ winter / spring (unused) / summer / autumn (unused) ],
+;;
+;;      "climates":
+;;        [ (defined in descr_climates.txt) ],
+;;
+;;      "ground types":
+;;        [ grass_short / grass_long / sand / rock / forest_dense / scrub_dense / swamp / mud / mud_road / stone_road / water / ice / snow / wood / dirt ],
+;;    },
+;;
+;;    "sounds":
+;;    [
+;;      ;; uses LoDs
+;;
+;;      ;; switch represents the number of soldiers in the unit
+;;    ],
+;;  },
+
+include "sounds/descrs/banks/descr_soundbank_unit_march.txt"    ;;used for normal movement
+include "sounds/descrs/banks/descr_soundbank_unit_run.txt"
+
+include "sounds/descrs/banks/descr_soundbank_unit_fighting.txt" ;;ambient group sound used for combat
+
+include "sounds/descrs/banks/descr_soundbank_unit_ambient.txt"  ;;played at random on random soldiers
+
+include "sounds/descrs/banks/descr_soundbank_foot_step.txt"     ;;attached to keyframed sounds in skeletons
+include "sounds/descrs/banks/descr_soundbank_foot_step_run.txt"
+include "sounds/descrs/banks/descr_soundbank_fall.txt"
+
+include "sounds/descrs/banks/descr_soundbank_unit_reform.txt"   ;;used when forming a testudo
+
+include "sounds/descrs/banks/descr_soundbank_unit_collide.txt"  ;;used when running into another unit
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;                            group voice                            ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; used for both individual soldier and group sounds that are related to the culture and voice type of the unit
+
+;;  FORMAT
+;;
+;;  {
+;;    "unit":
+;;    {
+;;      "categories":
+;;        [ infantry / cavalry / siege / non_combatant / ship (never practically used) / handler ],
+;;
+;;      "voices":
+;;        [ general / heavy / medium / light / female ],
+;;
+;;      "ID":
+;;        [ list of IDs of units that will use this regardless of the above ],
+;;    },
+;;
+;;    "cultures":
+;;      [ (defined in descr_cultures.txt) ],
+;;
+;;    "sounds":
+;;    [
+;;      ;; uses LoDs
+;;
+;;      ;; switch represents the number of soldiers in the unit
+;;    ],
+;;  },
+
+include "sounds/descrs/banks/descr_soundbank_unit_idle.txt"            ;;played on random soldiers while the unit is idle
+
+include "sounds/descrs/banks/descr_soundbank_unit_charge.txt"          ;;played when the unit is charging
+
+include "sounds/descrs/banks/descr_soundbank_unit_confirm_single.txt"  ;;soldier and group voice for confirming a command 
+include "sounds/descrs/banks/descr_soundbank_unit_confirm.txt"
+
+include "sounds/descrs/banks/descr_soundbank_unit_berserk.txt"         ;;used when a unit is using a special ability
+include "sounds/descrs/banks/descr_soundbank_unit_druid_chant.txt"
+include "sounds/descrs/banks/descr_soundbank_unit_screeching_women.txt"
+include "sounds/descrs/banks/descr_soundbank_unit_warcry.txt"
+
+include "sounds/descrs/banks/descr_soundbank_war_horns.txt"            ;;played when charging or using the general's special ability
+
+include "sounds/descrs/banks/descr_soundbank_unit_taunting.txt"        ;;group voice played when taunting
+
+include "sounds/descrs/banks/descr_soundbank_unit_routing.txt"         ;;group voice played when routing
+
+include "sounds/descrs/banks/descr_soundbank_unit_retreating.txt"      ;;played on random soldiers while routing
+
+include "sounds/descrs/banks/descr_soundbank_unit_celebrate.txt"       ;;played when celebrating
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;                              weather                              ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; used for wind, thunder, and rain sounds
+
+;;  GLOBAL PARAMETERS
+;;
+;;    speed pitch/volume adjustment - how much should wind speed effect the pitch/volume of the sound. constant and multiplier component. used as = multiplier * speed + constant
+;;
+;;    thunder delay - maximum and minimum component, how long (in seconds) should the time be between thunderstrikes
+;;
+;;    wind/rain sound distance - how far away from the camera should the wind and rain sound emitters be
+;;
+;;    wind speed height multiplier - a multiplier to the wind speed based on height. used as speed = base + (multiplier * height)
+;;
+;;  FORMAT
+;;
+;;  {
+;;    "wind types":
+;;      [ calm / breezes / wind / gusts / gales ],
+;;
+;;    "precipitate types":
+;;      [ none / rain / hail / snow / dust / sand ],
+;;
+;;    "climates":
+;;      [ (defined in descr_climates.txt) ],
+;;
+;;    "seasons":
+;;      [ winter / spring (unused) / summer / autumn (unused) ],
+;;
+;;    "type": Precipitate / Thunder / Wind,
+;;
+;;    "sounds":
+;;    [
+;;      ;; uses LoDs
+;;
+;;      ;; switch represents:
+;;      ;; (when type == Precipitate) the rain level (0-100%)
+;;      ;; (when type == Thunder)     the distance from the camera (in meters)
+;;      ;; (when type == Wind)        the wind level
+;;
+;;      ;; range of wind levels for each type:
+;;      
+;;      ;; calm    = 0-150
+;;      ;; breezes = 160-790
+;;      ;; wind    = 800-1710
+;;      ;; gusts   = 550-2840
+;;      ;; gales   = 1720-2440
+;;
+;;    ],
+;;  },
+
+include "sounds/descrs/banks/descr_soundbank_weather.txt"
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;                               water                               ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; used for water related sounds (and also ambient forest sounds for some reason)
+
+;;  GLOBAL PARAMETERS
+;;
+;;    each of the following parameters can be specified for each of the source types: river / lake / ocean / forest
+;;
+;;    sound source distances - maximum and minimum components, how far apart should the sound emitters be (in meters)
+;;
+;;    move smoothing - I have no idea what this does.
+;;
+;;    min outline length - the minimum size an area needs to have an emitter (in meters) (unused for river and ocean)
+;;
+;;    max wave sources - ONLY VALID FOR OCEAN. how many sound emitters should be used for wave sounds
+;;
+;;  FORMAT
+;;
+;;  {
+;;    "locations":
+;;    {
+;;      "ambient":
+;;        [ river / lake / ocean / forest / wooden bridge / stone bridge ],
+;;
+;;      "wave types":
+;;      {
+;;        "breadths":
+;;          [ wide / medium / narrow / very narrow ],
+;;
+;;        "lengths":
+;;          [ long / medium / short / very short ],
+;;      },
+;;    },
+;;
+;;    "climates":
+;;      [ (defined in descr_climates.txt) ],
+;;
+;;    "seasons":
+;;      [ winter / spring (unused) / summer / autumn (unused) ],
+;;
+;;    "sounds":
+;;    [
+;;    ],
+;;  },
+
+include "sounds/descrs/banks/descr_soundbank_water.txt"
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;                       unit/animal animations                       ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; used to attach to keyframed sounds in a unit's skeleton
+
+;;  FORMAT (animals)
+;;
+;;  {
+;;    "sound ID": (string ID to be referenced by the keyframed sound),
+;;
+;;    "animal types":
+;;      [ horse / camel / elephant / chariot / scorpion_cart / wardog / pig / hound / bird ],
+;;
+;;    "IDs":
+;;      [ list of IDs of animals or mounts that will use this regardless of the above ],
+;;
+;;    "sounds":
+;;    [
+;;    ],
+;;  },
+
+;;  FORMAT (units)
+;;
+;;  {
+;;    "sound ID": (string ID to be referenced by the keyframed sound),
+;;
+;;    "voice types":
+;;      [ general / heavy / medium / light / female ],
+;;
+;;    "cultures":
+;;      [ (defined in descr_cultures.txt) ],
+;;
+;;    "IDs":
+;;        [ list of IDs of animals or mounts that will use this regardless of the above ],
+;;
+;;    "sounds":
+;;    [
+;;    ],
+;;  },
+
+include "sounds/descrs/banks/descr_soundbank_animal_anims.txt"
+include "sounds/descrs/banks/descr_soundbank_unit_anims.txt"
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;                           campaign vocal                           ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; vocal lines that characters can say
+
+;;  FORMAT
+;;
+;;  {
+;;    "line": (the ID of the line to be used),
+;;
+;;    POSSIBLE ARGUMENTS FOR LINE:
+;;      ambushed               - when a general gets ambushed
+;;      attacked_enemy         - when a general is being attacked by an enemy unit
+;;      attacking              - when a general is attacking another army
+;;      battle_lost_retreat
+;;      battle_won
+;;      building_fort
+;;      building_tower
+;;      death_cry
+;;      dismantling_fort       - played on a fort when it despawns
+;;      dismantling_tower      - unused
+;;      entering_city
+;;      exiting_city
+;;      joins_army             - played when exchanging a unit into a army or fleet
+;;      joins_fleet
+;;      leaves_army            - played when a general is forced out of an army (practically unused?)
+;;      leaves_fleet           - unused
+;;      movement_blackops      - used for spy/assassin performing their actions or a merchant performing a buyout
+;;      movement_diplomacy     - used for diplomat performing their action or a merchant entering a foreign city
+;;      movement_monopolising  - used for a merchant moving onto a resource
+;;      movement_trade         - used for a merchant entering a player-owned settlement
+;;      movement_disembark     - used when moving on/off a boat
+;;      movement_embark
+;;      movement_completed
+;;      movement_ordered       - used for moving a character with no real goal
+;;      movement_ordered_illegal_move
+;;      placed_for_ambush
+;;      pursue_retreating_army - unused
+;;      selected
+;;      settlement_capture_celebration
+;;      units_disembark        - used by the navy that a character embarks onto / disembarks from
+;;      units_embark
+;;      siege_begun
+;;      siege_besiged          - used by the general that's being beseiged
+;;      siege_lifted
+;;      siege_ongoing
+;;
+;;    "character types":
+;;      [ spy / assassin / diplomat / merchant / admiral / army_captain / family ]
+;;
+;;    "cultures":
+;;      [ (defined in descr_cultures.txt) ],
+;;
+;;    "sounds":
+;;    [
+;;      ;;uses voice indexes
+;;    ],
+;;  },
+
+include "sounds/descrs/banks/descr_soundbank_character_vocal.txt"
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;                          campaign action                          ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; sounds which should attach to things a character might do
+
+;;  FORMAT
+;;
+;;  {
+;;    "action": (the ID of the action to be triggered by),
+;;
+;;    POSSIBLE ARGUMENTS FOR ACTION:
+;;      moving_normal       - unused
+;;      moving_quickmarch   - moving quickly
+;;      fleeing             - running away from a battle
+;;      constructing_road   - unused
+;;      constructing_bridge - unused
+;;      constructing_wall   - unused
+;;      land_rally_path     - unused??
+;;      sea_rally_path      - unused????
+;;      quick_sail          - moving, but for water
+;;      blockade            - blockading a port
+;;      disembark           - leaving a navy
+;;      besiege             - sieging a city
+;;      entrench            - unused
+;;      ambush              - either getting or doing and ambush (these are hard to decypher)
+;;      capture_residence   - capturing a city?
+;;      capture_tile        - ??? It's used but I have no idea how
+;;      assault             - attacking a city
+;;      attack              - attacking an army
+;;      building_fort
+;;      building_watchtower
+;;      engineering         - unused
+;;      sapping             - unused
+;;      diplomacy           - doing a diplomacy
+;;      bribe               - being bribed
+;;      infiltrate          - infiltrating a settlement
+;;      spying              - spying on someone
+;;      assassinate         - assassinating someone
+;;      insurrection        - is this a spy thing?
+;;      sabotage            - assassing killing a building
+;;      dying
+;;      deploy              - when being attacked?? (Maybe unused?)
+;;      delay_battle        - unused
+;;      exchange            - merging units via exchange scroll (maybe also boarding a navy counts?)
+;;
+;;    "character types":
+;;      [ spy / assassin / diplomat / merchant / admiral / army_captain / family ],
+;;
+;;    "sounds":
+;;    [
+;;    ],
+;;  },
+
+include "sounds/descrs/banks/descr_soundbank_character_action.txt"
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;                               music                               ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; various music banks
+
+;; BATTLE END MUSIC
+;; used when ending a battle
+
+;;  FORMAT
+;;
+;;  {
+;;    "result": win / draw / lose / unresolved,
+;;
+;;    "success types":
+;;      [ close / average / clear / crushing ],
+;;
+;;    "factions":
+;;      [ (defined in descr_sm_factions.txt) (may also use culture types) ],
+;;
+;;    "sounds":
+;;    [
+;;    ],
+;;  },
+
+include "sounds/descrs/banks/descr_soundbank_battle_end_music.txt"
+
+;; CAMPAIGN_END
+;; used when a campaign end panel pops up
+
+;;  FORMAT
+;;
+;;  {
+;;    "end type": destroyed / loss / victory,
+;;
+;;    "factions":
+;;      [ (defined in descr_sm_factions.txt) (may also use culture types) ],
+;;
+;;    "sounds":
+;;    [
+;;    ],
+;;  },
+
+include "sounds/descrs/banks/descr_soundbank_campaign_end.txt"
+
+;; STATIC MUSIC
+;; used for music that is triggered by predictable events
+
+;;  FORMAT
+;;
+;;  {
+;;    "music": (the ID of the music state to attach to),
+;;
+;;    POSSIBLE ARGUMENTS FOR MUSIC:
+;;      stratmap_summer - music that should play on the strategy map in summer and winter respectively
+;;      stratmap_winter
+;;
+;;      frontend - music that should play on the main menu
+;;
+;;      credits1 - music that should play when the credits start
+;;      credits2 - music that should play on the credits after the above one
+;;
+;;      city - music that should play during city view
+;;
+;;      prebattle_scroll - music that should play on the pre- and post- battle scrolls respectively
+;;      postbattle_scroll
+;;
+;;      campaign_loading - music that should play on the loading screens for campaign and battle respectively
+;;      battle_loading
+;;
+;;      near_victory - music that should play on the marian reforms or when the player is within 5 settlements of achieving victory
+;;
+;;    "factions":
+;;      [ (defined in descr_sm_factions.txt) (may also use culture types) ],
+;;
+;;    "sounds":
+;;    [
+;;    ],
+;;  },
+
+include "sounds/descrs/banks/descr_soundbank_static_music.txt"
+
+;; BATTLE MUSIC STATEMACHINE
+;; used for music that plays in battle using dynamic restrictions to dictate state changes
+
+;;  GLOBAL PARAMETERS
+;;
+;;    entry state - the ID of the state we should first start in (not having a valid state with this ID will cause music to fail to load)
+;;
+;;  FORMAT
+;;
+;;  {
+;;    "player factions":
+;;      [ (defined in descr_sm_factions.txt) (may also use culture types) ],
+;;
+;;    "enemy factions":
+;;      [ (defined in descr_sm_factions.txt) (may also use culture types) ],
+;;
+;;    "ID": (string ID for this state),
+;;
+;;    "from states":
+;;      [ (list of IDs of states that this can transition from) ],
+;;
+;;    "battle restrictions":
+;;      [ (list of prebattle restrictions - see prebattle speech bank for details) ],
+;;
+;;    "transition restrictions":
+;;    [
+;;      ;;list of restrictions that must be true to make this valid to transition to
+;;      ;;there are a few different types of restricton:
+;;
+;;      ;;power balance - checks the balance of power bar (at the top of the screen)
+;;      ;;must match the regex format "the balance of power is (>|<=)([.\d]+) in favour of (us|the enemy)"
+;;
+;;      ;;battle state - currently only checks if the battle is in the deployment phase or not
+;;      ;;must match the regex format "the battle is (not )?past the deployment phase"
+;;
+;;      ;;unit states - check the percentage of units that are in a given state
+;;      ;;must match the regex format "(>|<=)([.\d]+)% of units (?:in|on) (on the (allied|enemy) side|our army) (that are present)? are in the state (.*)"
+;;      ;;the "that are present" refers to if dead or deserted units should be included in the percentage
+;;      ;;valid unit states are:
+;;      ;; idling                - the unit isn't doing anything
+;;      ;; hiding                - unit is hiding, such as in forest or long grass
+;;      ;; taunting              - unit is taunting (may also represent a warcry)
+;;      ;; celebrating           - unit has defeated an enemy with no other enemies nearby
+;;      ;; ready                 - unit is braced for an attack due to a nearby enemy
+;;      ;; reforming             - unit has been disrupted and is moving back into formation
+;;      ;; moving                - unit is moving somewhere
+;;      ;; withdrawing           - unit is leaving the battle in a controlled manner
+;;      ;; missiles firing       - unit is firing a volley of missiles
+;;      ;; missiles reloading    - unit is preparing a volley (does not apply to siege equipment)
+;;      ;; charging              - unit is charging at the enemy
+;;      ;; fighting              - unit is engaged in combat
+;;      ;; pursuing              - unit is chasing down the enemy
+;;      ;; routing               - unit has been broken and is fleeing
+;;      ;; fighting to the death - unit has broken with no clear means of escape
+;;      ;; running amok          - unit has been frightened and is out of control
+;;      ;; going berserk         - unit is going berserk
+;;      ;; rallying              - unit is recovering from a previous break
+;;      ;; dead                  - unit has died or fled the battle
+;;      ;; leaving battle        - unit has crossed over the red line to leave the battle
+;;      ;; entering battle       - unit is preparing to enter the battle but hasn't entered the play area
+;;      ;; taking fire           - unit has recently taken fire from a missile unit
+;;
+;;      ;;time since valid - check the time since all the restrictions above this one were true
+;;      ;;must match the regex format "it has been (>|<=)([\d]+)ms since the above conditions became valid"
+;;    ]
+;;
+;;    "sounds":
+;;    [
+;;    ],
+;;  },
+
+include "sounds/descrs/banks/descr_soundbank_battle_music_statemachine.txt"
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;                               advice                               ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;used to attach sounds to the advisor panel
+
+;;  FORMAT
+;;
+;;  {
+;;    "text ID": (ID of the advice text that this should trigger for),
+;;
+;;    "sounds":
+;;    [
+;;    ],
+;;  },
+
+include "sounds/descrs/banks/descr_soundbank_advice.txt"
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;                            animal move                            ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;used in the same way as unit move, but for animals, and only every plays for individual soldiers
+
+;;  FORMAT
+;;
+;;  {
+;;    "animal":
+;;    {
+;;      "animal classes":
+;;        [ horse / camel / elephant / chariot / scorpion_cart / wardog / pig / hound / bird ],
+;;
+;;      "ID":
+;;        [ list of IDs of animals or mounts that will use this regardless of the above ],
+;;    },
+;;
+;;    "terrain":
+;;    {
+;;      "seasons":
+;;        [ winter / spring (unused) / summer / autumn (unused) ],
+;;
+;;      "climates":
+;;        [ (defined in descr_climates.txt) ],
+;;
+;;      "ground types":
+;;        [ grass_short / grass_long / sand / rock / forest_dense / scrub_dense / swamp / mud / mud_road / stone_road / water / ice / snow / wood / dirt ],
+;;    },
+;;
+;;    "sounds":
+;;    [
+;;    ],
+;;  },
+
+include "sounds/descrs/banks/descr_soundbank_animal_ambient.txt"       ;;played at random on random animals
+
+include "sounds/descrs/banks/descr_soundbank_animal_footstep_walk.txt" ;;attached to keyframed sounds in skeletons
+include "sounds/descrs/banks/descr_soundbank_animal_footstep_run.txt"
+include "sounds/descrs/banks/descr_soundbank_animal_fall.txt"
+
+include "sounds/descrs/banks/descr_soundbank_animal_idle.txt"          ;;played on random animals whose unit is idle
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;                              disaster                              ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;used for ambient disaster sounds on the strategy map
+
+;;  FORMAT
+;;
+;;  {
+;;    "disaster type":
+;;      [ fire / volcano / volcano_erupting / earthquake / flood / storm / smoke / flies (plague?) ],
+;;
+;;    "sounds":
+;;    [
+;;    ],
+;;  },
+
+include "sounds/descrs/banks/descr_soundbank_disasters.txt"
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;                            engine move                            ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;used in the same way as unit move, but for engines
+
+;;  FORMAT
+;;
+;;  {
+;;    "engine":
+;;    {
+;;      "engine types":
+;;        [ onager / heavy_onager / ballista / repeating_ballista / scorpion / tower / ram / ladder / sap_point ],
+;;
+;;      "ID":
+;;        [ list of IDs of engines that will use this regardless of the above ],
+;;    },
+;;
+;;    "terrain":
+;;    {
+;;      "seasons":
+;;        [ winter / spring (unused) / summer / autumn (unused) ],
+;;
+;;      "climates":
+;;        [ (defined in descr_climates.txt) ],
+;;
+;;      "ground types":
+;;        [ grass_short / grass_long / sand / rock / forest_dense / scrub_dense / swamp / mud / mud_road / stone_road / water / ice / snow / wood / dirt ],
+;;    },
+;;
+;;    "sounds":
+;;    [
+;;    ],
+;;  },
+
+include "sounds/descrs/banks/descr_soundbank_engine_move.txt"    ;;for normal movement
+
+include "sounds/descrs/banks/descr_soundbank_engine_ambient.txt" ;;for randomly triggered sounds
+
+include "sounds/descrs/banks/descr_soundbank_engine_alight.txt"  ;;for when an engine is burning
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;                             weapon hit                             ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;used for impacts and flying sounds for individual weapon sounds
+
+;;  FORMAT
+;;
+;;  {
+;;    "weapon":
+;;    {
+;;      "unit weapons":
+;;      [
+;;        ;;contains a list of pairs, containing both a list of units and the slot they should be using, like so:
+;;        {
+;;          "ID": (ID of the unit),
+;;          "slot": Primary / Secondary / Either,
+;;        },
+;;      ],
+;;
+;;      "sound types":
+;;        [ knife / sword / spear / axe / mace / club / arrow_tower / ballista_tower / none ]
+;;
+;;      "weapon types":
+;;        [ melee / siege_melee / thrown / missile / siege_missile ],
+;;
+;;      "damage types":
+;;        [ slashing / piercing / blunt / fire ],
+;;
+;;      "flying": Yes / No / Either,
+;;
+;;      "flaming": Yes / No / Either,
+;;
+;;      "death blow": Yes / No / Either,
+;;    },
+;;
+;;    "target":
+;;    {
+;;      "armour types":
+;;        [ metal / leather / wood / flesh / ground / building ],
+;;
+;;      "building ids":
+;;        [ (list of building IDs that we should trigger for, if none are specified will trigger for any) ],
+;;
+;;      "ground types":
+;;        [ grass_short / grass_long / sand / rock / forest_dense / scrub_dense / swamp / mud / mud_road / stone_road / water / ice / snow / wood / dirt ],
+;;    },
+;;
+;;    "sounds":
+;;    [
+;;    ],
+;;  },
+
+include "sounds/descrs/banks/descr_soundbank_weapon_hit.txt"
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;                              building                              ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;used for ambient, damage, and burning sounds on buildings
+
+;;  GLOBAL PARAMETERS
+;;
+;;    building sound cutoff distance - how close do we need to be to the building to hear the sounds
+;;
+;;  FORMAT
+;;
+;;  {
+;;    "sound type": damage / fire / ambient,
+;;
+;;    "building types":
+;;      [ decorative / major / wall / tower / gate ],
+;;
+;;    "building IDs":
+;;      [ (list of building IDs that this should play for, regardless of the above) ],
+;;
+;;    "play in battle": true / false,
+;;
+;;    "sounds":
+;;    [
+;;      ;; uses LoDs
+;;
+;;      ;;switch represents:
+;;      ;; (when sound type == fire or ambient) the health of the building (0-100%)
+;;      ;; (when sound type == damage) the damage level
+;;    ],
+;;  },
+
+include "sounds/descrs/banks/descr_soundbank_building.txt"
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;                                gate                                ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;used for when a gate is being moved or damaged
+
+;;  FORMAT
+;;
+;;  {
+;;    "building IDs":
+;;      [ (list of building IDs that this should play for) ],
+;;
+;;    "transition type": (the type of event that should trigger this),
+;;
+;;    POSSIBLE ARGUMENTS FOR TRANSITION TYPE:
+;;      open_to_closed - door is closing or closing
+;;      closed_to_open
+;;
+;;      open_to_next_damage - door is going up a damage level
+;;      closed_to_next_damage
+;;
+;;      closed_impacted - door is taking damage, but not enough to move up a damage level
+;;      open_impacted
+;;
+;;    "sounds":
+;;    [
+;;      ;; uses LoDs
+;;
+;;      ;;switch represents:
+;;      ;; (when sound type == fire or ambient) the health of the building (0-100%)
+;;      ;; (when sound type == damage) the damage level
+;;    ],
+;;  },
+
+include "sounds/descrs/banks/descr_soundbank_gate.txt"
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;                           missile attack                           ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;used for the aiming and firing sounds for missile unit groups
+
+;;  FORMAT
+;;
+;;  {
+;;    "weapon types":
+;;      [ melee / siege_melee / thrown / missile / siege_missile ],
+;;
+;;    "damage types":
+;;      [ slashing / piercing / blunt / fire ],
+;;
+;;    "IDs":
+;;      [ (list of unit IDs that this should play for regardless of the above) ],
+;;
+;;    "stage": ready / aim / fire,
+;;
+;;    "sounds":
+;;    [
+;;      ;; uses LoDs
+;;
+;;      ;;switch represents the number of soldiers in the unit
+;;    ],
+;;  },
+
+include "sounds/descrs/banks/descr_soundbank_unit_missile_attack.txt"
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;                           message events                           ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; used for the sounds when a message is generated or is opened
+
+;;  FORMAT
+;;
+;;  {
+;;    "message": (the ID of the message this should play for),
+;;
+;;    POSSIBLE ARGUMENTS FOR MESSAGE:
+;;      settlement_taken
+;;      settlement_besieged
+;;      settlement_destroyed
+;;      naval_blockade
+;;      wonder_captured
+;;      wonder_lost
+;;      faction_leader_dies
+;;      faction_leader_killed
+;;      faction_leader_imperator
+;;      faction_richest
+;;      faction_largest
+;;      faction_strongest
+;;      faction_advanced
+;;      army_revolt
+;;      settlement_unrest
+;;      settlement_revolts
+;;      games_held
+;;      building_completed
+;;      construction_complete_many
+;;      unit_completed
+;;      recruitment_complete_many
+;;      agent_recruited
+;;      character_dies_natural
+;;      character_dies_heroic
+;;      settlement_surrender
+;;      general_appointed
+;;      general_promoted
+;;      general_dies
+;;      new_faction_leader
+;;      new_faction_heir
+;;      new_bouncing_baby
+;;      coming_of_age
+;;      marriage
+;;      adoption
+;;      faction_defeated
+;;      mission_spy_character
+;;      mission_spy_settlement
+;;      mission_assassinate
+;;      mission_sabotage
+;;      hidden_agent_detected_in_settlement
+;;      reinforcements_arrived
+;;      war_declared
+;;      year_end_report
+;;      chat_message
+;;      disaster_earthquake
+;;      disaster_volcano
+;;      disaster_flood
+;;      disaster_storm
+;;      disaster_disorder
+;;      disaster_riot
+;;      disaster_mutiny
+;;      disaster_plague
+;;      disaster_famine
+;;      disaster_barbarian_horde
+;;      disaster_pirates
+;;      disaster_brigands
+;;      disaster_fire
+;;      family_report
+;;      senate_message
+;;      senate_mission_issued
+;;      senate_mission_failed
+;;      senate_mission_success
+;;      character_trait_gained
+;;      character_trait_lost
+;;      unit_routs_in_battle
+;;      building_captured_battle
+;;      building_lost_battle
+;;      general_killed_ally
+;;      general_killed_enemy
+;;      settlement_surrenders_own
+;;      settlement_surrenders_enemy
+;;      alliance_declared
+;;      ceasefire_declared
+;;      advisor_dummy_msg
+;;      new_ancillary_character
+;;      diplomacy_report
+;;      war_declared_on_ally
+;;      peacy_treaty_signed
+;;      alliance_broken
+;;      protectorate_established
+;;      ally_declared_alliance_with_enemy
+;;      suitor_available_for_daughter
+;;      adopta_general_offer
+;;      character_available_for_adoption
+;;      female_dies
+;;      adoption_failed
+;;      mission_spy_fail_and_killed
+;;      mission_spy_fail
+;;      mission_assassinate_fail_and_killed
+;;      mission_assassinate_fail
+;;      mission_sabotage_fail_and_killed
+;;      mission_sabotage_fail
+;;      settlement_occupied
+;;      settlement_enslaved
+;;      settlement_exterminated
+;;      banner_lost_warning
+;;      banner_lost_final
+;;      banner_captured
+;;      building_repair_complete
+;;      historic_event
+;;      races_held
+;;      player_faction_richest
+;;      player_faction_strongest
+;;      player_faction_advanced
+;;      player_faction_largest
+;;      building_sabotaged
+;;      players_army_destroyed
+;;      character_dies_suspicious
+;;      character_dies_disaster
+;;      exterminate_populace
+;;      upgrade_settlement_to_town
+;;      upgrade_settlement_to_large_town
+;;      upgrade_settlement_to_city
+;;      upgrade_settlement_to_large_city
+;;      upgrade_settlement_to_huge_city
+;;      multiturn_path_blocked
+;;      retraining_complete
+;;      senate_office_gained
+;;      senate_office_lost
+;;      war_declared_non_player
+;;      agent_detected_and_expelled
+;;      building_captured_by_allies
+;;      marian_reform
+;;      settlement_bribed
+;;      army_bribed
+;;      character_bribed
+;;      betrayed
+;;      fort_bribed
+;;      outlawed
+;;      civil_war_possible
+;;      civil_war
+;;      player_lose_warning
+;;      senate_election_results
+;;      transgression
+;;      senate_standing_transition
+;;      senate_congratulation_message
+;;      your_machine_needs_upgrading
+;;      small_army_disbands
+;;      faction_defeated_by_player
+;;      small_army_disbands_loser
+;;      your_machine_needs_upgrading_ai_to_reinforce
+;;      new_eastern_emperor
+;;      new_western_emperor
+;;      new_eastern_ceasar
+;;      new_western_ceasar
+;;      shadow_faction_appears
+;;      eastern_shadow_faction
+;;      western_shadow_faction
+;;      shadow_faction_destroyed
+;;      emergent_faction_appears
+;;      new_barbarian_horde
+;;      horde_settles
+;;      horde_in_your_region
+;;      city_sacked
+;;      dominant_religion
+;;      roman_empire_reunited
+;;      new_merchant_acquired
+;;      merchant_mission_buyout
+;;      merchant_mission_buyout_failed
+;;      merchant_mission_buyout_failed_acquired
+;;      enemy_merchant_mission_buyout
+;;      enemy_merchant_mission_buyout_failed
+;;      enemy_merchant_mission_buyout_failed_acquired
+;;
+;;    "on arrival": true / false,
+;;
+;;    "sounds":
+;;    [
+;;    ],
+;;  },
+
+include "sounds/descrs/banks/descr_soundbank_message_events.txt"
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;                        battle notifications                        ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; used for the voice crack narrator man lines
+
+;;  GLOBAL PARAMETERS
+;;
+;;    notification repeat timeout - how long should we wait before repeating a notification
+;;
+;;  FORMAT
+;;
+;;  {
+;;    "notification": (the ID of the notification this should play for),
+;;
+;;    POSSIBLE ARGUMENTS FOR NOTIFICATION:
+;;      Allied_Army_Leader_Killed
+;;      Allied_Army_Routed
+;;      Allied_General_Routed
+;;      Enemy_Army_Routing
+;;      Enemy_General_Killed
+;;      Enemy_General_Routing
+;;      Enemy_King_Killed
+;;      Enemy_King_Routing
+;;      Enemy_Ladders_Attacking_Walls
+;;      Enemy_Reinforcements_Arrive
+;;      Enemy_Roman_Leader_Killed
+;;      Enemy_Roman_Leader_Routing
+;;      Enemy_Sapping_Damaged
+;;      Enemy_Siege_Towers_Attacking_Walls
+;;      Enemy_Siege_Towers_Destroyed
+;;      Enemy_Walls_Breached_By_Player
+;;      Enemy_Walls_Captured_By_Player
+;;      Enemy_Walls_Undermined_By_Player
+;;      Player_Army_Routing
+;;      Player_Defeat_Average
+;;      Player_Defeat_Clear
+;;      Player_Defeat_Close
+;;      Player_Defeat_Crushing
+;;      Player_Draw
+;;      Player_General_Killed
+;;      Player_General_Routing
+;;      Player_Ladders_Attacking_Walls
+;;      Player_Leader_Killed
+;;      Player_Leader_Routing
+;;      Player_Ram_Attacking_Gate
+;;      Player_Ram_Breached_Gate
+;;      Player_Reinforcements_Arrive
+;;      Player_Sapping_Begun
+;;      Player_Sapping_Complete
+;;      Player_Sapping_Damaged
+;;      Player_Sapping_Failed
+;;      Player_Siege_Towers_Attacking_Walls
+;;      Player_Siege_Towers_Destroyed
+;;      Player_Time_Limit_Expired_Defeat_Average
+;;      Player_Time_Limit_Expired_Defeat_Clear
+;;      Player_Time_Limit_Expired_Defeat_Close
+;;      Player_Time_Limit_Expired_Defeat_Crushing
+;;      Player_Time_Limit_Expired_Draw
+;;      Player_Time_Limit_Expired_Victory_Average
+;;      Player_Time_Limit_Expired_Victory_Clear
+;;      Player_Time_Limit_Expired_Victory_Close
+;;      Player_Time_Limit_Expired_Victory_Crushing
+;;      Player_Victory_Average
+;;      Player_Victory_Clear
+;;      Player_Victory_Close
+;;      Player_Victory_Crushing
+;;      Player_Walls_Breached_By_Enemy
+;;      Player_Walls_Captured_By_Enemy
+;;      Player_Walls_Undermined_By_Enemy
+;;      Player_Ram_Attacking_Walls
+;;      Player_Ram_Breached_Walls
+;;
+;;    "factions":
+;;      [ (defined in descr_sm_factions.txt) (may also use culture types) ],
+;;
+;;    "sounds":
+;;    [
+;;    ],
+;;  },
+
+include "sounds/descrs/banks/descr_soundbank_battle_notifications.txt"
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;                               cursor                               ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;used for mouse-related sounds
+
+;;  FORMAT
+;;
+;;  {
+;;    "cursor type": normal / battle / strat / strat_ed / battle_ed / strat_v2,
+;;
+;;    "modes":
+;;      [ attack / attack_range / attack_thrown / attack_siege / attack_range_out_of_range / attack_thrown_out_of_range / attack_siege_out_of_range / move / move_in_range / move_out_of_range / select / timer / cohort / step_left / step_right / step_fwd / step_back / rotate_right / rotate_left / mouse_look / click_down / exchange / default_action / no_action / enter_settlement / disembark / set_rally_point / set_rally_point_and_select / object_placement / pickup_equipment / enter ]
+;;
+;;    "double": true / false,
+;;
+;;    "sounds":
+;;    [
+;;    ],
+;;  },
+
+include "sounds/descrs/banks/descr_soundbank_cursor_click.txt"
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;                         diplomacy comment                         ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;used for the voices used during diplomacy
+
+;;  FORMAT
+;;
+;;  {
+;;    "comment": (the comment ID this should trigger for),
+;;
+;;    POSSIBLE ARGUMENTS FOR COMMENT:
+;;      offering protectorate
+;;      trusted protector
+;;      avoid eradication
+;;      redirect conflict
+;;      offering alliance
+;;      offering ceasefire
+;;      nullify alliance
+;;      offer trade
+;;      offer access
+;;      offer attack
+;;      making threat
+;;      offer bribe
+;;      offer gift
+;;      offer info
+;;      accept gift
+;;      accept bribe
+;;      acknowledge acceptance
+;;      acknowledge rejection
+;;      acknowledge declaration
+;;      reject not interested
+;;      reject too many counters
+;;      reject bribe
+;;      decline protectorate
+;;      decline alliance
+;;      decline ceasefire
+;;      decline nullify
+;;      decline access
+;;      decline region
+;;      decline attack
+;;      decline threat
+;;      decline gift
+;;      decline offer
+;;      decline demand
+;;      decline yearly payment
+;;      decline payment too high
+;;      decline payment too low
+;;      dishonest region offer
+;;      dishonest access offer
+;;      dishonest access demand
+;;      dishonest attack offer
+;;      dishonest attack threat
+;;      dishonest tribute offer
+;;      accept proposition
+;;      accept counter
+;;      accept declaration
+;;      counter offer
+;;      counter demand
+;;      counter info
+;;      counter proposition
+;;      counter bribe
+;;      recipient welcome allied
+;;      recipient welcome neutral
+;;      recipient welcome at war
+;;      finished
+;;      unsure of intentions
+;;      decline embargo
+;;      decline protector
+;;      offer settle debt
+;;      demand settle debt
+;;      cannot settle debt
+;;      poor value settle debt
+;;
+;;    "from factions":
+;;      [ (defined in descr_sm_factions.txt) (may also use culture types) ],
+;;
+;;    "to factions":
+;;      [ (defined in descr_sm_factions.txt) (may also use culture types) ],
+;;
+;;    "characters":
+;;      [ spy / assassin / diplomat / merchant / admiral / army_captain / family / settlement ],
+;;
+;;    "cultures":
+;;      [ (defined in descr_cultures.txt) ],
+;;
+;;    "sounds":
+;;    [
+;;    ],
+;;  },
+
+include "sounds/descrs/banks/descr_soundbank_diplomacy_comment.txt"
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;                             unit voice                             ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;used for unit barks in battle, unit voice culture, class and index is specified in the EDU (note units take the culture of the faction if not overridden and general units always use the culture and voice index of the general and the general voice type)
+
+;;  FORMAT
+;;
+;;  {
+;;    "voice types":
+;;        [ general / heavy / medium / light / female ],
+;;
+;;    "confirm": true / false,
+;;
+;;    "npc": true / false,
+;;
+;;    "cultures":
+;;      [ (defined in descr_cultures.txt) ],
+;;
+;;    "unit IDs":
+;;    [
+;;      (list of unit IDs that should use this voice, as an additional restriction ON TOP OF the above)
+;;    ],
+;;
+;;    "engine IDs":
+;;    [
+;;      (list of engine IDs that a unit should have, as an additional restriction ON TOP OF the above)
+;;    ],
+;;
+;;    "command": (the command ID this should trigger for),
+;;
+;;    POSSIBLE ARGUMENTS FOR COMMAND:
+;;      group_created
+;;      group_disbanded
+;;      group_drop
+;;      group_formation_cavalry_first_3_lines
+;;      group_formation_cavalry_screen
+;;      group_formation_column
+;;      group_formation_double_line
+;;      group_formation_infantry_first_3_lines
+;;      group_formation_missile_first_3_lines
+;;      group_formation_single_line
+;;      group_formation_sorted_double_line
+;;      group_formation_sorted_line
+;;      group_order_attack
+;;      group_order_attack_fast
+;;      group_order_halt
+;;      group_order_missile_attack
+;;      group_order_missile_attack_fast
+;;      group_order_move
+;;      group_order_move_fast
+;;      group_order_rally
+;;      group_order_retreat
+;;      group_select
+;;      group_select_cavalry
+;;      group_select_engines
+;;      group_select_infantry
+;;      group_select_missiles
+;;      group_state_cantabrian_off
+;;      group_state_cantabrian_on
+;;      group_state_chant_off
+;;      group_state_chant_on
+;;      group_state_engage_at_will_off
+;;      group_state_engage_at_will_on
+;;      group_state_fire_at_will_off
+;;      group_state_fire_at_will_on
+;;      group_state_flaming_off
+;;      group_state_flaming_on
+;;      group_state_formation_loose
+;;      group_state_formation_tight
+;;      group_state_guard_off
+;;      group_state_guard_on
+;;      group_state_hold_position_off
+;;      group_state_hold_position_on
+;;      group_state_line_off
+;;      group_state_line_on
+;;      group_state_phalanx_off
+;;      group_state_phalanx_on
+;;      group_state_rapid_fire_off
+;;      group_state_rapid_fire_on
+;;      group_state_screech_off
+;;      group_state_screech_on
+;;      group_state_shieldwall_off
+;;      group_state_shieldwall_on
+;;      group_state_skirmish_off
+;;      group_state_skirmish_on
+;;      group_state_testudo_off
+;;      group_state_testudo_on
+;;      group_state_warcry_off
+;;      group_state_warcry_on
+;;      group_state_wedge_off
+;;      group_state_wedge_on
+;;      unit_attack
+;;      unit_attack_fast
+;;      unit_completed
+;;      unit_confirm
+;;      unit_error
+;;      unit_generic
+;;      unit_halt
+;;      unit_ladder_attack
+;;      unit_ladder_drop
+;;      unit_ladder_start
+;;      unit_ladder_use
+;;      unit_missile_aim
+;;      unit_missile_fire
+;;      unit_missile_move_into_range
+;;      unit_missile_move_into_range_fast
+;;      unit_missile_ready
+;;      unit_move
+;;      unit_move_fast
+;;      unit_rally
+;;      unit_ram_attack
+;;      unit_ram_drop
+;;      unit_ram_ramming
+;;      unit_ram_start
+;;      unit_ram_use
+;;      unit_retreat
+;;      unit_select
+;;      unit_siege_tower_attack
+;;      unit_siege_tower_drop
+;;      unit_siege_tower_start
+;;      unit_siege_tower_use
+;;      unit_state_cantabrian_off
+;;      unit_state_cantabrian_on
+;;      unit_state_chant_off
+;;      unit_state_chant_on
+;;      unit_state_engage_at_will_off
+;;      unit_state_engage_at_will_on
+;;      unit_state_fire_at_will_off
+;;      unit_state_fire_at_will_on
+;;      unit_state_flaming_off
+;;      unit_state_flaming_on
+;;      unit_state_formation_loose
+;;      unit_state_formation_tight
+;;      unit_state_guard_off
+;;      unit_state_guard_on
+;;      unit_state_hold_position_off
+;;      unit_state_hold_position_on
+;;      unit_state_line_off
+;;      unit_state_line_on
+;;      unit_state_phalanx_off
+;;      unit_state_phalanx_on
+;;      unit_state_rapid_fire_off
+;;      unit_state_rapid_fire_on
+;;      unit_state_screech_off
+;;      unit_state_screech_on
+;;      unit_state_shieldwall_off
+;;      unit_state_shieldwall_on
+;;      unit_state_skirmish_off
+;;      unit_state_skirmish_on
+;;      unit_state_testudo_off
+;;      unit_state_testudo_on
+;;      unit_state_warcry_off
+;;      unit_state_warcry_on
+;;      unit_state_wedge_off
+;;      unit_state_wedge_on
+;;      unit_tunnel_dig
+;;      unit_tunnel_exit
+;;      unit_tunnel_use
+;;      unit_under_attack
+;;      unit_ram_attack_walls
+;;      unit_ram_start_walls
+;;
+;;    "sounds":
+;;    [
+;;      ;;uses voice indexes
+;;    ],
+;;  },
+
+include "sounds/descrs/banks/descr_soundbank_unit_voice.txt"
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;                         enviroment ambient                         ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;used for ambient enviromental sounds
+
+;;  GLOBAL PARAMETERS
+;;
+;;    sound distance - maximum and minimum components, dictates the range of distances that the sounds should trigger away from the camera
+;;
+;;    delay - maximum and minimum components, dictates the range of times between sounds triggering
+;;
+;;    num channels - the number of emitters to use
+;;
+;;  FORMAT
+;;
+;;  {
+;;    "seasons":
+;;      [ winter / spring (unused) / summer / autumn (unused) ],
+;;
+;;    "climates":
+;;      [ (defined in descr_climates.txt) ],
+;;
+;;    "terrain":
+;;      [ grass_short / grass_long / sand / rock / forest_dense / scrub_dense / swamp / mud / mud_road / stone_road / water / ice / snow / wood / dirt ],
+;;
+;;    "times":
+;;      [ midnight / sunrise / mid_morning / morning / midday / sunset / mid_evening / night ],
+;;
+;;    "weather events":
+;;    [
+;;      (list of weather event IDs this can trigger during)
+;;    ],
+;;
+;;    "sounds":
+;;    [
+;;    ],
+;;  },
+
+include "sounds/descrs/banks/descr_soundbank_terrain_ambient.txt"
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;                          stratmap terrain                          ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;used to assign ambient sounds to the strat map
+
+;;  GLOBAL PARAMETERS
+;;
+;;    sound distance - maximum and minimum components, dictates the range of distances that the sounds should trigger away from the camera
+;;
+;;    delay - maximum and minimum components, dictates the range of times between sounds triggering
+;;
+;;    num channels - the number of emitters to use for ambient sounds
+;;
+;;    min region size - the minimum number of tiles a region needs for a looped emitter
+;;
+;;  FORMAT
+;;
+;;  {
+;;    "seasons":
+;;      [ winter / spring (unused) / summer / autumn (unused) ],
+;;
+;;    "climates":
+;;      [ (defined in descr_climates.txt) ],
+;;
+;;    "terrain":
+;;      [ grass_short / grass_long / sand / rock / forest_dense / scrub_dense / swamp / mud / mud_road / stone_road / water / ice / snow / wood / dirt ],
+;;
+;;    "type":
+;;      [ fertile_low / fertile_medium / fertile_high / wilderness / mountains_high / mountains_low / hills / forest_dense / forest_sparse / swamp / ocean / sea_deep / sea_shallow / beach ],
+;;
+;;    "sounds":
+;;    [
+;;    ],
+;;  },
+
+include "sounds/descrs/banks/descr_soundbank_stratmap_terrain.txt"
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;                          stratmap object                          ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;used to assign sounds to objects on the strategy map
+
+;;  GLOBAL PARAMETERS
+;;
+;;    radius - the size of the square around the camera that the object sound play within
+;;
+;;  FORMAT
+;;
+;;  {
+;;    "object type": (the type of stratmap object that should use this sound),
+;;
+;;    POSSIBLE ARGUMENTS FOR OBJECT TYPE:
+;;      resource
+;;      character
+;;      settlement
+;;      fort
+;;      port
+;;      watchtower
+;;      landmark
+;;      battle_marker
+;;		ambient_object
+;;
+;;    "settlement level":
+;;      [ village / town / large_town / city / large_city / huge_city / none ],
+;;
+;;    "factions":
+;;      [ (defined in descr_sm_factions.txt) (may also use culture types) ],
+;;
+;;    (if object type == character)
+;;    "character types":
+;;      [ spy / assassin / diplomat / merchant / admiral / army_captain / family ],
+;;
+;;    (if object type == port)
+;;    "port levels":
+;;      [ fishing_village / sea_port / shipwright / dockyard ],
+;;
+;;    (if object type == landmark)
+;;    "wonder types":
+;;      [ baal / pyramids_and_sphinx / zeus / artemis / mausoleum / colossus / pharos / stonehenge / barge / gardens ],
+;;
+;;    (if object type == battle_marker)
+;;    "battle losers":
+;;      [ (defined in descr_sm_factions.txt) (may also use culture types) ],
+;;
+;;    (if object type == resource)
+;;    "resource types":
+;;      [ (defined in descr_sm_resources.txt) ],
+;;
+;;    (if object type == ambient_object)
+;;    "ambient objects":
+;;      [ (defined in descr_sm_ambient_objects.txt) ],
+;;
+;;    "sounds":
+;;    [
+;;    ],
+;;  },
+
+include "sounds/descrs/banks/descr_soundbank_stratmap_object.txt"
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;                          prebattle speech                          ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;used for prebattle speeches
+
+;;  FORMAT
+;;
+;;  {
+;;    "player factions":
+;;      [ (defined in descr_sm_factions.txt) (may also use culture types) ],
+;;
+;;    "enemy factions":
+;;      [ (defined in descr_sm_factions.txt) (may also use culture types) ],
+;;
+;;    "ID": (string ID for this element, as used in descr_prebattle_script.txt),
+;;
+;;    "cultures":
+;;      [ (defined in descr_cultures.txt) ],
+;;
+;;    "delay":
+;;    {
+;;      "start": (time to wait at the start of the line),
+;;
+;;      "end": (time to wait after the line),
+;;    },
+;;
+;;    "weight": (multiplier to the the probability of this line being picked),
+;;
+;;    "should cheer": true / false,
+;;
+;;    "is cheering": true / false,
+;;
+;;    "restrictions":
+;;    [
+;;      ;;list of restrictions that must be true to make this valid to be picked
+;;      ;;there are a few different types of restricton:
+;;
+;;      ;;percentage - checks number-based information about the battle
+;;      ;;must match the regex format "the (percentage|ratio|absolute number) of (strength|numbers|units with (class|category|mount|ID) (\w+)|units) on the (enemy|allied) side must be (>|<=)([.\d]+)"
+;;      ;;if using class, the additional argument (\w+) must be one of [ heavy / light / skirmish / spearmen / missile ]
+;;      ;;if using category, the additional argument must be one of [ infantry / cavalry / siege / non_combatant / ship (never practically used) / handler ]
+;;      ;;if using mount, the additional argument must be one of [ horse / camel / elephant / chariot / scorpion_cart ]
+;;      ;;if using ID, the additional argument must be the ID of the unit that's being checked
+;;
+;;      ;;trait - checks the traits of the general giving the speech
+;;      ;;must match the regex format "our general must( not)? have the trait with ID (\w+) of level (\d+)"
+;;
+;;      ;;battle info - checks simple yes/no questions about the battle
+;;      ;;must match the regex format "we must( not)? be (attacking|aiding an ally|fighting a night battle)"
+;;
+;;      ;;enum - checks various enums that relate to the battle
+;;      ;;must match the regex format "(?:the |our )([\w ']+) must( not)? (?:be|include) (.*)"
+;;      ;;the first ([\w ']+) and third (.*) argument must be one of these pairs, listed as "first argument - [third argument options]"
+;;      ;; omens - [ fantastic / good / neutral / bad / awful ]
+;;      ;; reinforcements - [ near / far ]
+;;      ;; battle type - [ field / siege / siege relief / river crossing / ambush ]
+;;      ;; strategic situation - [ major city siege / our city undefended / enemy city undefended / custom battle / >25% of our forces / >50% of our forces / >75% of our forces / >25% of their forces / >50% of their forces / >75% of their forces / our last city / their last city / ally's last city / recovering our eagle / recovering their eagle / recovering ally's eagle ]
+;;      ;; precipitation type - [ none / rain / hail / snow / dust / sand ]
+;;      ;; wind level - [ calm / breezes / wind / gusts / gales ]
+;;      ;; fog type - [ clear / haze / light / heavy ]
+;;      ;; general's previous record - [ not fought before / fought a bit / fought a lot / never lost / lost last time / never won ]
+;;      ;; allied deployment zone - [ hills / steep hills / forest / long grass / road ]
+;;      ;; enemy deployment zone - [ hills / steep hills / forest / long grass / road ]
+;;      ;; avaiable siege equipment - [ ram / ladder / tower / sap_point ]
+;;
+;;      ;;faction info - check things about factions that might be participating in this battle
+;;      ;;must match the regex format "(\w+)(?: faction)? must be an (ally|enemy) and must( not)? (have ?)?((?:their)?|be) (?:(?:([\w ]+) of their family members present)|(?:(\w+) (?:by|to) our general)|(present|aiding another|a horde|faction leader present|faction heir present))"
+;;      ;;the first argument should be the name of a faction or 'any'
+;;      ;;valid amounts of family members = [ none / some / a few / half / most / all ]
+;;      ;;valid types of general relationships = [ neutral / hated / feared ]
+;;    ]
+;;
+;;    "sounds":
+;;    [
+;;      ;;uses voice indexes
+;;    ],
+;;  },
+
+include "sounds/descrs/banks/descr_soundbank_prebattle_speech.txt"

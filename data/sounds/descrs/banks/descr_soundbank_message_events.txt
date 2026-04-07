@@ -1,0 +1,1823 @@
+;; Last updated by jburnett on 2021/07/14
+;; DESCR file generated via RTW Amber pack editor
+
+"default sound parameters":
+{
+	"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+	"Probability": 100.0,		;;the chance the sound will play when triggered
+	"Volume": 20,				;;the volume of the sample as a percentage of the base file's
+	"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+	"Max pitch": 100.0,			
+	"Priority": 999,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+	"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+	"Fade out": 0.499,			
+	"Looped": false,			;;should the sound loop?
+	"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+	"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+	"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+	"Pref type": "Interface",	;;the slider the sound should be attached to
+	"Ignore pause": false,		;;should this sound ignore being paused?
+	"Streamed": true,			;;should this sound be streamed from disk?
+	"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+	"Dry level": 1.0,			;; ???
+	"Wet level": 0.0,			;; ???
+},
+
+"soundbank_message_events":
+{
+	"entries":
+	[
+		{
+			;;message type
+			"message": "games_held",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/games_held.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "year_end_report",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/year_end_report.opus",
+				{
+				},
+				"data/sounds/SFX/Campaign_Map/year_end_report_3.opus",
+				"data/sounds/SFX/Campaign_Map/year_end_report_2.opus",
+				{
+					"Volume": 70,				;;the volume of the sample as a percentage of the base file's
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "family_report",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/diplomacy_report.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "diplomacy_report",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/diplomacy_report.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "new_bouncing_baby",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/baby.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "marriage",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/marriage.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "coming_of_age",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/coming_of_age.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "adoption",
+
+			;;should this play on opening or on arrival
+			"on arrival": true,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/adoption.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "adopta_general_offer",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/adopta_general_offer.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "adoption_failed",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/adoption_failed.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "character_available_for_adoption",
+
+			;;should this play on opening or on arrival
+			"on arrival": true,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/character_available_for_adoption.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "suitor_available_for_daughter",
+
+			;;should this play on opening or on arrival
+			"on arrival": true,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/suitor_available_for_daughter.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "settlement_taken",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/settlement_lost.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "settlement_surrenders_own",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/settlement_lost.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "settlement_destroyed",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/settlement_lost.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "settlement_occupied",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/settlement_occupied.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "settlement_enslaved",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/settlement_enslaved.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "settlement_exterminated",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/settlement_exterminated.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "settlement_surrender",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/settlement_surrender.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "settlement_surrenders_enemy",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/settlement_taken.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "settlement_besieged",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/settlement_besieged.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "settlement_unrest",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/settlement_unrest.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "settlement_revolts",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/settlement_revolts.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "army_revolt",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/settlement_revolts.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "naval_blockade",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/naval_blockade.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "wonder_captured",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/wonder_captured.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "wonder_lost",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/wonder_lost.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "faction_richest",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/faction_richest.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "faction_largest",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/faction_largest.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "faction_strongest",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/faction_strongest.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "faction_advanced",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/faction_advanced.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "faction_defeated",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/faction_death.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "player_faction_richest",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/player_faction_richest.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "player_faction_largest",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/player_faction_largest.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "player_faction_strongest",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/player_faction_strongest.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "player_faction_advanced",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/player_faction_advanced.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "building_completed",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/building_completed_02.opus",
+				{
+				},
+				"data/sounds/SFX/Campaign_Map/building_completed.opus",
+				{
+					"Volume": 65,				;;the volume of the sample as a percentage of the base file's
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "building_repair_complete",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/building_repair_complete.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "building_captured_battle",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/building_captured_battle.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "building_lost_battle",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/building_lost_battle.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "building_captured_by_allies",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/building_captured_by_allies.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "agent_recruited",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/agent_recruited.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "unit_completed",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/unit_completed.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "agent_detected_and_expelled",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/agent_detected_and_expelled.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "general_appointed",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/general_appointed.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "general_promoted",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/general_promoted.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "new_faction_leader",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/new_faction_leader.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "new_faction_heir",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/new_faction_heir.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "races_held",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/races_held.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "mission_assassinate",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/mission_assassinate.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "mission_assassinate_fail_and_killed",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/mission_assassinate_fail_and_killed.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "mission_assassinate_fail",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/mission_assassinate_fail.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "mission_sabotage",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/sabotage_success.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "mission_sabotage_fail",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/sabotage_fail.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "mission_sabotage_fail_and_killed",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/sabotage_fail_and_killed.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "mission_spy_character",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/mission_spy_character.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "mission_spy_settlement",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/mission_spy_settlement.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "mission_spy_fail_and_killed",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/mission_spy_fail_and_killed.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "mission_spy_fail",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/mission_assassinate_fail.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "senate_mission_issued",
+
+			;;should this play on opening or on arrival
+			"on arrival": true,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/senate_mission_issued_short.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "senate_mission_success",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/senate_mission_success.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "senate_mission_failed",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/senate_mission_failed.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "senate_message",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/senate_message.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "senate_office_gained",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/senate_office_gained.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "senate_office_lost",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/senate_office_lost.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "female_dies",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/female_dies.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "war_declared",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/war_declared.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "war_declared_non_player",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/war_declared.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "war_declared_on_ally",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/war_declared_on_ally.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "alliance_declared",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/alliance_declared.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "alliance_broken",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/alliance_broken.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "ceasefire_declared",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/ceasefire_declared.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "peacy_treaty_signed",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/peace_treaty_signed.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "protectorate_established",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/protectorate_established.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "hidden_agent_detected_in_settlement",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/agent_detected.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "ally_declared_alliance_with_enemy",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/ally_declared_alliance_with_enemy.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "new_ancillary_character",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/new_ancillary_character.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "faction_leader_dies",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/general_dies.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "unit_routs_in_battle",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/unit_routs.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "reinforcements_arrived",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/reinforcements_arrived.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "character_trait_gained",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/character_trait_gained.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "character_trait_lost",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/character_trait_lost.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "banner_lost_warning",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/banner_lost_warning.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "banner_lost_final",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/banner_lost_final.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "banner_captured",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/banner_captured.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "disaster_volcano",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/Volcano44s.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "disaster_flood",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/flood.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "disaster_storm",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/storm44s.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "disaster_disorder",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/settlement_revolts.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "disaster_riot",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/settlement_revolts.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "disaster_plague",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/plague.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "disaster_famine",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/famine.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "disaster_pirates",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/pirates.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "disaster_brigands",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/pirates.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "disaster_fire",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/large_fire.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "disaster_mutiny",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/mutiny.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "disaster_barbarian_horde",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/barbarian_horde.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "historic_event",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/historic_event.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "chat_message",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/chat_message_02.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "faction_leader_imperator",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/faction_leader_imperator.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "multiturn_path_blocked",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/multiturn_path_blocked.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "players_army_destroyed",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/players_army_destroyed.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "upgrade_settlement_to_town",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/upgrade_settlement_to_town.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "upgrade_settlement_to_large_town",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/upgrade_settlement_to_large_town.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "upgrade_settlement_to_city",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/upgrade_settlement_to_city.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "upgrade_settlement_to_large_city",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/upgrade_settlement_to_large_city.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "upgrade_settlement_to_huge_city",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/upgrade_settlement_to_huge_city.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "marian_reform",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				;;can be used for all sorts of major events now, use something more general
+				"data/sounds/SFX/Campaign_Map/historic_event.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "settlement_bribed",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/settlement_bribed.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "army_bribed",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/army_bribed.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "character_bribed",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/character_bribed.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "betrayed",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/betrayed.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "fort_bribed",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/fort_bribed.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "outlawed",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/outlawed.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "civil_war",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/civil_war.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "civil_war_possible",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/civil_war_possible.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "player_lose_warning",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/player_lose_warning.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "senate_election_results",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/senate_election_results.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "transgression",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/transgression.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "senate_standing_transition",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/senate_standing_transition.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "senate_congratulation_message",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/senate_congratulation_message.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "your_machine_needs_upgrading",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/machine_upgrade.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "senate_mission_failed",
+
+			;;should this play on opening or on arrival
+			"on arrival": true,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/senate_mission_failed_short.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "senate_mission_success",
+
+			;;should this play on opening or on arrival
+			"on arrival": true,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/senate_mission_success_short.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "senate_mission_issued",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/senate_mission_issued.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "recruitment_complete_many",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/unit_completed.opus",
+				{
+				},
+			],
+		},
+		{
+			;;message type
+			"message": "construction_complete_many",
+
+			;;should this play on opening or on arrival
+			"on arrival": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/Campaign_Map/building_completed.opus",
+				{
+				},
+				"data/sounds/SFX/Campaign_Map/building_completed_02.opus",
+				{
+					"Volume": 65,				;;the volume of the sample as a percentage of the base file's
+				},
+			],
+		},
+	],
+}, ;;soundbank_message_events

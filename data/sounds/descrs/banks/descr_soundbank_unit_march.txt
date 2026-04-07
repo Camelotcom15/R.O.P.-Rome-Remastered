@@ -1,0 +1,1645 @@
+;; Last updated by jburnett on 2021/07/14
+;; DESCR file generated via RTW Amber pack editor
+
+"default sound parameters":
+{
+	"3d": true,					;;is the sound 3D (DO NOT CHANGE THIS)
+	"Probability": 100.0,		;;the chance the sound will play when triggered
+	"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+	"Min pitch": 89.999,		;;the random pitch of the sample (0-200%)
+	"Max pitch": 100.0,			
+	"Priority": 70,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+	"Fade in": 0.998,			;;the time, in seconds, for the sound to fade in and out
+	"Fade out": 0.742,			
+	"Looped": false,			;;should the sound loop?
+	"Random volume": -20,		;;the random adjustment applied to the volume (must be negative)
+	"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+	"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+	"Pref type": "SFX",			;;the slider the sound should be attached to
+	"Ignore pause": false,		;;should this sound ignore being paused?
+	"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+	"Max dist": -1.0,			;;setting max dist to -1 will mean the sound will autocalculate the max dist
+	"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+	"Prob radius": 0.0,			;;the range within which the probability will be overridden to be 100%
+	"Effect level": 0.0,		;;??? I think this has something to do with the EAX parameters?
+},
+
+"soundbank_unit_march":
+{
+	"entries":
+	[
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+		;;  GRASS FOOTSTEPS
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+		
+		;;human winter footsteps
+		{
+			"unit":
+			{
+				;;the categories, classes and specific units this sound applies to
+				"categories":
+					[ "all", "-cavalry", "-ship", ],
+				"classes":
+					[ "all", ],
+
+				"IDs":
+				[
+				],
+
+				;;if the category is handler or cavalry, check for these animals
+				"animals":
+					[ "all", ],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "winter", ],
+				"climates":
+					[ "all", "-test_climate", "-sandy_desert", "-rocky_desert", "-swamp", "-semi_arid", ],
+				"ground types":
+					[ "grass_short", "grass_long", "rock", "forest_dense", "scrub_dense", "snow", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 0,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Footsteps/Infantry/Snow/Inf_Footsteps_Snow_16.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Snow/Inf_Footsteps_Snow_15.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Snow/Inf_Footsteps_Snow_14.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Snow/Inf_Footsteps_Snow_13.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Snow/Inf_Footsteps_Snow_12.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Snow/Inf_Footsteps_Snow_11.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Snow/Inf_Footsteps_Snow_10.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Snow/Inf_Footsteps_Snow_09.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Snow/Inf_Footsteps_Snow_08.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Snow/Inf_Footsteps_Snow_07.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Snow/Inf_Footsteps_Snow_06.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Snow/Inf_Footsteps_Snow_05.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Snow/Inf_Footsteps_Snow_04.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Snow/Inf_Footsteps_Snow_03.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Snow/Inf_Footsteps_Snow_02.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Snow/Inf_Footsteps_Snow_01.wav",
+						{
+							"Probability": 48.235,		;;the chance the sound will play when triggered
+							"Volume": 55,				;;the volume of the sample as a percentage of the base file's
+							"Min pitch": 49.998,		;;the random pitch of the sample (0-200%)
+							"Priority": 10,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+							"Fade out": 0.0,			
+							"Dist priority": -2.0,		;;how much should the priority be reduced per meter of distance
+							"Prob radius": 7.0,			;;the range within which the probability will be overridden to be 100%
+							"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 5,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Infantry/snow/inf_group_walk_S_snow_02.wav",
+						{
+							"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 6.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+							"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 10,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Infantry/snow/inf_group_walk_M_snow_02.wav",
+						{
+							"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 6.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+							"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 30,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Infantry/snow/inf_group_walk_L_snow_02.wav",
+						{
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 6.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+							"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+						},
+					],
+				},
+			],
+		},
+		
+		;;human summer (/fallback)
+		{
+			"unit":
+			{
+				;;the categories, classes and specific units this sound applies to
+				"categories":
+					[ "all", "-cavalry", "-ship", ],
+				"classes":
+					[ "all", ],
+
+				"IDs":
+				[
+				],
+
+				;;if the category is handler or cavalry, check for these animals
+				"animals":
+					[ "all", ],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "grass_short", "grass_long", "forest_dense", "scrub_dense", "snow", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 0,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Footsteps/Infantry/Grass/Inf_Footstep_grass_b22.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Grass/Inf_Footstep_grass_b21.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Grass/Inf_Footstep_grass_b20.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Grass/Inf_Footstep_grass_b19.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Grass/Inf_Footstep_grass_b18.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Grass/Inf_Footstep_grass_b17.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Grass/Inf_Footstep_grass_b16.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Grass/Inf_Footstep_grass_b15.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Grass/Inf_Footstep_grass_b13.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Grass/Inf_Footstep_grass_b12.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Grass/Inf_Footstep_grass_b11.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Grass/Inf_Footstep_grass_b10.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Grass/Inf_Footstep_grass_b09.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Grass/Inf_Footstep_grass_b08.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Grass/Inf_Footstep_grass_b07.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Grass/Inf_Footstep_grass_b06.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Grass/Inf_Footstep_grass_b05.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Grass/Inf_Footstep_grass_b04.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Grass/Inf_Footstep_grass_b03.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Grass/Inf_Footstep_grass_b02.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Grass/Inf_Footstep_grass_b01.wav",
+						{
+							"Probability": 48.235,		;;the chance the sound will play when triggered
+							"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+							"Min pitch": 69.997,		;;the random pitch of the sample (0-200%)
+							"Priority": 10,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+							"Fade out": 0.0,			
+							"Dist priority": -2.0,		;;how much should the priority be reduced per meter of distance
+							"Prob radius": 7.0,			;;the range within which the probability will be overridden to be 100%
+							"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 5,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Infantry/Grass/inf_group_walk_s_grassTV.wav",
+						{
+							"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 6.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+							"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 10,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Infantry/Grass/inf_group_walk_m_grassTV.wav",
+						{
+							"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 6.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+							"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 30,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Infantry/Grass/inf_group_walk_l_grassTV.wav",
+						{
+							"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 6.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+							"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+						},
+					],
+				},
+			],
+		},
+		
+		;;chariot winter
+		{
+			"unit":
+			{
+				;;the categories, classes and specific units this sound applies to
+				"categories":
+					[ "cavalry", ],
+				"classes":
+					[ "all", ],
+
+				"IDs":
+				[
+				],
+
+				;;if the category is handler or cavalry, check for these animals
+				"animals":
+					[ "chariot", "scorpion_cart", ],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "winter", ],
+				"climates":
+					[ "all", "-test_climate", "-sandy_desert", "-rocky_desert", "-swamp", "-semi_arid", ],
+				"ground types":
+					[ "all", "-swamp", "-mud", "-mud_road", "-stone_road", "-water", "-dirt", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 2,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Chariot/snow/char_group_walk_s_snow.wav",
+						{
+							"Min dist": 7.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 4,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Chariot/snow/char_group_walk_m_snow.wav",
+						{
+							"Min dist": 7.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 8,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Chariot/snow/char_group_walk_l_snow.wav",
+						{
+							"Min dist": 7.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		
+		;;chariot summer (/fallback)
+		{
+			"unit":
+			{
+				;;the categories, classes and specific units this sound applies to
+				"categories":
+					[ "cavalry", ],
+				"classes":
+					[ "all", ],
+
+				"IDs":
+				[
+				],
+
+				;;if the category is handler or cavalry, check for these animals
+				"animals":
+					[ "chariot", "scorpion_cart", ],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "all", "-water", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 2,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Chariot/Grass/char_group_walk_small_grass.wav",
+						{
+							"Min dist": 7.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 4,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Chariot/Grass/char_group_walk_med_grass.wav",
+						{
+							"Min dist": 7.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 8,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Chariot/Grass/char_group_walk_large_grass.wav",
+						{
+							"Min dist": 7.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		
+		;;horse (all seasons because no snow footsteps)
+		{
+			"unit":
+			{
+				;;the categories, classes and specific units this sound applies to
+				"categories":
+					[ "cavalry", ],
+				"classes":
+					[ "all", ],
+
+				"IDs":
+				[
+				],
+
+				;;if the category is handler or cavalry, check for these animals
+				"animals":
+					[ "horse", ],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "all", "-stone_road", "-ice", "-water", "-wood", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 5,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Horse/Grass/horse_group_walk_sml_grass.wav",
+						{
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 8.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 10,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Horse/Grass/horse_group_walk_med_grass.wav",
+						{
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 8.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 20,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Horse/Grass/horse_group_walk_lrg_grass.wav",
+						{
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 8.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		
+		;;camel winter
+		{
+			"unit":
+			{
+				;;the categories, classes and specific units this sound applies to
+				"categories":
+					[ "cavalry", ],
+				"classes":
+					[ "all", ],
+
+				"IDs":
+				[
+				],
+
+				;;if the category is handler or cavalry, check for these animals
+				"animals":
+					[ "camel", ],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "winter", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "grass_short", "grass_long", "sand", "rock", "forest_dense", "scrub_dense", "snow", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 5,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Camel/snow/cam_group_walk_S_snow.wav",
+						{
+							"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 8.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 10,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Camel/snow/cam_group_walk_M_snow.wav",
+						{
+							"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 8.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 20,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Camel/snow/cam_group_walk_L_snow.wav",
+						{
+							"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 8.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		
+		;;camel summer (/fallback)
+		{
+			"unit":
+			{
+				;;the categories, classes and specific units this sound applies to
+				"categories":
+					[ "cavalry", ],
+				"classes":
+					[ "all", ],
+
+				"IDs":
+				[
+				],
+
+				;;if the category is handler or cavalry, check for these animals
+				"animals":
+					[ "camel", ],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "all", "-water", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 5,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Camel/Grass/cam_group_walk_small_grass4.wav",
+						{
+							"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 8.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 10,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Camel/Grass/cam_group_walk_med_grass4.wav",
+						{
+							"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 8.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 20,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Camel/Grass/cam_group_walk_large_grass4.wav",
+						{
+							"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 8.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		
+		;;elephant (all seasons because no snow footsteps)
+		{
+			"unit":
+			{
+				;;the categories, classes and specific units this sound applies to
+				"categories":
+					[ "cavalry", ],
+				"classes":
+					[ "all", ],
+
+				"IDs":
+				[
+				],
+
+				;;if the category is handler or cavalry, check for these animals
+				"animals":
+					[ "elephant", ],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "all", "-water", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Elephant/grass/ele_group_walk_small_grass.wav",
+						{
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+							"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+							"Priority": 170,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Min dist": 11.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 3,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Elephant/grass/ele_group_walk_med_grass.wav",
+						{
+							"Volume": 70,				;;the volume of the sample as a percentage of the base file's
+							"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+							"Priority": 170,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Min dist": 11.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 5,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Elephant/grass/ele_group_walk_large_grass.wav",
+						{
+							"Volume": 70,				;;the volume of the sample as a percentage of the base file's
+							"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+							"Priority": 170,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Min dist": 11.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+		;;  DIRT FOOTSTEPS
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+		
+		;;human footsteps
+		{
+			"unit":
+			{
+				;;the categories, classes and specific units this sound applies to
+				"categories":
+					[ "all", "-cavalry", "-ship", ],
+				"classes":
+					[ "all", ],
+
+				"IDs":
+				[
+				],
+
+				;;if the category is handler or cavalry, check for these animals
+				"animals":
+					[ "all", ],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "swamp", "mud", "mud_road", "dirt", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 0,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Footsteps/Infantry/Dirt/Inf_Footstep_Dirt_32.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Dirt/Inf_Footstep_Dirt_31.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Dirt/Inf_Footstep_Dirt_30.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Dirt/Inf_Footstep_Dirt_29.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Dirt/Inf_Footstep_Dirt_28.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Dirt/Inf_Footstep_Dirt_27.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Dirt/Inf_Footstep_Dirt_26.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Dirt/Inf_Footstep_Dirt_25.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Dirt/Inf_Footstep_Dirt_24.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Dirt/Inf_Footstep_Dirt_23.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Dirt/Inf_Footstep_Dirt_22.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Dirt/Inf_Footstep_Dirt_21.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Dirt/Inf_Footstep_Dirt_20.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Dirt/Inf_Footstep_Dirt_19.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Dirt/Inf_Footstep_Dirt_18.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Dirt/Inf_Footstep_Dirt_17.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Dirt/Inf_Footstep_Dirt_16.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Dirt/Inf_Footstep_Dirt_15.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Dirt/Inf_Footstep_DirtMarchRB_14.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Dirt/Inf_Footstep_DirtMarchRB_13.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Dirt/Inf_Footstep_DirtMarchRB_12.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Dirt/Inf_Footstep_DirtMarchRB_11.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Dirt/Inf_Footstep_DirtMarchRB_10.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Dirt/Inf_Footstep_DirtMarchRB_09.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Dirt/Inf_Footstep_DirtMarchRB_08.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Dirt/Inf_Footstep_DirtMarchRB_07.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Dirt/Inf_Footstep_DirtMarchRB_06.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Dirt/Inf_Footstep_DirtMarchRB_05.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Dirt/Inf_Footstep_DirtMarchRB_04.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Dirt/Inf_Footstep_DirtMarchRB_03.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Dirt/Inf_Footstep_DirtMarchRB_02.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Dirt/Inf_Footstep_DirtMarchRB_01.wav",
+						{
+							"Probability": 48.235,		;;the chance the sound will play when triggered
+							"Volume": 70,				;;the volume of the sample as a percentage of the base file's
+							"Min pitch": 69.997,		;;the random pitch of the sample (0-200%)
+							"Priority": 10,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+							"Fade out": 0.0,			
+							"Dist priority": -2.0,		;;how much should the priority be reduced per meter of distance
+							"Prob radius": 7.0,			;;the range within which the probability will be overridden to be 100%
+							"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 5,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Infantry/Grass/inf_group_walk_s_grassTV.wav",
+						{
+							"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 6.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+							"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 10,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Infantry/Grass/inf_group_walk_m_grassTV.wav",
+						{
+							"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 6.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+							"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 30,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Infantry/Grass/inf_group_walk_l_grassTV.wav",
+						{
+							"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 6.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+							"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+						},
+					],
+				},
+			],
+		},
+		
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+		;;  SAND FOOTSTEPS
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+		
+		;;human footsteps
+		{
+			"unit":
+			{
+				;;the categories, classes and specific units this sound applies to
+				"categories":
+					[ "all", "-cavalry", "-ship", ],
+				"classes":
+					[ "all", ],
+
+				"IDs":
+				[
+				],
+
+				;;if the category is handler or cavalry, check for these animals
+				"animals":
+					[ "all", ],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "sand", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 0,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Footsteps/Infantry/Sand/Inf_Footstep_Sand_32.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Sand/Inf_Footstep_Sand_31.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Sand/Inf_Footstep_Sand_29.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Sand/Inf_Footstep_Sand_26.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Sand/Inf_Footstep_Sand_25.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Sand/Inf_Footstep_Sand_24.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Sand/Inf_Footstep_Sand_22.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Sand/Inf_Footstep_Sand_19.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Sand/Inf_Footstep_Sand_15.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Sand/Inf_Footstep_Sand_14.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Sand/Inf_Footstep_Sand_13.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Sand/Inf_Footstep_Sand_11.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Sand/Inf_Footstep_Sand_10.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Sand/Inf_Footstep_Sand_09.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Sand/Inf_Footstep_Sand_08.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Sand/Inf_Footstep_Sand_07.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Sand/Inf_Footstep_Sand_06.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Sand/Inf_Footstep_Sand_05.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Sand/Inf_Footstep_Sand_04.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Sand/Inf_Footstep_Sand_03.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Sand/Inf_Footstep_Sand_01.wav",
+						{
+							"Probability": 48.235,		;;the chance the sound will play when triggered
+							"Min pitch": 49.998,		;;the random pitch of the sample (0-200%)
+							"Priority": 10,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+							"Fade out": 0.0,			
+							"Dist priority": -2.0,		;;how much should the priority be reduced per meter of distance
+							"Prob radius": 7.0,			;;the range within which the probability will be overridden to be 100%
+							"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 5,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Infantry/Grass/inf_group_walk_s_grassTV.wav",
+						{
+							"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 6.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+							"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 10,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Infantry/Grass/inf_group_walk_m_grassTV.wav",
+						{
+							"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 6.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+							"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 30,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Infantry/Grass/inf_group_walk_l_grassTV.wav",
+						{
+							"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 6.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+							"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+						},
+					],
+				},
+			],
+		},
+		
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+		;;  STONE FOOTSTEPS
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+		
+		;;human footsteps
+		{
+			"unit":
+			{
+				;;the categories, classes and specific units this sound applies to
+				"categories":
+					[ "all", "-cavalry", "-ship", ],
+				"classes":
+					[ "all", ],
+
+				"IDs":
+				[
+				],
+
+				;;if the category is handler or cavalry, check for these animals
+				"animals":
+					[ "all", ],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "rock", "stone_road", "ice", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 0,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Footsteps/Infantry/Stone/Inf_Footsteps_Stone_16.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Stone/Inf_Footsteps_Stone_15.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Stone/Inf_Footsteps_Stone_14.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Stone/Inf_Footsteps_Stone_13.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Stone/Inf_Footsteps_Stone_12.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Stone/Inf_Footsteps_Stone_11.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Stone/Inf_Footsteps_Stone_10.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Stone/Inf_Footsteps_Stone_09.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Stone/Inf_Footsteps_Stone_08.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Stone/Inf_Footsteps_Stone_07.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Stone/Inf_Footsteps_Stone_06.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Stone/Inf_Footsteps_Stone_05.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Stone/Inf_Footsteps_Stone_04.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Stone/Inf_Footsteps_Stone_03.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Stone/Inf_Footsteps_Stone_02.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Stone/Inf_Footsteps_Stone_01.wav",
+						{
+							"Probability": 48.235,		;;the chance the sound will play when triggered
+							"Min pitch": 59.999,		;;the random pitch of the sample (0-200%)
+							"Priority": 10,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+							"Fade out": 0.0,			
+							"Dist priority": -2.0,		;;how much should the priority be reduced per meter of distance
+							"Prob radius": 7.0,			;;the range within which the probability will be overridden to be 100%
+							"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 5,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Infantry/stone/inf_group_walk_s_Stone1.wav",
+						{
+							"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 6.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+							"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 10,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Infantry/stone/inf_group_walk_m_Stone1.wav",
+						{
+							"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 6.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+							"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 30,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Infantry/stone/inf_group_walk_l_Stone1.wav",
+						{
+							"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 6.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+							"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+						},
+					],
+				},
+			],
+		},
+		
+		;;horse
+		{
+			"unit":
+			{
+				;;the categories, classes and specific units this sound applies to
+				"categories":
+					[ "cavalry", ],
+				"classes":
+					[ "all", ],
+
+				"IDs":
+				[
+				],
+
+				;;if the category is handler or cavalry, check for these animals
+				"animals":
+					[ "horse", ],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "stone_road", "ice", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 5,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Horse/stone/horse_group_walk_S_stone3.wav",
+						{
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+							"Min pitch": 69.997,		;;the random pitch of the sample (0-200%)
+							"Min dist": 8.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 10,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Horse/stone/horse_group_walk_M_stone3.wav",
+						{
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+							"Min pitch": 69.997,		;;the random pitch of the sample (0-200%)
+							"Min dist": 8.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 20,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Horse/stone/horse_group_walk_L_stone3.wav",
+						{
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+							"Min pitch": 69.997,		;;the random pitch of the sample (0-200%)
+							"Min dist": 8.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+		;;  WATER FOOTSTEPS
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+		
+		;;human footsteps
+		{
+			"unit":
+			{
+				;;the categories, classes and specific units this sound applies to
+				"categories":
+					[ "all", "-cavalry", "-ship", ],
+				"classes":
+					[ "all", ],
+
+				"IDs":
+				[
+				],
+
+				;;if the category is handler or cavalry, check for these animals
+				"animals":
+					[ "all", ],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "water", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 0,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Footsteps/Infantry/Water/Inf_Footsteps_WaterC_15.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Water/Inf_Footsteps_WaterC_14.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Water/Inf_Footsteps_WaterC_13.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Water/Inf_Footsteps_WaterC_12.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Water/Inf_Footsteps_WaterC_11.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Water/Inf_Footsteps_WaterC_10.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Water/Inf_Footsteps_WaterC_09.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Water/Inf_Footsteps_WaterC_08.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Water/Inf_Footsteps_WaterC_07.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Water/Inf_Footsteps_WaterC_06.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Water/Inf_Footsteps_WaterC_05.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Water/Inf_Footsteps_WaterC_04.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Water/Inf_Footsteps_WaterC_03.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Water/Inf_Footsteps_WaterC_02.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Water/Inf_Footsteps_WaterC_01.wav",
+						{
+							"Probability": 48.235,		;;the chance the sound will play when triggered
+							"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+							"Min pitch": 49.998,		;;the random pitch of the sample (0-200%)
+							"Priority": 10,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+							"Fade out": 0.0,			
+							"Random volume": -10,		;;the random adjustment applied to the volume (must be negative)
+							"Dist priority": -2.0,		;;how much should the priority be reduced per meter of distance
+							"Prob radius": 7.0,			;;the range within which the probability will be overridden to be 100%
+							"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 5,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Infantry/water/inf_group_walk_S_water.wav",
+						{
+							"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 6.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+							"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 10,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Infantry/water/inf_group_walk_M_water.wav",
+						{
+							"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 6.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+							"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 30,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Infantry/water/inf_group_walk_L_water02.wav",
+						{
+							"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 6.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+							"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+						},
+					],
+				},
+			],
+		},
+		
+		;;chariot
+		{
+			"unit":
+			{
+				;;the categories, classes and specific units this sound applies to
+				"categories":
+					[ "cavalry", ],
+				"classes":
+					[ "all", ],
+
+				"IDs":
+				[
+				],
+
+				;;if the category is handler or cavalry, check for these animals
+				"animals":
+					[ "chariot", "scorpion_cart", ],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "water", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 2,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Chariot/water/char_group_walk_s_water.wav",
+						{
+							"Min dist": 7.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 4,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Chariot/water/char_group_walk_m_water.wav",
+						{
+							"Min dist": 7.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 8,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Chariot/water/char_group_walk_l_water.wav",
+						{
+							"Min dist": 7.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		
+		;;elephant
+		{
+			"unit":
+			{
+				;;the categories, classes and specific units this sound applies to
+				"categories":
+					[ "cavalry", ],
+				"classes":
+					[ "all", ],
+
+				"IDs":
+				[
+				],
+
+				;;if the category is handler or cavalry, check for these animals
+				"animals":
+					[ "elephant", ],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "water", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Elephant/water/ele_group_walk_S_water.wav",
+						{
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+							"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+							"Priority": 170,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Min dist": 11.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 3,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Elephant/water/ele_group_walk_M_water.wav",
+						{
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+							"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+							"Priority": 170,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Min dist": 11.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 5,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Elephant/water/ele_group_walk_L_water.wav",
+						{
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+							"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+							"Priority": 170,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Min dist": 11.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		
+		;;other animals (dummy, want to use individual animal keyframed footsteps)
+		{
+			"unit":
+			{
+				;;the categories, classes and specific units this sound applies to
+				"categories":
+					[ "cavalry", ],
+				"classes":
+					[ "all", ],
+
+				"IDs":
+				[
+				],
+
+				;;if the category is handler or cavalry, check for these animals
+				"animals":
+					[ "all", "-elephant", "-chariot", "-scorpion_cart", ],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "water", ],
+			},
+		},
+		
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+		;;  WOOD FOOTSTEPS
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+		
+		;;human footsteps
+		{
+			"unit":
+			{
+				;;the categories, classes and specific units this sound applies to
+				"categories":
+					[ "all", "-cavalry", "-ship", ],
+				"classes":
+					[ "all", ],
+
+				"IDs":
+				[
+				],
+
+				;;if the category is handler or cavalry, check for these animals
+				"animals":
+					[ "all", ],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "wood", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 0,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Footsteps/Infantry/Wood/Inf_Footsteps_Wood_13.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Wood/Inf_Footsteps_Wood_12.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Wood/Inf_Footsteps_Wood_11.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Wood/Inf_Footsteps_Wood_10.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Wood/Inf_Footsteps_Wood_09.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Wood/Inf_Footsteps_Wood_08.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Wood/Inf_Footsteps_Wood_07.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Wood/Inf_Footsteps_Wood_06.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Wood/Inf_Footsteps_Wood_05.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Wood/Inf_Footsteps_Wood_04.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Wood/Inf_Footsteps_Wood_03.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Wood/Inf_Footsteps_Wood_02.wav",
+						"data/sounds/SFX/individual/Footsteps/Infantry/Wood/Inf_Footsteps_Wood_01.wav",
+						{
+							"Probability": 48.235,		;;the chance the sound will play when triggered
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+							"Min pitch": 59.999,		;;the random pitch of the sample (0-200%)
+							"Priority": 10,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+							"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+							"Fade out": 0.0,			
+							"Dist priority": -2.0,		;;how much should the priority be reduced per meter of distance
+							"Prob radius": 7.0,			;;the range within which the probability will be overridden to be 100%
+							"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 5,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Infantry/Grass/inf_group_walk_s_grassTV.wav",
+						{
+							"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 6.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+							"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 10,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Infantry/Grass/inf_group_walk_m_grassTV.wav",
+						{
+							"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 6.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+							"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 30,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Infantry/Grass/inf_group_walk_l_grassTV.wav",
+						{
+							"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 6.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+							"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+						},
+					],
+				},
+			],
+		},
+		
+		;;horse
+		{
+			"unit":
+			{
+				;;the categories, classes and specific units this sound applies to
+				"categories":
+					[ "cavalry", ],
+				"classes":
+					[ "all", ],
+
+				"IDs":
+				[
+				],
+
+				;;if the category is handler or cavalry, check for these animals
+				"animals":
+					[ "horse", ],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "wood", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 5,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Horse/wood/horse_group_walk_S_wood.wav",
+						{
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+							"Min pitch": 59.999,		;;the random pitch of the sample (0-200%)
+							"Min dist": 8.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 10,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Horse/wood/horse_group_walk_M_wood.wav",
+						{
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+							"Min pitch": 59.999,		;;the random pitch of the sample (0-200%)
+							"Min dist": 8.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 20,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Horse/wood/horse_group_walk_L_wood.wav",
+						{
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+							"Min pitch": 59.999,		;;the random pitch of the sample (0-200%)
+							"Min dist": 8.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+	],
+}, ;;soundbank_unit_march

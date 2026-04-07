@@ -1,0 +1,631 @@
+;; Last updated by jburnett on 2021/07/14
+;; DESCR file generated via RTW Amber pack editor
+
+"default sound parameters":
+{
+	"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+	"Probability": 100.0,		;;the chance the sound will play when triggered
+	"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+	"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+	"Max pitch": 100.0,			
+	"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+	"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+	"Fade out": 0.499,			
+	"Looped": false,			;;should the sound loop?
+	"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+	"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+	"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+	"Pref type": "Speech",		;;the slider the sound should be attached to
+	"Ignore pause": false,		;;should this sound ignore being paused?
+	"Streamed": true,			;;should this sound be streamed from disk?
+	"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+	"Dry level": 1.0,			;; ???
+	"Wet level": 0.0,			;; ???
+},
+
+"soundbank_advice":
+{
+	"entries":
+	[
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial002_IAmVictoria",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/1_welcome_to_rome_total_war.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial004_ThisIsRome",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/2_sons_of_mars_and_the_eternal_city.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial005_YouPlayAsJulii",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/2pt2_sons_of_mars.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial007_AreaAroundRome",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/2pt3_sons_of_mars.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial009_MovingCamera",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/3_campaign_map_basics.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial012_TakeSegesta",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/4_new_mission_assigned.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial014_AttackBesiegeSettlement",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/5_how_to_attack_a_settlement.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial016_SiegeOverviewPanel",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/6_siege_overview.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial018_BattleDetailScreen",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/7_battle_details.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial021_PrepareForBattle",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/1_advisor_introduction.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial027_CameraControls",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/2_moving_the_camera.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial031_PracticeCommands",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/3_select_units.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial035_UnitCards",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/4_your_unit_cards.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial037_MoveSpearmen",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/5_move_your_units.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial421_MoveHastati",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/6_set_a_formation.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial042_MoveGeneralsBodyguard",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/6pt2_set_a_formation.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial046_GroupUnitsButton",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/7_group_selected_units.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial048_LockFormation",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/8_lock_formation.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial051_SelectLocation",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/9_select_location.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial053_FaceEnemyTroops",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/10_attack_enemy_unit.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial056_CavalryCharge",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/11_toggle_speed_unit.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial059_ToggleSpeed",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/12_toggle_speed_button.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial061_CavalryCharge",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/13_cavalry_charge_attack.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial063_CommandMultipleUnits",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/14_how_to_use_troops.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial066_FinishThisBattle",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/15_select_all_button.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial068_SegestaIsYours",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/16_battle_results_screen.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial070_TakenFirstSettlement",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/8_congratulations.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial072_SegestaDecisions",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/9_what_now.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial077_DevelopSettlment",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/9pt2_what_now.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial073_Occupy",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/9pt3_what_now.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial074_Enslave",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/9pt4_what_now.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial075_Exterminate",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/9pt5_what_now.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial076_RecommendEnslave",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/9pt6_what_now.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial079_BottomPanel",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/10_controlling_your_empire.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial082_ConstructionBasics",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/11_construction_basics.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial086_BuildGovernorsHouse",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/12_lets_build.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial091_AccomplishedMuch",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/13_end_turn.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial101_TakeGaulishSettlements",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/16pt2_economic_buildings.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial436_ThreeTypes",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/16_economic_buildings.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial106_MilitaryBuildings",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/17_military_buildings.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial113_TargetMediolanum",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/19_settlements_and_garrisons.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial115_RecruitTownWatch",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/19pt2_settlements_and_garrisons.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial117_SendSpy",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/20pt1_send_agent_panel.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial119_MediolanumAgentMission",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/20pt2_send_agent_panel.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial159_UseDiplomats1",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/28_use_of_diplomats.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial429_UseDiplomats3",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/28pt2_use_of_diplomats.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial162_EmbarkUnit1",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/29_embark_unit.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial165_Navy1",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/30_navy.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial175_HireMercenaries1",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/33_hire_mercenaries.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial189_Diplomacy1",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/36pt1_diplomacy.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial190_Diplomacy2",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/36pt2_diplomacy.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial191_Diplomacy3",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/36pt3_diplomacy.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial192_Diplomacy4",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/36pt4_diplomacy.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial194_Diplomacy6",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/36pt5_diplomacy.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial195_Diplomacy7",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/36pt6_diplomacy.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial197_Diplomacy9",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/36pt7_diplomacy.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial001_ClickContinue",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/1b_Click_to_continue.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial038_2_ScreenFromCharges",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/6pt1_set_a_formation.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial175_HireMercenaries1",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/20pt3_send_agent_panel.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the advice text ID that this should play for
+			"text ID": "RemasteredTutorial040_PositionArchersBehind",
+			"sounds":
+			[
+				"data/sounds/Voice/Human/Localized/Feral/Tutorial/6pt3_set_a_formation.wav",
+				{
+				},
+			],
+		},
+	],
+}, ;;soundbank_advice

@@ -1,0 +1,1646 @@
+;; Last updated by jburnett on 2021/07/14
+;; DESCR file generated via RTW Amber pack editor
+
+"default sound parameters":
+{
+	"3d": true,					;;is the sound 3D (DO NOT CHANGE THIS)
+	"Probability": 100.0,		;;the chance the sound will play when triggered
+	"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+	"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+	"Max pitch": 100.0,			
+	"Priority": 70,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+	"Fade in": 0.499,			;;the time, in seconds, for the sound to fade in and out
+	"Fade out": 1.996,			
+	"Looped": false,			;;should the sound loop?
+	"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+	"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+	"Random delay": 0.233,		;;the maximum random delay added to the constant delay
+	"Pref type": "SFX",			;;the slider the sound should be attached to
+	"Ignore pause": false,		;;should this sound ignore being paused?
+	"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+	"Max dist": -1.0,			;;setting max dist to -1 will mean the sound will autocalculate the max dist
+	"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+	"Prob radius": 0.0,			;;the range within which the probability will be overridden to be 100%
+	"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+},
+
+"soundbank_engine_move":
+{
+	"entries":
+	[
+		{
+			"engine":
+			{
+				;;the types and IDs of specific engines this sound applies to
+				"engine types":
+					[ "scorpion", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", "-winter", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "grass_short", "grass_long", "sand", "rock", "forest_dense", "scrub_dense", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Siege_Engines/Scorpion/Grass/Siege_Scorp_Move_Grass_03.wav",
+						"data/sounds/SFX/individual/Siege_Engines/Scorpion/Grass/Siege_Scorp_Move_Grass_02.wav",
+						"data/sounds/SFX/individual/Siege_Engines/Scorpion/Grass/Siege_Scorp_Move_Grass_01.wav",
+						{
+							"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 2,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Siege/Scorpion/Siege_Group_Scorpion_Move_Grass.wav",
+						{
+							"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 3.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			"engine":
+			{
+				;;the types and IDs of specific engines this sound applies to
+				"engine types":
+					[ "scorpion", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", "-winter", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "stone_road", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Siege_Engines/Scorpion/Stone/Siege_Scorp_Move_Stone_03.wav",
+						"data/sounds/SFX/individual/Siege_Engines/Scorpion/Stone/Siege_Scorp_Move_Stone_02.wav",
+						"data/sounds/SFX/individual/Siege_Engines/Scorpion/Stone/Siege_Scorp_Move_Stone_01.wav",
+						{
+							"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 2,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Siege/Scorpion/Siege_Group_Scorpion_Move_Stone.wav",
+						{
+							"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 3.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			"engine":
+			{
+				;;the types and IDs of specific engines this sound applies to
+				"engine types":
+					[ "scorpion", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", "-winter", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "water", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Siege_Engines/Scorpion/Water/Siege_Scorp_Move_Water_03.wav",
+						"data/sounds/SFX/individual/Siege_Engines/Scorpion/Water/Siege_Scorp_Move_Water_02.wav",
+						"data/sounds/SFX/individual/Siege_Engines/Scorpion/Water/Siege_Scorp_Move_Water_01.wav",
+						{
+							"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 2,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Siege/Scorpion/Siege_Group_Scorpion_Move_water.wav",
+						{
+							"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 3.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			"engine":
+			{
+				;;the types and IDs of specific engines this sound applies to
+				"engine types":
+					[ "scorpion", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", "-winter", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "swamp", "mud", "mud_road", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Siege_Engines/Scorpion/Mud/Siege_Scorp_Move_Mud_03.wav",
+						"data/sounds/SFX/individual/Siege_Engines/Scorpion/Mud/Siege_Scorp_Move_Mud_02.wav",
+						"data/sounds/SFX/individual/Siege_Engines/Scorpion/Mud/Siege_Scorp_Move_Mud_01.wav",
+						{
+							"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 2,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Siege/Scorpion/Siege_Group_Scorpion_Move_mud.wav",
+						{
+							"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 3.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			"engine":
+			{
+				;;the types and IDs of specific engines this sound applies to
+				"engine types":
+					[ "scorpion", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "wood", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Siege_Engines/Scorpion/Wood/Siege_Scorp_Move_Wood_03.wav",
+						"data/sounds/SFX/individual/Siege_Engines/Scorpion/Wood/Siege_Scorp_Move_Wood_02.wav",
+						"data/sounds/SFX/individual/Siege_Engines/Scorpion/Wood/Siege_Scorp_Move_Wood_01.wav",
+						{
+							"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 2,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Siege/Scorpion/Siege_Group_Scorpion_Move_wood.wav",
+						{
+							"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 3.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			"engine":
+			{
+				;;the types and IDs of specific engines this sound applies to
+				"engine types":
+					[ "scorpion", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "winter", ],
+				"climates":
+					[ "all", "-test_climate", "-sandy_desert", "-rocky_desert", "-swamp", "-semi_arid", ],
+				"ground types":
+					[ "ice", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Siege_Engines/Scorpion/Stone/Siege_Scorp_Move_Stone_03.wav",
+						"data/sounds/SFX/individual/Siege_Engines/Scorpion/Stone/Siege_Scorp_Move_Stone_02.wav",
+						"data/sounds/SFX/individual/Siege_Engines/Scorpion/Stone/Siege_Scorp_Move_Stone_01.wav",
+						{
+							"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 2,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Siege/Scorpion/Siege_Group_Scorpion_Move_Stone.wav",
+						{
+							"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 3.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			"engine":
+			{
+				;;the types and IDs of specific engines this sound applies to
+				"engine types":
+					[ "scorpion", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "winter", ],
+				"climates":
+					[ "all", "-test_climate", "-sandy_desert", "-rocky_desert", "-swamp", "-semi_arid", ],
+				"ground types":
+					[ "grass_short", "grass_long", "sand", "rock", "forest_dense", "scrub_dense", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Siege_Engines/Scorpion/snow/Siege_Scorp_Move_Snow_03.wav",
+						"data/sounds/SFX/individual/Siege_Engines/Scorpion/snow/Siege_Scorp_Move_Snow_02.wav",
+						"data/sounds/SFX/individual/Siege_Engines/Scorpion/snow/Siege_Scorp_Move_Snow_01.wav",
+						{
+							"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 2,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Siege/Scorpion/Siege_Group_Scorpion_Move_snow.wav",
+						{
+							"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 3.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			"engine":
+			{
+				;;the types and IDs of specific engines this sound applies to
+				"engine types":
+					[ "ballista", "repeating_ballista", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", "-winter", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "grass_short", "grass_long", "sand", "rock", "forest_dense", "scrub_dense", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Siege_Engines/Ballista/Grass/Siege_Ball_Move_Grass_05.wav",
+						"data/sounds/SFX/individual/Siege_Engines/Ballista/Grass/Siege_Ball_Move_Grass_04.wav",
+						"data/sounds/SFX/individual/Siege_Engines/Ballista/Grass/Siege_Ball_Move_Grass_03.wav",
+						{
+							"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 2,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Siege/Ballista/Siege_Group_Ball_Move_Grass.wav",
+						{
+							"Min dist": 4.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			"engine":
+			{
+				;;the types and IDs of specific engines this sound applies to
+				"engine types":
+					[ "ballista", "repeating_ballista", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", "-winter", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "stone_road", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Siege_Engines/Ballista/Stone/Siege_Ball_Move_Stone_03.wav",
+						"data/sounds/SFX/individual/Siege_Engines/Ballista/Stone/Siege_Ball_Move_Stone_02.wav",
+						"data/sounds/SFX/individual/Siege_Engines/Ballista/Stone/Siege_Ball_Move_Stone_01.wav",
+						{
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 2,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Siege/Ballista/Siege_Group_Ball_Move_Stone.wav",
+						{
+							"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 4.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			"engine":
+			{
+				;;the types and IDs of specific engines this sound applies to
+				"engine types":
+					[ "ballista", "repeating_ballista", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", "-winter", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "water", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Siege_Engines/Ballista/Water/Siege_Ball_Move_Water_03.wav",
+						"data/sounds/SFX/individual/Siege_Engines/Ballista/Water/Siege_Ball_Move_Water_02.wav",
+						"data/sounds/SFX/individual/Siege_Engines/Ballista/Water/Siege_Ball_Move_Water_01.wav",
+						{
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 2,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Siege/Ballista/Siege_Group_Ball_Move_Water.wav",
+						{
+							"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 4.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			"engine":
+			{
+				;;the types and IDs of specific engines this sound applies to
+				"engine types":
+					[ "ballista", "repeating_ballista", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", "-winter", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "swamp", "mud", "mud_road", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Siege_Engines/Ballista/Mud/Siege_Ball_Move_Mud.wav",
+						{
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 2,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Siege/Ballista/Siege_Group_Ball_Move_mud.wav",
+						{
+							"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 4.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			"engine":
+			{
+				;;the types and IDs of specific engines this sound applies to
+				"engine types":
+					[ "ballista", "repeating_ballista", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", "-winter", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "wood", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Siege_Engines/Ballista/Wood/Siege_Ball_Move_Wood_03.wav",
+						"data/sounds/SFX/individual/Siege_Engines/Ballista/Wood/Siege_Ball_Move_Wood_02.wav",
+						"data/sounds/SFX/individual/Siege_Engines/Ballista/Wood/Siege_Ball_Move_Wood_01.wav",
+						{
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 2,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Siege/Ballista/Siege_Group_Ball_Move_wood.wav",
+						{
+							"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 4.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			"engine":
+			{
+				;;the types and IDs of specific engines this sound applies to
+				"engine types":
+					[ "ballista", "repeating_ballista", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "winter", ],
+				"climates":
+					[ "all", "-test_climate", "-sandy_desert", "-rocky_desert", "-swamp", "-semi_arid", ],
+				"ground types":
+					[ "ice", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Siege_Engines/Ballista/Stone/Siege_Ball_Move_Stone_03.wav",
+						"data/sounds/SFX/individual/Siege_Engines/Ballista/Stone/Siege_Ball_Move_Stone_02.wav",
+						"data/sounds/SFX/individual/Siege_Engines/Ballista/Stone/Siege_Ball_Move_Stone_01.wav",
+						{
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 2,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Siege/Ballista/Siege_Group_Ball_Move_Stone.wav",
+						{
+							"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 4.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			"engine":
+			{
+				;;the types and IDs of specific engines this sound applies to
+				"engine types":
+					[ "ballista", "repeating_ballista", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "winter", ],
+				"climates":
+					[ "all", "-test_climate", "-sandy_desert", "-rocky_desert", "-swamp", "-semi_arid", ],
+				"ground types":
+					[ "grass_short", "grass_long", "sand", "rock", "forest_dense", "scrub_dense", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Siege_Engines/Ballista/snow/Siege_Ball_Move_Snow_03.wav",
+						"data/sounds/SFX/individual/Siege_Engines/Ballista/snow/Siege_Ball_Move_Snow_02.wav",
+						"data/sounds/SFX/individual/Siege_Engines/Ballista/snow/Siege_Ball_Move_Snow_01.wav",
+						{
+							"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 2,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Siege/Ballista/Siege_Group_Ball_Move_snow.wav",
+						{
+							"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 4.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			"engine":
+			{
+				;;the types and IDs of specific engines this sound applies to
+				"engine types":
+					[ "onager", "heavy_onager", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", "-winter", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "grass_short", "grass_long", "sand", "rock", "forest_dense", "scrub_dense", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Siege_Engines/Onager/Grass/Siege_Onager_Move_Grass.wav",
+						{
+							"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 2,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Siege/Onager/Siege_Group_Onager_Move_Grass.wav",
+						{
+							"Min dist": 4.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			"engine":
+			{
+				;;the types and IDs of specific engines this sound applies to
+				"engine types":
+					[ "onager", "heavy_onager", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", "-winter", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "stone_road", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Siege_Engines/Onager/Stone/Siege_Onager_Move_Stone.wav",
+						{
+							"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 2,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Siege/Onager/Siege_Group_Onager_Move_Stone.wav",
+						{
+							"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 4.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			"engine":
+			{
+				;;the types and IDs of specific engines this sound applies to
+				"engine types":
+					[ "onager", "heavy_onager", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", "-winter", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "water", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Siege_Engines/Onager/Water/Siege_Onager_Move_Water.wav",
+						{
+							"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 2,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Siege/Onager/Siege_Group_Onager_Move_water.wav",
+						{
+							"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 4.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			"engine":
+			{
+				;;the types and IDs of specific engines this sound applies to
+				"engine types":
+					[ "onager", "heavy_onager", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", "-winter", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "swamp", "mud", "mud_road", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Siege_Engines/Onager/Mud/Siege_Onager_Move_Mud.wav",
+						{
+							"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 2,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Siege/Onager/Siege_Group_Onager_Move_mud.wav",
+						{
+							"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 4.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			"engine":
+			{
+				;;the types and IDs of specific engines this sound applies to
+				"engine types":
+					[ "onager", "heavy_onager", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", "-winter", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "wood", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Siege_Engines/Onager/Wood/Siege_Onager_Move_Wood.wav",
+						{
+							"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 2,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Siege/Onager/Siege_Group_Onager_Move_wood.wav",
+						{
+							"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 4.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			"engine":
+			{
+				;;the types and IDs of specific engines this sound applies to
+				"engine types":
+					[ "onager", "heavy_onager", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "winter", ],
+				"climates":
+					[ "all", "-test_climate", "-sandy_desert", "-rocky_desert", "-swamp", "-semi_arid", ],
+				"ground types":
+					[ "ice", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Siege_Engines/Onager/Stone/Siege_Onager_Move_Stone.wav",
+						{
+							"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 2,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Siege/Onager/Siege_Group_Onager_Move_Stone.wav",
+						{
+							"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 4.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			"engine":
+			{
+				;;the types and IDs of specific engines this sound applies to
+				"engine types":
+					[ "onager", "heavy_onager", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "winter", ],
+				"climates":
+					[ "all", "-test_climate", "-sandy_desert", "-rocky_desert", "-swamp", "-semi_arid", ],
+				"ground types":
+					[ "grass_short", "grass_long", "sand", "rock", "forest_dense", "scrub_dense", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Siege_Engines/Onager/Snow/Siege_Onager_Move_Snow.wav",
+						{
+							"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 2,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Siege/Onager/Siege_Group_Onager_Move_snow.wav",
+						{
+							"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 4.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			"engine":
+			{
+				;;the types and IDs of specific engines this sound applies to
+				"engine types":
+					[ "ram", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", "-winter", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "grass_short", "grass_long", "sand", "rock", "forest_dense", "scrub_dense", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Siege_Engines/all_rams/Siege_Ram_Move_Grass_03.wav",
+						{
+							"Min dist": 5.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			"engine":
+			{
+				;;the types and IDs of specific engines this sound applies to
+				"engine types":
+					[ "ram", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", "-winter", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "stone_road", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Siege_Engines/all_rams/Siege_Ram_Move_Stone_02.wav",
+						{
+							"Min dist": 5.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			"engine":
+			{
+				;;the types and IDs of specific engines this sound applies to
+				"engine types":
+					[ "ram", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", "-winter", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "water", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Siege_Engines/all_rams/Siege_Ram_Move_Water.wav",
+						{
+							"Min dist": 5.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			"engine":
+			{
+				;;the types and IDs of specific engines this sound applies to
+				"engine types":
+					[ "ram", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", "-winter", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "swamp", "mud", "mud_road", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Siege_Engines/all_rams/Siege_Ram_Move_Mud.wav",
+						{
+							"Min dist": 5.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			"engine":
+			{
+				;;the types and IDs of specific engines this sound applies to
+				"engine types":
+					[ "ram", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", "-winter", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "wood", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Siege_Engines/all_rams/Siege_Ram_Move_Wood.wav",
+						{
+							"Min dist": 5.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			"engine":
+			{
+				;;the types and IDs of specific engines this sound applies to
+				"engine types":
+					[ "ram", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "winter", ],
+				"climates":
+					[ "all", "-test_climate", "-sandy_desert", "-rocky_desert", "-swamp", "-semi_arid", ],
+				"ground types":
+					[ "ice", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Siege_Engines/all_rams/Siege_Ram_Move_Stone.wav",
+						{
+							"Min dist": 5.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			"engine":
+			{
+				;;the types and IDs of specific engines this sound applies to
+				"engine types":
+					[ "ram", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "winter", ],
+				"climates":
+					[ "all", "-test_climate", "-sandy_desert", "-rocky_desert", "-swamp", "-semi_arid", ],
+				"ground types":
+					[ "grass_short", "grass_long", "sand", "rock", "forest_dense", "scrub_dense", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Siege_Engines/all_rams/Siege_Ram_Move_Snow.wav",
+						{
+							"Min dist": 5.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			"engine":
+			{
+				;;the types and IDs of specific engines this sound applies to
+				"engine types":
+					[ "tower", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", "-winter", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "grass_short", "grass_long", "sand", "rock", "forest_dense", "scrub_dense", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Siege_Engines/Siege_Tower/Grass/Siege_Tower_Move_Grass.wav",
+						{
+							"Min dist": 10.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			"engine":
+			{
+				;;the types and IDs of specific engines this sound applies to
+				"engine types":
+					[ "tower", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", "-winter", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "stone_road", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Siege_Engines/Siege_Tower/Stone/Siege_Tower_Move_Stone.wav",
+						{
+							"Min dist": 10.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			"engine":
+			{
+				;;the types and IDs of specific engines this sound applies to
+				"engine types":
+					[ "tower", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", "-winter", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "water", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Siege_Engines/Siege_Tower/Water/Siege_Tower_Move_Water.wav",
+						{
+							"Min dist": 10.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			"engine":
+			{
+				;;the types and IDs of specific engines this sound applies to
+				"engine types":
+					[ "tower", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", "-winter", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "swamp", "mud", "mud_road", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Siege_Engines/Siege_Tower/Mud/Siege_Tower_Move_Mud.wav",
+						{
+							"Min dist": 10.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			"engine":
+			{
+				;;the types and IDs of specific engines this sound applies to
+				"engine types":
+					[ "tower", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", "-winter", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "wood", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Siege_Engines/Siege_Tower/Wood/Siege_Tower_Move_Wood.wav",
+						{
+							"Min dist": 10.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			"engine":
+			{
+				;;the types and IDs of specific engines this sound applies to
+				"engine types":
+					[ "tower", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "winter", ],
+				"climates":
+					[ "all", "-test_climate", "-sandy_desert", "-rocky_desert", "-swamp", "-semi_arid", ],
+				"ground types":
+					[ "ice", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Siege_Engines/Siege_Tower/Stone/Siege_Tower_Move_Stone.wav",
+						{
+							"Min dist": 10.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+		{
+			"engine":
+			{
+				;;the types and IDs of specific engines this sound applies to
+				"engine types":
+					[ "tower", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "winter", ],
+				"climates":
+					[ "all", "-test_climate", "-sandy_desert", "-rocky_desert", "-swamp", "-semi_arid", ],
+				"ground types":
+					[ "grass_short", "grass_long", "sand", "rock", "forest_dense", "scrub_dense", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of engines in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Siege_Engines/Siege_Tower/snow/Siege_Tower_Move_Snow.wav",
+						{
+							"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 10.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+	],
+}, ;;soundbank_engine_move

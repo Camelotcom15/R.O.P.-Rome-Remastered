@@ -1,0 +1,3470 @@
+;; Last updated by jburnett on 2021/05/25
+;; DESCR file generated via RTW Amber pack editor
+
+;; (Valid enum names are listed at the bottom of the file)
+
+"enumerated events":
+[
+	{
+		"enum": "BUTTON_DOWN_LIGHT",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/switch_09.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": true,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "BUTTON_DOWN_HEAVY",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/show_switch_07.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 55,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "START_GAME",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/frontend/start_battle_03.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.5,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_HIGHLIGHT_HEAVY",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/frontend/metslide_04_02.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 50,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.5,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_DROP_MENUS_DOWN",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/frontend/slidey_03.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+				"Max pitch": 79.998,		
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_DROP_MENUS_UP",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/frontend/slidey_03.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_DROP_MENUS_SELECT",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/switch_09.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_TEXT_FIELD_ENTERED",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/frontend/quick_05.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 10,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.5,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_TICK_BOX_ON_HEAVY",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/frontend/tick_on_03.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.5,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_TICK_BOX_OFF_HEAVY",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/frontend/tick_on_01.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 35,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.5,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_TICK_BOX_ON_LIGHT",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/card_deselect_02.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 70,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_TICK_BOX_OFF_LIGHT",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/card_select_02.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_ARROW_BUTTONS_INCR_LIGHT",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/daha_01.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_ARROW_BUTTONS_DECR_LIGHT",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/daha_02.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_ARROW_BUTTONS_NEUTRAL_LIGHT",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/daha_01.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_ARROW_BUTTONS_INCR_HEAVY",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/show_switch_07.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_ARROW_BUTTONS_DECR_HEAVY",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/show_switch_07.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 96.997,		;;the random pitch of the sample (0-200%)
+				"Max pitch": 96.997,		
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_ARROW_BUTTONS_NEUTRAL_HEAVY",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/show_switch_07.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_DIALOG_APPEAR",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/tile_hit_open_1.wav",
+			"data/sounds/SFX/interface/tile_hit_open_2.wav",
+			"data/sounds/SFX/interface/tile_hit_open_3.wav",
+			"data/sounds/SFX/interface/tile_hit_open_4.wav",
+			"data/sounds/SFX/interface/tile_hit_open_5.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": true,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_DIALOG_CHECK",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/frontend/slam_01.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_SLIDER_ARROWS_INCR",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/slidey_03.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_SLIDER_ARROWS_DECR",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/slidey_03.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 96.997,		;;the random pitch of the sample (0-200%)
+				"Max pitch": 96.997,		
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_SLIDER_DROP",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/slidey_03.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_SLIDER_SELECT",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/slidey_03.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 50,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_SLIDER_HOVER",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/tooltip_02.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_SCROLL_OPENS",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/tile_hit_open_5.wav",
+			"data/sounds/SFX/interface/tile_hit_open_4.wav",
+			"data/sounds/SFX/interface/tile_hit_open_3.wav",
+			"data/sounds/SFX/interface/tile_hit_open_2.wav",
+			"data/sounds/SFX/interface/tile_hit_open_1.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": true,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_SCROLL_CLOSES",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/tile_hit_close_5.wav",
+			"data/sounds/SFX/interface/tile_hit_close_4.wav",
+			"data/sounds/SFX/interface/tile_hit_close_3.wav",
+			"data/sounds/SFX/interface/tile_hit_close_2.wav",
+			"data/sounds/SFX/interface/tile_hit_close_1.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": true,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_SLIDING_PANEL_OPENS",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/tile_slide_open_1.wav",
+			"data/sounds/SFX/interface/tile_slide_open_2.wav",
+			"data/sounds/SFX/interface/tile_slide_open_3.wav",
+			"data/sounds/SFX/interface/tile_slide_open_4.wav",
+			"data/sounds/SFX/interface/tile_slide_open_5.wav",
+			"data/sounds/SFX/interface/tile_slide_open_6.wav",
+			"data/sounds/SFX/interface/tile_slide_open_7.wav",
+			"data/sounds/SFX/interface/tile_slide_open_8.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.247,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": true,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_SLIDING_PANEL_CLOSES",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/tile_slide_close_1.wav",
+			"data/sounds/SFX/interface/tile_slide_close_2.wav",
+			"data/sounds/SFX/interface/tile_slide_close_3.wav",
+			"data/sounds/SFX/interface/tile_slide_close_4.wav",
+			"data/sounds/SFX/interface/tile_slide_close_5.wav",
+			"data/sounds/SFX/interface/tile_slide_close_6.wav",
+			"data/sounds/SFX/interface/tile_slide_close_7.wav",
+			"data/sounds/SFX/interface/tile_slide_close_8.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.247,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": true,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_SCROLL_X_BUTTON",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/switch_09.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_QUIT_BUTTON",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/frontend/check_button_02.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_HOVER_CARD",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/frontend/metslide_04_02.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 25,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_SELECT_CARD",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/battlefield/card_select_02.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 65,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.5,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_DESELECT_CARD",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/battlefield/card_deselect_02.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 65,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.5,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_PICKUP_CARD",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/pickup_card.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_DROP_CARD",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/drop_building.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_NOTIFICATION_TAB",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/drop_building.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_MORE_INFO",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/scroll_08_open.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_SORT",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/slidey_03.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "UI_SELECT_LIST_ELEMENT",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/card_select_02.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.5,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "MENU_FORWARD",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/frontend/next_02.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 65,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.5,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "MENU_RETURN",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/frontend/back_03.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 65,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.5,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "MENU_CHANGE_ARMOUR_INCR",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/frontend/metal_06.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 50,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.5,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "MENU_CHANGE_ARMOUR_DECR",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/frontend/metal_06.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 50,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 96.997,		;;the random pitch of the sample (0-200%)
+				"Max pitch": 96.997,		
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.5,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "MENU_CHANGE_EXPERIENCE_INCR",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/frontend/change_experience_01.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.5,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "MENU_CHANGE_EXPERIENCE_DECR",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/frontend/change_experience_01.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 45,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 96.997,		;;the random pitch of the sample (0-200%)
+				"Max pitch": 96.997,		
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.5,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "MENU_CHANGE_WEAPON_INCR",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/frontend/Change_Weapon_02.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 35,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.5,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "MENU_CHANGE_WEAPON_DECR",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/frontend/Change_Weapon_02.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 35,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 96.997,		;;the random pitch of the sample (0-200%)
+				"Max pitch": 96.997,		
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.5,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "MENU_SELECT_PRESET_ARMY",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/frontend/peewhoo.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 50,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.5,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "MENU_COMPUTER_CHOOSE_ARMY",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/frontend/peewhoo.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 50,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.5,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "MENU_CLEAR_CURRENT_ARMY",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/frontend/remove_army_01.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 70,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.5,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "MENU_SELECT_PRESET_BATTLE",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/frontend/peewhoo.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 50,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "MENU_ADD_ARMY",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/triple_button.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "MENU_MULTIPLAYER_TOGGLE_RECIEVE_INCOMING",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/frontend/quick_03.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.5,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "MENU_MULTIPLAYER_TOGGLE_RECIEVE_OUTGOING",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/frontend/quick_03.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.5,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "MENU_LOAD_KEY_SETTINGS",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/frontend/switch_09.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.5,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "MENU_SAVE_KEY_SETTINGS",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/frontend/switch_09.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.5,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "MENU_NEXT_FACTION",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/frontend/change_faction_01.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 50,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.5,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "MENU_NEXT_TEAM",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/frontend/donga_01.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 35,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.5,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "MENU_PAUSE",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/pause_menu.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": true,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "MENU_ADVANCED_OPTIONS",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/switch_09.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "MENU_OPTION_EXPAND",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/battlefield/start_formation_01b.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "MENU_OPTION_CONTRACT",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/slidey_03.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "MENU_GOLD_BUTTON",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/frontend/quick_05.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "STRAT_SELECT_CHARACTER",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/card_select_02.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.5,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "STRAT_SELECT_CITY",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/select_building_city_noise_01.opus",
+			"data/sounds/SFX/interface/select_building_city_noise_02.opus",
+			"data/sounds/SFX/interface/select_building_city_noise_03.opus",
+			"data/sounds/SFX/interface/select_building_city_noise_04.opus",
+			"data/sounds/SFX/interface/select_building_city_noise_05.opus",
+			"data/sounds/SFX/interface/select_building_city_noise_06.opus",
+			"data/sounds/SFX/interface/select_building_city_noise_07.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 70,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 0.5,			;; ???
+				"Wet level": 1.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "STRAT_SELECT_FORT",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/switch_09.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 70,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+				"Max pitch": 79.998,		
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "STRAT_CHANGE_CAPITAL",
+		"sounds":
+		[
+			"data/sounds/SFX/Campaign_Map/wonder_captured_short.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "STRAT_DISMISS_AGENT",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/agent_disbanded_bell.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 65,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "STRAT_DISBAND_UNIT",
+		"sounds":
+		[
+			"data/sounds/SFX/Campaign_Map/merge_armies_02.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 65,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "STRAT_DESTROY_BUILDING",
+		"sounds":
+		[
+			"data/sounds/SFX/structure/towers/tower_Collapse_02.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "STRAT_CLICK_ON_RADAR_TELEPORTS_SCREEN",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/radar_click.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "STRAT_SELECT_NEXT",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/slidey_033.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "STRAT_SELECT_PREVIOUS",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/slidey_033.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "STRAT_OPEN_CONTRUCTION_PANEL",
+		"sounds":
+		[
+			"data/sounds/SFX/Campaign_Map/building_info_01.opus",
+			"data/sounds/SFX/Campaign_Map/building_info_02.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 55,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.998,			
+				"Looped": true,				;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "STRAT_OPEN_TRAINING_PANEL",
+		"sounds":
+		[
+			"data/sounds/SFX/Campaign_Map/training_info_01.opus",
+			"data/sounds/SFX/Campaign_Map/training_info_02.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 50,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.998,			
+				"Looped": true,				;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "STRAT_ADD_BUILDING_TO_QUEUE",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/drop_building.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "STRAT_REMOVE_BUILDING_FROM_QUEUE",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/pickup_building.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "STRAT_DRAG_BUILDING_IN_QUEUE",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/pickup_building.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "STRAT_DROP_BUILDING_IN_QUEUE",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/drop_building.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "STRAT_ADD_UNIT_TO_QUEUE",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/drop_building.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "STRAT_REMOVE_UNIT_FROM_QUEUE",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/pickup_building.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "STRAT_DRAG_UNIT_IN_QUEUE",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/pickup_building.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "STRAT_DROP_UNIT_IN_QUEUE",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/drop_building.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "STRAT_BUILD_FORT",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/switch_09.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 70,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+				"Max pitch": 79.998,		
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "STRAT_BUILD_WATCHTOWER",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/switch_09.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 70,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+				"Max pitch": 79.998,		
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "STRAT_ADVICE_PANEL_SLIDING_IN",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/tile_slide_close_1.wav",
+			"data/sounds/SFX/interface/tile_slide_close_2.wav",
+			"data/sounds/SFX/interface/tile_slide_close_3.wav",
+			"data/sounds/SFX/interface/tile_slide_close_4.wav",
+			"data/sounds/SFX/interface/tile_slide_close_5.wav",
+			"data/sounds/SFX/interface/tile_slide_close_6.wav",
+			"data/sounds/SFX/interface/tile_slide_close_7.wav",
+			"data/sounds/SFX/interface/tile_slide_close_8.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.25,				;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "STRAT_ADVICE_PANEL_SLIDING_OUT",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/tile_slide_open_1.wav",
+			"data/sounds/SFX/interface/tile_slide_open_2.wav",
+			"data/sounds/SFX/interface/tile_slide_open_3.wav",
+			"data/sounds/SFX/interface/tile_slide_open_4.wav",
+			"data/sounds/SFX/interface/tile_slide_open_5.wav",
+			"data/sounds/SFX/interface/tile_slide_open_6.wav",
+			"data/sounds/SFX/interface/tile_slide_open_7.wav",
+			"data/sounds/SFX/interface/tile_slide_open_8.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.25,				;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "STRAT_ADVICE_CHANGES",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/new_advice.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "STRAT_ZOOM_TO_ITEM",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/slidey_033.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "STRAT_VIEW_SETTLEMENT_ON_BATTLEMAP",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/view_settlement_battlefield_03.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "STRAT_MERGE_ARMIES",
+		"sounds":
+		[
+			"data/sounds/SFX/Campaign_Map/merge_armies_02.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 65,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "STRAT_END_TURN",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/end_turn_001.opus",
+			"data/sounds/SFX/interface/end_turn_002.opus",
+			"data/sounds/SFX/interface/end_turn_003.opus",
+			"data/sounds/SFX/interface/end_turn_004.opus",
+			"data/sounds/SFX/interface/end_turn_005.opus",
+			"data/sounds/SFX/interface/end_turn_006.opus",
+			"data/sounds/SFX/interface/end_turn_007.opus",
+			"data/sounds/SFX/interface/end_turn_008.opus",
+			"data/sounds/SFX/interface/end_turn_009.opus",
+			"data/sounds/SFX/interface/end_turn_010.opus",
+			"data/sounds/SFX/interface/end_turn_011.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 260,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "STRAT_BATTLE_ZOOM",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/view_settlement_battlefield_03.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "STRAT_DIPLOMACY_AMBIENT",
+		"sounds":
+		[
+			"data/sounds/SFX/Campaign_Map/senate_info.opus",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": true,				;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": true,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "STRAT_DIPLOMACY_SELECT_OFFER",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/switch_09.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "STRAT_DIPLOMACY_SCROLL_OPEN",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/scroll_02_open.wav",
+			"data/sounds/SFX/interface/scroll_03_open.wav",
+			"data/sounds/SFX/interface/scroll_06_open.wav",
+			"data/sounds/SFX/interface/scroll_08_open.wav",
+			"data/sounds/SFX/interface/scroll_10_open.wav",
+			"data/sounds/SFX/interface/scroll_12_open.wav",
+			"data/sounds/SFX/interface/scroll_13_open.wav",
+			"data/sounds/SFX/interface/scroll_14_open.wav",
+			"data/sounds/SFX/interface/scroll_16_open.wav",
+			"data/sounds/SFX/interface/scroll_17_open.wav",
+			"data/sounds/SFX/interface/scroll_18_open.wav",
+			"data/sounds/SFX/interface/scroll_19_open.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "STRAT_DIPLOMACY_SCROLL_CLOSE",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/scroll_01_close.wav",
+			"data/sounds/SFX/interface/scroll_04_close.wav",
+			"data/sounds/SFX/interface/scroll_05_close.wav",
+			"data/sounds/SFX/interface/scroll_07_close.wav",
+			"data/sounds/SFX/interface/scroll_09_close.wav",
+			"data/sounds/SFX/interface/scroll_11_close.wav",
+			"data/sounds/SFX/interface/scroll_15_close.wav",
+			"data/sounds/SFX/interface/scroll_22_close.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "BATTLE_SELECT_ALL",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/battlefield/card_select_02.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 65,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.5,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "BATTLE_ZOOM_RADAR_IN",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/daha_02.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "BATTLE_ZOOM_RADAR_OUT",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/daha_01.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "BATTLE_PAUSE",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/switch_09.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "BATTLE_UNPAUSE",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/switch_09.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "BATTLE_HALF_SPEED",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/switch_09.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "BATTLE_DOUBLE_SPEED",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/double_button.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "BATTLE_TRIPLE_SPEED",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/triple_button.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "BATTLE_ZOOM_TO_UNIT",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/battlefield/zoom_to_unit.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "BATTLE_ZOOM_GENERAL",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/battlefield/zoom_to_unit.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "BATTLE_UI_START_DRAG_FORMATION",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/battlefield/drag_formation_07.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 0.8999999761581421,;; ???
+				"Wet level": 1.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "BATTLE_UI_END_DRAG_FORMATION",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/battlefield/move_02.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 0.8999999761581421,;; ???
+				"Wet level": 1.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "BATTLE_UI_START_DRAG_SELECTION",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/battlefield/start_formation_01b.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 0.8999999761581421,;; ???
+				"Wet level": 1.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "BATTLE_UI_END_DRAG_SELECTION",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/battlefield/card_select_02.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "Interface",	;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 0.8999999761581421,;; ???
+				"Wet level": 1.0,			;; ???
+			},
+		],
+	},
+	{
+		"enum": "BATTLE_UI_PING_ATTACK",
+		"sounds":
+		[
+			"data/sounds/SFX/interface/multi_ping_attack.wav",
+			{
+				"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+				"Probability": 100.0,		;;the chance the sound will play when triggered
+				"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+				"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+				"Max pitch": 100.0,			
+				"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+				"Fade out": 0.0,			
+				"Looped": false,			;;should the sound loop?
+				"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+				"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+				"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+				"Pref type": "SFX",			;;the slider the sound should be attached to
+				"Ignore pause": false,		;;should this sound ignore being paused?
+				"Streamed": false,			;;should this sound be streamed from disk?
+				"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+				"Dry level": 1.0,			;; ???
+				"Wet level": 0.0,			;; ???
+			},
+		],
+	},
+],
+;; Begin list of valid sound enums:
+;;
+;;	//------------------------------------------
+;;	//General UI sounds used throughout the game
+;;	//------------------------------------------
+;;	
+;;	//Buttons
+;;	SEE_BUTTON_DOWN_LIGHT,
+;;	SEE_BUTTON_DOWN_HEAVY,
+;;	SEE_START_GAME,
+;;	
+;;	//Hover highlights
+;;	SEE_UI_HIGHLIGHT_HEAVY,
+;;	SEE_UI_HIGHLIGHT_LIGHT,
+;;	
+;;	//Dropdown menus
+;;	SEE_UI_DROP_MENUS_DOWN,
+;;	SEE_UI_DROP_MENUS_UP,
+;;	SEE_UI_DROP_MENUS_SELECT,
+;;	
+;;	//Clicking on/writing in a text field
+;;	SEE_UI_TEXT_FIELD_CLICKED,
+;;	SEE_UI_TEXT_FIELD_ENTERED,
+;;	
+;;	//Checkboxes
+;;	SEE_UI_TICK_BOX_ON_HEAVY,
+;;	SEE_UI_TICK_BOX_OFF_HEAVY,
+;;	SEE_UI_TICK_BOX_ON_LIGHT,
+;;	SEE_UI_TICK_BOX_OFF_LIGHT,
+;;	
+;;	//Arrows
+;;	SEE_UI_ARROW_BUTTONS_INCR_LIGHT,
+;;	SEE_UI_ARROW_BUTTONS_DECR_LIGHT,
+;;	SEE_UI_ARROW_BUTTONS_NEUTRAL_LIGHT,
+;;	SEE_UI_ARROW_BUTTONS_INCR_HEAVY,
+;;	SEE_UI_ARROW_BUTTONS_DECR_HEAVY,
+;;	SEE_UI_ARROW_BUTTONS_NEUTRAL_HEAVY,
+;;	
+;;	//Used in some popups (i.e. waiting for players)
+;;	SEE_UI_DIALOG_APPEAR,
+;;	SEE_UI_DIALOG_CHECK,
+;;	SEE_UI_DIALOG_X,
+;;	
+;;	//Tooltips
+;;	SEE_UI_TOOLTIP,
+;;	
+;;	//Sliders
+;;	SEE_UI_SLIDER_ARROWS_INCR,
+;;	SEE_UI_SLIDER_ARROWS_DECR,
+;;	SEE_UI_SLIDER_DROP,
+;;	SEE_UI_SLIDER_SELECT,
+;;	SEE_UI_SLIDER_HOVER,
+;;	
+;;	//Scroll open/close noises
+;;	SEE_UI_SCROLL_OPENS,
+;;	SEE_UI_SCROLL_CLOSES,
+;;	
+;;	//Sliding panel open/close noises
+;;	SEE_UI_SLIDING_PANEL_OPENS,
+;;	SEE_UI_SLIDING_PANEL_CLOSES,
+;;	
+;;	//Pressing the close button on scrolls
+;;	SEE_UI_SCROLL_X_BUTTON,
+;;	
+;;	//Pressing the quit button, specifically
+;;	SEE_UI_QUIT_BUTTON,
+;;	
+;;	//Unit/character cards
+;;	SEE_UI_HOVER_CARD,
+;;	SEE_UI_SELECT_CARD,
+;;	SEE_UI_DESELECT_CARD,
+;;	SEE_UI_PICKUP_CARD,
+;;	SEE_UI_DROP_CARD,
+;;	
+;;	//News panel tabs
+;;	SEE_UI_NOTIFICATION_TAB,
+;;	
+;;	//Unit descriptions and the like
+;;	SEE_UI_MORE_INFO,
+;;	
+;;	//Sort headings
+;;	SEE_UI_SORT,
+;;	
+;;	//Select filter list entry
+;;	SEE_UI_SELECT_LIST_ELEMENT,
+;;	
+;;	//------------------------------------------
+;;	//       Main/Pause menu sounds
+;;	//------------------------------------------
+;;	
+;;	//Main/Pause menu selecting items
+;;	SEE_MENU_FORWARD,
+;;	
+;;	//Main/pause menu back
+;;	SEE_MENU_RETURN,
+;;
+;;	//Custom battle unit variables
+;;	SEE_MENU_CHANGE_ARMOUR_INCR,
+;;	SEE_MENU_CHANGE_ARMOUR_DECR,
+;;	SEE_MENU_CHANGE_EXPERIENCE_INCR,
+;;	SEE_MENU_CHANGE_EXPERIENCE_DECR,
+;;	SEE_MENU_CHANGE_WEAPON_INCR,
+;;	SEE_MENU_CHANGE_WEAPON_DECR,
+;;	
+;;	//Custom battle army options
+;;	SEE_MENU_SELECT_PRESET_ARMY,
+;;	SEE_MENU_PRESET_ARMY_OPTION,
+;;	SEE_MENU_COMPUTER_CHOOSE_ARMY,
+;;	SEE_MENU_CLEAR_CURRENT_ARMY,
+;;	
+;;	SEE_MENU_SELECT_PRESET_BATTLE,
+;;	SEE_MENU_ADD_ARMY,
+;;	
+;;	//Some multiplayer stuff I'm not sure even does anything anymore
+;;	SEE_MENU_MULTIPLAYER_REFRESH_GAME_LIST,
+;;	SEE_MENU_MULTIPLAYER_TOGGLE_RECIEVE_INCOMING,
+;;	SEE_MENU_MULTIPLAYER_TOGGLE_RECIEVE_OUTGOING,
+;;	
+;;	//Keybindings
+;;	SEE_MENU_LOAD_KEY_SETTINGS,
+;;	SEE_MENU_SAVE_KEY_SETTINGS,
+;;	
+;;	//Faction/Team switch buttons that exist somewhere I suppose
+;;	SEE_MENU_NEXT_FACTION,
+;;	SEE_MENU_NEXT_TEAM,
+;;	
+;;	//Pause menu sound
+;;	SEE_MENU_PAUSE,
+;;	
+;;	//Open advanced options
+;;	SEE_MENU_ADVANCED_OPTIONS,
+;;	
+;;	//When a menu heading expands to show more options
+;;	SEE_MENU_OPTION_EXPAND,
+;;	SEE_MENU_OPTION_CONTRACT,
+;;	
+;;	//The gold buttons, you should know them, they're gold
+;;	SEE_MENU_GOLD_BUTTON,
+;;
+;;	//------------------------------------------
+;;	//         Strategy map sounds
+;;	//------------------------------------------
+;;	
+;;	//Item selections
+;;	SEE_STRAT_SELECT_CHARACTER,
+;;	SEE_STRAT_SELECT_CITY,
+;;	SEE_STRAT_SELECT_RALLY_POINT,
+;;	SEE_STRAT_SELECT_FORT,
+;;	
+;;	//This is used in some mobile-exclusive scroll, I think?
+;;	SEE_STRAT_SHOW_INFO_RIGHT_CLICK,
+;;	
+;;	//Change the capital
+;;	SEE_STRAT_CHANGE_CAPITAL,
+;;	
+;;	//Disband/destroy buttons
+;;	SEE_STRAT_DISBAND_UNIT,
+;;	SEE_STRAT_DESTROY_BUILDING,
+;;	
+;;	//Combined overview scroll sounds
+;;	SEE_STRAT_OVERVIEW_FACTION_TAB,
+;;	SEE_STRAT_OVERVIEW_SENATE_TAB,
+;;	SEE_STRAT_OVERVIEW_SENATE_POLICY_SUBTAB,
+;;	SEE_STRAT_OVERVIEW_SENATE_STANDING_SUBTAB,
+;;	SEE_STRAT_OVERVIEW_FACTIONS_TAB,
+;;	SEE_STRAT_OVERVIEW_FACTIONS_RANKING_SUBTAB,
+;;	SEE_STRAT_OVERVIEW_FACTIONS_DIPLO_SUBTAB,
+;;	SEE_STRAT_OVERVIEW_FF_TAB,
+;;	SEE_STRAT_OVERVIEW_FF_FINANCE_SUBTAB,
+;;	SEE_STRAT_OVERVIEW_FF_FAMILY_SUBTAB,
+;;	SEE_STRAT_OVERVIEW_LISTS_TAB,
+;;	SEE_STRAT_OVERVIEW_LISTS_SETTLEMENT_SUBTAB,
+;;	SEE_STRAT_OVERVIEW_LISTS_MILITARY_SUBTAB,
+;;	SEE_STRAT_OVERVIEW_LISTS_AGENT_SUBTAB,
+;;	SEE_STRAT_OVERVIEW_FOLLOWER_TAB,
+;;	SEE_STRAT_OVERVIEW_AGENT_TAB,
+;;	
+;;	//Clicking on the radar
+;;	SEE_STRAT_CLICK_ON_RADAR_TELEPORTS_SCREEN,
+;;	
+;;	//Centre panel buttons
+;;	SEE_STRAT_SHOW_UNITS_IN_GARRISON,
+;;	SEE_STRAT_SHOW_BUILDINGS_IN_SETTLEMENT,
+;;	SEE_STRAT_SHOW_VISITORS_IN_SETTLEMENT,
+;;	SEE_STRAT_SHOW_UNITS_ON_SHIP,
+;;	
+;;	//Stratmap view next settlement/character/whatever in centre panel
+;;	SEE_STRAT_SELECT_NEXT,
+;;	SEE_STRAT_SELECT_PREVIOUS,
+;;	
+;;	//Construction & training panels
+;;	SEE_STRAT_OPEN_CONTRUCTION_PANEL,
+;;	SEE_STRAT_OPEN_TRAINING_PANEL,
+;;	
+;;	//Construction queue
+;;	SEE_STRAT_ADD_BUILDING_TO_QUEUE,
+;;	SEE_STRAT_REMOVE_BUILDING_FROM_QUEUE,
+;;	SEE_STRAT_DRAG_BUILDING_IN_QUEUE,
+;;	SEE_STRAT_DROP_BUILDING_IN_QUEUE,
+;;	
+;;	//Recruitment queue
+;;	SEE_STRAT_ADD_UNIT_TO_QUEUE,
+;;	SEE_STRAT_REMOVE_UNIT_FROM_QUEUE,
+;;	SEE_STRAT_DRAG_UNIT_IN_QUEUE,
+;;	SEE_STRAT_DROP_UNIT_IN_QUEUE,
+;;	
+;;	//Field construction menu
+;;	SEE_STRAT_BUILD_FORT,
+;;	SEE_STRAT_BUILD_WATCHTOWER,
+;;	
+;;	//Family tree sounds
+;;	SEE_STRAT_SET_FACTION_HEIR,
+;;	SEE_STRAT_SELECT_PORTRAIT_MALE,
+;;	SEE_STRAT_SELECT_PORTRAIT_FEMALE,
+;;	
+;;	//Trade summary
+;;	SEE_STRAT_SHOW_TRADE_SUMMARY,
+;;	
+;;	//Advice panel
+;;	SEE_STRAT_ADVICE_PANEL_SLIDING_IN,
+;;	SEE_STRAT_ADVICE_PANEL_SLIDING_OUT,
+;;	SEE_STRAT_ADVICE_BUBBLE_APPEARS,
+;;	SEE_STRAT_ADVICE_BUBBLE_DISAPPEARS,
+;;	SEE_STRAT_ADVICE_MESSAGE_TICK,
+;;	SEE_STRAT_ADVICE_CHANGES,
+;;	
+;;	//This is a moblie-only thing? I Think?
+;;	SEE_STRAT_ASK_FOR_ADVICE,
+;;	
+;;	//Move to button
+;;	SEE_STRAT_ZOOM_TO_ITEM,
+;;	
+;;	//View settlement on battlemap
+;;	SEE_STRAT_VIEW_SETTLEMENT_ON_BATTLEMAP,
+;;	
+;;	//Merge armies dialog open
+;;	SEE_STRAT_MERGE_ARMIES,
+;;	
+;;	//End turn button
+;;	SEE_STRAT_END_TURN,
+;;	SEE_STRAT_END_TURN_FAILED,
+;;	
+;;	//Zoom in to start battle
+;;	SEE_STRAT_BATTLE_ZOOM,
+;;
+;;	//Diplomacy scroll
+;;	SEE_STRAT_DIPLOMACY_AMBIENT,
+;;	SEE_STRAT_DIPLOMACY_SELECT_OFFER,
+;;	SEE_STRAT_DIPLOMACY_SCROLL_OPEN,
+;;	SEE_STRAT_DIPLOMACY_SCROLL_CLOSE,
+;;	
+;;	//------------------------------------------
+;;	//            Battle map sounds
+;;	//------------------------------------------
+;;
+;;	//Header sounds
+;;	SEE_BATTLE_START_DEPLOYMENT,
+;;	SEE_BATTLE_START_BATTLE,
+;;	SEE_BATTLE_WAIT,
+;;	
+;;	//Follow unit sounds
+;;	SEE_BATTLE_FOLLOW_UNIT,
+;;	SEE_BATTLE_STOP_FOLLOWING_UNIT,
+;;	
+;;	//Select all
+;;	SEE_BATTLE_SELECT_ALL,
+;;	SEE_BATTLE_DESELCT_ALL,
+;;	
+;;	//Individual selections
+;;	SEE_BATTLE_SELECT_CAVALRY,
+;;	SEE_BATTLE_SELECT_INFANTRY,
+;;	SEE_BATTLE_SELECT_MELEE,
+;;	SEE_BATTLE_SELECT_MISSILE,
+;;	SEE_BATTLE_SELECT_SIEGE,
+;;	
+;;	//Select groups
+;;	SEE_BATTLE_SELECT_NEXT_GROUP,
+;;	SEE_BATTLE_SELECT_PREVIOUS_GROUP,
+;;	
+;;	//Radar zoom
+;;	SEE_BATTLE_ZOOM_RADAR_IN,
+;;	SEE_BATTLE_ZOOM_RADAR_OUT,
+;;	
+;;	//Speed controls
+;;	SEE_BATTLE_PAUSE,
+;;	SEE_BATTLE_UNPAUSE,
+;;	SEE_BATTLE_HALF_SPEED,
+;;	SEE_BATTLE_DOUBLE_SPEED,
+;;	SEE_BATTLE_TRIPLE_SPEED,
+;;	
+;;	//Zoom to
+;;	SEE_BATTLE_ZOOM_TO_UNIT,
+;;	SEE_BATTLE_ZOOM_GENERAL,
+;;	
+;;	//Group creation
+;;	SEE_BATTLE_GROUP_SELECTED_UNITS,
+;;	SEE_BATTLE_UNGROUP_SELECTED_UNITS,
+;;	
+;;	//Orders
+;;	SEE_BATTLE_HALT_STOP_CURRENT_ORDERS,
+;;	SEE_BATTLE_WITHDRAW,
+;;	SEE_BATTLE_TIGHT_FORMATION,
+;;	SEE_BATTLE_LOOSE_FORMATION,
+;;	SEE_BATTLE_ENABLE_SKIRMISH_MODE,
+;;	SEE_BATTLE_DISABLE_SKIRMISH_MODE,
+;;	SEE_BATTLE_ENABLE_FIRE_AT_WILL,
+;;	SEE_BATTLE_DISABLE_FIRE_AT_WILL,
+;;	SEE_BATTLE_NORMAL_FORMATION,
+;;	SEE_BATTLE_SPECIAL_FORMATION,
+;;	SEE_BATTLE_ENABLE_GUARD_MODE,
+;;	SEE_BATTLE_DISABLE_GUARD_MODE,
+;;	SEE_BATTLE_RUN_MODE,
+;;	SEE_BATTLE_WALK_MODE,
+;;	SEE_BATTLE_ENABLE_FORCE_MELEE,
+;;	SEE_BATTLE_DISABLE_FORCE_MELEE,
+;;	
+;;	//Group formations
+;;	SEE_BATTLE_SHOW_GROUP_FORMATIONS,
+;;	SEE_BATTLE_HIDE_GROUP_FORMATIONS,
+;;	SEE_BATTLE_SELECT_GROUP_FORMATION,
+;;	
+;;	//Battle AI control
+;;	SEE_BATTLE_AI_ASSISTANCE_ON,
+;;	SEE_BATTLE_AI_ASSISTANCE_OFF,
+;;
+;;	//Drag sounds
+;;	SEE_BATTLE_UI_START_DRAG_FORMATION,
+;;	SEE_BATTLE_UI_END_DRAG_FORMATION,
+;;	SEE_BATTLE_UI_START_DRAG_SELECTION,
+;;	SEE_BATTLE_UI_END_DRAG_SELECTION,
+;;	
+;;	//Ping sounds
+;;	SEE_BATTLE_UI_PING_ATTACK,
+;;	SEE_BATTLE_UI_PING_SUPPORT,
+;;	SEE_BATTLE_UI_PING_MOVE,

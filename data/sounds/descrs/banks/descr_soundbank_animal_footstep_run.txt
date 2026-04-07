@@ -1,0 +1,875 @@
+;; Last updated by jburnett on 2021/07/14
+;; DESCR file generated via RTW Amber pack editor
+
+"default sound parameters":
+{
+	"3d": true,					;;is the sound 3D (DO NOT CHANGE THIS)
+	"Probability": 48.235,		;;the chance the sound will play when triggered
+	"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+	"Min pitch": 49.998,		;;the random pitch of the sample (0-200%)
+	"Max pitch": 100.0,			
+	"Priority": 20,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+	"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+	"Fade out": 0.0,			
+	"Looped": false,			;;should the sound loop?
+	"Random volume": -15,		;;the random adjustment applied to the volume (must be negative)
+	"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+	"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+	"Pref type": "SFX",			;;the slider the sound should be attached to
+	"Ignore pause": false,		;;should this sound ignore being paused?
+	"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+	"Max dist": -1.0,			;;setting max dist to -1 will mean the sound will autocalculate the max dist
+	"Dist priority": -2.0,		;;how much should the priority be reduced per meter of distance
+	"Prob radius": 7.0,			;;the range within which the probability will be overridden to be 100%
+	"Effect level": 0.0,		;;??? I think this has something to do with the EAX parameters?
+},
+
+"soundbank_animal_footstep_run":
+{
+	"entries":
+	[
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "wardog", "pig", "hound", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "all", "-stone_road", "-water", "-ice", "-wood", ],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Footsteps/Wardog/grass/Wardog_Footstep_Grass_10.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/grass/Wardog_Footstep_Grass_09.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/grass/Wardog_Footstep_Grass_08.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/grass/Wardog_Footstep_Grass_07.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/grass/Wardog_Footstep_Grass_06.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/grass/Wardog_Footstep_Grass_05.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/grass/Wardog_Footstep_Grass_04.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/grass/Wardog_Footstep_Grass_03.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/grass/Wardog_Footstep_Grass_02.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/grass/Wardog_Footstep_Grass_01.wav",
+				{
+					"Volume": 55,				;;the volume of the sample as a percentage of the base file's
+					"Priority": 10,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				},
+			],
+		},
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "wardog", "pig", "hound", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "stone_road", "ice", ],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Footsteps/Wardog/Stone/Wardog_Footstep_Stone_10.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/Stone/Wardog_Footstep_Stone_09.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/Stone/Wardog_Footstep_Stone_08.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/Stone/Wardog_Footstep_Stone_07.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/Stone/Wardog_Footstep_Stone_06.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/Stone/Wardog_Footstep_Stone_05.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/Stone/Wardog_Footstep_Stone_04.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/Stone/Wardog_Footstep_Stone_03.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/Stone/Wardog_Footstep_Stone_02.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/Stone/Wardog_Footstep_Stone_01.wav",
+				{
+					"Priority": 10,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				},
+			],
+		},
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "wardog", "pig", "hound", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "water", ],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Footsteps/Wardog/Water/Wardog_Footstep_Water_12.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/Water/Wardog_Footstep_Water_11.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/Water/Wardog_Footstep_Water_10.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/Water/Wardog_Footstep_Water_09.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/Water/Wardog_Footstep_Water_08.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/Water/Wardog_Footstep_Water_07.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/Water/Wardog_Footstep_Water_06.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/Water/Wardog_Footstep_Water_05.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/Water/Wardog_Footstep_Water_04.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/Water/Wardog_Footstep_Water_03.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/Water/Wardog_Footstep_Water_02.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/Water/Wardog_Footstep_Water_01.wav",
+				{
+					"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+					"Priority": 10,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Random volume": -10,		;;the random adjustment applied to the volume (must be negative)
+				},
+			],
+		},
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "wardog", "pig", "hound", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "wood", ],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Footsteps/Wardog/Wood/Wardog_Footstep_Wood_10.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/Wood/Wardog_Footstep_Wood_09.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/Wood/Wardog_Footstep_Wood_08.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/Wood/Wardog_Footstep_Wood_07.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/Wood/Wardog_Footstep_Wood_06.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/Wood/Wardog_Footstep_Wood_05.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/Wood/Wardog_Footstep_Wood_04.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/Wood/Wardog_Footstep_Wood_03.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/Wood/Wardog_Footstep_Wood_02.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/Wood/Wardog_Footstep_Wood_01.wav",
+				{
+					"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+					"Priority": 10,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				},
+			],
+		},
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "wardog", "pig", "hound", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "winter", ],
+				"climates":
+					[ "all", "-test_climate", "-sandy_desert", "-rocky_desert", "-swamp", "-semi_arid", ],
+				"ground types":
+					[ "grass_short", "grass_long", "sand", "rock", "forest_dense", "scrub_dense", ],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Footsteps/Wardog/grass/Wardog_Footstep_Grass_10.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/grass/Wardog_Footstep_Grass_09.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/grass/Wardog_Footstep_Grass_08.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/grass/Wardog_Footstep_Grass_07.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/grass/Wardog_Footstep_Grass_06.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/grass/Wardog_Footstep_Grass_05.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/grass/Wardog_Footstep_Grass_04.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/grass/Wardog_Footstep_Grass_03.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/grass/Wardog_Footstep_Grass_02.wav",
+				"data/sounds/SFX/individual/Footsteps/Wardog/grass/Wardog_Footstep_Grass_01.wav",
+				{
+					"Volume": 55,				;;the volume of the sample as a percentage of the base file's
+					"Priority": 10,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Random volume": -30,		;;the random adjustment applied to the volume (must be negative)
+				},
+			],
+		},
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "horse", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "winter", ],
+				"climates":
+					[ "all", "-test_climate", "-sandy_desert", "-rocky_desert", "-swamp", "-semi_arid", ],
+				"ground types":
+					[ "grass_short", "grass_long", "sand", "rock", "forest_dense", "scrub_dense", ],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Snow/Horse_Footstep_Snow_12.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Snow/Horse_Footstep_Snow_11.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Snow/Horse_Footstep_Snow_10.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Snow/Horse_Footstep_Snow_09.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Snow/Horse_Footstep_Snow_08.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Snow/Horse_Footstep_Snow_07.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Snow/Horse_Footstep_Snow_06.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Snow/Horse_Footstep_Snow_05.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Snow/Horse_Footstep_Snow_04.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Snow/Horse_Footstep_Snow_03.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Snow/Horse_Footstep_Snow_02.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Snow/Horse_Footstep_Snow_01.wav",
+				{
+					"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+					"Random volume": -5,		;;the random adjustment applied to the volume (must be negative)
+				},
+			],
+		},
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "horse", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "all", "-stone_road", "-water", "-ice", "-wood", ],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Grass/Horse_Scuffle_65.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Grass/Horse_Scuffle_64.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Grass/Horse_Scuffle_63.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Grass/Horse_Scuffle_62.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Grass/Horse_Scuffle_61.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Grass/Horse_Scuffle_60.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Grass/Horse_Scuffle_59.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Grass/Horse_Scuffle_58.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Grass/Horse_Scuffle_57.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Grass/Horse_Scuffle_56.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Grass/Horse_Scuffle_55.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Grass/Horse_Scuffle_54.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Grass/Horse_Scuffle_53.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Grass/Horse_Scuffle_52.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Grass/Horse_Scuffle_51.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Grass/Horse_Scuffle_50.wav",
+				{
+					"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+					"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+				},
+			],
+		},
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "horse", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "stone_road", "ice", ],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Stone/Footstep_Horse_Stone_12a.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Stone/Footstep_Horse_Stone_11a.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Stone/Footstep_Horse_Stone_10a.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Stone/Footstep_Horse_Stone_09a.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Stone/Footstep_Horse_Stone_08a.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Stone/Footstep_Horse_Stone_07a.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Stone/Footstep_Horse_Stone_06a.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Stone/Footstep_Horse_Stone_05a.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Stone/Footstep_Horse_Stone_04a.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Stone/Footstep_Horse_Stone_03a.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Stone/Footstep_Horse_Stone_02a.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Stone/Footstep_Horse_Stone_01a.wav",
+				{
+					"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+					"Min pitch": 69.997,		;;the random pitch of the sample (0-200%)
+					"Random volume": -35,		;;the random adjustment applied to the volume (must be negative)
+				},
+			],
+		},
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "horse", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "water", ],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Water/Horse_Footstep_Water_12.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Water/Horse_Footstep_Water_11.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Water/Horse_Footstep_Water_10.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Water/Horse_Footstep_Water_09.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Water/Horse_Footstep_Water_08.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Water/Horse_Footstep_Water_07.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Water/Horse_Footstep_Water_06.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Water/Horse_Footstep_Water_05.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Water/Horse_Footstep_Water_04.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Water/Horse_Footstep_Water_03.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Water/Horse_Footstep_Water_02.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Water/Horse_Footstep_Water_01.wav",
+				{
+					"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+					"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+					"Random volume": -20,		;;the random adjustment applied to the volume (must be negative)
+				},
+			],
+		},
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "horse", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "wood", ],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Wood/Horse_Footstep_Wood_15.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Wood/Horse_Footstep_Wood_14.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Wood/Horse_Footstep_Wood_13.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Wood/Horse_Footstep_Wood_12.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Wood/Horse_Footstep_Wood_11.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Wood/Horse_Footstep_Wood_10.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Wood/Horse_Footstep_Wood_09.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Wood/Horse_Footstep_Wood_08.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Wood/Horse_Footstep_Wood_07.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Wood/Horse_Footstep_Wood_06.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Wood/Horse_Footstep_Wood_05.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Wood/Horse_Footstep_Wood_04.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Wood/Horse_Footstep_Wood_03.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Wood/Horse_Footstep_Wood_02.wav",
+				"data/sounds/SFX/individual/Footsteps/Cavalry/Wood/Horse_Footstep_Wood_01.wav",
+				{
+					"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+					"Random volume": -10,		;;the random adjustment applied to the volume (must be negative)
+				},
+			],
+		},
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "camel", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "winter", ],
+				"climates":
+					[ "all", "-test_climate", "-sandy_desert", "-rocky_desert", "-swamp", "-semi_arid", ],
+				"ground types":
+					[ "grass_short", "grass_long", "sand", "rock", "forest_dense", "scrub_dense", ],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Footsteps/Camel/Snow/Camel_Footstep_Snow_12.wav",
+				"data/sounds/SFX/individual/Footsteps/Camel/Snow/Camel_Footstep_Snow_11.wav",
+				"data/sounds/SFX/individual/Footsteps/Camel/Snow/Camel_Footstep_Snow_10.wav",
+				"data/sounds/SFX/individual/Footsteps/Camel/Snow/Camel_Footstep_Snow_09.wav",
+				"data/sounds/SFX/individual/Footsteps/Camel/Snow/Camel_Footstep_Snow_08.wav",
+				"data/sounds/SFX/individual/Footsteps/Camel/Snow/Camel_Footstep_Snow_07.wav",
+				"data/sounds/SFX/individual/Footsteps/Camel/Snow/Camel_Footstep_Snow_06.wav",
+				"data/sounds/SFX/individual/Footsteps/Camel/Snow/Camel_Footstep_Snow_05.wav",
+				"data/sounds/SFX/individual/Footsteps/Camel/Snow/Camel_Footstep_Snow_04.wav",
+				"data/sounds/SFX/individual/Footsteps/Camel/Snow/Camel_Footstep_Snow_03.wav",
+				"data/sounds/SFX/individual/Footsteps/Camel/Snow/Camel_Footstep_Snow_02.wav",
+				"data/sounds/SFX/individual/Footsteps/Camel/Snow/Camel_Footstep_Snow_01.wav",
+				{
+					"Random volume": -20,		;;the random adjustment applied to the volume (must be negative)
+				},
+			],
+		},
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "camel", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "all", "-stone_road", "-water", ],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Footsteps/Camel/Grass/Camel_Footstep_12.wav",
+				"data/sounds/SFX/individual/Footsteps/Camel/Grass/Camel_Footstep_11.wav",
+				"data/sounds/SFX/individual/Footsteps/Camel/Grass/Camel_Footstep_10.wav",
+				"data/sounds/SFX/individual/Footsteps/Camel/Grass/Camel_Footstep_09.wav",
+				"data/sounds/SFX/individual/Footsteps/Camel/Grass/Camel_Footstep_08.wav",
+				"data/sounds/SFX/individual/Footsteps/Camel/Grass/Camel_Footstep_07.wav",
+				"data/sounds/SFX/individual/Footsteps/Camel/Grass/Camel_Footstep_06.wav",
+				"data/sounds/SFX/individual/Footsteps/Camel/Grass/Camel_Footstep_05.wav",
+				"data/sounds/SFX/individual/Footsteps/Camel/Grass/Camel_Footstep_04.wav",
+				"data/sounds/SFX/individual/Footsteps/Camel/Grass/Camel_Footstep_03.wav",
+				"data/sounds/SFX/individual/Footsteps/Camel/Grass/Camel_Footstep_02.wav",
+				"data/sounds/SFX/individual/Footsteps/Camel/Grass/Camel_Footstep_01.wav",
+				{
+					"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+					"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+					"Random volume": -20,		;;the random adjustment applied to the volume (must be negative)
+				},
+			],
+		},
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "camel", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "stone_road", "ice", ],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Footsteps/Camel/Stone/Camel_Footstep_Stone_08.wav",
+				"data/sounds/SFX/individual/Footsteps/Camel/Stone/Camel_Footstep_Stone_07.wav",
+				"data/sounds/SFX/individual/Footsteps/Camel/Stone/Camel_Footstep_Stone_06.wav",
+				"data/sounds/SFX/individual/Footsteps/Camel/Stone/Camel_Footstep_Stone_05.wav",
+				"data/sounds/SFX/individual/Footsteps/Camel/Stone/Camel_Footstep_Stone_04.wav",
+				"data/sounds/SFX/individual/Footsteps/Camel/Stone/Camel_Footstep_Stone_03.wav",
+				"data/sounds/SFX/individual/Footsteps/Camel/Stone/Camel_Footstep_Stone_02.wav",
+				"data/sounds/SFX/individual/Footsteps/Camel/Stone/Camel_Footstep_Stone_01.wav",
+				{
+					"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+					"Random volume": -20,		;;the random adjustment applied to the volume (must be negative)
+				},
+			],
+		},
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "camel", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "water", ],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Footsteps/Elephants/Water/Elephant_Footstep_Water_09.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Water/Elephant_Footstep_Water_08.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Water/Elephant_Footstep_Water_07.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Water/Elephant_Footstep_Water_06.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Water/Elephant_Footstep_Water_05.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Water/Elephant_Footstep_Water_04.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Water/Elephant_Footstep_Water_03.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Water/Elephant_Footstep_Water_02.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Water/Elephant_Footstep_Water_01.wav",
+				{
+					"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+					"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+				},
+			],
+		},
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "elephant", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "winter", ],
+				"climates":
+					[ "all", "-test_climate", "-sandy_desert", "-rocky_desert", "-swamp", "-semi_arid", ],
+				"ground types":
+					[ "grass_short", "grass_long", "sand", "rock", "forest_dense", "scrub_dense", ],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Footsteps/Elephants/Snow/Elephant_Footstep_Snow_12.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Snow/Elephant_Footstep_Snow_11.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Snow/Elephant_Footstep_Snow_10.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Snow/Elephant_Footstep_Snow_09.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Snow/Elephant_Footstep_Snow_08.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Snow/Elephant_Footstep_Snow_07.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Snow/Elephant_Footstep_Snow_06.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Snow/Elephant_Footstep_Snow_05.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Snow/Elephant_Footstep_Snow_04.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Snow/Elephant_Footstep_Snow_03.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Snow/Elephant_Footstep_Snow_02.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Snow/Elephant_Footstep_Snow_01.wav",
+				{
+					"Min pitch": 89.999,		;;the random pitch of the sample (0-200%)
+					"Priority": 190,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Min dist": 2.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Dist priority": -5.0,		;;how much should the priority be reduced per meter of distance
+				},
+			],
+		},
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "elephant", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "all", "-stone_road", "-water", "-ice", ],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Footsteps/Elephants/Grass/Elephant_Footstep_09.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Grass/Elephant_Footstep_08.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Grass/Elephant_Footstep_07.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Grass/Elephant_Footstep_06.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Grass/Elephant_Footstep_05.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Grass/Elephant_Footstep_04.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Grass/Elephant_Footstep_03.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Grass/Elephant_Footstep_02.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Grass/Elephant_Footstep_01.wav",
+				{
+					"Min pitch": 89.999,		;;the random pitch of the sample (0-200%)
+					"Priority": 190,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Random volume": -10,		;;the random adjustment applied to the volume (must be negative)
+					"Min dist": 2.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Dist priority": -5.0,		;;how much should the priority be reduced per meter of distance
+				},
+			],
+		},
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "elephant", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "stone_road", "ice", ],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Footsteps/Elephants/Stone/Elephant_Footstep_Stone_07.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Stone/Elephant_Footstep_Stone_06.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Stone/Elephant_Footstep_Stone_05.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Stone/Elephant_Footstep_Stone_04.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Stone/Elephant_Footstep_Stone_03.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Stone/Elephant_Footstep_Stone_02.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Stone/Elephant_Footstep_Stone_01.wav",
+				{
+					"Min pitch": 89.999,		;;the random pitch of the sample (0-200%)
+					"Priority": 190,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Random volume": -10,		;;the random adjustment applied to the volume (must be negative)
+					"Min dist": 2.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Dist priority": -5.0,		;;how much should the priority be reduced per meter of distance
+				},
+			],
+		},
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "elephant", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "water", ],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Footsteps/Elephants/Water/Elephant_Footstep_Water_09.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Water/Elephant_Footstep_Water_08.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Water/Elephant_Footstep_Water_07.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Water/Elephant_Footstep_Water_06.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Water/Elephant_Footstep_Water_05.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Water/Elephant_Footstep_Water_04.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Water/Elephant_Footstep_Water_03.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Water/Elephant_Footstep_Water_02.wav",
+				"data/sounds/SFX/individual/Footsteps/Elephants/Water/Elephant_Footstep_Water_01.wav",
+				{
+					"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+					"Min pitch": 89.999,		;;the random pitch of the sample (0-200%)
+					"Priority": 190,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Min dist": 2.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Dist priority": -5.0,		;;how much should the priority be reduced per meter of distance
+				},
+			],
+		},
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "chariot", "scorpion_cart", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "winter", ],
+				"climates":
+					[ "all", "-test_climate", "-sandy_desert", "-rocky_desert", "-swamp", "-semi_arid", ],
+				"ground types":
+					[ "all", "-swamp", "-mud", "-mud_road", "-stone_road", "-water", "-wood", "-dirt", ],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Footsteps/Chariots/Snow/Chariot_Walk_Snow_03.wav",
+				"data/sounds/SFX/individual/Footsteps/Chariots/Snow/Chariot_Walk_Snow_02.wav",
+				"data/sounds/SFX/individual/Footsteps/Chariots/Snow/Chariot_Walk_Snow_01.wav",
+				{
+					"Probability": 49.804,		;;the chance the sound will play when triggered
+					"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+					"Max pitch": 119.999,		
+					"Priority": 190,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Random volume": -10,		;;the random adjustment applied to the volume (must be negative)
+					"Min dist": 2.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Dist priority": -5.0,		;;how much should the priority be reduced per meter of distance
+				},
+			],
+		},
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "chariot", "scorpion_cart", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "all", "-water", ],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Footsteps/Chariots/Grass/Chariot_FS_Walk_Blade_02b.wav",
+				"data/sounds/SFX/individual/Footsteps/Chariots/Grass/Chariot_FS_Walk_Blade_01b.wav",
+				{
+					"Probability": 49.804,		;;the chance the sound will play when triggered
+					"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+					"Max pitch": 119.999,		
+					"Priority": 190,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Random volume": -10,		;;the random adjustment applied to the volume (must be negative)
+					"Min dist": 2.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Dist priority": -5.0,		;;how much should the priority be reduced per meter of distance
+				},
+			],
+		},
+		{
+			"animal":
+			{
+				;;the classes and specific animals this sound applies to
+				"animal classes":
+					[ "chariot", "scorpion_cart", ],
+
+				"IDs":
+				[
+				],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "water", ],
+			},
+
+			"sounds":
+			[
+				"data/sounds/SFX/individual/Footsteps/Chariots/Water/Chariot_Walk_Water_03.wav",
+				"data/sounds/SFX/individual/Footsteps/Chariots/Water/Chariot_Walk_Water_02.wav",
+				"data/sounds/SFX/individual/Footsteps/Chariots/Water/Chariot_Walk_Water_01.wav",
+				{
+					"Probability": 49.804,		;;the chance the sound will play when triggered
+					"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+					"Max pitch": 119.999,		
+					"Priority": 190,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+					"Random volume": -10,		;;the random adjustment applied to the volume (must be negative)
+					"Min dist": 2.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+					"Dist priority": -5.0,		;;how much should the priority be reduced per meter of distance
+				},
+			],
+		},
+	],
+}, ;;soundbank_animal_footstep_run

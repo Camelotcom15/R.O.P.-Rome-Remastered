@@ -1,0 +1,655 @@
+;; Last updated by jburnett on 2021/07/14
+;; DESCR file generated via RTW Amber pack editor
+
+"default sound parameters":
+{
+	"3d": true,					;;is the sound 3D (DO NOT CHANGE THIS)
+	"Probability": 100.0,		;;the chance the sound will play when triggered
+	"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+	"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+	"Max pitch": 100.0,			
+	"Priority": 190,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+	"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+	"Fade out": 0.0,			
+	"Looped": false,			;;should the sound loop?
+	"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+	"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+	"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+	"Pref type": "SFX",			;;the slider the sound should be attached to
+	"Ignore pause": false,		;;should this sound ignore being paused?
+	"Min dist": 6.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+	"Max dist": -1.0,			;;setting max dist to -1 will mean the sound will autocalculate the max dist
+	"Dist priority": -1.0,		;;how much should the priority be reduced per meter of distance
+	"Prob radius": 0.0,			;;the range within which the probability will be overridden to be 100%
+	"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+},
+
+"soundbank_unit_missile_attack":
+{
+	"entries":
+	[
+		{
+			"weapon":
+			{
+				;;the damage and weapon type of the weapons this sound applies to
+				"damage types":
+					[ "fire", ],
+				"weapon types":
+					[ "missile", ],
+
+				"IDs":
+				[
+				],
+			},
+			"stage": "ready",
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 5,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Missile/Archers/Archer_Group_Fire_Ready_Small_03b.wav",
+						"data/sounds/SFX/Group/Missile/Archers/Archer_Group_Fire_Ready_Small_02b.wav",
+						"data/sounds/SFX/Group/Missile/Archers/Archer_Group_Fire_Ready_Small_01b.wav",
+						{
+							"Min dist": 5.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 20,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Missile/Archers/Archer_Group_Fire_Ready_Medium_03b.wav",
+						"data/sounds/SFX/Group/Missile/Archers/Archer_Group_Fire_Ready_Medium_02b.wav",
+						"data/sounds/SFX/Group/Missile/Archers/Archer_Group_Fire_Ready_Medium_01b.wav",
+						{
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 40,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Missile/Archers/Archer_Group_Fire_Ready_Large_03b.wav",
+						"data/sounds/SFX/Group/Missile/Archers/Archer_Group_Fire_Ready_Large_02b.wav",
+						"data/sounds/SFX/Group/Missile/Archers/Archer_Group_Fire_Ready_Large_01b.wav",
+						{
+						},
+					],
+				},
+			],
+		},
+		{
+			"weapon":
+			{
+				;;the damage and weapon type of the weapons this sound applies to
+				"damage types":
+					[ "fire", ],
+				"weapon types":
+					[ "missile", ],
+
+				"IDs":
+				[
+				],
+			},
+			"stage": "aim",
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 5,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Missile/Archers/Archer_Group_Aim_Small_03.wav",
+						"data/sounds/SFX/Group/Missile/Archers/Archer_Group_Aim_Small_02.wav",
+						"data/sounds/SFX/Group/Missile/Archers/Archer_Group_Aim_Small_01.wav",
+						{
+							"Min dist": 5.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 20,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Missile/Archers/Archer_Group_Aim_Medium_03.wav",
+						"data/sounds/SFX/Group/Missile/Archers/Archer_Group_Aim_Medium_02.wav",
+						"data/sounds/SFX/Group/Missile/Archers/Archer_Group_Aim_Medium_01.wav",
+						{
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 40,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Missile/Archers/Archer_Group_Aim_Large_03.wav",
+						"data/sounds/SFX/Group/Missile/Archers/Archer_Group_Aim_Large_02.wav",
+						"data/sounds/SFX/Group/Missile/Archers/Archer_Group_Aim_Large_01.wav",
+						{
+						},
+					],
+				},
+			],
+		},
+		{
+			"weapon":
+			{
+				;;the damage and weapon type of the weapons this sound applies to
+				"damage types":
+					[ "fire", ],
+				"weapon types":
+					[ "missile", ],
+
+				"IDs":
+				[
+				],
+			},
+			"stage": "fire",
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 5,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Missile/Archers/Archer_group_fire_small_03c.wav",
+						"data/sounds/SFX/Group/Missile/Archers/Archer_group_fire_small_02c.wav",
+						"data/sounds/SFX/Group/Missile/Archers/Archer_group_fire_small_01c.wav",
+						{
+							"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 5.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 20,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Missile/Archers/Archer_group_fire_medium_03c.wav",
+						"data/sounds/SFX/Group/Missile/Archers/Archer_group_fire_medium_02c.wav",
+						"data/sounds/SFX/Group/Missile/Archers/Archer_group_fire_medium_01c.wav",
+						{
+							"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 40,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Missile/Archers/Archer_group_fire_large_03c.wav",
+						"data/sounds/SFX/Group/Missile/Archers/Archer_group_fire_large_02c.wav",
+						"data/sounds/SFX/Group/Missile/Archers/Archer_group_fire_large_01c.wav",
+						{
+						},
+					],
+				},
+			],
+		},
+		{
+			"weapon":
+			{
+				;;the damage and weapon type of the weapons this sound applies to
+				"damage types":
+					[ "blunt", ],
+				"weapon types":
+					[ "thrown", "missile", ],
+
+				"IDs":
+				[
+				],
+			},
+			"stage": "ready",
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 5,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Missile/Slingers/Slinger_Group_Aim_Small_03.wav",
+						"data/sounds/SFX/Group/Missile/Slingers/Slinger_Group_Aim_Small_02.wav",
+						"data/sounds/SFX/Group/Missile/Slingers/Slinger_Group_Aim_Small_01.wav",
+						{
+							"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 20,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Missile/Slingers/Slinger_Group_Aim_Medium_03.wav",
+						"data/sounds/SFX/Group/Missile/Slingers/Slinger_Group_Aim_Medium_02.wav",
+						"data/sounds/SFX/Group/Missile/Slingers/Slinger_Group_Aim_Medium_01.wav",
+						{
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 40,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Missile/Slingers/Slinger_Group_Aim_Large_03.wav",
+						"data/sounds/SFX/Group/Missile/Slingers/Slinger_Group_Aim_Large_02.wav",
+						"data/sounds/SFX/Group/Missile/Slingers/Slinger_Group_Aim_Large_01.wav",
+						{
+						},
+					],
+				},
+			],
+		},
+		{
+			"weapon":
+			{
+				;;the damage and weapon type of the weapons this sound applies to
+				"damage types":
+					[ "blunt", ],
+				"weapon types":
+					[ "thrown", "missile", ],
+
+				"IDs":
+				[
+				],
+			},
+			"stage": "aim",
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 5,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Missile/Slingers/Slinger_Group_Aim_Small_03.wav",
+						"data/sounds/SFX/Group/Missile/Slingers/Slinger_Group_Aim_Small_02.wav",
+						"data/sounds/SFX/Group/Missile/Slingers/Slinger_Group_Aim_Small_01.wav",
+						{
+							"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 20,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Missile/Slingers/Slinger_Group_Aim_Medium_03.wav",
+						"data/sounds/SFX/Group/Missile/Slingers/Slinger_Group_Aim_Medium_02.wav",
+						"data/sounds/SFX/Group/Missile/Slingers/Slinger_Group_Aim_Medium_01.wav",
+						{
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 40,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Missile/Slingers/Slinger_Group_Aim_Large_03.wav",
+						"data/sounds/SFX/Group/Missile/Slingers/Slinger_Group_Aim_Large_02.wav",
+						"data/sounds/SFX/Group/Missile/Slingers/Slinger_Group_Aim_Large_01.wav",
+						{
+						},
+					],
+				},
+			],
+		},
+		{
+			"weapon":
+			{
+				;;the damage and weapon type of the weapons this sound applies to
+				"damage types":
+					[ "blunt", ],
+				"weapon types":
+					[ "thrown", "missile", ],
+
+				"IDs":
+				[
+				],
+			},
+			"stage": "fire",
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 5,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Missile/Slingers/Slinger_Group_Fire_Small_03.wav",
+						"data/sounds/SFX/Group/Missile/Slingers/Slinger_Group_Fire_Small_02.wav",
+						"data/sounds/SFX/Group/Missile/Slingers/Slinger_Group_Fire_Small_01.wav",
+						{
+							"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 20,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Missile/Slingers/Slinger_Group_Fire_medium_03.wav",
+						"data/sounds/SFX/Group/Missile/Slingers/Slinger_Group_Fire_medium_02.wav",
+						"data/sounds/SFX/Group/Missile/Slingers/Slinger_Group_Fire_medium_01.wav",
+						{
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 40,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Missile/Slingers/Slinger_Group_Fire_Large_03.wav",
+						"data/sounds/SFX/Group/Missile/Slingers/Slinger_Group_Fire_Large_02.wav",
+						"data/sounds/SFX/Group/Missile/Slingers/Slinger_Group_Fire_Large_01.wav",
+						{
+							"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+			],
+		},
+		{
+			"weapon":
+			{
+				;;the damage and weapon type of the weapons this sound applies to
+				"damage types":
+					[ "piercing", ],
+				"weapon types":
+					[ "thrown", ],
+
+				"IDs":
+				[
+				],
+			},
+			"stage": "fire",
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 5,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Missile/Spearman/Spearman_Group_Fire_Small_03a.wav",
+						"data/sounds/SFX/Group/Missile/Spearman/Spearman_Group_Fire_Small_02a.wav",
+						"data/sounds/SFX/Group/Missile/Spearman/Spearman_Group_Fire_Small_01a.wav",
+						{
+							"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+							"Start delay": 0.998,		;;the constant delay before the sound should play when triggered
+							"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 15,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Missile/Spearman/Spearman_Group_Fire_Medium_03a.wav",
+						"data/sounds/SFX/Group/Missile/Spearman/Spearman_Group_Fire_Medium_02a.wav",
+						"data/sounds/SFX/Group/Missile/Spearman/Spearman_Group_Fire_Medium_01a.wav",
+						{
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+							"Start delay": 0.998,		;;the constant delay before the sound should play when triggered
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 25,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Missile/Spearman/Spearman_Group_Fire_Large_03a.wav",
+						"data/sounds/SFX/Group/Missile/Spearman/Spearman_Group_Fire_Large_02a.wav",
+						"data/sounds/SFX/Group/Missile/Spearman/Spearman_Group_Fire_Large_01a.wav",
+						{
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+							"Start delay": 0.998,		;;the constant delay before the sound should play when triggered
+						},
+					],
+				},
+			],
+		},
+		{
+			"weapon":
+			{
+				;;the damage and weapon type of the weapons this sound applies to
+				"damage types":
+					[ "piercing", ],
+				"weapon types":
+					[ "missile", ],
+
+				"IDs":
+				[
+				],
+			},
+			"stage": "ready",
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 5,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Missile/Archers/Archer_Group_Ready_Small_03.wav",
+						"data/sounds/SFX/Group/Missile/Archers/Archer_Group_Ready_Small_02.wav",
+						"data/sounds/SFX/Group/Missile/Archers/Archer_Group_Ready_Small_01.wav",
+						{
+							"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 15,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Missile/Archers/Archer_Group_Ready_Medium_03.wav",
+						"data/sounds/SFX/Group/Missile/Archers/Archer_Group_Ready_Medium_02.wav",
+						"data/sounds/SFX/Group/Missile/Archers/Archer_Group_Ready_Medium_01.wav",
+						{
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 25,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Missile/Archers/Archer_Group_Ready_Large_03.wav",
+						"data/sounds/SFX/Group/Missile/Archers/Archer_Group_Ready_Large_02.wav",
+						"data/sounds/SFX/Group/Missile/Archers/Archer_Group_Ready_Large_01.wav",
+						{
+						},
+					],
+				},
+			],
+		},
+		{
+			"weapon":
+			{
+				;;the damage and weapon type of the weapons this sound applies to
+				"damage types":
+					[ "piercing", ],
+				"weapon types":
+					[ "missile", ],
+
+				"IDs":
+				[
+				],
+			},
+			"stage": "aim",
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 5,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Missile/Archers/Archer_Group_Aim_Small_03.wav",
+						"data/sounds/SFX/Group/Missile/Archers/Archer_Group_Aim_Small_02.wav",
+						"data/sounds/SFX/Group/Missile/Archers/Archer_Group_Aim_Small_01.wav",
+						{
+							"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 15,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Missile/Archers/Archer_Group_Aim_Medium_03.wav",
+						"data/sounds/SFX/Group/Missile/Archers/Archer_Group_Aim_Medium_02.wav",
+						"data/sounds/SFX/Group/Missile/Archers/Archer_Group_Aim_Medium_01.wav",
+						{
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 25,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Missile/Archers/Archer_Group_Aim_Large_03.wav",
+						"data/sounds/SFX/Group/Missile/Archers/Archer_Group_Aim_Large_02.wav",
+						"data/sounds/SFX/Group/Missile/Archers/Archer_Group_Aim_Large_01.wav",
+						{
+						},
+					],
+				},
+			],
+		},
+		{
+			"weapon":
+			{
+				;;the damage and weapon type of the weapons this sound applies to
+				"damage types":
+					[ "piercing", ],
+				"weapon types":
+					[ "missile", ],
+
+				"IDs":
+				[
+				],
+			},
+			"stage": "fire",
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 5,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Missile/Archers/Archer_group_fire_small_03c.wav",
+						"data/sounds/SFX/Group/Missile/Archers/Archer_group_fire_small_02c.wav",
+						"data/sounds/SFX/Group/Missile/Archers/Archer_group_fire_small_01c.wav",
+						{
+							"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+							"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 15,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Missile/Archers/Archer_group_fire_medium_03c.wav",
+						"data/sounds/SFX/Group/Missile/Archers/Archer_group_fire_medium_02c.wav",
+						"data/sounds/SFX/Group/Missile/Archers/Archer_group_fire_medium_01c.wav",
+						{
+							"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 25,
+
+					"sounds":
+					[
+						"data/sounds/SFX/Group/Missile/Archers/Archer_group_fire_large_03c.wav",
+						"data/sounds/SFX/Group/Missile/Archers/Archer_group_fire_large_02c.wav",
+						"data/sounds/SFX/Group/Missile/Archers/Archer_group_fire_large_01c.wav",
+						{
+						},
+					],
+				},
+			],
+		},
+	],
+}, ;;soundbank_unit_missile_attack

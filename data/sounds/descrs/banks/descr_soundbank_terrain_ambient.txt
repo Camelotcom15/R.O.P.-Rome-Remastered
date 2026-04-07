@@ -1,0 +1,759 @@
+;; Last updated by jburnett on 2021/07/14
+;; DESCR file generated via RTW Amber pack editor
+
+"default sound parameters":
+{
+	"3d": true,					;;is the sound 3D (DO NOT CHANGE THIS)
+	"Probability": 100.0,		;;the chance the sound will play when triggered
+	"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+	"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+	"Max pitch": 100.0,			
+	"Priority": 50,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+	"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+	"Fade out": 0.0,			
+	"Looped": false,			;;should the sound loop?
+	"Random volume": -20,		;;the random adjustment applied to the volume (must be negative)
+	"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+	"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+	"Pref type": "SFX",			;;the slider the sound should be attached to
+	"Ignore pause": false,		;;should this sound ignore being paused?
+	"Min dist": 5.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+	"Max dist": -1.0,			;;setting max dist to -1 will mean the sound will autocalculate the max dist
+	"Dist priority": -2.0,		;;how much should the priority be reduced per meter of distance
+	"Prob radius": 0.0,			;;the range within which the probability will be overridden to be 100%
+	"Effect level": 1.0,		;;??? I think this has something to do with the EAX parameters?
+},
+
+"soundbank_terrain_ambient":
+{
+	"global parameters":
+	{
+		;; distance from the camera the sounds should trigger
+		"sound distance":
+		{
+			"min": 40.0,
+			"max": 100.0,
+		},
+
+		;; the delay between sounds
+		"delay":
+		{
+			"min": 0.0,
+			"max": 15.0,
+		},
+
+		;; the number of soundchannels to use
+		"num channels": 10,
+	},
+	"entries":
+	[
+		{
+			;;the seasons and times of day this should apply to
+			"seasons":
+				[ "all", "-winter", ],
+			"times":
+				[ "mid_evening", ],
+
+			;;if any defined, one of these weather events must be happening
+			"weather events":
+			[
+				"calm",
+				"hazy",
+				"light_fog",
+			],
+
+			;;the terrain below the camera and climate
+			"terrain":
+				[ "all", "-mud_road", "-stone_road", "-ice", "-snow", "-wood", "-dirt", ],
+			"climates":
+				[ "all", ],
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/ambience/Night_2.wav",
+				{
+					"Looped": true,				;;should the sound loop?
+				},
+			],
+		},
+		{
+			;;the seasons and times of day this should apply to
+			"seasons":
+				[ "all", "-winter", ],
+			"times":
+				[ "mid_evening", ],
+
+			;;if any defined, one of these weather events must be happening
+			"weather events":
+			[
+				"hail_shower",
+				"rain_drizzle",
+				"rain_storm",
+				"rain_summer_shower",
+				"snow_falling",
+			],
+
+			;;the terrain below the camera and climate
+			"terrain":
+				[ "all", "-mud_road", "-stone_road", "-ice", "-snow", "-wood", "-dirt", ],
+			"climates":
+				[ "all", ],
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/ambience/Night_2.wav",
+				{
+					"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+					"Looped": true,				;;should the sound loop?
+				},
+			],
+		},
+		{
+			;;the seasons and times of day this should apply to
+			"seasons":
+				[ "all", "-winter", ],
+			"times":
+				[ "midnight", "night", ],
+
+			;;if any defined, one of these weather events must be happening
+			"weather events":
+			[
+				"calm",
+				"hazy",
+				"light_fog",
+			],
+
+			;;the terrain below the camera and climate
+			"terrain":
+				[ "all", "-mud_road", "-stone_road", "-ice", "-snow", "-wood", "-dirt", ],
+			"climates":
+				[ "all", ],
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/ambience/Night_1.wav",
+				{
+					"Looped": true,				;;should the sound loop?
+				},
+				"data/sounds/SFX/environment/Animals/owl_02.wav",
+				"data/sounds/SFX/environment/Animals/owl_01.wav",
+				"data/sounds/SFX/environment/Animals/wolf04.wav",
+				"data/sounds/SFX/environment/Animals/wolf03.wav",
+				"data/sounds/SFX/environment/Animals/wolf02.wav",
+				"data/sounds/SFX/environment/Animals/wolf01.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the seasons and times of day this should apply to
+			"seasons":
+				[ "all", "-winter", ],
+			"times":
+				[ "midnight", "night", ],
+
+			;;if any defined, one of these weather events must be happening
+			"weather events":
+			[
+				"hail_shower",
+				"rain_drizzle",
+				"rain_storm",
+				"rain_summer_shower",
+				"snow_falling",
+			],
+
+			;;the terrain below the camera and climate
+			"terrain":
+				[ "all", "-mud_road", "-stone_road", "-ice", "-snow", "-wood", "-dirt", ],
+			"climates":
+				[ "all", ],
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/ambience/Night_1.wav",
+				{
+					"Looped": true,				;;should the sound loop?
+				},
+				"data/sounds/SFX/environment/Animals/wolf04.wav",
+				"data/sounds/SFX/environment/Animals/wolf03.wav",
+				"data/sounds/SFX/environment/Animals/wolf02.wav",
+				"data/sounds/SFX/environment/Animals/wolf01.wav",
+				{
+					"Probability": 48.235,		;;the chance the sound will play when triggered
+				},
+			],
+		},
+		{
+			;;the seasons and times of day this should apply to
+			"seasons":
+				[ "all", "-winter", ],
+			"times":
+				[ "all", "-midnight", "-mid_evening", "-night", ],
+
+			;;if any defined, one of these weather events must be happening
+			"weather events":
+			[
+				"calm",
+				"hazy",
+				"light_fog",
+			],
+
+			;;the terrain below the camera and climate
+			"terrain":
+				[ "forest_dense", ],
+			"climates":
+				[ "all", ],
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/Animals/bee.wav",
+				{
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+				"data/sounds/SFX/environment/Animals/squarky_02.wav",
+				"data/sounds/SFX/environment/Animals/squarky_01.wav",
+				"data/sounds/SFX/environment/Animals/tree_birds_09.wav",
+				"data/sounds/SFX/environment/Animals/tree_birds_08.wav",
+				"data/sounds/SFX/environment/Animals/tree_birds_07.wav",
+				"data/sounds/SFX/environment/Animals/tree_birds_06.wav",
+				"data/sounds/SFX/environment/Animals/tree_birds_05.wav",
+				"data/sounds/SFX/environment/Animals/tree_birds_04.wav",
+				"data/sounds/SFX/environment/Animals/tree_birds_03.wav",
+				"data/sounds/SFX/environment/Animals/tree_birds_02.wav",
+				"data/sounds/SFX/environment/Animals/tree_birds_01.wav",
+				"data/sounds/SFX/environment/Animals/wren10.wav",
+				"data/sounds/SFX/environment/Animals/wren09.wav",
+				"data/sounds/SFX/environment/Animals/wren08.wav",
+				"data/sounds/SFX/environment/Animals/wren07.wav",
+				"data/sounds/SFX/environment/Animals/wren06.wav",
+				"data/sounds/SFX/environment/Animals/wren05.wav",
+				"data/sounds/SFX/environment/Animals/wren04.wav",
+				"data/sounds/SFX/environment/Animals/wren03.wav",
+				"data/sounds/SFX/environment/Animals/wren02.wav",
+				"data/sounds/SFX/environment/Animals/wren01.wav",
+				"data/sounds/SFX/environment/Animals/woodpecker02.wav",
+				"data/sounds/SFX/environment/Animals/woodpecker01.wav",
+				"data/sounds/SFX/environment/Animals/wingflap01.wav",
+				"data/sounds/SFX/environment/Animals/wood_birds_05.wav",
+				"data/sounds/SFX/environment/Animals/wood_birds_04.wav",
+				"data/sounds/SFX/environment/Animals/wood_birds_03.wav",
+				"data/sounds/SFX/environment/Animals/wood_birds_02.wav",
+				"data/sounds/SFX/environment/Animals/wood_birds_01.wav",
+				"data/sounds/SFX/environment/Animals/sparrow02.wav",
+				"data/sounds/SFX/environment/Animals/sparrow01.wav",
+				"data/sounds/SFX/environment/Animals/songbird02.wav",
+				"data/sounds/SFX/environment/Animals/songbird01.wav",
+				"data/sounds/SFX/environment/Animals/lark04.wav",
+				"data/sounds/SFX/environment/Animals/lark03.wav",
+				"data/sounds/SFX/environment/Animals/lark02.wav",
+				"data/sounds/SFX/environment/Animals/lark01.wav",
+				"data/sounds/SFX/environment/Animals/flicker01.wav",
+				"data/sounds/SFX/environment/Animals/forest_birds_08.wav",
+				"data/sounds/SFX/environment/Animals/forest_birds_07.wav",
+				"data/sounds/SFX/environment/Animals/forest_birds_06.wav",
+				"data/sounds/SFX/environment/Animals/forest_birds_05.wav",
+				"data/sounds/SFX/environment/Animals/forest_birds_04.wav",
+				"data/sounds/SFX/environment/Animals/forest_birds_03.wav",
+				"data/sounds/SFX/environment/Animals/forest_birds_02.wav",
+				"data/sounds/SFX/environment/Animals/forest_birds_01.wav",
+				"data/sounds/SFX/environment/Animals/bird04.wav",
+				"data/sounds/SFX/environment/Animals/bird03.wav",
+				"data/sounds/SFX/environment/Animals/bird02.wav",
+				"data/sounds/SFX/environment/Animals/bird01.wav",
+				{
+					"Volume": 70,				;;the volume of the sample as a percentage of the base file's
+				},
+			],
+		},
+		{
+			;;the seasons and times of day this should apply to
+			"seasons":
+				[ "all", "-winter", ],
+			"times":
+				[ "all", "-midnight", "-mid_evening", "-night", ],
+
+			;;if any defined, one of these weather events must be happening
+			"weather events":
+			[
+				"calm",
+				"hazy",
+				"light_fog",
+			],
+
+			;;the terrain below the camera and climate
+			"terrain":
+				[ "grass_short", "grass_long", ],
+			"climates":
+				[ "all", ],
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/Animals/bee.wav",
+				{
+					"Probability": 28.235,		;;the chance the sound will play when triggered
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+				"data/sounds/SFX/environment/Animals/bird04.wav",
+				"data/sounds/SFX/environment/Animals/bird03.wav",
+				"data/sounds/SFX/environment/Animals/bird02.wav",
+				"data/sounds/SFX/environment/Animals/bird01.wav",
+				{
+					"Probability": 28.235,		;;the chance the sound will play when triggered
+					"Volume": 70,				;;the volume of the sample as a percentage of the base file's
+				},
+				"data/sounds/SFX/environment/Animals/fly_swarm01.wav",
+				{
+					"Probability": 28.235,		;;the chance the sound will play when triggered
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+				"data/sounds/SFX/environment/Animals/squarky_02.wav",
+				"data/sounds/SFX/environment/Animals/squarky_01.wav",
+				"data/sounds/SFX/environment/Animals/woodpecker02.wav",
+				"data/sounds/SFX/environment/Animals/woodpecker01.wav",
+				"data/sounds/SFX/environment/Animals/wingflap01.wav",
+				"data/sounds/SFX/environment/Animals/sparrow02.wav",
+				"data/sounds/SFX/environment/Animals/sparrow01.wav",
+				"data/sounds/SFX/environment/Animals/hawk01.wav",
+				"data/sounds/SFX/environment/Animals/flicker01.wav",
+				"data/sounds/SFX/environment/Animals/eagle02.wav",
+				"data/sounds/SFX/environment/Animals/eagle01.wav",
+				"data/sounds/SFX/environment/Animals/crow02.wav",
+				"data/sounds/SFX/environment/Animals/crow01.wav",
+				{
+					"Probability": 28.235,		;;the chance the sound will play when triggered
+					"Volume": 70,				;;the volume of the sample as a percentage of the base file's
+				},
+			],
+		},
+		{
+			;;the seasons and times of day this should apply to
+			"seasons":
+				[ "all", "-winter", ],
+			"times":
+				[ "all", "-midnight", "-mid_evening", "-night", ],
+
+			;;if any defined, one of these weather events must be happening
+			"weather events":
+			[
+				"calm",
+				"hazy",
+				"light_fog",
+			],
+
+			;;the terrain below the camera and climate
+			"terrain":
+				[ "scrub_dense", ],
+			"climates":
+				[ "all", ],
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/Animals/bee.wav",
+				{
+					"Probability": 28.235,		;;the chance the sound will play when triggered
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+				"data/sounds/SFX/environment/Animals/flicker01.wav",
+				"data/sounds/SFX/environment/Animals/eagle02.wav",
+				"data/sounds/SFX/environment/Animals/eagle01.wav",
+				"data/sounds/SFX/environment/Animals/crow02.wav",
+				"data/sounds/SFX/environment/Animals/crow01.wav",
+				"data/sounds/SFX/environment/Animals/bird04.wav",
+				"data/sounds/SFX/environment/Animals/bird03.wav",
+				"data/sounds/SFX/environment/Animals/bird02.wav",
+				"data/sounds/SFX/environment/Animals/bird01.wav",
+				{
+					"Probability": 28.235,		;;the chance the sound will play when triggered
+					"Volume": 70,				;;the volume of the sample as a percentage of the base file's
+				},
+				"data/sounds/SFX/environment/Animals/fly_swarm01.wav",
+				{
+					"Probability": 28.235,		;;the chance the sound will play when triggered
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+				"data/sounds/SFX/environment/Animals/woodpecker02.wav",
+				"data/sounds/SFX/environment/Animals/woodpecker01.wav",
+				"data/sounds/SFX/environment/Animals/sparrow02.wav",
+				"data/sounds/SFX/environment/Animals/sparrow01.wav",
+				"data/sounds/SFX/environment/Animals/lark04.wav",
+				"data/sounds/SFX/environment/Animals/lark03.wav",
+				"data/sounds/SFX/environment/Animals/lark02.wav",
+				"data/sounds/SFX/environment/Animals/lark01.wav",
+				"data/sounds/SFX/environment/Animals/hawk01.wav",
+				{
+					"Probability": 28.235,		;;the chance the sound will play when triggered
+					"Volume": 70,				;;the volume of the sample as a percentage of the base file's
+				},
+			],
+		},
+		{
+			;;the seasons and times of day this should apply to
+			"seasons":
+				[ "all", "-winter", ],
+			"times":
+				[ "all", "-midnight", "-mid_evening", "-night", ],
+
+			;;if any defined, one of these weather events must be happening
+			"weather events":
+			[
+				"calm",
+				"hazy",
+				"light_fog",
+			],
+
+			;;the terrain below the camera and climate
+			"terrain":
+				[ "sand", "rock", ],
+			"climates":
+				[ "all", ],
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/Animals/eagle02.wav",
+				"data/sounds/SFX/environment/Animals/eagle01.wav",
+				"data/sounds/SFX/environment/Animals/crow02.wav",
+				"data/sounds/SFX/environment/Animals/crow01.wav",
+				{
+					"Probability": 20.0,		;;the chance the sound will play when triggered
+					"Volume": 70,				;;the volume of the sample as a percentage of the base file's
+				},
+				"data/sounds/SFX/environment/Animals/fly_swarm01.wav",
+				{
+					"Probability": 48.235,		;;the chance the sound will play when triggered
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+				"data/sounds/SFX/environment/Animals/vulture04.wav",
+				"data/sounds/SFX/environment/Animals/vulture03.wav",
+				"data/sounds/SFX/environment/Animals/vulture02.wav",
+				"data/sounds/SFX/environment/Animals/vulture01.wav",
+				"data/sounds/SFX/environment/Animals/hawk01.wav",
+				{
+					"Probability": 7.843,		;;the chance the sound will play when triggered
+					"Volume": 55,				;;the volume of the sample as a percentage of the base file's
+				},
+			],
+		},
+		{
+			;;the seasons and times of day this should apply to
+			"seasons":
+				[ "all", "-winter", ],
+			"times":
+				[ "all", "-midnight", "-mid_evening", "-night", ],
+
+			;;if any defined, one of these weather events must be happening
+			"weather events":
+			[
+				"calm",
+				"hazy",
+				"light_fog",
+			],
+
+			;;the terrain below the camera and climate
+			"terrain":
+				[ "water", ],
+			"climates":
+				[ "all", ],
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/Animals/duck04.wav",
+				"data/sounds/SFX/environment/Animals/seagull_08.wav",
+				"data/sounds/SFX/environment/Animals/seagull_07.wav",
+				"data/sounds/SFX/environment/Animals/seagull_06.wav",
+				"data/sounds/SFX/environment/Animals/seagull_05.wav",
+				"data/sounds/SFX/environment/Animals/water_bird.wav",
+				"data/sounds/SFX/environment/Animals/gull_04.wav",
+				"data/sounds/SFX/environment/Animals/gull_03.wav",
+				"data/sounds/SFX/environment/Animals/gull_02.wav",
+				"data/sounds/SFX/environment/Animals/gull_01.wav",
+				"data/sounds/SFX/environment/Animals/seagull04.wav",
+				"data/sounds/SFX/environment/Animals/seagull03.wav",
+				"data/sounds/SFX/environment/Animals/seagull02.wav",
+				"data/sounds/SFX/environment/Animals/seagull01.wav",
+				"data/sounds/SFX/environment/Animals/frog02.wav",
+				"data/sounds/SFX/environment/Animals/frog01.wav",
+				"data/sounds/SFX/environment/Animals/flicker02.wav",
+				"data/sounds/SFX/environment/Animals/duck03.wav",
+				"data/sounds/SFX/environment/Animals/duck02.wav",
+				"data/sounds/SFX/environment/Animals/duck01.wav",
+				"data/sounds/SFX/environment/Animals/crow02.wav",
+				"data/sounds/SFX/environment/Animals/crow01.wav",
+				{
+					"Probability": 68.235,		;;the chance the sound will play when triggered
+				},
+			],
+		},
+		{
+			;;the seasons and times of day this should apply to
+			"seasons":
+				[ "all", "-winter", ],
+			"times":
+				[ "all", "-midnight", "-mid_evening", "-night", ],
+
+			;;if any defined, one of these weather events must be happening
+			"weather events":
+			[
+				"calm",
+				"hazy",
+				"light_fog",
+			],
+
+			;;the terrain below the camera and climate
+			"terrain":
+				[ "swamp", "mud", ],
+			"climates":
+				[ "all", ],
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/Animals/crow02.wav",
+				"data/sounds/SFX/environment/Animals/crow01.wav",
+				{
+					"Probability": 48.235,		;;the chance the sound will play when triggered
+				},
+				"data/sounds/SFX/environment/Animals/fly_swarm01.wav",
+				{
+					"Probability": 48.235,		;;the chance the sound will play when triggered
+					"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+				},
+				"data/sounds/SFX/environment/Animals/frog02.wav",
+				"data/sounds/SFX/environment/Animals/frog01.wav",
+				{
+					"Probability": 48.235,		;;the chance the sound will play when triggered
+				},
+			],
+		},
+		{
+			;;the seasons and times of day this should apply to
+			"seasons":
+				[ "winter", ],
+			"times":
+				[ "midnight", "night", ],
+
+			;;if any defined, one of these weather events must be happening
+			"weather events":
+			[
+				"calm",
+				"hazy",
+				"light_fog",
+			],
+
+			;;the terrain below the camera and climate
+			"terrain":
+				[ "all", "-mud_road", "-stone_road", "-water", "-wood", "-dirt", ],
+			"climates":
+				[ "all", ],
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/Animals/owl_02.wav",
+				"data/sounds/SFX/environment/Animals/owl_01.wav",
+				"data/sounds/SFX/environment/Animals/wolf04.wav",
+				"data/sounds/SFX/environment/Animals/wolf03.wav",
+				"data/sounds/SFX/environment/Animals/wolf02.wav",
+				"data/sounds/SFX/environment/Animals/wolf01.wav",
+				{
+					"Probability": 48.235,		;;the chance the sound will play when triggered
+				},
+			],
+		},
+		{
+			;;the seasons and times of day this should apply to
+			"seasons":
+				[ "winter", ],
+			"times":
+				[ "all", "-midnight", "-night", ],
+
+			;;if any defined, one of these weather events must be happening
+			"weather events":
+			[
+				"calm",
+				"hazy",
+				"light_fog",
+			],
+
+			;;the terrain below the camera and climate
+			"terrain":
+				[ "grass_short", "grass_long", "rock", "scrub_dense", "ice", "snow", ],
+			"climates":
+				[ "all", ],
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/Animals/owl_02.wav",
+				"data/sounds/SFX/environment/Animals/owl_01.wav",
+				"data/sounds/SFX/environment/Animals/wolf04.wav",
+				"data/sounds/SFX/environment/Animals/wolf03.wav",
+				"data/sounds/SFX/environment/Animals/wolf02.wav",
+				"data/sounds/SFX/environment/Animals/wolf01.wav",
+				"data/sounds/SFX/environment/Animals/hawk01.wav",
+				"data/sounds/SFX/environment/Animals/eagle02.wav",
+				"data/sounds/SFX/environment/Animals/eagle01.wav",
+				{
+					"Probability": 28.235,		;;the chance the sound will play when triggered
+				},
+			],
+		},
+		{
+			;;the seasons and times of day this should apply to
+			"seasons":
+				[ "winter", ],
+			"times":
+				[ "all", "-midnight", "-night", ],
+
+			;;if any defined, one of these weather events must be happening
+			"weather events":
+			[
+				"calm",
+				"hazy",
+				"light_fog",
+			],
+
+			;;the terrain below the camera and climate
+			"terrain":
+				[ "forest_dense", ],
+			"climates":
+				[ "all", ],
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/Animals/owl_02.wav",
+				"data/sounds/SFX/environment/Animals/owl_01.wav",
+				"data/sounds/SFX/environment/Animals/wolf04.wav",
+				"data/sounds/SFX/environment/Animals/wolf03.wav",
+				"data/sounds/SFX/environment/Animals/wolf02.wav",
+				"data/sounds/SFX/environment/Animals/wolf01.wav",
+				"data/sounds/SFX/environment/Animals/hawk01.wav",
+				"data/sounds/SFX/environment/Animals/eagle02.wav",
+				"data/sounds/SFX/environment/Animals/eagle01.wav",
+				{
+					"Probability": 60.0,		;;the chance the sound will play when triggered
+					"Effect level": 1.5,		;;??? I think this has something to do with the EAX parameters?
+				},
+			],
+		},
+		{
+			;;the seasons and times of day this should apply to
+			"seasons":
+				[ "winter", ],
+			"times":
+				[ "all", "-midnight", "-night", ],
+
+			;;if any defined, one of these weather events must be happening
+			"weather events":
+			[
+				"calm",
+				"hazy",
+				"light_fog",
+			],
+
+			;;the terrain below the camera and climate
+			"terrain":
+				[ "sand", ],
+			"climates":
+				[ "all", ],
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/Animals/owl_02.wav",
+				"data/sounds/SFX/environment/Animals/owl_01.wav",
+				"data/sounds/SFX/environment/Animals/wolf04.wav",
+				"data/sounds/SFX/environment/Animals/wolf03.wav",
+				"data/sounds/SFX/environment/Animals/wolf02.wav",
+				"data/sounds/SFX/environment/Animals/wolf01.wav",
+				"data/sounds/SFX/environment/Animals/vulture04.wav",
+				"data/sounds/SFX/environment/Animals/vulture03.wav",
+				"data/sounds/SFX/environment/Animals/vulture02.wav",
+				"data/sounds/SFX/environment/Animals/vulture01.wav",
+				"data/sounds/SFX/environment/Animals/hawk01.wav",
+				"data/sounds/SFX/environment/Animals/eagle02.wav",
+				"data/sounds/SFX/environment/Animals/eagle01.wav",
+				{
+					"Probability": 20.0,		;;the chance the sound will play when triggered
+				},
+			],
+		},
+		{
+			;;the seasons and times of day this should apply to
+			"seasons":
+				[ "winter", ],
+			"times":
+				[ "all", "-midnight", "-night", ],
+
+			;;if any defined, one of these weather events must be happening
+			"weather events":
+			[
+				"calm",
+				"hazy",
+				"light_fog",
+			],
+
+			;;the terrain below the camera and climate
+			"terrain":
+				[ "swamp", "mud", "water", ],
+			"climates":
+				[ "all", ],
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/Animals/owl_02.wav",
+				"data/sounds/SFX/environment/Animals/owl_01.wav",
+				"data/sounds/SFX/environment/Animals/wolf04.wav",
+				"data/sounds/SFX/environment/Animals/wolf03.wav",
+				"data/sounds/SFX/environment/Animals/wolf02.wav",
+				"data/sounds/SFX/environment/Animals/wolf01.wav",
+				"data/sounds/SFX/environment/Animals/vulture04.wav",
+				"data/sounds/SFX/environment/Animals/vulture03.wav",
+				"data/sounds/SFX/environment/Animals/vulture02.wav",
+				"data/sounds/SFX/environment/Animals/vulture01.wav",
+				"data/sounds/SFX/environment/Animals/hawk01.wav",
+				"data/sounds/SFX/environment/Animals/eagle02.wav",
+				"data/sounds/SFX/environment/Animals/eagle01.wav",
+				"data/sounds/SFX/environment/Animals/frog02.wav",
+				"data/sounds/SFX/environment/Animals/frog01.wav",
+				{
+					"Probability": 20.0,		;;the chance the sound will play when triggered
+				},
+			],
+		},
+		{
+			;;the seasons and times of day this should apply to
+			"seasons":
+				[ "winter", ],
+			"times":
+				[ "all", "-midnight", "-night", ],
+
+			;;if any defined, one of these weather events must be happening
+			"weather events":
+			[
+				"hail_shower",
+				"rain_drizzle",
+				"rain_storm",
+				"rain_summer_shower",
+				"snow_falling",
+			],
+
+			;;the terrain below the camera and climate
+			"terrain":
+				[ "all", "-mud_road", "-stone_road", "-wood", "-dirt", ],
+			"climates":
+				[ "all", ],
+
+			"sounds":
+			[
+				"data/sounds/SFX/environment/Animals/owl_02.wav",
+				"data/sounds/SFX/environment/Animals/owl_01.wav",
+				"data/sounds/SFX/environment/Animals/wolf04.wav",
+				"data/sounds/SFX/environment/Animals/wolf03.wav",
+				"data/sounds/SFX/environment/Animals/wolf02.wav",
+				"data/sounds/SFX/environment/Animals/wolf01.wav",
+				"data/sounds/SFX/environment/Animals/hawk01.wav",
+				"data/sounds/SFX/environment/Animals/eagle02.wav",
+				"data/sounds/SFX/environment/Animals/eagle01.wav",
+				{
+					"Probability": 4.706,		;;the chance the sound will play when triggered
+				},
+			],
+		},
+	],
+}, ;;soundbank_terrain_ambient

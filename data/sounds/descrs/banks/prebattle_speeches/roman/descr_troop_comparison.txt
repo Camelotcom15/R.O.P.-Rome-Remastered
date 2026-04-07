@@ -1,0 +1,693 @@
+;; Last updated by jburnett on 2021/07/14
+;; DESCR file generated via RTW Amber pack editor
+
+"default sound parameters":
+{
+	"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+	"Probability": 100.0,		;;the chance the sound will play when triggered
+	"Volume": 35,				;;the volume of the sample as a percentage of the base file's
+	"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+	"Max pitch": 100.0,			
+	"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+	"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+	"Fade out": 0.998,			
+	"Looped": false,			;;should the sound loop?
+	"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+	"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+	"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+	"Pref type": "Speech",		;;the slider the sound should be attached to
+	"Ignore pause": false,		;;should this sound ignore being paused?
+	"Streamed": true,			;;should this sound be streamed from disk?
+	"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+	"Dry level": 1.0,			;; ???
+	"Wet level": 1.0,			;; ???
+},
+
+"soundbank_prebattle_speech":
+{
+	"entries":
+	[
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Troop comparison",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the percentage of units with category cavalry on the allied side must be <=0.35",
+				},
+				"percentage":
+				{
+					"string": "the percentage of units with category cavalry on the enemy side must be >0.35",
+				},
+				"percentage":
+				{
+					"string": "the percentage of units with class spearmen on the enemy side must be >0.35",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_01_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_01_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_01_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Troop comparison",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the percentage of units with category cavalry on the allied side must be <=0.35",
+				},
+				"percentage":
+				{
+					"string": "the percentage of units with category cavalry on the enemy side must be <=0.35",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_02_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_02_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_02_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Troop comparison",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the percentage of units with category cavalry on the allied side must be <=0.35",
+				},
+				"percentage":
+				{
+					"string": "the percentage of units with class spearmen on the enemy side must be <=0.35",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_03_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_03_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_03_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Troop comparison",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the percentage of units with category cavalry on the enemy side must be <=0.35",
+				},
+				"percentage":
+				{
+					"string": "the percentage of units with category cavalry on the allied side must be >0.35",
+				},
+				"percentage":
+				{
+					"string": "the percentage of units with class spearmen on the allied side must be >0.35",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_04_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_04_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_04_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Troop comparison",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the percentage of units with category cavalry on the enemy side must be <=0.35",
+				},
+				"percentage":
+				{
+					"string": "the percentage of units with class spearmen on the allied side must be <=0.35",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_05_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_05_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_05_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Troop comparison",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the percentage of units with ID elephant on the allied side must be <=0.01",
+				},
+				"percentage":
+				{
+					"string": "the percentage of units with class skirmish on the enemy side must be >0.15",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_06_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_06_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_06_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Troop comparison",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the percentage of units with ID elephant on the allied side must be <=0.01",
+				},
+				"percentage":
+				{
+					"string": "the percentage of units with class skirmish on the enemy side must be <=0.15",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_07_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_07_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_07_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Troop comparison",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the percentage of units with ID elephant on the enemy side must be <=0.01",
+				},
+				"percentage":
+				{
+					"string": "the percentage of units with class skirmish on the allied side must be >0.15",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_08_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_08_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_08_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Troop comparison",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the percentage of units with ID elephant on the enemy side must be <=0.01",
+				},
+				"percentage":
+				{
+					"string": "the percentage of units with class skirmish on the allied side must be <=0.15",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_09_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_09_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_09_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Troop comparison",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the percentage of units with class missile on the allied side must be >0.35",
+				},
+				"percentage":
+				{
+					"string": "the percentage of units with class missile on the enemy side must be <=0.35",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_10_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_10_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_10_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Troop comparison",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the percentage of units with class missile on the allied side must be <=0.35",
+				},
+				"percentage":
+				{
+					"string": "the percentage of units with class missile on the enemy side must be >0.35",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_11_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_11_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_11_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Troop comparison",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the percentage of units with category cavalry on the enemy side must be <=0.35",
+				},
+				"enum":
+				{
+					"string": "the battle type must be siege",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_12_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_12_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_12_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Troop comparison",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"percentage":
+				{
+					"string": "the percentage of units with category cavalry on the allied side must be <=0.35",
+				},
+				"enum":
+				{
+					"string": "the battle type must be siege",
+				},
+				"battle info":
+				{
+					"string": "we must not be attacking",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_13_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_13_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Troops_13_1.opus",
+					{
+					},
+				],
+			],
+		},
+	],
+}, ;;soundbank_prebattle_speech

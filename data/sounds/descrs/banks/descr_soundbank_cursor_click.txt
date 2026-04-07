@@ -1,0 +1,405 @@
+;; Last updated by jburnett on 2021/07/14
+;; DESCR file generated via RTW Amber pack editor
+
+"default sound parameters":
+{
+	"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+	"Probability": 100.0,		;;the chance the sound will play when triggered
+	"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+	"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+	"Max pitch": 100.0,			
+	"Priority": 250,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+	"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+	"Fade out": 0.0,			
+	"Looped": false,			;;should the sound loop?
+	"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+	"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+	"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+	"Pref type": "Interface",	;;the slider the sound should be attached to
+	"Ignore pause": false,		;;should this sound ignore being paused?
+	"Streamed": false,			;;should this sound be streamed from disk?
+	"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+	"Dry level": 1.0,			;; ???
+	"Wet level": 1.0,			;; ???
+},
+
+"soundbank_cursor_click":
+{
+	"entries":
+	[
+		{
+			;;the state the cursor should be in
+			"cursor type": "battle",
+
+			;;the types of cursor icons this should play for
+			"modes":
+				[ "attack", ],
+
+			;;should this play on a double or single click
+			"double": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/interface/battlefield/Metalicius_Low.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the state the cursor should be in
+			"cursor type": "battle",
+
+			;;the types of cursor icons this should play for
+			"modes":
+				[ "attack", ],
+
+			;;should this play on a double or single click
+			"double": true,
+
+			"sounds":
+			[
+				"data/sounds/SFX/interface/battlefield/run_swoosh_07b.wav",
+				{
+					"Volume": 65,				;;the volume of the sample as a percentage of the base file's
+				},
+			],
+		},
+		{
+			;;the state the cursor should be in
+			"cursor type": "battle",
+
+			;;the types of cursor icons this should play for
+			"modes":
+				[ "attack_range", ],
+
+			;;should this play on a double or single click
+			"double": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/interface/battlefield/Metalicius_Low.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the state the cursor should be in
+			"cursor type": "battle",
+
+			;;the types of cursor icons this should play for
+			"modes":
+				[ "attack_range", ],
+
+			;;should this play on a double or single click
+			"double": true,
+
+			"sounds":
+			[
+				"data/sounds/SFX/interface/battlefield/run_swoosh_07b.wav",
+				{
+					"Volume": 65,				;;the volume of the sample as a percentage of the base file's
+				},
+			],
+		},
+		{
+			;;the state the cursor should be in
+			"cursor type": "battle",
+
+			;;the types of cursor icons this should play for
+			"modes":
+				[ "attack_thrown", ],
+
+			;;should this play on a double or single click
+			"double": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/interface/battlefield/Metalicius_Low.wav",
+				{
+				},
+			],
+		},
+		{
+			;;the state the cursor should be in
+			"cursor type": "battle",
+
+			;;the types of cursor icons this should play for
+			"modes":
+				[ "attack_thrown", ],
+
+			;;should this play on a double or single click
+			"double": true,
+
+			"sounds":
+			[
+				"data/sounds/SFX/interface/battlefield/run_swoosh_07b.wav",
+				{
+					"Volume": 65,				;;the volume of the sample as a percentage of the base file's
+				},
+			],
+		},
+		{
+			;;the state the cursor should be in
+			"cursor type": "battle",
+
+			;;the types of cursor icons this should play for
+			"modes":
+				[ "attack_siege", ],
+
+			;;should this play on a double or single click
+			"double": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/interface/battlefield/siege_attack_05.wav",
+				{
+					"Volume": 70,				;;the volume of the sample as a percentage of the base file's
+				},
+			],
+		},
+		{
+			;;the state the cursor should be in
+			"cursor type": "battle",
+
+			;;the types of cursor icons this should play for
+			"modes":
+				[ "move", "move_in_range", "move_out_of_range", ],
+
+			;;should this play on a double or single click
+			"double": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/interface/battlefield/move_02.wav",
+				{
+					"Dry level": 0.8999999761581421,;; ???
+				},
+			],
+		},
+		{
+			;;the state the cursor should be in
+			"cursor type": "battle",
+
+			;;the types of cursor icons this should play for
+			"modes":
+				[ "move", "move_in_range", "move_out_of_range", ],
+
+			;;should this play on a double or single click
+			"double": true,
+
+			"sounds":
+			[
+				"data/sounds/SFX/interface/battlefield/run_swoosh_07b.wav",
+				{
+					"Volume": 65,				;;the volume of the sample as a percentage of the base file's
+				},
+			],
+		},
+		{
+			;;the state the cursor should be in
+			"cursor type": "battle",
+
+			;;the types of cursor icons this should play for
+			"modes":
+				[ "select", ],
+
+			;;should this play on a double or single click
+			"double": false,
+
+			"sounds":
+			[
+				;;no sounds assigned
+			],
+		},
+		{
+			;;the state the cursor should be in
+			"cursor type": "battle",
+
+			;;the types of cursor icons this should play for
+			"modes":
+				[ "attack_range_out_of_range", ],
+
+			;;should this play on a double or single click
+			"double": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/interface/battlefield/attack_out_of_range_01.wav",
+				{
+					"Dry level": 0.8999999761581421,;; ???
+				},
+			],
+		},
+		{
+			;;the state the cursor should be in
+			"cursor type": "battle",
+
+			;;the types of cursor icons this should play for
+			"modes":
+				[ "attack_thrown_out_of_range", ],
+
+			;;should this play on a double or single click
+			"double": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/interface/battlefield/attack_out_of_range_01.wav",
+				{
+					"Dry level": 0.8999999761581421,;; ???
+				},
+			],
+		},
+		{
+			;;the state the cursor should be in
+			"cursor type": "battle",
+
+			;;the types of cursor icons this should play for
+			"modes":
+				[ "attack_siege_out_of_range", ],
+
+			;;should this play on a double or single click
+			"double": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/interface/battlefield/attack_out_of_range_01.wav",
+				{
+					"Dry level": 0.8999999761581421,;; ???
+				},
+			],
+		},
+		{
+			;;the state the cursor should be in
+			"cursor type": "battle",
+
+			;;the types of cursor icons this should play for
+			"modes":
+				[ "pickup_equipment", ],
+
+			;;should this play on a double or single click
+			"double": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/interface/battlefield/grab_siege_06.wav",
+				{
+					"Volume": 70,				;;the volume of the sample as a percentage of the base file's
+				},
+			],
+		},
+		{
+			;;the state the cursor should be in
+			"cursor type": "battle",
+
+			;;the types of cursor icons this should play for
+			"modes":
+				[ "enter", ],
+
+			;;should this play on a double or single click
+			"double": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/interface/battlefield/grab_siege_06.wav",
+				{
+					"Volume": 70,				;;the volume of the sample as a percentage of the base file's
+				},
+			],
+		},
+		{
+			;;the state the cursor should be in
+			"cursor type": "strat_v2",
+
+			;;the types of cursor icons this should play for
+			"modes":
+				[ "attack", ],
+
+			;;should this play on a double or single click
+			"double": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/interface/battlefield/Metalicius_Low.wav",
+				{
+					"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+				},
+			],
+		},
+		{
+			;;the state the cursor should be in
+			"cursor type": "strat_v2",
+
+			;;the types of cursor icons this should play for
+			"modes":
+				[ "move", ],
+
+			;;should this play on a double or single click
+			"double": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/interface/battlefield/move_02.wav",
+				{
+					"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+					"Dry level": 0.8999999761581421,;; ???
+				},
+			],
+		},
+		{
+			;;the state the cursor should be in
+			"cursor type": "strat_v2",
+
+			;;the types of cursor icons this should play for
+			"modes":
+				[ "select", ],
+
+			;;should this play on a double or single click
+			"double": false,
+
+			"sounds":
+			[
+				;;no sounds assigned
+			],
+		},
+		{
+			;;the state the cursor should be in
+			"cursor type": "strat_v2",
+
+			;;the types of cursor icons this should play for
+			"modes":
+				[ "exchange", ],
+
+			;;should this play on a double or single click
+			"double": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/interface/battlefield/move_02.wav",
+				{
+					"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+					"Dry level": 0.8999999761581421,;; ???
+				},
+			],
+		},
+		{
+			;;the state the cursor should be in
+			"cursor type": "strat_v2",
+
+			;;the types of cursor icons this should play for
+			"modes":
+				[ "enter_settlement", ],
+
+			;;should this play on a double or single click
+			"double": false,
+
+			"sounds":
+			[
+				"data/sounds/SFX/interface/battlefield/move_02.wav",
+				{
+					"Volume": 60,				;;the volume of the sample as a percentage of the base file's
+					"Dry level": 0.8999999761581421,;; ???
+				},
+			],
+		},
+	],
+}, ;;soundbank_cursor_click

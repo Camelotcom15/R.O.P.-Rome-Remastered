@@ -1,0 +1,823 @@
+;; Last updated by jburnett on 2021/07/14
+;; DESCR file generated via RTW Amber pack editor
+
+"default sound parameters":
+{
+	"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+	"Probability": 100.0,		;;the chance the sound will play when triggered
+	"Volume": 35,				;;the volume of the sample as a percentage of the base file's
+	"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+	"Max pitch": 100.0,			
+	"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+	"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+	"Fade out": 0.998,			
+	"Looped": false,			;;should the sound loop?
+	"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+	"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+	"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+	"Pref type": "Speech",		;;the slider the sound should be attached to
+	"Ignore pause": false,		;;should this sound ignore being paused?
+	"Streamed": true,			;;should this sound be streamed from disk?
+	"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+	"Dry level": 1.0,			;; ???
+	"Wet level": 1.0,			;; ???
+},
+
+"soundbank_prebattle_speech":
+{
+	"entries":
+	[
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait middle",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID Anger of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Comments_01_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait middle",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID BadAmbusher of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Comments_02_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait middle",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID BadAttacker of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Comments_03_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait middle",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID BadCavalryGeneral of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Comments_04_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait middle",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID BadDefender of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Comments_05_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait middle",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID BadDisciplinarian of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Comments_06_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait middle",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID BadInfantryGeneral of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Comments_07_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait middle",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID BadSiegeAttacker of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Comments_08_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait middle",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID BadSiegeDefender of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Comments_09_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait middle",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID Disciplinarian of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Comments_10_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait middle",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID GoodAmbusher of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Comments_11_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait middle",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID GoodAttacker of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Comments_12_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait middle",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID GoodAttacker of level 4",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Comments_12_4.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait middle",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID GoodCavalryGeneral of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Comments_13_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait middle",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID GoodDefender of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Comments_14_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait middle",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID GoodDefender of level 4",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Comments_14_4.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait middle",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID GoodInfantryGeneral of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Comments_15_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 3,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Trait middle",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"trait":
+				{
+					"string": "our general must have the trait with ID GoodSiegeDefender of level 1",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Comments_17_1.opus",
+					{
+					},
+				],
+			],
+		},
+	],
+}, ;;soundbank_prebattle_speech

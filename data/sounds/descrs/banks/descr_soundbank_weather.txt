@@ -1,0 +1,594 @@
+;; Last updated by jburnett on 2021/07/14
+;; DESCR file generated via RTW Amber pack editor
+
+"default sound parameters":
+{
+	"3d": true,					;;is the sound 3D (DO NOT CHANGE THIS)
+	"Probability": 100.0,		;;the chance the sound will play when triggered
+	"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+	"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+	"Max pitch": 100.0,			
+	"Priority": 9999,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+	"Fade in": 1.996,			;;the time, in seconds, for the sound to fade in and out
+	"Fade out": 2.994,			
+	"Looped": false,			;;should the sound loop?
+	"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+	"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+	"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+	"Pref type": "SFX",			;;the slider the sound should be attached to
+	"Ignore pause": false,		;;should this sound ignore being paused?
+	"Min dist": 10.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+	"Max dist": -1.0,			;;setting max dist to -1 will mean the sound will autocalculate the max dist
+	"Dist priority": 0.0,		;;how much should the priority be reduced per meter of distance
+	"Prob radius": 0.0,			;;the range within which the probability will be overridden to be 100%
+	"Effect level": 0.0,		;;??? I think this has something to do with the EAX parameters?
+},
+
+"soundbank_weather":
+{
+	"global parameters":
+	{
+		"speed pitch adjustment":
+		{
+			;;pitch = multiplier * speed + constant
+			"multiplier": 0.008999999612569809,
+			"constant": 0.6000000238418579,
+		},
+		"speed volume adjustment":
+		{
+			;;volume = multiplier * speed + constant
+			"multiplier": 1.0,
+			"constant": -50.0,
+		},
+
+		"thunder delay":
+		{
+			"min": 12.0,
+			"max": 32.0,
+		},
+
+		"wind sound distance": 15.0,
+		"rain sound distance": 10.0,
+
+		;;speed = base + (multiplier * height)
+		"wind speed height multiplier": 0.05999999865889549,
+	},
+	"entries":
+	[
+		{
+			;;the types of wind
+			"wind types":
+				[ "all", ],
+			"precipitate types":
+				[ "rain", ],
+
+			"climates":
+				[ "all", ],
+			"seasons":
+				[ "all", ],
+
+			"type": "Precipitate",
+
+			"sounds":
+			[
+				"lod":
+				{
+					;; the rain level x100 (for rain) (0-100) / distance from camera (for thunder) / the wind speed x100 (for wind) (0-2840)
+					"switch": 0,
+
+					"sounds":
+					[
+						"data/sounds/SFX/environment/weather/light_rain_03.wav",
+						"data/sounds/SFX/environment/weather/light_rain_01.wav",
+						{
+							"Max dist": 320.0,			;;setting max dist to -1 will mean the sound will autocalculate the max dist
+						},
+					],
+				},
+				"lod":
+				{
+					;; the rain level x100 (for rain) (0-100) / distance from camera (for thunder) / the wind speed x100 (for wind) (0-2840)
+					"switch": 50,
+
+					"sounds":
+					[
+						"data/sounds/SFX/environment/weather/rain_medium.wav",
+						{
+							"Max dist": 320.0,			;;setting max dist to -1 will mean the sound will autocalculate the max dist
+						},
+					],
+				},
+				"lod":
+				{
+					;; the rain level x100 (for rain) (0-100) / distance from camera (for thunder) / the wind speed x100 (for wind) (0-2840)
+					"switch": 80,
+
+					"sounds":
+					[
+						"data/sounds/SFX/environment/weather/heavy_rain_sp_02.wav",
+						"data/sounds/SFX/environment/weather/heavy_rain_sp_01.wav",
+						{
+							"Max dist": 320.0,			;;setting max dist to -1 will mean the sound will autocalculate the max dist
+						},
+					],
+				},
+			],
+		},
+		{
+			;;the types of wind
+			"wind types":
+				[ "all", ],
+			"precipitate types":
+				[ "hail", ],
+
+			"climates":
+				[ "all", ],
+			"seasons":
+				[ "all", ],
+
+			"type": "Precipitate",
+
+			"sounds":
+			[
+				"lod":
+				{
+					;; the rain level x100 (for rain) (0-100) / distance from camera (for thunder) / the wind speed x100 (for wind) (0-2840)
+					"switch": 0,
+
+					"sounds":
+					[
+						"data/sounds/SFX/environment/weather/rain_hail_sp_02.wav",
+						"data/sounds/SFX/environment/weather/rain_hail_sp_01.wav",
+						{
+							"Max dist": 320.0,			;;setting max dist to -1 will mean the sound will autocalculate the max dist
+						},
+					],
+				},
+			],
+		},
+		{
+			;;the types of wind
+			"wind types":
+				[ "all", ],
+			"precipitate types":
+				[ "dust", "sand", ],
+
+			"climates":
+				[ "all", ],
+			"seasons":
+				[ "all", ],
+
+			"type": "Precipitate",
+
+			"sounds":
+			[
+				"lod":
+				{
+					;; the rain level x100 (for rain) (0-100) / distance from camera (for thunder) / the wind speed x100 (for wind) (0-2840)
+					"switch": 0,
+
+					"sounds":
+					[
+						"data/sounds/SFX/environment/weather/Wind_Sand_02.wav",
+						"data/sounds/SFX/environment/weather/Wind_Mountain.wav",
+						{
+						},
+					],
+				},
+			],
+		},
+		{
+			;;the types of wind
+			"wind types":
+				[ "all", "-gusts", "-gales", ],
+			"precipitate types":
+				[ "all", ],
+
+			"climates":
+				[ "all", "-sandy_desert", "-rocky_desert", "-semi_arid", ],
+			"seasons":
+				[ "all", "-winter", ],
+
+			"type": "Wind",
+
+			"sounds":
+			[
+				"lod":
+				{
+					;; the rain level x100 (for rain) (0-100) / distance from camera (for thunder) / the wind speed x100 (for wind) (0-2840)
+					"switch": 0,
+
+					"sounds":
+					[
+						"data/sounds/SFX/environment/weather/Wind_Calm_02.wav",
+						"data/sounds/SFX/environment/weather/Wind_Calm_01.wav",
+						{
+						},
+					],
+				},
+				"lod":
+				{
+					;; the rain level x100 (for rain) (0-100) / distance from camera (for thunder) / the wind speed x100 (for wind) (0-2840)
+					"switch": 160,
+
+					"sounds":
+					[
+						"data/sounds/SFX/environment/weather/Wind_Breezes_02.wav",
+						"data/sounds/SFX/environment/weather/Wind_Calm_01.wav",
+						{
+						},
+					],
+				},
+				"lod":
+				{
+					;; the rain level x100 (for rain) (0-100) / distance from camera (for thunder) / the wind speed x100 (for wind) (0-2840)
+					"switch": 800,
+
+					"sounds":
+					[
+						"data/sounds/SFX/environment/weather/Wind_Whistling.wav",
+						"data/sounds/SFX/environment/weather/Wind_Lush.wav",
+						{
+						},
+					],
+				},
+			],
+		},
+		{
+			;;the types of wind
+			"wind types":
+				[ "gusts", ],
+			"precipitate types":
+				[ "all", ],
+
+			"climates":
+				[ "all", "-sandy_desert", "-rocky_desert", "-semi_arid", ],
+			"seasons":
+				[ "all", "-winter", ],
+
+			"type": "Wind",
+
+			"sounds":
+			[
+				"lod":
+				{
+					;; the rain level x100 (for rain) (0-100) / distance from camera (for thunder) / the wind speed x100 (for wind) (0-2840)
+					"switch": 0,
+
+					"sounds":
+					[
+						"data/sounds/SFX/environment/weather/Wind_Gusts_02.wav",
+						"data/sounds/SFX/environment/weather/Wind_Gusts_01.wav",
+						{
+						},
+					],
+				},
+			],
+		},
+		{
+			;;the types of wind
+			"wind types":
+				[ "gales", ],
+			"precipitate types":
+				[ "all", ],
+
+			"climates":
+				[ "all", "-sandy_desert", "-rocky_desert", "-semi_arid", ],
+			"seasons":
+				[ "all", "-winter", ],
+
+			"type": "Wind",
+
+			"sounds":
+			[
+				"lod":
+				{
+					;; the rain level x100 (for rain) (0-100) / distance from camera (for thunder) / the wind speed x100 (for wind) (0-2840)
+					"switch": 0,
+
+					"sounds":
+					[
+						"data/sounds/SFX/environment/weather/Wind_Gusts_02.wav",
+						"data/sounds/SFX/environment/weather/Wind_Gales_03.wav",
+						{
+						},
+					],
+				},
+			],
+		},
+		{
+			;;the types of wind
+			"wind types":
+				[ "all", "-gusts", "-gales", ],
+			"precipitate types":
+				[ "all", ],
+
+			"climates":
+				[ "all", "-sandy_desert", "-rocky_desert", "-semi_arid", ],
+			"seasons":
+				[ "winter", ],
+
+			"type": "Wind",
+
+			"sounds":
+			[
+				"lod":
+				{
+					;; the rain level x100 (for rain) (0-100) / distance from camera (for thunder) / the wind speed x100 (for wind) (0-2840)
+					"switch": 0,
+
+					"sounds":
+					[
+						"data/sounds/SFX/environment/weather/Wind_Winter_Light_02.wav",
+						"data/sounds/SFX/environment/weather/Wind_Winter_Light_01.wav",
+						{
+						},
+					],
+				},
+				"lod":
+				{
+					;; the rain level x100 (for rain) (0-100) / distance from camera (for thunder) / the wind speed x100 (for wind) (0-2840)
+					"switch": 160,
+
+					"sounds":
+					[
+						"data/sounds/SFX/environment/weather/Wind_Winter_Medium.wav",
+						"data/sounds/SFX/environment/weather/Wind_Winter_Icy.wav",
+						{
+						},
+					],
+				},
+				"lod":
+				{
+					;; the rain level x100 (for rain) (0-100) / distance from camera (for thunder) / the wind speed x100 (for wind) (0-2840)
+					"switch": 800,
+
+					"sounds":
+					[
+						"data/sounds/SFX/environment/weather/Wind_winter.wav",
+						"data/sounds/SFX/environment/weather/Wind_WinterHills.wav",
+						{
+						},
+					],
+				},
+			],
+		},
+		{
+			;;the types of wind
+			"wind types":
+				[ "gusts", ],
+			"precipitate types":
+				[ "all", ],
+
+			"climates":
+				[ "all", "-sandy_desert", "-rocky_desert", "-semi_arid", ],
+			"seasons":
+				[ "winter", ],
+
+			"type": "Wind",
+
+			"sounds":
+			[
+				"lod":
+				{
+					;; the rain level x100 (for rain) (0-100) / distance from camera (for thunder) / the wind speed x100 (for wind) (0-2840)
+					"switch": 0,
+
+					"sounds":
+					[
+						"data/sounds/SFX/environment/weather/Wind_WinterStorm1.wav",
+						{
+						},
+						"data/sounds/SFX/environment/weather/Wind_Winter_Howl.wav",
+						{
+							"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+			],
+		},
+		{
+			;;the types of wind
+			"wind types":
+				[ "gales", ],
+			"precipitate types":
+				[ "all", ],
+
+			"climates":
+				[ "all", "-sandy_desert", "-rocky_desert", "-semi_arid", ],
+			"seasons":
+				[ "winter", ],
+
+			"type": "Wind",
+
+			"sounds":
+			[
+				"lod":
+				{
+					;; the rain level x100 (for rain) (0-100) / distance from camera (for thunder) / the wind speed x100 (for wind) (0-2840)
+					"switch": 0,
+
+					"sounds":
+					[
+						"data/sounds/SFX/environment/weather/Wind_Winter_Gales_01.wav",
+						"data/sounds/SFX/environment/weather/Wind_HowlGusty_02.wav",
+						{
+						},
+					],
+				},
+			],
+		},
+		{
+			;;the types of wind
+			"wind types":
+				[ "calm", ],
+			"precipitate types":
+				[ "all", ],
+
+			"climates":
+				[ "sandy_desert", "rocky_desert", "semi_arid", ],
+			"seasons":
+				[ "all", ],
+
+			"type": "Wind",
+
+			"sounds":
+			[
+				"lod":
+				{
+					;; the rain level x100 (for rain) (0-100) / distance from camera (for thunder) / the wind speed x100 (for wind) (0-2840)
+					"switch": 0,
+
+					"sounds":
+					[
+						"data/sounds/SFX/environment/weather/Wind_Sand_02.wav",
+						"data/sounds/SFX/environment/weather/Wind_Mountain.wav",
+						{
+						},
+					],
+				},
+			],
+		},
+		{
+			;;the types of wind
+			"wind types":
+				[ "breezes", "wind", ],
+			"precipitate types":
+				[ "all", ],
+
+			"climates":
+				[ "sandy_desert", "rocky_desert", "semi_arid", ],
+			"seasons":
+				[ "all", "-winter", ],
+
+			"type": "Wind",
+
+			"sounds":
+			[
+				"lod":
+				{
+					;; the rain level x100 (for rain) (0-100) / distance from camera (for thunder) / the wind speed x100 (for wind) (0-2840)
+					"switch": 0,
+
+					"sounds":
+					[
+						"data/sounds/SFX/environment/weather/Wind_Sand_02.wav",
+						{
+						},
+					],
+				},
+			],
+		},
+		{
+			;;the types of wind
+			"wind types":
+				[ "gusts", ],
+			"precipitate types":
+				[ "all", ],
+
+			"climates":
+				[ "sandy_desert", "rocky_desert", "semi_arid", ],
+			"seasons":
+				[ "all", "-winter", ],
+
+			"type": "Wind",
+
+			"sounds":
+			[
+				"lod":
+				{
+					;; the rain level x100 (for rain) (0-100) / distance from camera (for thunder) / the wind speed x100 (for wind) (0-2840)
+					"switch": 0,
+
+					"sounds":
+					[
+						"data/sounds/SFX/environment/weather/Wind_Sand_03.wav",
+						{
+							"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; the rain level x100 (for rain) (0-100) / distance from camera (for thunder) / the wind speed x100 (for wind) (0-2840)
+					"switch": 0,
+
+					"sounds":
+					[
+						"data/sounds/SFX/environment/weather/Wind_Sand_03.wav",
+						{
+						},
+					],
+				},
+			],
+		},
+		{
+			;;the types of wind
+			"wind types":
+				[ "all", ],
+			"precipitate types":
+				[ "all", ],
+
+			"climates":
+				[ "all", ],
+			"seasons":
+				[ "all", "-winter", "-autumn", ],
+
+			"type": "Thunder",
+
+			"sounds":
+			[
+				"lod":
+				{
+					;; the rain level x100 (for rain) (0-100) / distance from camera (for thunder) / the wind speed x100 (for wind) (0-2840)
+					"switch": 100,
+
+					"sounds":
+					[
+						"data/sounds/SFX/environment/weather/thunder_near_4.wav",
+						"data/sounds/SFX/environment/weather/thunder_near_3.wav",
+						"data/sounds/SFX/environment/weather/thunder_near_2.wav",
+						"data/sounds/SFX/environment/weather/thunder_near_1.wav",
+						{
+							"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+							"Random volume": -20,		;;the random adjustment applied to the volume (must be negative)
+							"Min dist": 1000.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+				"lod":
+				{
+					;; the rain level x100 (for rain) (0-100) / distance from camera (for thunder) / the wind speed x100 (for wind) (0-2840)
+					"switch": 1000,
+
+					"sounds":
+					[
+						"data/sounds/SFX/environment/weather/thunder_far_2.wav",
+						"data/sounds/SFX/environment/weather/thunder_far.wav",
+						{
+							"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+							"Random volume": -20,		;;the random adjustment applied to the volume (must be negative)
+							"Min dist": 1000.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+				"lod":
+				{
+					;; the rain level x100 (for rain) (0-100) / distance from camera (for thunder) / the wind speed x100 (for wind) (0-2840)
+					"switch": 10000,
+
+					"sounds":
+					[
+						"data/sounds/SFX/environment/weather/thunder_far_3.wav",
+						"data/sounds/SFX/environment/weather/thunder_far_2.wav",
+						{
+							"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+							"Random volume": -20,		;;the random adjustment applied to the volume (must be negative)
+							"Min dist": 1000.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+						},
+					],
+				},
+			],
+		},
+	],
+}, ;;soundbank_weather

@@ -1,0 +1,331 @@
+;; Last updated by jburnett on 2021/07/14
+;; DESCR file generated via RTW Amber pack editor
+
+"default sound parameters":
+{
+	"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+	"Probability": 100.0,		;;the chance the sound will play when triggered
+	"Volume": 35,				;;the volume of the sample as a percentage of the base file's
+	"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+	"Max pitch": 100.0,			
+	"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+	"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+	"Fade out": 0.998,			
+	"Looped": false,			;;should the sound loop?
+	"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+	"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+	"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+	"Pref type": "Speech",		;;the slider the sound should be attached to
+	"Ignore pause": false,		;;should this sound ignore being paused?
+	"Streamed": true,			;;should this sound be streamed from disk?
+	"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+	"Dry level": 1.0,			;; ???
+	"Wet level": 1.0,			;; ???
+},
+
+"soundbank_prebattle_speech":
+{
+	"entries":
+	[
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Terrain",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the allied deployment zone must include hills",
+				},
+				"battle info":
+				{
+					"string": "we must not be attacking",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Terrain_01_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Terrain_01_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Terrain_01_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Terrain",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the enemy deployment zone must include hills",
+				},
+				"battle info":
+				{
+					"string": "we must be attacking",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Terrain_02_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Terrain_02_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Terrain_02_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Terrain",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the allied deployment zone must include steep hills",
+				},
+				"battle info":
+				{
+					"string": "we must not be attacking",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Terrain_03_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Terrain_03_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Terrain_03_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Terrain",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the enemy deployment zone must include steep hills",
+				},
+				"battle info":
+				{
+					"string": "we must be attacking",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Terrain_04_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Terrain_04_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Terrain_04_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Terrain",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the allied deployment zone must include forest",
+				},
+				"battle info":
+				{
+					"string": "we must not be attacking",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Terrain_05_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Terrain_05_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Terrain_05_1.opus",
+					{
+					},
+				],
+			],
+		},
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 2.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Terrain",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+				"enum":
+				{
+					"string": "the enemy deployment zone must include forest",
+				},
+				"battle info":
+				{
+					"string": "we must be attacking",
+				},
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Terrain_06_3.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Terrain_06_2.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_Terrain_06_1.opus",
+					{
+					},
+				],
+			],
+		},
+	],
+}, ;;soundbank_prebattle_speech

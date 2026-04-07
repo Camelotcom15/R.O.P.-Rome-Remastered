@@ -1,0 +1,170 @@
+;; Last updated by jburnett on 2021/07/14
+;; DESCR file generated via RTW Amber pack editor
+
+"default sound parameters":
+{
+	"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+	"Probability": 100.0,		;;the chance the sound will play when triggered
+	"Volume": 35,				;;the volume of the sample as a percentage of the base file's
+	"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+	"Max pitch": 100.0,			
+	"Priority": 500,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+	"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+	"Fade out": 0.998,			
+	"Looped": false,			;;should the sound loop?
+	"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+	"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+	"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+	"Pref type": "Speech",		;;the slider the sound should be attached to
+	"Ignore pause": false,		;;should this sound ignore being paused?
+	"Streamed": true,			;;should this sound be streamed from disk?
+	"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+	"Dry level": 1.0,			;; ???
+	"Wet level": 1.0,			;; ???
+},
+
+"soundbank_prebattle_speech":
+{
+	"entries":
+	[
+		{
+			;;general voice cultures this should be used for
+			"cultures": 
+				[ "roman", ],
+
+			;;how long should we wait before and after this line
+			"delay":
+			{
+				"start": 0.0,
+				"end": 0.0,
+			},
+
+			;;weight to apply to this line to make it more likely to trigger
+			"weight": 1,
+
+			;;is this line a type of cheering
+			"is cheering": false,
+
+			;;should we cheer after this line
+			"should cheer": false,
+
+			;;the ID of this line as referenced in descr_prebattle_script.txt
+			"ID": "Oneliner",
+
+			;;restrictions to be checked to see if this line is valid for a given battle
+			"restrictions":
+			[
+			],
+
+			"sounds":
+			[
+				;;voice index 0
+				"index":
+				[
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_100.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_099.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_098.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_097.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_096.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_095.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_094.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_093.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_092.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_091.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_090.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_089.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_088.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_087.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_086.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_085.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_084.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_083.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_082.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_081.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_080.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_079.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_078.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_077.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_076.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_075.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_074.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_073.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_072.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_071.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_070.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_069.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_068.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_067.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_066.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_065.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_064.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_063.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_062.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_061.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_060.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_059.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_058.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_057.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_056.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_055.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_054.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_053.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_052.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_051.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_050.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_049.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_048.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_047.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_046.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_045.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_044.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_043.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_042.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_041.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_040.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_039.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_038.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_037.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_036.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_035.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_034.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_033.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_032.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_031.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_030.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_029.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_028.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_027.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_026.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_025.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_024.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_023.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_022.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_021.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_020.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_019.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_018.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_017.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_016.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_015.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_014.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_013.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_012.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_011.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_010.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_009.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_008.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_007.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_006.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_005.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_004.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_003.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_002.opus",
+					"data/sounds/Voice/Human/Localized/Pre_Battle_Speech/Roman_One_Liner_001.opus",
+					{
+					},
+				],
+			],
+		},
+	],
+}, ;;soundbank_prebattle_speech
