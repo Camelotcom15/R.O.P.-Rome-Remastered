@@ -1,0 +1,169 @@
+; custom locations , add new locations at the bottom
+
+custom_location		Mesopotamia
+{
+	location		136	106		
+	image			data/menu/grass1.tga
+	sett_locked		no
+	summer			no
+}
+
+custom_location		Ma Saka Plains
+{
+	location		156	177		
+	image			data/menu/grass2.tga
+	sett_locked		no
+	summer			no
+}
+
+custom_location		Peloponnesos
+{
+	location		37	105	
+	image			data/menu/grass3.tga
+	sett_locked		no
+	summer			no
+}
+
+custom_location		Arabian Dunes
+{
+	location		175	28		
+	image			data/menu/sand1.tga
+	sett_locked		no
+	summer			yes
+}
+
+custom_location		Libyan Plains
+{
+	location		55	69		
+	image			data/menu/sand2.tga
+	sett_locked		no
+	summer			yes
+}
+
+custom_location		Sabaean Desert
+{
+	location		186	29		
+	image			data/menu/sand3.tga
+	sett_locked		no
+	summer			yes
+}
+
+custom_location		Indian Forests
+{
+	location		305	45		
+	image			data/menu/forest1.tga
+	sett_locked		no
+	summer			no
+}
+
+custom_location		Germanic Woodland
+{
+	location		10	185		
+	image			data/menu/forest2.tga
+	sett_locked		no
+	summer			no
+}
+
+custom_location		Thrakian Forests
+{
+	location		48	132		
+	image			data/menu/forest3.tga
+	sett_locked		no
+	summer			no
+}
+
+custom_location		Illyrian Plains
+{
+	location		11	144		
+	image			data/menu/baron1.tga
+	sett_locked		no
+	summer			no
+}
+
+custom_location		Axumite Valley
+{
+	location		121	10		
+	image			data/menu/baron2.tga
+	sett_locked		no
+	summer			no
+}
+
+custom_location		Lydian Heartland
+{
+	location		68	117		
+	image			data/menu/baron3.tga
+	sett_locked		no
+	summer			no
+}
+
+custom_location		Anshan Valley
+{
+	location		177	99		
+	image			data/menu/mountain1.tga
+	sett_locked		yes
+	summer			no
+}
+
+custom_location		Hindu Kush
+{
+	location		240	137		
+	image			data/menu/mountain2.tga
+	sett_locked		yes
+	summer			no
+}
+
+custom_location		Issyk Kul Lake
+{
+	location		257	202		
+	image			data/menu/mountain3.tga
+	sett_locked		yes
+	summer			no
+}
+
+custom_location		Kolchis Coast
+{
+	location		100	152		
+	image			data/menu/coast1.tga
+	sett_locked		no
+	summer			no
+
+}
+
+custom_location		Kyrenaika Shore
+{
+	location		31	77		
+	image			data/menu/coast2.tga
+	sett_locked		no
+	summer			no
+}
+
+custom_location		Levantine Coast
+{
+	location		98	99		
+	image			data/menu/coast3.tga
+	sett_locked		no
+	summer			yes
+}
+
+custom_location		Danube River
+{
+	location		24	144		
+	image			data/menu/river1.tga
+	sett_locked		yes
+	summer			no
+}
+custom_location		Greek River
+{
+	location		263	89		
+	image			data/menu/river2.tga
+	sett_locked		yes
+	summer			no
+}
+custom_location		Nile Bridge
+{
+	location		82	67		
+	image			data/menu/river3.tga
+	sett_locked		yes
+	summer			yes
+}
+

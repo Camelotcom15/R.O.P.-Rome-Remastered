@@ -1,0 +1,681 @@
+rebel_type			Brigantes	//britons
+category			peasant_revolt
+chance				0
+description			Brigantes
+unit				campa barbarian peltasts
+unit				campa barbarian archers
+unit				campa barbarian horsemen
+unit				barbarian rebel general
+
+;Duplicates of veneti. Can't remove as it breaks the save game
+;Not tested this, but will leave it in for safety - Nero
+rebel_type 			VenetiII		//gauls
+category			peasant_revolt 
+chance				0
+description			Veneti
+unit				campa barbarian peltasts
+unit				campa barbarian archers
+unit				campa barbarian horsemen
+unit				barbarian rebel general
+
+;;Thrakian AOR
+
+rebel_type 			Thrakians		//thrace
+category			peasant_revolt 
+chance				3
+description			Thrakians
+unit				campa thrake slingers
+unit				campa thrake peltasts
+unit				campa thrake peltasts
+unit				campa thrake horsemen
+unit				generic rebel general
+
+rebel_type 			Bithynioi		//thrace
+category			peasant_revolt 
+chance				3
+description			Bithynioi
+unit				campa thrake slingers
+unit				campa thrake peltasts
+unit				campa thrake peltasts
+unit				campa thrake horsemen
+unit				generic rebel general
+
+rebel_type 			Thynioi		//thrace
+category			peasant_revolt 
+chance				3
+description			Thynioi
+unit				campa thrake slingers
+unit				campa thrake peltasts
+unit				campa thrake peltasts
+unit				campa thrake horsemen
+unit				generic rebel general
+
+;;Steppe AOR
+
+rebel_type 			Skudata		//scythia
+category			peasant_revolt 
+chance				3
+description			Skudata
+unit				campa steppe peltasts
+unit				campa steppe archers
+unit				campa steppe horsemen
+unit				generic rebel general
+
+rebel_type 			Massagetes		//gauls
+category			peasant_revolt 
+chance				3
+description			Massagetes
+unit				campa steppe peltasts
+unit				campa steppe archers
+unit				campa steppe horsemen
+unit				generic rebel general
+
+;;Barbarian AOR
+
+rebel_type 			Illyrioi		//germans
+category			peasant_revolt 
+chance				3
+description			Illyrioi
+unit				campa barbarian peltasts
+unit				campa barbarian archers
+unit				campa barbarian horsemen
+unit				generic rebel general
+
+;;Persian AOR
+
+rebel_type 			Mardians		//parthia
+category			peasant_revolt 
+chance				3
+description			Mardians
+unit				campa parsa spearmen
+unit				campa parsa archers
+unit				campa parsa axemen
+unit				campa parsa cavalry
+unit				generic rebel general
+
+rebel_type 			Persians		//parthia
+category			peasant_revolt 
+chance				3
+description			Persians
+unit				campa parsa spearmen
+unit				campa parsa archers
+unit				campa parsa axemen
+unit				campa parsa cavalry
+unit				generic rebel general
+
+rebel_type 			Elamites		//parthia
+category			peasant_revolt 
+chance				3
+description			Elamites
+unit				campa parsa spearmen
+unit				campa parsa archers
+unit				campa parsa axemen
+unit				campa parsa cavalry
+unit				generic rebel general
+
+;;Iranian AOR
+
+rebel_type 			Iranians		//armenia
+category			peasant_revolt 
+chance				3
+description			Iranians
+unit				campa iranian spearmen
+unit				campa iranian archers
+unit				campa iranian axemen
+unit				campa iranian cavalry
+unit				generic rebel general
+
+rebel_type 			Kolchians		//armenia
+category			peasant_revolt 
+chance				3
+description			Kolchians
+unit				campa iranian spearmen
+unit				campa iranian archers
+unit				campa iranian axemen
+unit				campa iranian cavalry
+unit				generic rebel general
+
+;;Indian AOR
+
+rebel_type 			Indians		//magadh
+category			peasant_revolt 
+chance				3
+description			Indians
+unit				campa magadh archers
+unit				campa magadh skirmishers
+unit				campa magadh royal guards
+unit				campa magadh royal guards
+unit				campa magadh cavalry
+unit				generic rebel general
+
+;;Babylonian AOR
+
+rebel_type 			Babylonians		//britons
+category			peasant_revolt 
+chance				3
+description			Babylonians
+unit				campa babylon slingers
+unit				campa babylon cavalry
+unit				campa babylon archers
+unit				campa babylon spearmen
+unit				generic rebel general
+
+;;Eastern AOR
+
+rebel_type 			Arabians		//saba
+category			peasant_revolt 
+chance				3
+description			Arabians
+unit				campa eastern slingers
+unit				campa eastern infantry
+unit				campa eastern archers
+unit				campa eastern spearmen
+unit				campa eastern cavalry
+unit				generic rebel general
+
+;;Kemetic AOR
+
+rebel_type 			Egyptians		//egypt
+category			peasant_revolt 
+chance				3
+description			Egyptians
+unit				campa kemet lybian archers
+unit				campa kemet lybian spearmen
+unit				campa kemet marines
+unit				campa kemet troopers
+unit				campa kemet cavalry
+unit				generic rebel general
+
+;;African AOR
+
+rebel_type 			Kushites		//numidia
+category			peasant_revolt 
+chance				3
+description			Kushites
+unit				campa african archers
+unit				campa african spearmen
+unit				campa african cavalry
+unit				campa african infantry
+unit				generic rebel general
+
+;;Lydian AOR
+
+rebel_type 			Lydians		//pontus
+category			peasant_revolt 
+chance				3
+description			Lydians
+unit				campa lydia mysians
+unit				campa lydia hoplites
+unit				campa lydia karian hoplites
+unit				campa lydia pamphylian hoplites
+unit				campa lydia paphlagonian cavalry
+unit				generic rebel general
+
+rebel_type 			Karoi		//pontus
+category			peasant_revolt 
+chance				3
+description			Karoi
+unit				campa lydia hoplites
+unit				campa lydia karian hoplites
+unit				campa lydia kolophonian cavalry
+unit				generic rebel general
+
+rebel_type 			Mysoi		//pontus
+category			peasant_revolt 
+chance				3
+description			Mysoi
+unit				campa lydia mysians
+unit				campa lydia hoplites
+unit				campa lydia karian hoplites
+unit				campa lydia pamphylian hoplites
+unit				campa lydia paphlagonian cavalry
+unit				generic rebel general
+
+rebel_type 			Pontikoi		//pontus
+category			peasant_revolt 
+chance				3
+description			Pontikoi
+unit				campa lydia phrygians
+unit				campa lydia hoplites
+unit				campa lydia karian hoplites
+unit				campa lydia pamphylian hoplites
+unit				campa lydia kolophonian cavalry
+unit				generic rebel general
+
+rebel_type 			Paphlagones		//pontus
+category			peasant_revolt 
+chance				3
+description			Paphlagones
+unit				campa lydia phrygians
+unit				campa lydia hoplites
+unit				campa lydia karian hoplites
+unit				campa lydia pamphylian hoplites
+unit				campa lydia paphlagonian cavalry
+unit				generic rebel general
+
+rebel_type 			Pamphyloi		//pontus
+category			peasant_revolt 
+chance				3
+description			Pamphyloi
+unit				campa lydia mysians
+unit				campa lydia hoplites
+unit				campa lydia pamphylian hoplites
+unit				campa lydia kolophonian cavalry
+unit				campa lydia paphlagonian cavalry
+unit				generic rebel general
+
+;;Greek AOR
+
+rebel_type 			Athenaioi		//kyrene
+category			peasant_revolt 
+chance				3
+description			Athenaioi
+unit				campa greek archers
+unit				campa greek skirmishers
+unit				campa greek dorian hoplites
+unit				campa greek heavy hoplites
+unit				campa greek cavalry
+unit				generic rebel general
+
+rebel_type 			Lakonikoi		//kyrene
+category			peasant_revolt 
+chance				3
+description			Lakonikoi
+unit				campa greek archers
+unit				campa greek skirmishers
+unit				campa greek dorian hoplites
+unit				campa greek heavy hoplites
+unit				campa greek cavalry
+unit				generic rebel general
+
+rebel_type 			Boiotoi		//kyrene
+category			peasant_revolt 
+chance				3
+description			Boiotoi
+unit				campa greek archers
+unit				campa greek skirmishers
+unit				campa greek dorian hoplites
+unit				campa greek heavy hoplites
+unit				campa greek cavalry
+unit				generic rebel general
+
+rebel_type 			Achaioi		//kyrene
+category			peasant_revolt 
+chance				3
+description			Achaioi
+unit				campa greek archers
+unit				campa greek skirmishers
+unit				campa greek dorian hoplites
+unit				campa greek heavy hoplites
+unit				campa greek cavalry
+unit				generic rebel general
+
+rebel_type 			Argeioi		//kyrene
+category			peasant_revolt 
+chance				3
+description			Argeioi
+unit				campa greek archers
+unit				campa greek skirmishers
+unit				campa greek dorian hoplites
+unit				campa greek heavy hoplites
+unit				campa greek cavalry
+unit				generic rebel general
+
+rebel_type 			Euboeis		//kyrene
+category			peasant_revolt 
+chance				3
+description			Euboeis
+unit				campa greek archers
+unit				campa greek skirmishers
+unit				campa greek dorian hoplites
+unit				campa greek heavy hoplites
+unit				campa greek cavalry
+unit				generic rebel general
+
+rebel_type 			Thessalioi		//kyrene
+category			peasant_revolt 
+chance				3
+description			Thessalioi
+unit				campa greek archers
+unit				campa greek skirmishers
+unit				campa greek dorian hoplites
+unit				campa greek heavy hoplites
+unit				campa greek cavalry
+unit				generic rebel general
+
+rebel_type 			Makedones		//kyrene
+category			peasant_revolt 
+chance				3
+description			Makedones
+unit				campa greek archers
+unit				campa greek skirmishers
+unit				campa greek dorian hoplites
+unit				campa greek heavy hoplites
+unit				campa greek cavalry
+unit				generic rebel general
+
+rebel_type 			Chalkidikes		//kyrene
+category			peasant_revolt 
+chance				3
+description			Chalkidikes
+unit				campa greek archers
+unit				campa greek skirmishers
+unit				campa greek dorian hoplites
+unit				campa greek heavy hoplites
+unit				campa greek cavalry
+unit				generic rebel general
+
+rebel_type 			Bisaltoi		//kyrene
+category			peasant_revolt 
+chance				3
+description			Bisaltoi
+unit				campa greek archers
+unit				campa greek skirmishers
+unit				campa greek dorian hoplites
+unit				campa greek heavy hoplites
+unit				campa greek cavalry
+unit				generic rebel general
+
+rebel_type 			Abydenoi		//kyrene
+category			peasant_revolt 
+chance				3
+description			Abydenoi
+unit				campa greek archers
+unit				campa greek skirmishers
+unit				campa greek dorian hoplites
+unit				campa greek heavy hoplites
+unit				campa greek cavalry
+unit				generic rebel general
+
+rebel_type 			Mytilenioi		//kyrene
+category			peasant_revolt 
+chance				3
+description			Mytilenioi
+unit				campa greek archers
+unit				campa greek skirmishers
+unit				campa greek dorian hoplites
+unit				campa greek heavy hoplites
+unit				campa greek cavalry
+unit				generic rebel general
+
+rebel_type 			Aioleis		//kyrene
+category			peasant_revolt 
+chance				3
+description			Aioleis
+unit				campa greek archers
+unit				campa greek skirmishers
+unit				campa greek dorian hoplites
+unit				campa greek heavy hoplites
+unit				campa greek cavalry
+unit				generic rebel general
+
+rebel_type 			Tarantinoi		//kyrene
+category			peasant_revolt 
+chance				3
+description			Tarantinoi
+unit				campa greek archers
+unit				campa greek skirmishers
+unit				campa greek dorian hoplites
+unit				campa greek heavy hoplites
+unit				campa greek cavalry
+unit				generic rebel general
+
+rebel_type 			Apoulioi		//kyrene
+category			peasant_revolt 
+chance				3
+description			Apoulioi
+unit				campa greek archers
+unit				campa greek skirmishers
+unit				campa greek dorian hoplites
+unit				campa greek heavy hoplites
+unit				campa greek cavalry
+unit				generic rebel general
+
+rebel_type 			Sybaritai		//kyrene
+category			peasant_revolt 
+chance				3
+description			Sybaritai
+unit				campa greek archers
+unit				campa greek skirmishers
+unit				campa greek dorian hoplites
+unit				campa greek heavy hoplites
+unit				campa greek cavalry
+unit				generic rebel general
+
+rebel_type 			Kampanioi		//kyrene
+category			peasant_revolt 
+chance				3
+description			Kampanioi
+unit				campa greek archers
+unit				campa greek skirmishers
+unit				campa greek dorian hoplites
+unit				campa greek heavy hoplites
+unit				campa greek cavalry
+unit				generic rebel general
+
+rebel_type 			Rheginoi		//kyrene
+category			peasant_revolt 
+chance				3
+description			Rheginoi
+unit				campa greek archers
+unit				campa greek skirmishers
+unit				campa greek dorian hoplites
+unit				campa greek heavy hoplites
+unit				campa greek cavalry
+unit				generic rebel general
+
+rebel_type 			Sikelioi		//kyrene
+category			peasant_revolt 
+chance				3
+description			Sikelioi
+unit				campa greek archers
+unit				campa greek skirmishers
+unit				campa greek dorian hoplites
+unit				campa greek heavy hoplites
+unit				campa greek cavalry
+unit				generic rebel general
+
+rebel_type 			Zanklaioi		//kyrene
+category			peasant_revolt 
+chance				3
+description			Zanklaioi
+unit				campa greek archers
+unit				campa greek skirmishers
+unit				campa greek dorian hoplites
+unit				campa greek heavy hoplites
+unit				campa greek cavalry
+unit				generic rebel general
+
+rebel_type 			Euesperinoi		//kyrene
+category			peasant_revolt 
+chance				3
+description			Euesperinoi
+unit				campa greek archers
+unit				campa greek skirmishers
+unit				campa greek dorian hoplites
+unit				campa greek heavy hoplites
+unit				campa greek cavalry
+unit				generic rebel general
+
+rebel_type 			Kyrenaioi		//kyrene
+category			peasant_revolt 
+chance				3
+description			Kyrenaioi
+unit				campa greek archers
+unit				campa greek skirmishers
+unit				campa greek dorian hoplites
+unit				campa greek heavy hoplites
+unit				campa greek cavalry
+unit				generic rebel general
+
+rebel_type 			Molossioi		//kyrene
+category			peasant_revolt 
+chance				3
+description			Molossioi
+unit				campa greek archers
+unit				campa greek skirmishers
+unit				campa greek dorian hoplites
+unit				campa greek heavy hoplites
+unit				campa greek cavalry
+unit				generic rebel general
+
+rebel_type 			Kretai		//spain
+category			peasant_revolt 
+chance				3
+description			Kretai
+unit				campa greek archers
+unit				campa greek skirmishers
+unit				campa greek dorian hoplites
+unit				campa greek heavy hoplites
+unit				campa greek cavalry
+unit				generic rebel general
+
+rebel_type 			Rhodioi		//spain
+category			peasant_revolt 
+chance				3
+description			Rhodioi
+unit				campa greek archers
+unit				campa greek skirmishers
+unit				campa greek dorian hoplites
+unit				campa greek heavy hoplites
+unit				campa greek cavalry
+unit				generic rebel general
+
+rebel_type 			Kyprioi		//spain
+category			peasant_revolt 
+chance				3
+description			Kyprioi
+unit				campa greek archers
+unit				campa greek skirmishers
+unit				campa greek dorian hoplites
+unit				campa greek heavy hoplites
+unit				campa greek cavalry
+unit				generic rebel general
+
+rebel_type 			Paiones		//spain
+category			peasant_revolt 
+chance				3
+description			Paiones
+unit				campa greek archers
+unit				campa greek skirmishers
+unit				campa greek dorian hoplites
+unit				campa greek heavy hoplites
+unit				campa greek cavalry
+unit				generic rebel general
+
+rebel_type 			Iones		//spain
+category			peasant_revolt 
+chance				3
+description			Iones
+unit				campa greek archers
+unit				campa greek skirmishers
+unit				campa greek dorian hoplites
+unit				campa greek heavy hoplites
+unit				campa greek cavalry
+unit				generic rebel general
+
+rebel_type 			Lokroi		//spain
+category			peasant_revolt 
+chance				3
+description			Lokroi
+unit				campa greek archers
+unit				campa greek skirmishers
+unit				campa greek dorian hoplites
+unit				campa greek heavy hoplites
+unit				campa greek cavalry
+unit				generic rebel general
+
+rebel_type 			Mossynoikoi		//spain
+category			peasant_revolt 
+chance				3
+description			Mossynoikoi
+unit				campa greek archers
+unit				campa greek skirmishers
+unit				campa greek dorian hoplites
+unit				campa greek heavy hoplites
+unit				campa greek cavalry
+unit				generic rebel general
+
+rebel_type 			Chersonitai		//spain
+category			peasant_revolt 
+chance				3
+description			Chersonitai
+unit				campa greek archers
+unit				campa greek skirmishers
+unit				campa greek dorian hoplites
+unit				campa greek heavy hoplites
+unit				campa greek cavalry
+unit				generic rebel general
+
+rebel_type 			Pantikapaioi		//spain
+category			peasant_revolt 
+chance				3
+description			Pantikapaioi
+unit				campa greek archers
+unit				campa greek skirmishers
+unit				campa greek dorian hoplites
+unit				campa greek heavy hoplites
+unit				campa greek cavalry
+unit				generic rebel general
+
+rebel_type 			Greeks		//spain
+category			peasant_revolt 
+chance				3
+description			Greeks
+unit				campa greek archers
+unit				campa greek skirmishers
+unit				campa greek dorian hoplites
+unit				campa greek heavy hoplites
+unit				campa greek cavalry
+unit				generic rebel general
+
+rebel_type 			Kilikes		//spain
+category			peasant_revolt 
+chance				3
+description			Kilikes
+unit				campa greek archers
+unit				campa greek skirmishers
+unit				campa greek dorian hoplites
+unit				campa greek heavy hoplites
+unit				campa greek cavalry
+unit				generic rebel general
+
+;;;;;;;;;;;;		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;non region			based
+;;;;;;;;;;;;		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+rebel_type			gladiator_uprising
+category			gladiator_revolt
+chance				100
+description			gladiator_uprising
+unit				campa barbarian peltasts
+unit				campa barbarian archers
+unit				campa barbarian horsemen
+
+rebel_type			brigands
+category			brigands
+chance				50
+description			brigands
+unit				campa thrake archers
+unit				campa thrake horsemen
+unit				campa parsa spearmen
+unit				campa parsa archers
+unit				campa parsa cavalry
+unit				campa greek archers
+unit				campa greek dorian hoplites
+unit				campa babylon cavalry
+unit				campa babylon archers
+unit				campa babylon spearmen
+unit				campa magadh archers
+unit				campa magadh royal guards
+unit				campa magadh cavalry
+unit				campa kemet marines
+unit				campa kemet cavalry
+
+rebel_type			pirates
+category			pirates
+chance				50
+description			pirates
+unit				naval pirate ships
+
+					

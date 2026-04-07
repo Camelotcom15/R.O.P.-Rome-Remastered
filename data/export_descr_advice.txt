@@ -1,0 +1,37 @@
+;ROP: Took out all threads and triggers that are not used, except 4tpy
+
+;===============================================================
+;== ADVICE THREAD DATA STARTS HERE ==
+;===============================================================
+
+;------------------------------------------
+AdviceThread 4tpy_Thread
+    GameArea Campaign
+
+    Item 4tpy_Text_01
+        Uninhibitable
+        Verbosity  0 
+        Threshold  1 
+        MaxRepeats  0 
+        RepeatInterval  1 
+        Attitude Normal
+        Presentation Default
+        Title 4tpy_Text_01_Title
+        ; TODO: Temp change
+        ;Script scripts\show_me\descr_script_v2.txt
+        Script scripts\show_me\descr_script_v3.txt
+        Text 4tpy_Text_01_Text1
+
+
+
+;===============================================================
+;== TRIGGER DATA STARTS HERE ==
+;===============================================================
+
+;------------------------------------------
+
+Trigger 4tpy_Trigger
+    WhenToTest SettlementSelected
+
+    AdviceThread 4tpy_Thread  1
+

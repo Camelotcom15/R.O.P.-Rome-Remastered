@@ -1,0 +1,394 @@
+;; Last updated by jburnett on 2021/05/07
+;; DESCR file generated via RTW Amber pack editor
+
+;;Note: this might LOOK like json, but I'm actually hijacking our txt parser to do this, so it might be kinda prone to breaking, sorry. Please note that the trailing commas are VERY IMPORTANT, DO NOT FORGET THEM
+;;oh, also some decimals may be slightly off due to the fact that we pack them into <4 bytes to save space
+
+"hashes": ;;hashes used to identify if the cultures/factions/climates for this mod are valid to use with whatever was loaded first, it's just the 16 byte SHA1 of all the names joined together (no spaces) % (2^32)
+{
+	;;technically as long as you have a unique number (within uint_max, of course) for your mod this will still work, and if you leave this part out your mod will always use that of the previously loaded mod,
+	;;although it might break if you actually use cultures, factions or climates anywhere
+
+	"culture hash": 92657404,
+	"faction hash": 17399110,
+	"climate hash": 81592029,
+},
+
+"global parameters":
+{
+	"battle rolloff factor": 0.1,			;;rolloff factors for both 3D battle and campaign map
+	"strat rolloff factor": 3.0,
+
+	"doppler factor": 2.0,  				;;doppler factor, idk what this does but I assume it has something to do with the doppler effect
+	"music retrigger": 5,					;;time it takes for the music to restart after it finishes
+	"music fade in": 0, 					;;time the music takes to fade in and out
+	"music fade out": 5,
+
+	"cull group noise": false,				;;disable group sounds when close enough to a unit
+	"group noise cull dist": -6.0,			;;distance at which to cull group noises
+
+	"unit move start delay": 0.5,			;;delay before playing unit movement sounds
+
+	"unit sound merge distance": 50.0,  	;;the minimum distance at which two units can play seperate group sounds
+
+	"unit collide threshold": 10.0, 		;;the minimum percentage of soldiers that need to be colliding to play collision sounds when charging
+
+	"unit under attack timeout": 60.0,		;;the minimum time between "under attack" voicelines
+	"unit warhorns timeout": 15.0,			;;the minimum time between warhorn effects
+
+	"ducking on": true, 					;;should we be using ducking?
+	"ducking fade in": 0.1, 				;;amount of time taken for ducking to reach it's maxium
+	"ducking fade out": 1.0, 				;;amount of time taken for ducking to retreat from maximum
+	"voice ducking amount": -55,			;;ducking percentage when a voice is playing
+	"pause ducking amount": -50.0,			;;ducking amount when the pause menu is opened while the game is unpaused
+
+	"use unit idle probability": true,		;;trigger idle sounds randomly instead of doing so every tick
+	"use unit ambient probability": true,	;;trigger ambient sounds randomly instead of doing so every tick
+	"use unit retreat probability": true,	;;trigger retreat sounds randomly instead of doing so every tick
+	
+	"unit idle probability scale": 0.01, 	;;the chance that a unit will make an idle sound every tick, multiplied by the number of soldiers in the unit
+	"unit ambient probability scale": 0.01,	;;same as above but for ambient sounds
+	"unit retreat probability scale": 0.02,	;;same as above but for retreating sounds
+
+	"volume cutoff": 0.1,					;;the cutoff volume used when autocalculating max dist for sounds
+	"priority floor": -1000.0,				;;don't play sounds below this priority
+	"weather pitch offset": 0.2,			;;the minimum pitch difference between two weather effects
+
+
+	;;the contiguous range of voice indexes valid for randomly generated characters of each type for each faction
+	;;these will be ignored if the faction or culture hash doesn't match the topmost mod
+	"random voice indexes":
+	{
+		;;you can either define by culture type, faction type, or just do "all", later overrides earlier
+		
+		;;so here we're defining that all character types for all factions use this set
+		"all":
+		{
+			"all":
+			{
+				"start index": 0,
+				"num indexes": 1,
+			},
+		},
+		;;but we could override this so that, say, greek cultures use a different set to everyone else
+		"greek":
+		{
+			"all":
+			{
+				"start index": 0,
+				"num indexes": 1,
+			},
+		},
+		;;and we can then override _that_ so that macedon's admirals and diplomats could use a different set to the greek ones
+		"macedon":
+		{
+			"admiral":
+			{
+				"start index": 0,
+				"num indexes": 1,
+			},
+			"diplomat":
+			{
+				"start index": 0,
+				"num indexes": 1,
+			},
+		},
+		
+		;; *most* places in the sound descrs where it uses factions will allow you to use the above all/culture shorthand
+	},
+},
+
+;;these will be ignored if the climate hash doesn't match the topmost mod
+"EAX parameters":
+[
+	"global":
+	{
+		"parameters":
+		[
+			{
+				"name": "Mute at maximum",
+				"value": 0,
+			},
+		],
+	},
+	"terrain":
+	{
+		"ground types":
+			[ "grass_short", "grass_long", "scrub_dense", ],
+		"parameters":
+		[
+			{
+				"room type": "ENVIRONMENT_GENERIC",
+				"is master": false,
+			},
+		],
+	},
+	"terrain":
+	{
+		"ground types":
+			[ "sand", "rock", ],
+		"parameters":
+		[
+			{
+				"room type": "ENVIRONMENT_GENERIC",
+				"is master": false,
+			},
+		],
+	},
+	"terrain":
+	{
+		"ground types":
+			[ "forest_dense", ],
+		"parameters":
+		[
+			{
+				"room type": "ENVIRONMENT_GENERIC",
+				"is master": false,
+			},
+		],
+	},
+	"terrain":
+	{
+		"ground types":
+			[ "swamp", ],
+		"parameters":
+		[
+			{
+				"room type": "ENVIRONMENT_GENERIC",
+				"is master": false,
+			},
+		],
+	},
+	"terrain":
+	{
+		"ground types":
+			[ "mud", ],
+		"parameters":
+		[
+			{
+				"room type": "ENVIRONMENT_GENERIC",
+				"is master": false,
+			},
+		],
+	},
+	"terrain":
+	{
+		"ground types":
+			[ "mud_road", ],
+		"parameters":
+		[
+			{
+				"room type": "ENVIRONMENT_GENERIC",
+				"is master": false,
+			},
+		],
+	},
+	"terrain":
+	{
+		"ground types":
+			[ "stone_road", ],
+		"parameters":
+		[
+			{
+				"room type": "ENVIRONMENT_GENERIC",
+				"is master": false,
+			},
+		],
+	},
+	"terrain":
+	{
+		"ground types":
+			[ "water", ],
+		"parameters":
+		[
+			{
+				"room type": "ENVIRONMENT_GENERIC",
+				"is master": false,
+			},
+		],
+	},
+	"terrain":
+	{
+		"ground types":
+			[ "ice", ],
+		"parameters":
+		[
+			{
+				"room type": "ENVIRONMENT_GENERIC",
+				"is master": false,
+			},
+		],
+	},
+	"terrain":
+	{
+		"ground types":
+			[ "snow", ],
+		"parameters":
+		[
+			{
+				"room type": "ENVIRONMENT_GENERIC",
+				"is master": false,
+			},
+		],
+	},
+	"terrain":
+	{
+		"ground types":
+			[ "wood", ],
+		"parameters":
+		[
+			{
+				"room type": "ENVIRONMENT_GENERIC",
+				"is master": false,
+			},
+		],
+	},
+	"terrain":
+	{
+		"ground types":
+			[ "dirt", ],
+		"parameters":
+		[
+			{
+				"room type": "ENVIRONMENT_GENERIC",
+				"is master": false,
+			},
+		],
+	},
+	"city":
+	{
+		"settlement levels":
+			[ "all", "-village", ],
+		"providers":
+			[ "Creative Labs EAX 3 (TM)", "Creative Labs EAX 2 (TM)", ],
+		"parameters":
+		[
+			{
+				"room type": "ENVIRONMENT_ALLEY",
+				"is master": false,
+			},
+			{
+				"name": "EAX effect volume",
+				"value": 1.0,
+			},
+		],
+	},
+	"city":
+	{
+		"settlement levels":
+			[ "all", "-village", ],
+		"providers":
+			[ "Miles Fast 2D Positional Audio", ],
+		"parameters":
+		[
+			{
+				"room type": "ENVIRONMENT_ALLEY",
+				"is master": false,
+			},
+		],
+	},
+	"forest":
+	{
+		"climates":
+			[ "all", "-test_climate", "-rocky_desert", "-temperate_forest_open", "-temperate_forest_deep", "-highland", "-alpine", ],
+		"providers":
+			[ "Miles Fast 2D Positional Audio", ],
+		"parameters":
+		[
+			{
+				"room type": "ENVIRONMENT_FOREST",
+				"is master": false,
+			},
+			{
+				"name": "EAX effect volume",
+				"value": 0.6000000238418579,
+			},
+		],
+	},
+	"forest":
+	{
+		"climates":
+			[ "all", "-test_climate", "-rocky_desert", "-temperate_forest_open", "-temperate_forest_deep", "-highland", "-alpine", ],
+		"providers":
+			[ "Creative Labs EAX 3 (TM)", "Creative Labs EAX 2 (TM)", ],
+		"parameters":
+		[
+			{
+				"room type": "ENVIRONMENT_FOREST",
+				"is master": false,
+			},
+			{
+				"name": "EAX effect volume",
+				"value": 0.6000000238418579,
+			},
+		],
+	},
+	"forest":
+	{
+		"climates":
+			[ "temperate_forest_open", "temperate_forest_deep", "alpine", ],
+		"providers":
+			[ "Miles Fast 2D Positional Audio", ],
+		"parameters":
+		[
+			{
+				"room type": "ENVIRONMENT_FOREST",
+				"is master": false,
+			},
+			{
+				"name": "EAX effect volume",
+				"value": 1.0,
+			},
+		],
+	},
+	"forest":
+	{
+		"climates":
+			[ "temperate_forest_open", "temperate_forest_deep", "alpine", ],
+		"providers":
+			[ "Creative Labs EAX 3 (TM)", "Creative Labs EAX 2 (TM)", ],
+		"parameters":
+		[
+			{
+				"room type": "ENVIRONMENT_FOREST",
+				"is master": false,
+			},
+			{
+				"name": "EAX effect volume",
+				"value": 1.0,
+			},
+		],
+	},
+	"frontend":
+	{
+		"parameters":
+		[
+			{
+				"room type": "ENVIRONMENT_FOREST",
+				"is master": true,
+			},
+			{
+				"name": "EAX effect volume",
+				"value": 1.0,
+			},
+		],
+	},
+	"campaign":
+	{
+		"parameters":
+		[
+			{
+				"room type": "ENVIRONMENT_FOREST",
+				"is master": true,
+			},
+			{
+				"name": "EAX effect volume",
+				"value": 1.0,
+			},
+		],
+	},
+],
+
+include "sounds/descrs/descr_enum_sounds.txt" ;; enumerated sounds
+include "sounds/descrs/descr_misc_sounds.txt" ;; misc (id) sounds
+include "sounds/descrs/descr_bank_sounds.txt" ;; banked sounds

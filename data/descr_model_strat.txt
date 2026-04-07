@@ -1,0 +1,1009 @@
+;;	
+;	this file contains the model linkages for both strategy map and battlefield; it gets 
+;	parsed on application startup but is not otherwise referred to. the data format is thus:
+;
+;	;						indicates a comment ;-)
+;							
+;	type					indicates a new model type
+;
+;								must be followed by id name string
+;
+;	skeleton				indicates which skeleton should be used for these models
+;
+;								must be followed by id name string (cf descr_skeleton.txt)
+;
+;	;indiv_range				indicates at what point we start rendering men individually even if 
+;								we can 'group render'
+;
+;								must be followed by an integer (whole number) range in metres
+;
+;								group render means the whole unit will be rendered using one 
+;								model, individual render means the soldiers will be	tested 
+;								individually for which model lod to use (slower) 
+;
+;	(models)				there must be at least one; the model_ keywords indicate a new model in
+;								the lod series; each must be followed by a filename and either the
+;								lod range in metres or the word 'max' for maximum range... all lods
+;								must be in order, from shortest distance (highest detail) to furthest
+;								distance. The model_ keywords are:
+;
+;			model_flexi_m		essentially a flexi model but has a small number of weighted 
+;								vertices, such as Will's high-detail carthaginian infantryman 
+;								with the weighted shoulder verts 
+;			
+;			model_flexi_c		a flexi model which contains per-vertex colours, for example 
+;								for colouring the different Roman faction assassins
+;
+;			model_flexi			plain vanilla flexi model, which is a single-skinned mesh with 
+;								normals and texture coordinates
+;
+;			;shadow_model_flexi	as model_flexi but used to create the shadow volume	
+;
+;	model_mesh				(optional) range only for using animated mesh frames for the model
+;
+;	model_sprite			(optional) sprite model for this model type 
+;
+;								if the first item is a distance (integer number in m), a new 
+;								sprite animation set will be generated for this model; if it is 
+;								anything else, it must be a type name from this file which has a 
+;								valid sprite entry *and* was processed before this type entry
+;
+;	model_tri				(optional) indicates that this model can be represented by a single 
+;								triangle
+;
+;								must be followed by a range (integer number in metres), and three 
+;								floating point numbers in the range 0.0f - 1.0f which indicate 
+;								colours red,green,blue to use for the triangle
+;
+
+
+;strat map only characters
+ignore_registry
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;SPIES, ASSASSINS AND DIPLOMATS
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+type				diplomat
+skeleton			strat_diplomat
+scale				0.7
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture				kyrene, data/models_strat/textures/diplomat_pandya.tga
+texture				baktria, data/models_strat/textures/diplomat_baktria.tga
+texture				magadh, data/models_strat/textures/diplomat_cilicia.tga
+texture				saba, data/models_strat/textures/diplomat_sabaean.tga
+texture				macedon, data/models_strat/textures/diplomat_makedon.tga
+texture				egypt, data/models_strat/textures/diplomat_kemet.tga
+texture				seleucid, data/models_strat/textures/diplomat_athenai.tga
+texture				carthage, data/models_strat/textures/diplomat_phoenicia.tga
+texture				parthia, data/models_strat/textures/diplomat_persia.tga
+texture				pontus, data/models_strat/textures/diplomat_pontus.tga
+texture				gauls, data/models_strat/textures/diplomat_massagetes.tga
+texture				germans, data/models_strat/textures/diplomat_german.tga
+texture				britons, data/models_strat/textures/diplomat_babylon.tga
+texture				armenia, data/models_strat/textures/diplomat_media.tga
+texture				dacia, data/models_strat/textures/diplomat_taras.tga
+texture				greek_cities, data/models_strat/textures/diplomat_lakedaimon.tga
+texture				numidia, data/models_strat/textures/diplomat_nubia.tga
+texture				scythia, data/models_strat/textures/diplomat_scythia.tga
+texture				spain, data/models_strat/textures/diplomat_ionia.tga
+texture				thrace, data/models_strat/textures/diplomat_thrake.tga
+texture				slave, data/models_strat/textures/diplomat_slave.tga
+model_flexi_m		data/models_strat/diplomat.cas, max
+no_variation model_flexi_m		data/models_strat/diplomat.cas, max
+;shadow_model_flexi	data/models_strat/shadow_model_diplomat.cas, max
+
+
+type				spy
+skeleton			strat_spy
+scale				0.7
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture				kyrene, data/models_strat/textures/spy_pandya.tga
+texture				baktria, data/models_strat/textures/spy_baktria.tga
+texture				magadh, data/models_strat/textures/spy_cilicia.tga
+texture				saba, data/models_strat/textures/spy_sabaean.tga
+texture				macedon, data/models_strat/textures/spy_makedon.tga
+texture				egypt, data/models_strat/textures/spy_kemet.tga
+texture				seleucid, data/models_strat/textures/spy_athenai.tga
+texture				carthage, data/models_strat/textures/spy_phoenicia.tga
+texture				parthia, data/models_strat/textures/spy_persia.tga
+texture				pontus, data/models_strat/textures/spy_pontus.tga
+texture				gauls, data/models_strat/textures/spy_massagetes.tga
+texture				germans, data/models_strat/textures/spy_german.tga
+texture				britons, data/models_strat/textures/spy_babylon.tga
+texture				armenia, data/models_strat/textures/spy_media.tga
+texture				dacia, data/models_strat/textures/spy_taras.tga
+texture				greek_cities, data/models_strat/textures/spy_lakedaimon.tga
+texture				numidia, data/models_strat/textures/spy_nubia.tga
+texture				scythia, data/models_strat/textures/spy_scythia.tga
+texture				spain, data/models_strat/textures/spy_ionia.tga
+texture				thrace, data/models_strat/textures/spy_thrake.tga
+texture				slave, data/models_strat/textures/spy_slave.tga
+model_flexi_m		data/models_strat/spy.cas, max
+no_variation model_flexi_m		data/models_strat/spy.cas, max
+;shadow_model_flexi	data/models_strat/shadow_model_sword.cas, max
+
+
+;;TEMPORARY;;
+
+type				assassin
+skeleton			strat_assassin
+scale				0.7
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture				kyrene, data/models_strat/textures/assassin_pandya.tga
+texture				baktria, data/models_strat/textures/assassin_baktria.tga
+texture				magadh, data/models_strat/textures/assassin_cilicia.tga
+texture				saba, data/models_strat/textures/assassin_sabaean.tga
+texture				macedon, data/models_strat/textures/assassin_makedon.tga
+texture				egypt, data/models_strat/textures/assassin_kemet.tga
+texture				seleucid, data/models_strat/textures/assassin_athenai.tga
+texture				carthage, data/models_strat/textures/assassin_phoenicia.tga
+texture				parthia, data/models_strat/textures/assassin_persia.tga
+texture				pontus, data/models_strat/textures/assassin_pontus.tga
+texture				gauls, data/models_strat/textures/assassin_massagetes.tga
+texture				germans, data/models_strat/textures/assassin_german.tga
+texture				britons, data/models_strat/textures/assassin_babylon.tga
+texture				armenia, data/models_strat/textures/assassin_media.tga
+texture				dacia, data/models_strat/textures/assassin_taras.tga
+texture				greek_cities, data/models_strat/textures/assassin_lakedaimon.tga
+texture				numidia, data/models_strat/textures/assassin_nubia.tga
+texture				scythia, data/models_strat/textures/assassin_scythia.tga
+texture				spain, data/models_strat/textures/assassin_ionia.tga
+texture				thrace, data/models_strat/textures/assassin_thrake.tga
+texture				slave, data/models_strat/textures/assassin_slave.tga
+model_flexi			data/models_strat/assassin.cas, max
+no_variation model_flexi			data/models_strat/assassin.cas, max
+;shadow_model_flexi	data/models_strat/shadow_model_sword.cas, max
+
+;;ROP Generals
+
+type						sm_persia_general
+skeleton					strat_named_with_army
+scale				0.7
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture						parthia, data/models_unit/textures/officer_rop_persia_general.tga
+model_flexi_m			data/models_unit/officer_rop_persia_general.cas, max
+no_variation model_flexi_m			data/models_unit/officer_rop_persia_general.cas, max
+;shadow_model_flexi	data/models_strat/shadow_model_sword.cas, max
+
+type						sm_persia_lesser_general
+skeleton					strat_named_with_army
+scale				0.7
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture						parthia, data/models_unit/textures/officer_rop_persia_lesser_general.tga
+model_flexi_m			data/models_unit/officer_rop_persia_lesser_general.cas, max
+no_variation model_flexi_m			data/models_unit/officer_rop_persia_lesser_general.cas, max
+;shadow_model_flexi	data/models_strat/shadow_model_sword.cas, max
+
+
+type						sm_babylon_general
+skeleton					strat_named_with_army
+scale				0.7
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture						britons, data/models_unit/textures/officer_rop_babylon_general.tga
+model_flexi			data/models_unit/officer_rop_babylon_general.cas, max
+no_variation model_flexi			data/models_unit/officer_rop_babylon_general.cas, max
+;shadow_model_flexi	data/models_strat/shadow_model_sword.cas, max
+
+type						sm_babylon_lesser_general
+skeleton					strat_named_with_army
+scale				0.7
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture						britons, data/models_unit/textures/officer_rop_babylon_lesser_general.tga
+model_flexi			data/models_unit/officer_rop_babylon_lesser_general.cas, max
+no_variation model_flexi			data/models_unit/officer_rop_babylon_lesser_general.cas, max
+;shadow_model_flexi	data/models_strat/shadow_model_sword.cas, max
+
+
+type						sm_lydia_general
+skeleton					strat_named_with_army
+scale				0.7
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture						pontus, data/models_unit/textures/officer_rop_lydia_general.tga
+model_flexi			data/models_unit/officer_rop_lydia_general.cas, max
+no_variation model_flexi			data/models_unit/officer_rop_lydia_general.cas, max
+;shadow_model_flexi	data/models_strat/shadow_model_sword.cas, max
+
+type						sm_lydia_lesser_general
+skeleton					strat_named_with_army
+scale				0.7
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture						pontus, data/models_unit/textures/officer_rop_lydia_lesser_general.tga
+model_flexi			data/models_unit/officer_rop_lydia_lesser_general.cas, max
+no_variation model_flexi			data/models_unit/officer_rop_lydia_lesser_general.cas, max
+;shadow_model_flexi	data/models_strat/shadow_model_sword.cas, max
+
+
+type						sm_magadh_general
+skeleton					strat_named_with_army
+scale				0.7
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture						magadh, data/models_unit/textures/officer_rop_magadh_general.tga
+model_flexi			data/models_unit/officer_rop_magadh_general.cas, max
+no_variation model_flexi			data/models_unit/officer_rop_magadh_general.cas, max
+;shadow_model_flexi	data/models_strat/shadow_model_sword.cas, max
+
+type						sm_magadh_lesser_general
+skeleton					strat_named_with_army
+scale				0.7
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture						magadh, data/models_unit/textures/officer_rop_magadh_lesser_general.tga
+model_flexi			data/models_unit/officer_rop_magadh_lesser_general.cas, max
+no_variation model_flexi			data/models_unit/officer_rop_magadh_lesser_general.cas, max
+;shadow_model_flexi	data/models_strat/shadow_model_sword.cas, max
+
+
+type						sm_media_general
+skeleton					strat_named_with_army
+scale				0.7
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture						armenia, data/models_unit/textures/officer_rop_media_general.tga
+model_flexi			data/models_unit/officer_rop_media_general.cas, max
+no_variation model_flexi			data/models_unit/officer_rop_media_general.cas, max
+;shadow_model_flexi	data/models_strat/shadow_model_sword.cas, max
+
+type						sm_media_lesser_general
+skeleton					strat_named_with_army
+scale				0.7
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture						armenia, data/models_unit/textures/officer_rop_media_lesser_general.tga
+model_flexi			data/models_unit/officer_rop_persia_lesser_general.cas, max
+no_variation model_flexi			data/models_unit/officer_rop_persia_lesser_general.cas, max
+;shadow_model_flexi	data/models_strat/shadow_model_sword.cas, max
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;BARB GENERALS
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+type				sm_barb_general
+skeleton			strat_named_with_army
+scale				0.7
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture						gauls, data/models_unit/textures/officer_aor_steppe_general_massagetes.tga
+texture						germans, data/models_unit/textures/officer_aor_barbarian_general.tga
+texture						scythia, data/models_unit/textures/officer_aor_steppe_general_scythia.tga
+texture						thrace, data/models_unit/textures/officer_thrake_general.TGA
+model_flexi_m		data/models_unit/officer_thrake_general.CAS, max
+no_variation model_flexi_m		data/models_unit/officer_thrake_general.CAS, max
+;shadow_model_flexi	data/models_strat/shadow_model_sword.cas, max
+
+type				sm_barb_lesser_general
+skeleton			strat_named_with_army
+scale				0.7
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture						gauls, data/models_unit/textures/officer_aor_steppe_lesser_general_massagetes.tga
+texture						germans, data/models_unit/textures/officer_aor_barbarian_lesser_general.tga
+texture						scythia, data/models_unit/textures/officer_aor_steppe_lesser_general_scythia.tga
+texture						thrace, data/models_unit/textures/officer_thrake_lesser_general.TGA
+model_flexi_m		data/models_unit/officer_thrake_lesser_general.CAS, max
+no_variation model_flexi_m		data/models_unit/officer_thrake_lesser_general.CAS, max
+;shadow_model_flexi	data/models_strat/shadow_model_sword.cas, max
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;CARTHAGINIAN GENERALS - not used
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+type				sm_carthage_general
+skeleton			strat_named_with_army
+scale				0.7
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture				carthage, data/models_unit/textures/UNIT_AOR_GREEK_ARCHERS.TGA
+texture				spain, data/models_unit/textures/UNIT_AOR_GREEK_ARCHERS.TGA
+model_flexi_m		data/models_unit/officer_carthage_general_high.cas, max
+no_variation model_flexi_m		data/models_unit/officer_carthage_general_high.cas, max
+;shadow_model_flexi	data/models_strat/shadow_model_sword.cas, max
+
+
+type				sm_carthage_lesser_general
+skeleton			strat_named_with_army
+scale				0.7
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture				carthage, data/models_unit/textures/UNIT_AOR_GREEK_ARCHERS.TGA
+texture				spain, data/models_unit/textures/UNIT_AOR_GREEK_ARCHERS.TGA
+model_flexi_m		data/models_strat/carthage_strat_captain.CAS, max
+no_variation model_flexi_m		data/models_strat/carthage_strat_captain.CAS, max
+;shadow_model_flexi	data/models_strat/shadow_model_sword.cas, max
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;EASTERN GENERALS
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+type				sm_eastern_general
+skeleton			strat_named_with_army
+scale				0.7
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture				baktria, data/models_unit/textures/OFFICER_ROP_PARSA.TGA
+texture				saba, data/models_unit/textures/OFFICER_ROP_PARSA.TGA
+model_flexi_m		data/models_unit/officer_eastern_general_high.CAS, max
+no_variation model_flexi_m		data/models_unit/officer_eastern_general_high.CAS, max
+;shadow_model_flexi	data/models_strat/shadow_model_sword.cas, max
+
+
+type				sm_eastern_lesser_general
+skeleton			strat_named_with_army
+scale				0.7
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture				baktria, data/models_unit/textures/UNIT_ROP_PANDYA_INFANTRY.TGA
+texture				saba, data/models_unit/textures/UNIT_ROP_PANDYA_INFANTRY.TGA
+model_flexi			data/models_strat/strat_eastern_lesser_general.CAS, max
+no_variation model_flexi			data/models_strat/strat_eastern_lesser_general.CAS, max
+;shadow_model_flexi	data/models_strat/shadow_model_sword.cas, max
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;EGYPTIAN GENERALS
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+type				sm_egypt_general
+skeleton			strat_named_with_army
+scale				0.7
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture				egypt, data/models_unit/textures/officer_rop_kemet_general.TGA
+texture				numidia, data/models_unit/textures/officer_rop_kemet_general.TGA
+model_flexi_m		data/models_unit/officer_rop_kemet_general.cas, max
+no_variation model_flexi_m		data/models_unit/officer_rop_kemet_general.cas, max
+;shadow_model_flexi	data/models_strat/shadow_model_sword.cas, max
+
+type				sm_egypt_lesser_general
+skeleton			strat_named_with_army
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture				egypt, data/models_unit/textures/officer_rop_kemet_lesser_general.TGA
+texture				numidia, data/models_unit/textures/officer_rop_kemet_lesser_general.TGA
+model_flexi_m		data/models_unit/officer_rop_kemet_lesser_general.CAS, max
+no_variation model_flexi_m		data/models_unit/officer_rop_kemet_lesser_general.CAS, max
+;shadow_model_flexi	data/models_strat/shadow_model_axe.cas, max
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;GREEK GENERALS
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+type				sm_greek_general
+skeleton			strat_named_with_army
+scale				0.7
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture						kyrene, data/models_unit/textures/officer_rop_kyrene_general.TGA
+texture						greek_cities, data/models_unit/textures/officer_rop_greek_general_sparta.tga
+texture						seleucid, data/models_unit/textures/officer_rop_greek_general_athenai.tga
+texture						dacia, data/models_unit/textures/officer_rop_greek_general_taras.tga
+texture						spain, data/models_unit/textures/officer_rop_greek_general_ionia.tga
+texture						macedon, data/models_unit/textures/officer_rop_greek_general_makedon.tga
+model_flexi_m		data/models_strat/strat_kyrene_general.cas, max
+no_variation model_flexi_m		data/models_strat/strat_kyrene_general.cas, max
+;shadow_model_flexi	data/models_strat/shadow_model_sword.cas, max
+
+type				sm_greek_lesser_general
+skeleton			strat_named_with_army
+scale				0.7
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture						kyrene, data/models_unit/textures/officer_rop_kyrene_lesser_general.TGA
+texture						greek_cities, data/models_unit/textures/officer_rop_greek_lesser_general_sparta.tga
+texture						seleucid, data/models_unit/textures/officer_rop_greek_lesser_general_athenai.tga
+texture						dacia, data/models_unit/textures/officer_rop_greek_lesser_general_taras.tga
+texture						spain, data/models_unit/textures/officer_rop_greek_lesser_general_ionia.tga
+texture						macedon, data/models_unit/textures/officer_rop_greek_lesser_general_makedon.tga
+model_flexi_m		data/models_strat/strat_kyrene_lesser_general_v2.CAS, max
+no_variation model_flexi_m		data/models_strat/strat_kyrene_lesser_general_v2.CAS, max
+;shadow_model_flexi	data/models_strat/shadow_model_sword.cas, max
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;ROMAN GENERALS - not used
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+type				sm_roman_general
+skeleton			strat_named_with_army
+scale				0.7
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture				baktria, data/models_unit/textures/OFFICER_ROP_PARSA.TGA
+texture				magadh, data/models_unit/textures/OFFICER_ROP_PARSA.TGA
+texture				saba, data/models_unit/textures/OFFICER_ROP_PARSA.TGA
+model_flexi_m		data/models_unit/officer_roman_general_high.cas, max
+no_variation model_flexi_m		data/models_unit/officer_roman_general_high.cas, max
+;shadow_model_flexi	data/models_strat/shadow_model_sword.cas, max
+
+type				sm_roman_lesser_general
+skeleton			strat_named_with_army
+scale				0.7
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture				baktria, data/models_unit/textures/UNIT_ROP_PANDYA_INFANTRY.TGA
+texture				magadh, data/models_unit/textures/UNIT_ROP_PANDYA_INFANTRY.TGA
+texture				saba, data/models_unit/textures/UNIT_ROP_PANDYA_INFANTRY.TGA
+model_flexi_m		data/models_strat/strat_roman_lesser_general.cas, max
+no_variation model_flexi_m		data/models_strat/strat_roman_lesser_general.cas, max
+;shadow_model_flexi	data/models_strat/shadow_model_sword.cas, max
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;REBEL GENERALS
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+type				sm_rebel_general
+skeleton			strat_named_with_army
+scale				0.7
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+;;texture				slave, data/models_unit/textures/unit_rebel_greater_general.tga
+texture				slave, data/models_unit/textures/unit_greek_peasant_slave.tga
+model_flexi_m		data/models_unit/unit_rebel_greater_general_high.cas, max
+no_variation model_flexi_m		data/models_unit/unit_rebel_greater_general_high.cas, max
+;shadow_model_flexi	data/models_strat/shadow_model_sword.cas, max
+
+type				sm_rebel_lesser_general
+skeleton			strat_named_with_army
+scale				0.7
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture			slave, data/models_unit/textures/unit_greek_peasant_slave.tga
+model_flexi		data/models_unit/unit_roman_peasant_high.cas
+no_variation model_flexi		data/models_unit/unit_roman_peasant_high.cas
+;shadow_model_flexi	data/models_strat/shadow_model_sword.cas, max
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;ADMIRALS
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+type				kyrene_admiral
+skeleton			strat_navy
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture				kyrene, data/models_strat/textures/navy_kyrene.tga
+model_flexi			data/models_strat/navy_greek.cas, max
+no_variation model_flexi			data/models_strat/navy_greek.cas, max
+;shadow_model_flexi	data/models_strat/navy_roman_shadow.cas, max
+
+type				baktria_admiral
+skeleton			strat_navy
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture				baktria, data/models_strat/textures/navy_baktria.tga
+model_flexi			data/models_strat/navy_eastern.cas, max
+no_variation model_flexi			data/models_strat/navy_eastern.cas, max
+;shadow_model_flexi	data/models_strat/navy_roman_shadow.cas, max
+
+type				magadh_admiral
+skeleton			strat_navy
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture				magadh, data/models_strat/textures/navy_magadh.tga
+model_flexi			data/models_strat/navy_eastern.cas, max
+no_variation model_flexi			data/models_strat/navy_eastern.cas, max
+;shadow_model_flexi	data/models_strat/navy_roman_shadow.cas, max
+
+type				saba_admiral
+skeleton			strat_navy
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture				saba, data/models_strat/textures/navy_saba.tga
+model_flexi			data/models_strat/navy_eastern.cas, max
+no_variation model_flexi			data/models_strat/navy_eastern.cas, max
+;shadow_model_flexi	data/models_strat/navy_roman_shadow.cas, max
+
+type				macedon_admiral
+skeleton			strat_navy
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture				macedon, data/models_strat/textures/navy_macedon.tga
+model_flexi			data/models_strat/navy_greek.cas, max
+no_variation model_flexi			data/models_strat/navy_greek.cas, max
+;shadow_model_flexi	data/models_strat/navy_roman_shadow.cas, max
+
+type				carthage_admiral
+skeleton			strat_navy
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture				carthage, data/models_strat/textures/navy_carthage.tga
+model_flexi			data/models_strat/navy_greek.cas, max
+no_variation model_flexi			data/models_strat/navy_greek.cas, max
+;shadow_model_flexi	data/models_strat/navy_roman_shadow.cas, max
+
+type				parthia_admiral
+skeleton			strat_navy
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture				parthia, data/models_strat/textures/navy_parsa.tga
+model_flexi			data/models_strat/navy_eastern.cas, max
+no_variation model_flexi			data/models_strat/navy_eastern.cas, max
+;shadow_model_flexi	data/models_strat/navy_roman_shadow.cas, max
+
+type				egypt_admiral
+skeleton			strat_navy
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture				egypt, data/models_strat/textures/navy_egypt.tga
+model_flexi			data/models_strat/navy_egypt.cas, max
+no_variation model_flexi			data/models_strat/navy_egypt.cas, max
+;shadow_model_flexi	data/models_strat/navy_roman_shadow.cas, max
+
+type				seleucid_admiral
+skeleton			strat_navy
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture				seleucid, data/models_strat/textures/navy_athens.tga
+model_flexi			data/models_strat/navy_greek.cas, max
+no_variation model_flexi			data/models_strat/navy_greek.cas, max
+;shadow_model_flexi	data/models_strat/navy_roman_shadow.cas, max
+
+type				pontus_admiral
+skeleton			strat_navy
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture				pontus, data/models_strat/textures/navy_lydia.tga
+model_flexi			data/models_strat/navy_eastern.cas, max
+no_variation model_flexi			data/models_strat/navy_eastern.cas, max
+;shadow_model_flexi	data/models_strat/navy_roman_shadow.cas, max
+
+type				gaul_admiral
+skeleton			strat_navy
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture				gauls, data/models_strat/textures/navy_mazaka.tga
+model_flexi			data/models_strat/navy_barb.cas, max
+no_variation model_flexi			data/models_strat/navy_barb.cas, max
+;shadow_model_flexi	data/models_strat/navy_roman_shadow.cas, max
+
+type				german_admiral
+skeleton			strat_navy
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture				germans, data/models_strat/textures/navy_german.tga
+model_flexi			data/models_strat/navy_barb.cas, max
+no_variation model_flexi			data/models_strat/navy_barb.cas, max
+;shadow_model_flexi	data/models_strat/navy_roman_shadow.cas, max
+
+type				briton_admiral
+skeleton			strat_navy
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture				britons, data/models_strat/textures/navy_babylon.tga
+model_flexi			data/models_strat/navy_eastern.cas, max
+no_variation model_flexi			data/models_strat/navy_eastern.cas, max
+;shadow_model_flexi	data/models_strat/navy_roman_shadow.cas, max
+
+type				armenia_admiral
+skeleton			strat_navy
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture				armenia, data/models_strat/textures/navy_media.tga
+model_flexi			data/models_strat/navy_eastern.cas, max
+no_variation model_flexi			data/models_strat/navy_eastern.cas, max
+;shadow_model_flexi	data/models_strat/navy_roman_shadow.cas, max
+
+type				dacia_admiral
+skeleton			strat_navy
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture				dacia, data/models_strat/textures/navy_taras.tga
+model_flexi			data/models_strat/navy_greek.cas, max
+no_variation model_flexi			data/models_strat/navy_greek.cas, max
+;shadow_model_flexi	data/models_strat/navy_roman_shadow.cas, max
+
+type				greek_cities_admiral
+skeleton			strat_navy
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture				greek_cities, data/models_strat/textures/navy_sparta.tga
+model_flexi			data/models_strat/navy_greek.cas, max
+no_variation model_flexi			data/models_strat/navy_greek.cas, max
+;shadow_model_flexi	data/models_strat/navy_roman_shadow.cas, max
+
+type				numidia_admiral
+skeleton			strat_navy
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture				numidia, data/models_strat/textures/navy_kush.tga
+model_flexi			data/models_strat/navy_egypt.cas, max
+no_variation model_flexi			data/models_strat/navy_egypt.cas, max
+;shadow_model_flexi	data/models_strat/navy_roman_shadow.cas, max
+
+type				scythia_admiral
+skeleton			strat_navy
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture				scythia, data/models_strat/textures/navy_scythia.tga
+model_flexi			data/models_strat/navy_barb.cas, max
+no_variation model_flexi			data/models_strat/navy_barb.cas, max
+;shadow_model_flexi	data/models_strat/navy_roman_shadow.cas, max
+
+type				spain_admiral
+skeleton			strat_navy
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture				spain, data/models_strat/textures/navy_ionia.tga
+model_flexi			data/models_strat/navy_greek.cas, max
+no_variation model_flexi			data/models_strat/navy_greek.cas, max
+;shadow_model_flexi	data/models_strat/navy_roman_shadow.cas, max
+
+type				thrace_admiral
+skeleton			strat_navy
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture				thrace, data/models_strat/textures/navy_thrake.tga
+model_flexi			data/models_strat/navy_barb.cas, max
+no_variation model_flexi			data/models_strat/navy_barb.cas, max
+;shadow_model_flexi	data/models_strat/navy_roman_shadow.cas, max
+
+type				slave_admiral
+skeleton			strat_navy
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+texture				slave, data/models_strat/textures/navy_slave.tga
+model_flexi			data/models_strat/navy_roman.cas, max
+no_variation model_flexi			data/models_strat/navy_roman.cas, max
+;shadow_model_flexi	data/models_strat/navy_roman_shadow.cas, max
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+type				pontus_named
+skeleton			strat_named_with_army
+scale				0.7
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+model_flexi			data/models_strat/character_pontus.cas, max
+no_variation model_flexi			data/models_strat/character_pontus.cas, max
+
+type				pontus_general
+skeleton			strat_named_with_army
+scale				0.7
+;indiv_range			40
+pbr_texture         data/characters/textures/generic_pbr.tga
+model_flexi			data/models_strat/general_pontus.cas, max
+no_variation model_flexi			data/models_strat/general_pontus.cas, max
+
+; merchant
+
+type merchant
+skeleton			strat_diplomat
+scale				0.7
+male
+body Overweight
+angry_face no
+medieval_features no
+tired No
+aged 0.00
+pbr_texture data/characters/textures/strat_merchant_armenia_pbr.tga
+pbr_texture britons, data/characters/textures/strat_merchant_britons_pbr.tga
+pbr_texture dacia, data/characters/textures/strat_merchant_britons_pbr.tga
+pbr_texture gauls, data/characters/textures/strat_merchant_britons_pbr.tga
+pbr_texture germans, data/characters/textures/strat_merchant_britons_pbr.tga
+pbr_texture greek_cities, data/characters/textures/strat_merchant_greek_cities_pbr.tga
+pbr_texture macedon, data/characters/textures/strat_merchant_greek_cities_pbr.tga
+pbr_texture romans_brutii, data/characters/textures/strat_merchant_greek_cities_pbr.tga
+pbr_texture romans_julii, data/characters/textures/strat_merchant_greek_cities_pbr.tga
+pbr_texture romans_scipii, data/characters/textures/strat_merchant_greek_cities_pbr.tga
+pbr_texture romans_senate, data/characters/textures/strat_merchant_greek_cities_pbr.tga
+pbr_texture slave, data/characters/textures/strat_merchant_britons_pbr.tga
+pbr_texture spain, data/characters/textures/strat_merchant_britons_pbr.tga
+pbr_texture thrace, data/characters/textures/strat_merchant_greek_cities_pbr.tga
+texture data/characters/textures/strat_merchant_armenia.tga
+texture britons, data/characters/textures/strat_merchant_britons.tga
+texture carthage, data/characters/textures/strat_merchant_carthage.tga
+texture dacia, data/characters/textures/strat_merchant_dacia.tga
+texture egypt, data/characters/textures/strat_merchant_egypt.tga
+texture gauls, data/characters/textures/strat_merchant_gauls.tga
+texture germans, data/characters/textures/strat_merchant_germans.tga
+texture greek_cities, data/characters/textures/strat_merchant_greek_cities.tga
+texture macedon, data/characters/textures/strat_merchant_macedon.tga
+texture numidia, data/characters/textures/strat_merchant_numidia.tga
+texture parthia, data/characters/textures/strat_merchant_parthia.tga
+texture pontus, data/characters/textures/strat_merchant_pontus.tga
+texture romans_brutii, data/characters/textures/strat_merchant_romans_brutii.tga
+texture romans_julii, data/characters/textures/strat_merchant_romans_julii.tga
+texture romans_scipii, data/characters/textures/strat_merchant_romans_scipii.tga
+texture romans_senate, data/characters/textures/strat_merchant_romans_senate.tga
+texture scythia, data/characters/textures/strat_merchant_scythia.tga
+texture seleucid, data/characters/textures/strat_merchant_seleucid.tga
+texture slave, data/characters/textures/strat_merchant_slave.tga
+texture spain, data/characters/textures/strat_merchant_spain.tga
+texture thrace, data/characters/textures/strat_merchant_thrace.tga
+model African data/characters/strat_merchant_britons_African
+model armenia, African data/characters/strat_merchant_armenia_African
+model carthage, African data/characters/strat_merchant_carthage_African
+model egypt, African data/characters/strat_merchant_egypt_African
+model gauls, African data/characters/strat_merchant_gauls_African
+model germans, African data/characters/strat_merchant_germans_African
+model greek_cities, African data/characters/strat_merchant_greek_cities_African
+model macedon, African data/characters/strat_merchant_macedon_African
+model numidia, African data/characters/strat_merchant_numidia_African
+model parthia, African data/characters/strat_merchant_parthia_African
+model pontus, African data/characters/strat_merchant_pontus_African
+model romans_brutii, African data/characters/strat_merchant_romans_brutii_African
+model romans_julii, African data/characters/strat_merchant_romans_julii_African
+model romans_scipii, African data/characters/strat_merchant_romans_scipii_African
+model romans_senate, African data/characters/strat_merchant_romans_senate_African
+model scythia, African data/characters/strat_merchant_scythia_African
+model seleucid, African data/characters/strat_merchant_seleucid_African
+model slave, African data/characters/strat_merchant_slave_African
+model thrace, African data/characters/strat_merchant_thrace_African
+no_variation model African data/characters/strat_merchant_britons_African_no_variation
+no_variation model armenia, African data/characters/strat_merchant_armenia_African_no_variation
+no_variation model carthage, African data/characters/strat_merchant_carthage_African_no_variation
+no_variation model egypt, African data/characters/strat_merchant_egypt_African_no_variation
+no_variation model gauls, African data/characters/strat_merchant_gauls_African_no_variation
+no_variation model germans, African data/characters/strat_merchant_germans_African_no_variation
+no_variation model greek_cities, African data/characters/strat_merchant_greek_cities_African_no_variation
+no_variation model macedon, African data/characters/strat_merchant_macedon_African_no_variation
+no_variation model numidia, African data/characters/strat_merchant_numidia_African_no_variation
+no_variation model parthia, African data/characters/strat_merchant_parthia_African_no_variation
+no_variation model pontus, African data/characters/strat_merchant_pontus_African_no_variation
+no_variation model romans_brutii, African data/characters/strat_merchant_romans_brutii_African_no_variation
+no_variation model romans_julii, African data/characters/strat_merchant_romans_julii_African_no_variation
+no_variation model romans_scipii, African data/characters/strat_merchant_romans_scipii_African_no_variation
+no_variation model romans_senate, African data/characters/strat_merchant_romans_senate_African_no_variation
+no_variation model scythia, African data/characters/strat_merchant_scythia_African_no_variation
+no_variation model seleucid, African data/characters/strat_merchant_seleucid_African_no_variation
+no_variation model slave, African data/characters/strat_merchant_slave_African_no_variation
+no_variation model thrace, African data/characters/strat_merchant_romans_julii_African_no_variation
+model Arabic data/characters/strat_merchant_armenia_Arabic
+model britons, Arabic data/characters/strat_merchant_britons_Arabic
+model carthage, Arabic data/characters/strat_merchant_carthage_Arabic
+model dacia, Arabic data/characters/strat_merchant_dacia_Arabic
+model egypt, Arabic data/characters/strat_merchant_egypt_Arabic
+model gauls, Arabic data/characters/strat_merchant_gauls_Arabic
+model germans, Arabic data/characters/strat_merchant_gauls_Arabic
+model greek_cities, Arabic data/characters/strat_merchant_greek_cities_Arabic
+model macedon, Arabic data/characters/strat_merchant_macedon_Arabic
+model numidia, Arabic data/characters/strat_merchant_numidia_Arabic
+model parthia, Arabic data/characters/strat_merchant_parthia_Arabic
+model romans_brutii, Arabic data/characters/strat_merchant_romans_brutii_Arabic
+model romans_julii, Arabic data/characters/strat_merchant_romans_julii_Arabic
+model romans_scipii, Arabic data/characters/strat_merchant_greek_cities_Arabic
+model romans_senate, Arabic data/characters/strat_merchant_romans_senate_Arabic
+model scythia, Arabic data/characters/strat_merchant_scythia_Arabic
+model seleucid, Arabic data/characters/strat_merchant_seleucid_Arabic
+model slave, Arabic data/characters/strat_merchant_slave_Arabic
+model spain, Arabic data/characters/strat_merchant_spain_Arabic
+model thrace, Arabic data/characters/strat_merchant_thrace_Arabic
+no_variation model Arabic data/characters/strat_merchant_armenia_Arabic_no_variation
+no_variation model britons, Arabic data/characters/strat_merchant_britons_Arabic_no_variation
+no_variation model carthage, Arabic data/characters/strat_merchant_carthage_Arabic_no_variation
+no_variation model dacia, Arabic data/characters/strat_merchant_dacia_Arabic_no_variation
+no_variation model egypt, Arabic data/characters/strat_merchant_egypt_Arabic_no_variation
+no_variation model gauls, Arabic data/characters/strat_merchant_gauls_Arabic_no_variation
+no_variation model germans, Arabic data/characters/strat_merchant_gauls_Arabic_no_variation
+no_variation model greek_cities, Arabic data/characters/strat_merchant_greek_cities_Arabic_no_variation
+no_variation model macedon, Arabic data/characters/strat_merchant_macedon_Arabic_no_variation
+no_variation model numidia, Arabic data/characters/strat_merchant_numidia_Arabic_no_variation
+no_variation model parthia, Arabic data/characters/strat_merchant_parthia_Arabic_no_variation
+no_variation model romans_brutii, Arabic data/characters/strat_merchant_romans_brutii_Arabic_no_variation
+no_variation model romans_julii, Arabic data/characters/strat_merchant_romans_julii_Arabic_no_variation
+no_variation model romans_scipii, Arabic data/characters/strat_merchant_greek_cities_Arabic_no_variation
+no_variation model romans_senate, Arabic data/characters/strat_merchant_romans_senate_Arabic_no_variation
+no_variation model scythia, Arabic data/characters/strat_merchant_scythia_Arabic_no_variation
+no_variation model seleucid, Arabic data/characters/strat_merchant_seleucid_Arabic_no_variation
+no_variation model slave, Arabic data/characters/strat_merchant_slave_Arabic_no_variation
+no_variation model spain, Arabic data/characters/strat_merchant_spain_Arabic_no_variation
+no_variation model thrace, Arabic data/characters/strat_merchant_thrace_Arabic_no_variation
+model Caucasian data/characters/strat_merchant_egypt_Caucasian
+model armenia, Caucasian data/characters/strat_merchant_armenia_Caucasian
+model britons, Caucasian data/characters/strat_merchant_britons_Caucasian
+model carthage, Caucasian data/characters/strat_merchant_carthage_Caucasian
+model dacia, Caucasian data/characters/strat_merchant_dacia_Caucasian
+model gauls, Caucasian data/characters/strat_merchant_gauls_Caucasian
+model germans, Caucasian data/characters/strat_merchant_germans_Caucasian
+model greek_cities, Caucasian data/characters/strat_merchant_greek_cities_Caucasian
+model macedon, Caucasian data/characters/strat_merchant_macedon_Caucasian
+model numidia, Caucasian data/characters/strat_merchant_numidia_Caucasian
+model parthia, Caucasian data/characters/strat_merchant_parthia_Caucasian
+model pontus, Caucasian data/characters/strat_merchant_pontus_Caucasian
+model romans_brutii, Caucasian data/characters/strat_merchant_romans_brutii_Caucasian
+model romans_julii, Caucasian data/characters/strat_merchant_romans_julii_Caucasian
+model romans_scipii, Caucasian data/characters/strat_merchant_romans_scipii_Caucasian
+model romans_senate, Caucasian data/characters/strat_merchant_romans_senate_Caucasian
+model seleucid, Caucasian data/characters/strat_merchant_seleucid_Caucasian
+model slave, Caucasian data/characters/strat_merchant_slave_Caucasian
+model spain, Caucasian data/characters/strat_merchant_spain_Caucasian
+model thrace, Caucasian data/characters/strat_merchant_thrace_Caucasian
+no_variation model Caucasian data/characters/strat_merchant_egypt_Caucasian_no_variation
+no_variation model armenia, Caucasian data/characters/strat_merchant_armenia_Caucasian_no_variation
+no_variation model britons, Caucasian data/characters/strat_merchant_britons_Caucasian_no_variation
+no_variation model carthage, Caucasian data/characters/strat_merchant_carthage_Caucasian_no_variation
+no_variation model dacia, Caucasian data/characters/strat_merchant_dacia_Caucasian_no_variation
+no_variation model gauls, Caucasian data/characters/strat_merchant_gauls_Caucasian_no_variation
+no_variation model germans, Caucasian data/characters/strat_merchant_germans_Caucasian_no_variation
+no_variation model greek_cities, Caucasian data/characters/strat_merchant_greek_cities_Caucasian_no_variation
+no_variation model macedon, Caucasian data/characters/strat_merchant_macedon_Caucasian_no_variation
+no_variation model numidia, Caucasian data/characters/strat_merchant_numidia_Caucasian_no_variation
+no_variation model parthia, Caucasian data/characters/strat_merchant_parthia_Caucasian_no_variation
+no_variation model pontus, Caucasian data/characters/strat_merchant_pontus_Caucasian_no_variation
+no_variation model romans_brutii, Caucasian data/characters/strat_merchant_romans_brutii_Caucasian_no_variation
+no_variation model romans_julii, Caucasian data/characters/strat_merchant_romans_julii_Caucasian_no_variation
+no_variation model romans_scipii, Caucasian data/characters/strat_merchant_romans_scipii_Caucasian_no_variation
+no_variation model romans_senate, Caucasian data/characters/strat_merchant_romans_senate_Caucasian_no_variation
+no_variation model seleucid, Caucasian data/characters/strat_merchant_seleucid_Caucasian_no_variation
+no_variation model slave, Caucasian data/characters/strat_merchant_slave_Caucasian_no_variation
+no_variation model spain, Caucasian data/characters/strat_merchant_spain_Caucasian_no_variation
+no_variation model thrace, Caucasian data/characters/strat_merchant_thrace_Caucasian_no_variation
+model EastAsian data/characters/strat_merchant_egypt_EastAsian
+model armenia, EastAsian data/characters/strat_merchant_armenia_EastAsian
+model britons, EastAsian data/characters/strat_merchant_britons_EastAsian
+model carthage, EastAsian data/characters/strat_merchant_carthage_EastAsian
+model dacia, EastAsian data/characters/strat_merchant_britons_EastAsian
+model gauls, EastAsian data/characters/strat_merchant_gauls_EastAsian
+model germans, EastAsian data/characters/strat_merchant_germans_EastAsian
+model greek_cities, EastAsian data/characters/strat_merchant_greek_cities_EastAsian
+model macedon, EastAsian data/characters/strat_merchant_macedon_EastAsian
+model numidia, EastAsian data/characters/strat_merchant_carthage_EastAsian
+model parthia, EastAsian data/characters/strat_merchant_parthia_EastAsian
+model romans_brutii, EastAsian data/characters/strat_merchant_romans_brutii_EastAsian
+model romans_julii, EastAsian data/characters/strat_merchant_romans_julii_EastAsian
+model romans_scipii, EastAsian data/characters/strat_merchant_romans_julii_EastAsian
+model romans_senate, EastAsian data/characters/strat_merchant_romans_brutii_EastAsian
+model slave, EastAsian data/characters/strat_merchant_germans_EastAsian
+model spain, EastAsian data/characters/strat_merchant_britons_EastAsian
+model thrace, EastAsian data/characters/strat_merchant_romans_julii_EastAsian
+no_variation model EastAsian data/characters/strat_merchant_egypt_EastAsian_no_variation
+no_variation model armenia, EastAsian data/characters/strat_merchant_armenia_EastAsian_no_variation
+no_variation model britons, EastAsian data/characters/strat_merchant_britons_EastAsian_no_variation
+no_variation model carthage, EastAsian data/characters/strat_merchant_carthage_EastAsian_no_variation
+no_variation model dacia, EastAsian data/characters/strat_merchant_britons_EastAsian_no_variation
+no_variation model gauls, EastAsian data/characters/strat_merchant_gauls_EastAsian_no_variation
+no_variation model germans, EastAsian data/characters/strat_merchant_germans_EastAsian_no_variation
+no_variation model greek_cities, EastAsian data/characters/strat_merchant_greek_cities_EastAsian_no_variation
+no_variation model macedon, EastAsian data/characters/strat_merchant_macedon_EastAsian_no_variation
+no_variation model numidia, EastAsian data/characters/strat_merchant_carthage_EastAsian_no_variation
+no_variation model parthia, EastAsian data/characters/strat_merchant_parthia_EastAsian_no_variation
+no_variation model romans_brutii, EastAsian data/characters/strat_merchant_romans_brutii_EastAsian_no_variation
+no_variation model romans_julii, EastAsian data/characters/strat_merchant_romans_julii_EastAsian_no_variation
+no_variation model romans_scipii, EastAsian data/characters/strat_merchant_romans_julii_EastAsian_no_variation
+no_variation model romans_senate, EastAsian data/characters/strat_merchant_romans_brutii_EastAsian_no_variation
+no_variation model slave, EastAsian data/characters/strat_merchant_germans_EastAsian_no_variation
+no_variation model spain, EastAsian data/characters/strat_merchant_britons_EastAsian_no_variation
+no_variation model thrace, EastAsian data/characters/strat_merchant_romans_julii_EastAsian_no_variation
+model Egyptian data/characters/strat_merchant_armenia_Egyptian
+model britons, Egyptian data/characters/strat_merchant_britons_Egyptian
+model carthage, Egyptian data/characters/strat_merchant_carthage_Egyptian
+model dacia, Egyptian data/characters/strat_merchant_britons_Egyptian
+model egypt, Egyptian data/characters/strat_merchant_carthage_Egyptian
+model gauls, Egyptian data/characters/strat_merchant_britons_Egyptian
+model germans, Egyptian data/characters/strat_merchant_britons_Egyptian
+model greek_cities, Egyptian data/characters/strat_merchant_greek_cities_Egyptian
+model macedon, Egyptian data/characters/strat_merchant_greek_cities_Egyptian
+model romans_brutii, Egyptian data/characters/strat_merchant_romans_brutii_Egyptian
+model romans_julii, Egyptian data/characters/strat_merchant_romans_brutii_Egyptian
+model romans_scipii, Egyptian data/characters/strat_merchant_greek_cities_Egyptian
+model romans_senate, Egyptian data/characters/strat_merchant_greek_cities_Egyptian
+model slave, Egyptian data/characters/strat_merchant_slave_Egyptian
+model spain, Egyptian data/characters/strat_merchant_slave_Egyptian
+model thrace, Egyptian data/characters/strat_merchant_romans_brutii_Egyptian
+no_variation model Egyptian data/characters/strat_merchant_armenia_Egyptian_no_variation
+no_variation model britons, Egyptian data/characters/strat_merchant_britons_Egyptian_no_variation
+no_variation model carthage, Egyptian data/characters/strat_merchant_carthage_Egyptian_no_variation
+no_variation model dacia, Egyptian data/characters/strat_merchant_britons_Egyptian_no_variation
+no_variation model egypt, Egyptian data/characters/strat_merchant_carthage_Egyptian_no_variation
+no_variation model gauls, Egyptian data/characters/strat_merchant_britons_Egyptian_no_variation
+no_variation model germans, Egyptian data/characters/strat_merchant_britons_Egyptian_no_variation
+no_variation model greek_cities, Egyptian data/characters/strat_merchant_greek_cities_Egyptian_no_variation
+no_variation model macedon, Egyptian data/characters/strat_merchant_greek_cities_Egyptian_no_variation
+no_variation model romans_brutii, Egyptian data/characters/strat_merchant_romans_brutii_Egyptian_no_variation
+no_variation model romans_julii, Egyptian data/characters/strat_merchant_romans_brutii_Egyptian_no_variation
+no_variation model romans_scipii, Egyptian data/characters/strat_merchant_greek_cities_Egyptian_no_variation
+no_variation model romans_senate, Egyptian data/characters/strat_merchant_greek_cities_Egyptian_no_variation
+no_variation model slave, Egyptian data/characters/strat_merchant_slave_Egyptian_no_variation
+no_variation model spain, Egyptian data/characters/strat_merchant_slave_Egyptian_no_variation
+no_variation model thrace, Egyptian data/characters/strat_merchant_romans_brutii_Egyptian_no_variation
+model Indian data/characters/strat_merchant_greek_cities_Indian
+model armenia, Indian data/characters/strat_merchant_armenia_Indian
+model britons, Indian data/characters/strat_merchant_britons_Indian
+model carthage, Indian data/characters/strat_merchant_carthage_Indian
+model dacia, Indian data/characters/strat_merchant_dacia_Indian
+model egypt, Indian data/characters/strat_merchant_egypt_Indian
+model gauls, Indian data/characters/strat_merchant_gauls_Indian
+model germans, Indian data/characters/strat_merchant_germans_Indian
+model macedon, Indian data/characters/strat_merchant_macedon_Indian
+model numidia, Indian data/characters/strat_merchant_numidia_Indian
+model parthia, Indian data/characters/strat_merchant_parthia_Indian
+model pontus, Indian data/characters/strat_merchant_pontus_Indian
+model romans_brutii, Indian data/characters/strat_merchant_romans_brutii_Indian
+model romans_julii, Indian data/characters/strat_merchant_romans_julii_Indian
+model romans_scipii, Indian data/characters/strat_merchant_romans_scipii_Indian
+model romans_senate, Indian data/characters/strat_merchant_romans_scipii_Indian
+model scythia, Indian data/characters/strat_merchant_scythia_Indian
+model seleucid, Indian data/characters/strat_merchant_seleucid_Indian
+model slave, Indian data/characters/strat_merchant_slave_Indian
+model spain, Indian data/characters/strat_merchant_spain_Indian
+no_variation model Indian data/characters/strat_merchant_greek_cities_Indian_no_variation
+no_variation model armenia, Indian data/characters/strat_merchant_armenia_Indian_no_variation
+no_variation model britons, Indian data/characters/strat_merchant_britons_Indian_no_variation
+no_variation model carthage, Indian data/characters/strat_merchant_carthage_Indian_no_variation
+no_variation model dacia, Indian data/characters/strat_merchant_dacia_Indian_no_variation
+no_variation model egypt, Indian data/characters/strat_merchant_egypt_Indian_no_variation
+no_variation model gauls, Indian data/characters/strat_merchant_gauls_Indian_no_variation
+no_variation model germans, Indian data/characters/strat_merchant_germans_Indian_no_variation
+no_variation model macedon, Indian data/characters/strat_merchant_macedon_Indian_no_variation
+no_variation model numidia, Indian data/characters/strat_merchant_numidia_Indian_no_variation
+no_variation model parthia, Indian data/characters/strat_merchant_parthia_Indian_no_variation
+no_variation model pontus, Indian data/characters/strat_merchant_pontus_Indian_no_variation
+no_variation model romans_brutii, Indian data/characters/strat_merchant_romans_brutii_Indian_no_variation
+no_variation model romans_scipii, Indian data/characters/strat_merchant_romans_scipii_Indian_no_variation
+no_variation model romans_senate, Indian data/characters/strat_merchant_romans_scipii_Indian_no_variation
+no_variation model scythia, Indian data/characters/strat_merchant_scythia_Indian_no_variation
+no_variation model seleucid, Indian data/characters/strat_merchant_carthage_Indian_no_variation
+no_variation model slave, Indian data/characters/strat_merchant_slave_Indian_no_variation
+no_variation model spain, Indian data/characters/strat_merchant_spain_Indian_no_variation
+model Mediterranean data/characters/strat_merchant_greek_cities_Mediterranean
+model armenia, Mediterranean data/characters/strat_merchant_armenia_Mediterranean
+model britons, Mediterranean data/characters/strat_merchant_britons_Mediterranean
+model carthage, Mediterranean data/characters/strat_merchant_carthage_Mediterranean
+model dacia, Mediterranean data/characters/strat_merchant_dacia_Mediterranean
+model egypt, Mediterranean data/characters/strat_merchant_egypt_Mediterranean
+model gauls, Mediterranean data/characters/strat_merchant_gauls_Mediterranean
+model germans, Mediterranean data/characters/strat_merchant_germans_Mediterranean
+model macedon, Mediterranean data/characters/strat_merchant_macedon_Mediterranean
+model numidia, Mediterranean data/characters/strat_merchant_numidia_Mediterranean
+model parthia, Mediterranean data/characters/strat_merchant_parthia_Mediterranean
+model pontus, Mediterranean data/characters/strat_merchant_pontus_Mediterranean
+model romans_brutii, Mediterranean data/characters/strat_merchant_romans_brutii_Mediterranean
+model romans_julii, Mediterranean data/characters/strat_merchant_romans_julii_Mediterranean
+model romans_scipii, Mediterranean data/characters/strat_merchant_romans_scipii_Mediterranean
+model romans_senate, Mediterranean data/characters/strat_merchant_romans_senate_Mediterranean
+model scythia, Mediterranean data/characters/strat_merchant_scythia_Mediterranean
+model seleucid, Mediterranean data/characters/strat_merchant_seleucid_Mediterranean
+model slave, Mediterranean data/characters/strat_merchant_slave_Mediterranean
+model spain, Mediterranean data/characters/strat_merchant_spain_Mediterranean
+no_variation model Mediterranean data/characters/strat_merchant_greek_cities_Mediterranean_no_variation
+no_variation model armenia, Mediterranean data/characters/strat_merchant_armenia_Mediterranean_no_variation
+no_variation model britons, Mediterranean data/characters/strat_merchant_britons_Mediterranean_no_variation
+no_variation model carthage, Mediterranean data/characters/strat_merchant_carthage_Mediterranean_no_variation
+no_variation model dacia, Mediterranean data/characters/strat_merchant_dacia_Mediterranean_no_variation
+no_variation model egypt, Mediterranean data/characters/strat_merchant_egypt_Mediterranean_no_variation
+no_variation model gauls, Mediterranean data/characters/strat_merchant_gauls_Mediterranean_no_variation
+no_variation model germans, Mediterranean data/characters/strat_merchant_germans_Mediterranean_no_variation
+no_variation model macedon, Mediterranean data/characters/strat_merchant_macedon_Mediterranean_no_variation
+no_variation model numidia, Mediterranean data/characters/strat_merchant_numidia_Mediterranean_no_variation
+no_variation model parthia, Mediterranean data/characters/strat_merchant_parthia_Mediterranean_no_variation
+no_variation model pontus, Mediterranean data/characters/strat_merchant_pontus_Mediterranean_no_variation
+no_variation model romans_brutii, Mediterranean data/characters/strat_merchant_romans_brutii_Mediterranean_no_variation
+no_variation model romans_julii, Mediterranean data/characters/strat_merchant_romans_julii_Mediterranean_no_variation
+no_variation model romans_scipii, Mediterranean data/characters/strat_merchant_romans_scipii_Mediterranean_no_variation
+no_variation model romans_senate, Mediterranean data/characters/strat_merchant_romans_senate_Mediterranean_no_variation
+no_variation model scythia, Mediterranean data/characters/strat_merchant_scythia_Mediterranean_no_variation
+no_variation model seleucid, Mediterranean data/characters/strat_merchant_seleucid_Mediterranean_no_variation
+no_variation model slave, Mediterranean data/characters/strat_merchant_slave_Mediterranean_no_variation
+no_variation model spain, Mediterranean data/characters/strat_merchant_spain_Mediterranean_no_variation
+
+
