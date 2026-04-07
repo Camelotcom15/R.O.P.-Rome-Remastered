@@ -1,0 +1,360 @@
+plan
+
+{
+
+;; JNF 2021-09-06 - Define model as part of plans now - allows for specific settlement models
+;; and generally makes the code logistics more straightforward
+strat
+{
+	buildings		data/models_strat/residences/eastern_huge_city_buildings.CAS
+	default_base	settlement_roman_level_6
+
+	;;walls and base map overrides
+	fortifications
+	{
+		wooden_pallisade
+		{
+			model	data/models_strat/residences/roman_huge_city_wall_1.CAS
+			base	settlement_roman_walled_level_6
+		}
+		wooden_wall
+		{
+			model	data/models_strat/residences/roman_huge_city_wall_2.CAS
+			base	settlement_roman_walled_level_6
+		}
+		stone_wall
+		{
+			model	data/models_strat/residences/eastern_huge_city_wall_3.CAS
+			base	settlement_roman_walled_level_6
+		}
+		large_stone_wall
+		{
+			model	data/models_strat/residences/eastern_huge_city_wall_4.CAS
+			base	settlement_roman_walled_level_6
+		}
+		epic_stone_wall
+		{
+			model	data/models_strat/residences/eastern_huge_city_wall_5.CAS
+			base	settlement_roman_walled_level_6
+		}
+	}
+
+	;;models for ports (only relevant for settlements)
+	ports
+	{
+		fishing_village
+		{
+			land_model	data/models_strat/residences/eastern_fishing_village.CAS
+			base	port_eastern_level_1
+		}
+		sea_port
+		{
+			land_model	data/models_strat/residences/eastern_port_01_land.CAS
+			sea_model	data/models_strat/residences/eastern_port_01_sea.CAS
+			base	port_eastern_level_2
+		}
+		shipwright
+		{
+			land_model	data/models_strat/residences/eastern_port_02_land.CAS
+			sea_model	data/models_strat/residences/eastern_port_02_sea.CAS
+			base	port_eastern_level_3
+		}
+		dockyard
+		{
+			land_model	data/models_strat/residences/eastern_port_03_land.CAS
+			sea_model	data/models_strat/residences/eastern_port_03_sea.CAS
+			base	port_eastern_level_4
+		}
+	}
+}
+target rectangle x 0 z 0 rot 0 width 192 height 192
+floor	eastern_huge_city_underlay.cas eastern_huge_city_overlay.cas
+ground_types	ground_eastern_huge_city.tga -544 -544 544 544
+street_plan	eastern_huge_city_pathfinding.CAS
+borders
+
+	{
+	;WALLS
+
+gateway,	-320,	480,	180,	0
+straight,	384,	-480,	0,	0
+straight,	320,	-480,	0,	0
+straight,	448,	-448,	45,	0
+straight,	448,	64,	135,	0
+straight,	416,	128,	90,	0
+straight,	320,	288,	180,	0
+straight,	-128,	416,	180,	0
+straight,	-384,	480,	180,	0
+straight,	-192,	448,	135,	0
+straight,	-448,	320,	-135,	0
+straight,	-480,	-256,	-90,	0
+straight,	-416,	-384,	-90,	0
+tower_external_corner_link,	-416,	-416,	0,	0
+tower_straight,	192,	-480,	0,	0
+straight,	-384,	32,	0,	0
+tower_straight,	480,	-384,	90,	0
+tower_straight,	480,	-0,	90,	0
+gateway,	64,	-480,	0,	0
+tower_straight,	384,	288,	-180,	0
+tower_straight,	-416,	448,	-90,	0
+straight_link,	288,	-480,	0,	0
+straight_link,	-416,	416,	-90,	0
+external_right_link,	416,	-480,	0,	0
+external_left_link,	480,	-416,	90,	0
+external_right_link,	480,	32,	90,	0
+internal_left_link,	416,	96,	90,	0
+external_left_link,	-480,	288,	-90,	0
+external_right_link,	-480,	-288,	-90,	0
+straight,	192,	352,	180,	0
+straight_link,	224,	-480,	0,	0
+straight,	416,	256,	90,	0
+straight,	-480,	256,	-90,	0
+straight,	256,	-480,	0,	0
+tower_straight,	-448,	-320,	-45,	0
+straight,	-256,	480,	180,	0
+tower_straight,	-64,	416,	-180,	0
+straight,	0,	384,	135,	0
+straight,	64,	352,	180,	0
+internal_left_link,	-416,	-352,	-90,	0
+straight_link,	-96,	416,	-180,	0
+straight,	480,	-256,	90,	0
+tower_straight,	416,	192,	90,	0
+straight_link,	416,	224,	90,	0
+straight_link,	416,	160,	90,	0
+
+tower_straight,	128,	352,	-180,	0
+
+straight_link,	160,	352,	-180,	0
+straight_link,	96,	352,	-180,	0
+
+straight,	480,	-320,	90,	0
+straight_link,	480,	-288,	90,	0
+straight_link,	480,	-352,	90,	0
+straight,	-384,	-416,	0,	0
+gateway,	-288,	-64,	-90,	0
+gateway,	416,	-128,	90,	0
+straight,	-288,	-0,	-90,	0
+straight,	-416,	384,	-90,	0
+external_left_link,	-224,	480,	-180,	0
+external_left_link,	-32,	416,	-180,	0
+external_left_link,	224,	352,	-180,	0
+straight,	448,	-32,	0,	0
+straight,	416,	-64,	90,	0
+straight,	416,	-192,	90,	0
+straight,	-288,	-128,	-90,	0
+tower_straight,	-320,	-160,	180,	0
+tower_straight,	-448,	-160,	180,	0
+tower_straight,	-320,	32,	0,	0
+tower_straight,	-448,	32,	0,	0
+straight,	-384,	-160,	180,	0
+tower_straight,	-480,	192,	-90,	0
+straight,	-480,	128,	-90,	0
+straight,	-480,	64,	-90,	0
+straight,	-480,	-192,	-90,	0
+straight,	-0,	-480,	0,	0
+straight,	-64,	-480,	0,	0
+straight,	-192,	-480,	0,	0
+straight,	-256,	-480,	0,	0
+straight,	-320,	-448,	-45,	0
+straight_link,	-96,	-480,	0,	0
+straight_link,	-160,	-480,	0,	0
+straight_link,	-224,	-480,	0,	0
+external_left_link,	-288,	-480,	0,	0
+straight_link,	-416,	32,	0,	0
+straight_link,	-352,	32,	0,	0
+straight_link,	-352,	-160,	180,	0
+straight_link,	-416,	-160,	180,	0
+straight_link,	352,	288,	180,	0
+straight_link,	-480,	-224,	-90,	0
+straight_link,	-480,	96,	-90,	0
+straight_link,	-480,	160,	-90,	0
+straight_link,	-480,	224,	-90,	0
+tower_straight,	-128,	-480,	0,	0
+straight,	256,	320,	135,	0
+tower_straight,	448,	-224,	-180,	0
+external_corner_link,	-480,	-160,	-90,	0
+external_corner_link,	-416,	480,	-90,	0
+external_corner_link,	416,	288,	-180,	0
+external_corner_link,	480,	-224,	-180,	0
+external_corner_link,	480,	-32,	90,	0
+external_corner_link,	-480,	32,	0,	0
+internal_corner_link,	416,	-32,	90,	0
+internal_corner_link,	416,	-224,	-180,	0
+internal_corner_link,	-288,	-160,	-90,	0
+internal_corner_link,	-288,	32,	0,	0
+internal_right_link,	288,	288,	180,	0
+internal_right_link,	32,	352,	180,	0
+internal_right_link,	-160,	416,	180,	0
+internal_right_link,	-416,	352,	-90,	0
+internal_right_link,	-352,	-416,	0,	0
+straight_link,	-32,	-480,	0,	0
+straight_link,	352,	-480,	0,	0
+straight_link,	160,	-480,	0,	0
+straight,	128,	-480,	0,	0
+
+
+	}
+
+; ROAD JOINERS
+
+gateway_slot_into_flat_town,	-320,	512,	90,	0
+gateway_slot_into_flat_town,	448,	-128,	0,	0
+gateway_slot_into_flat_town,	64,	-512,	-90,	0
+gateway_slot_into_flat_town,	-320,	-64,	180,	0
+
+
+; COLLISION
+
+eastern_huge_city_collision_info,	0,	0,	0,	0
+
+
+; BUILDINGS
+
+slot_160x128_religious,	-193.49,	176,	90,	0
+slot_160x128_market,	160,	-144,	-90,	0
+slot_160x128_missiles,	16,	-160,	0,	0
+slot_256x96_equestrian,	174.51,	160,	90,	-0
+slot_256x192_despotic_law,	254.51,	-348.64,	0,	-0
+slot_256x192_core_building,	-1.49,	192,	0,	-0
+slot_112x64_barracks,	-160,	24.32,	0,	0
+slot_112x64_academic,	-160,	-225.93,	180,	0
+slot_48x32_smith,	345.4,	-210.19,	0,	0
+slot_112x64_health,	-286,	-277,	90,	0
+
+slot_plaza_eastern_192x192m,	0,	0,	0,	0
+
+carthaginian_tenamentA,	300.71,	52.10,	-180,	0
+carthaginian_tenamentA,	-338.80,	392.52,	0,	0
+carthaginian_tenamentA,	-358.45,	-333.41,	-90,	0
+carthaginian_tenamentA,	-358.50,	-252.05,	-90,	0
+carthaginian_tenamentA,	-126.48,	-388.94,	-90,	0
+carthaginian_tenamentA,	-125.51,	-306.72,	-90,	0
+carthaginian_tenamentA,	32.33,	-383.90,	164.87,	0
+carthaginian_tenamentA,	-29.86,	-276.66,	-90,	0
+carthaginian_tenamentA,	45.53,	-267.06,	-180,	0
+carthaginian_tenamentA,	417.18,	-293.02,	-90,	0
+carthaginian_tenamentA,	183.50,	-29.45,	-180,	0
+carthaginian_tenamentA,	307.09,	-86.06,	-90,	0
+carthaginian_tenamentA,	300.84,	-12.75,	0,	0
+carthaginian_tenamentA,	-283.42,	316.55,	-90,	0
+carthaginian_tenamentA,	-349.85,	285.48,	-90,	0
+carthaginian_tenamentA,	-305.82,	212.39,	0,	0
+carthaginian_tenamentA,	-387.77,	202.34,	180,	0
+carthaginian_tenamentA,	-295.17,	139.48,	-90,	0
+carthaginian_tenamentA,	-372.46,	132.90,	-180,	0
+carthaginian_tenamentA,	-179.80,	354.98,	180,	0
+carthaginian_tenamentA,	-175.21,	289.51,	180,	0
+carthaginian_tenamentA,	-179.18,	-43.73,	0,	0
+carthaginian_tenamentA,	338.456,	192.647,	180,	0
+
+
+carthaginian_tenamentB,	-408,	-291.36,	-90,	0
+carthaginian_tenamentB,	-299.17,	-355.89,	0,	0
+carthaginian_tenamentB,	404.86,	-417.23,	0,	0
+carthaginian_tenamentB,	-172.77,	-314.17,	-90,	0
+carthaginian_tenamentB,	82.25,	-414.92,	-15,	0
+carthaginian_tenamentB,	359.98,	68.91,	90,	0
+carthaginian_tenamentB,	360.29,	-24.23,	0,	0
+carthaginian_tenamentB,	-214.13,	403.15,	90,	0
+carthaginian_tenamentB,	125.69,	-12.55,	-180,	0
+carthaginian_tenamentB,	-399.65,	310.51,	-180,	0
+carthaginian_tenamentB,	-307.25,	81.80,	-180,	0
+carthaginian_tenamentB,	-401.69,	82.53,	-90,	0
+carthaginian_tenamentB,	-127.56,	-102.65,	0,	0
+carthaginian_tenamentB,	-200.83,	-166.003,	180,	0
+carthaginian_tenamentB,	279.214,	235.667,	180,	0
+
+carthaginian_tenamentC,	-424.42,	266.45,	90,	0
+carthaginian_tenamentC,	-355.86,	73.03,	-180,	0
+carthaginian_tenamentC,	-418.89,	133.63,	-90,	0
+carthaginian_tenamentC,	-31.51,	295.63,	180,	0
+carthaginian_tenamentC,	-399.04,	-241.52,	-90,	0
+carthaginian_tenamentC,	-240.11,	-419.16,	-180,	0
+carthaginian_tenamentC,	-189.02,	-290.60,	-180,	0
+carthaginian_tenamentC,	-45.59,	-383.75,	-15,	0
+carthaginian_tenamentC,	80.70,	-330.34,	-90,	0
+carthaginian_tenamentC,	250.23,	-74.88,	90,	0
+carthaginian_tenamentC,	267.65,	-135.53,	-90,	0
+carthaginian_tenamentC,	346.03,	-78.14,	90,	0
+carthaginian_tenamentC,	367.90,	21.53,	-90,	0
+carthaginian_tenamentC,	-285.71,	269.71,	0,	0
+carthaginian_tenamentC, 285.77,	-197.76,	0,	0
+carthaginian_tenamentC,	-130.838,	-50.82,	90,	0
+carthaginian_tenamentC,	279.535,	183.596,	-90,	0
+carthaginian_tenamentC,	340.338,	233.361,	180,	0
+carthaginian_tenamentC,	-130.84,	-50.82,	90,	0	
+
+carthaginian_tenamentD,	-33.16,	-338.23,	-15,	0
+carthaginian_tenamentD,	307.23,	-149.60,	0,	0
+carthaginian_tenamentD,	-237.99,	-352.52,	0,	0
+carthaginian_tenamentD,	-262.76,	400.67,	0,	0
+carthaginian_tenamentD,	-97.67,	333.39,	0,	0
+carthaginian_tenamentD,	418.16,	-356.09,	0,	0
+carthaginian_tenamentD,	-181.67,	-118.09,	180,	0
+carthaginian_tenamentD,	-134.57,	-148.09,	0,	0
+carthaginian_tenamentD,	362.806,	122.134,	-90,	0
+carthaginian_tenamentD,	286.304,	132.548,	0,	0
+
+
+
+tree_A,		77.32,		-390.81,	0,	0
+tree_A,		385.89,		-418.57,	0,	0
+tree_A,	-238.86,	-238.94,	0,	0
+tree_A,	84.69,	297.80,	0,	0
+tree_A,	-107.36,	-327.93,	0,	0
+tree_A,	271.05,	69.05,	0,	0
+tree_A,	270.41,	-170.18,	0,	0
+tree_A,	-332.41,	266.63,	0,	0
+tree_A,	-319.29,	331.76,	0,	0
+tree_A,	-80.14,	312.48,	0,	0
+tree_A,	102.31,	-48.60,	0,	0
+tree_A,	380.08,	-10.22,	0,	0
+tree_A,	33.33,	-332.08,	0,	0
+tree_A,	345.26,	-164.92,	0,	0
+
+tree_C,		-64.77,		-316.23,	0,	0
+tree_C,		-239.08,	270.69,		0,	0
+tree_C,	-328.85,	165.24,	0,	0
+tree_C,	-191.74,	-300.87,	0,	0
+tree_C,	135.98,	295.66,	0,	0
+tree_C,	-133.90,	350.39,	0,	0
+tree_C,	398.47,	-436.77,	-90,	0
+tree_C,	346.83,	-117.94,	0,	0
+tree_C,	-109.02,	-409.71,	0,	0
+tree_C,	92.97,	-240.36,	0,	0
+tree_C,	-314.50,	93.64,	0,	0
+tree_C,	-219.23,	300.37,	0,	0
+tree_C,	-261.41,	231.07,	0,	0
+
+tree_E,		-15.80,		-408.06,	0,	0
+tree_E,		-166.02,	-336.82,	0,	0
+tree_E,		-392.66,	216.49,		0,	0
+tree_E,	92.48,	-250.95,	0,	0
+tree_E,	-140.48,	-309.44,	0,	0
+tree_E,	256.87,	-135.38,	0,	0
+tree_E,	-265.52,	94.09,	0,	0
+tree_E,	-246.13,	309.62,	0,	0
+tree_E,	0.73,	316.42,	0,	0
+tree_E,	379.85,	58.73,	0,	0
+tree_E,	-65.08,	-263.87,	0,	0
+tree_E,	113.39,	89.43,	0,	0
+tree_E,	-321.65,	81.23,	0,	0
+tree_E,	314.08,	88.76,	0,	0
+
+tree_F,		37.79,		-320.24,	0,	0
+tree_F,		-277.76,	-341.43,	0,	0
+tree_F,	255.75,	49.86,	0,	0
+tree_F,	254.63,	-36.82,	0,	0
+tree_F,	-303.60,	197.58,	0,	0
+tree_F,	-333.50,	175.60,	0,	0
+tree_F,	-67.26,	-105.18,	0,	0
+tree_F,	347.16,	-42.68,	0,	0
+tree_F,	227.07,	190.83,	0,	0
+tree_F,	23.82,	-319.18,	0,	0
+tree_F,	-282.01,	423.48,	0,	0
+tree_F,	-169.73,	88.36,	0,	0
+tree_F,	-237.72,	347.91,	0,	0
+
+}
+
+

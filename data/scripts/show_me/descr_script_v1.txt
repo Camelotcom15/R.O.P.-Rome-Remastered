@@ -1,0 +1,7255 @@
+script
+
+;console_command toggle_perfect_spy
+
+;suspend_unscripted_advice true
+
+;---------------------------------
+;-------Government Triggers-------
+;---------------------------------
+
+;ROP has three governments: Monarchy(one), Oligarchy(few) and Democracy(many)
+;Monarchy and Oligarchy are widespread in the beginning of the campaign, but Democracy spawns from Athens
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Abydos
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Abydos "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Abydos
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Abydos "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Abydos
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Abydos "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Metoulon
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Metoulon "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Metoulon
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Metoulon "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Metoulon
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Metoulon "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Agathirsion
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Agathirsion "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Agathirsion
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Agathirsion "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Agathirsion
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Agathirsion "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Aigai
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Aigai "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Aigai
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Aigai "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Aigai
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Aigai "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Ajagomeru
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Ajagomeru "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Ajagomeru
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Ajagomeru "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Ajagomeru
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Ajagomeru "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Albana
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Albana "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Albana
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Albana "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Albana
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Albana "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Amid
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Amid "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Amid
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Amid "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Amid
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Amid "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Amonion
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Amonion "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Amonion
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Amonion "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Amonion
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Amonion "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Amyrgikon
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Amyrgikon "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Amyrgikon
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Amyrgikon "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Amyrgikon
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Amyrgikon "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Ankyra
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Ankyra "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Ankyra
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Ankyra "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Ankyra
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Ankyra "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Ansân
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Ansân "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Ansân
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Ansân "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Ansân
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Ansân "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Argos
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Argos "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Argos
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Argos "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Argos
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Argos "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Armavira
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Armavira "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Armavira
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Armavira "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Armavira
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Armavira "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Arpoi
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Arpoi "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Arpoi
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Arpoi "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Arpoi
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Arpoi "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Asaak
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Asaak "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Asaak
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Asaak "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Asaak
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Asaak "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Aspadana
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Aspadana "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Aspadana
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Aspadana "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Aspadana
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Aspadana "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Assur
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Assur "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Assur
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Assur "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Assur
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Assur "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Athenai
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Athenai "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Athenai
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Athenai "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Athenai
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Athenai "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Atjechatro
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Atjechatro "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Atjechatro
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Atjechatro "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Atjechatro
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Atjechatro "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Axum
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Axum "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Axum
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Axum "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Axum
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Axum "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Bab-Ilû
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Bab-Ilû "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Bab-Ilû
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Bab-Ilû "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Bab-Ilû
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Bab-Ilû "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Bagastana
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Bagastana "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Bagastana
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Bagastana "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Bagastana
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Bagastana "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Bagh
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Bagh "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Bagh
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Bagh "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Bagh
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Bagh "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Baktra
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Baktra "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Baktra
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Baktra "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Baktra
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Baktra "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Belir
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Belir "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Belir
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Belir "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Belir
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Belir "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Bessopara
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Bessopara "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Bessopara
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Bessopara "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Bessopara
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Bessopara "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Bhaja
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Bhaja "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Bhaja
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Bhaja "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Bhaja
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Bhaja "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Bhraukoccha
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Bhraukoccha "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Bhraukoccha
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Bhraukoccha "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Bhraukoccha
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Bhraukoccha "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Blemmye
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Blemmye "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Blemmye
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Blemmye "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Blemmye
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Blemmye "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Byzantion
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Byzantion "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Byzantion
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Byzantion "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Byzantion
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Byzantion "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Chersonesos
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Chersonesos "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Chersonesos
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Chersonesos "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Chersonesos
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Chersonesos "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Oasis~Dakhla
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Oasis~Dakhla "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Oasis~Dakhla
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Oasis~Dakhla "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Oasis~Dakhla
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Oasis~Dakhla "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Damaskos
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Damaskos "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Damaskos
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Damaskos "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Damaskos
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Damaskos "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Daskyleion
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Daskyleion "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Daskyleion
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Daskyleion "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Daskyleion
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Daskyleion "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Dioskourios
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Dioskourios "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Dioskourios
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Dioskourios "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Dioskourios
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Dioskourios "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Dodone
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Dodone "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Dodone
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Dodone "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Dodone
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Dodone "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Elis
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Elis "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Elis
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Elis "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Elis
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Elis "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Epidamnos
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Epidamnos "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Epidamnos
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Epidamnos "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Epidamnos
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Epidamnos "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Eretria
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Eretria "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Eretria
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Eretria "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Eretria
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Eretria "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Euesperides
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Euesperides "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Euesperides
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Euesperides "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Euesperides
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Euesperides "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Gaza
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Gaza "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Gaza
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Gaza "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Gaza
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Gaza "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Gazaka
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Gazaka "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Gazaka
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Gazaka "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Gazaka
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Gazaka "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Gelonos
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Gelonos "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Gelonos
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Gelonos "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Gelonos
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Gelonos "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Neurai-Germanis-Venedae
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Neurai-Germanis-Venedae "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Neurai-Germanis-Venedae
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Neurai-Germanis-Venedae "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Neurai-Germanis-Venedae
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Neurai-Germanis-Venedae "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Gerrah
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Gerrah "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Gerrah
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Gerrah "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Gerrah
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Gerrah "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Gerros
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Gerros "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Gerros
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Gerros "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Gerros
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Gerros "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Arabia-Gorda
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Arabia-Gorda "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Arabia-Gorda
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Arabia-Gorda "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Arabia-Gorda
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Arabia-Gorda "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Gushan
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Gushan "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Gushan
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Gushan "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Gushan
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Gushan "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Hâgmatâna
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Hâgmatâna "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Hâgmatâna
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Hâgmatâna "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Hâgmatâna
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Hâgmatâna "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Halikarnassos
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Halikarnassos "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Halikarnassos
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Halikarnassos "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Halikarnassos
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Halikarnassos "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Harmozia
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Harmozia "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Harmozia
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Harmozia "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Harmozia
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Harmozia "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Heraklea
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Heraklea "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Heraklea
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Heraklea "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Heraklea
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Heraklea "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Hira
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Hira "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Hira
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Hira "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Hira
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Hira "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Ialysos
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Ialysos "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Ialysos
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Ialysos "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Ialysos
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Ialysos "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Ineb-Hedj
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Ineb-Hedj "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Ineb-Hedj
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Ineb-Hedj "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Ineb-Hedj
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Ineb-Hedj "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Issedonia
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Issedonia "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Issedonia
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Issedonia "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Issedonia
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Issedonia "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Istros
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Istros "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Istros
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Istros "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Istros
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Istros "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Kangha
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Kangha "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Kangha
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Kangha "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Kangha
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Kangha "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Karna
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Karna "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Karna
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Karna "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Karna
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Karna "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Yuezhe-Tibet-Kashgar
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Yuezhe-Tibet-Kashgar "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Yuezhe-Tibet-Kashgar
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Yuezhe-Tibet-Kashgar "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Yuezhe-Tibet-Kashgar
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Yuezhe-Tibet-Kashgar "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Kelainai
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Kelainai "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Kelainai
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Kelainai "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Kelainai
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Kelainai "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Khalman
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Khalman "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Khalman
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Khalman "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Khalman
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Khalman "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Khiva
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Khiva "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Khiva
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Khiva "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Khiva
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Khiva "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Kityon
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Kityon "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Kityon
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Kityon "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Kityon
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Kityon "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Klerouchia~Daon
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Klerouchia~Daon "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Klerouchia~Daon
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Klerouchia~Daon "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Klerouchia~Daon
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Klerouchia~Daon "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Klerouchia~Tauron
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Klerouchia~Tauron "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Klerouchia~Tauron
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Klerouchia~Tauron "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Klerouchia~Tauron
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Klerouchia~Tauron "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Knossos
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Knossos "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Knossos
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Knossos "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Knossos
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Knossos "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Komana
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Komana "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Komana
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Komana "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Komana
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Komana "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Kophen
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Kophen "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Kophen
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Kophen "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Kophen
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Kophen "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Kyrene
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Kyrene "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Kyrene
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Kyrene "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Kyrene
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Kyrene "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Maka
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Maka "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Maka
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Maka "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Maka
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Maka "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Marakanda
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Marakanda "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Marakanda
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Marakanda "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Marakanda
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Marakanda "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Mariaba
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Mariaba "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Mariaba
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Mariaba "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Mariaba
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Mariaba "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Maroneia
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Maroneia "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Maroneia
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Maroneia "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Maroneia
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Maroneia "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Massagete
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Massagete "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Massagete
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Massagete "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Massagete
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Massagete "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Mathara
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Mathara "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Mathara
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Mathara "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Mathara
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Mathara "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Meroe
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Meroe "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Meroe
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Meroe "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Meroe
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Meroe "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Merv
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Merv "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Merv
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Merv "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Merv
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Merv "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Miletos
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Miletos "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Miletos
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Miletos "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Miletos
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Miletos "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Milid
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Milid "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Milid
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Milid "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Milid
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Milid "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Mtskheta
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Mtskheta "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Mtskheta
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Mtskheta "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Mtskheta
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Mtskheta "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Mytilene
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Mytilene "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Mytilene
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Mytilene "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Mytilene
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Mytilene "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Naissos
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Naissos "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Naissos
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Naissos "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Naissos
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Naissos "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Naupaktos
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Naupaktos "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Naupaktos
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Naupaktos "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Naupaktos
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Naupaktos "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Neh
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Neh "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Neh
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Neh "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Neh
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Neh "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Nisa
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Nisa "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Nisa
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Nisa "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Nisa
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Nisa "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Nisibis
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Nisibis "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Nisibis
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Nisibis "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Nisibis
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Nisibis "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Niwt-imn
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Niwt-imn "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Niwt-imn
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Niwt-imn "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Niwt-imn
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Niwt-imn "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Lybia-Noba
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Lybia-Noba "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Lybia-Noba
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Lybia-Noba "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Lybia-Noba
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Lybia-Noba "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Olbia
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Olbia "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Olbia
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Olbia "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Olbia
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Olbia "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Olynthos
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Olynthos "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Olynthos
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Olynthos "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Olynthos
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Olynthos "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Opiana
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Opiana "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Opiana
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Opiana "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Opiana
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Opiana "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Opone
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Opone "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Opone
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Opone "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Opone
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Opone "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Paktya
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Paktya "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Paktya
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Paktya "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Paktya
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Paktya "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Pantikapaion
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Pantikapaion "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Pantikapaion
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Pantikapaion "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Pantikapaion
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Pantikapaion "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Paretonion
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Paretonion "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Paretonion
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Paretonion "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Paretonion
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Paretonion "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Patala
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Patala "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Patala
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Patala "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Patala
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Patala "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Pathrâgadâ
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Pathrâgadâ "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Pathrâgadâ
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Pathrâgadâ "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Pathrâgadâ
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Pathrâgadâ "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Petra
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Petra "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Petra
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Petra "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Petra
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Petra "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Phanagorea
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Phanagorea "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Phanagorea
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Phanagorea "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Phanagorea
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Phanagorea "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Phokaia
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Phokaia "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Phokaia
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Phokaia "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Phokaia
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Phokaia "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Phra
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Phra "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Phra
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Phra "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Phra
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Phra "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Phylake
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Phylake "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Phylake
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Phylake "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Phylake
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Phylake "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Poseidonia
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Poseidonia "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Poseidonia
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Poseidonia "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Poseidonia
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Poseidonia "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Pselchis
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Pselchis "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Pselchis
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Pselchis "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Pselchis
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Pselchis "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Pteria
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Pteria "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Pteria
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Pteria "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Pteria
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Pteria "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Pura
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Pura "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Pura
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Pura "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Pura
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Pura "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Raga
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Raga "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Raga
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Raga "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Raga
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Raga "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Rhegion
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Rhegion "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Rhegion
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Rhegion "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Rhegion
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Rhegion "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Sabata
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Sabata "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Sabata
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Sabata "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Sabata
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Sabata "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Sais
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Sais "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Sais
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Sais "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Sais
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Sais "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Odessos
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Odessos "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Odessos
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Odessos "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Odessos
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Odessos "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Delminion
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Delminion "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Delminion
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Delminion "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Delminion
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Delminion "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Sardike
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Sardike "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Sardike
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Sardike "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Sardike
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Sardike "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Sauromatia
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Sauromatia "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Sauromatia
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Sauromatia "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Sauromatia
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Sauromatia "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Sfard
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Sfard "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Sfard
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Sfard "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Sfard
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Sfard "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Side
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Side "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Side
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Side "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Side
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Side "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Sidon
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Sidon "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Sidon
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Sidon "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Sidon
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Sidon "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Sinope
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Sinope "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Sinope
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Sinope "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Sinope
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Sinope "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Sirmion
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Sirmion "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Sirmion
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Sirmion "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Sirmion
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Sirmion "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Sparte
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Sparte "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Sparte
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Sparte "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Sparte
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Sparte "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Susim
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Susim "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Susim
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Susim "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Susim
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Susim "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Sybaris
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Sybaris "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Sybaris
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Sybaris "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Sybaris
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Sybaris "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Syrakousai
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Syrakousai "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Syrakousai
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Syrakousai "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Syrakousai
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Syrakousai "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Tadmur
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Tadmur "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Tadmur
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Tadmur "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Tadmur
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Tadmur "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Tamna
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Tamna "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Tamna
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Tamna "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Tamna
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Tamna "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Tanais
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Tanais "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Tanais
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Tanais "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Tanais
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Tanais "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Tanis
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Tanis "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Tanis
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Tanis "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Tanis
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Tanis "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Taoke
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Taoke "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Taoke
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Taoke "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Taoke
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Taoke "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Taras
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Taras "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Taras
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Taras "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Taras
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Taras "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Tarsos
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Tarsos "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Tarsos
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Tarsos "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Tarsos
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Tarsos "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Taxila
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Taxila "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Taxila
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Taxila "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Taxila
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Taxila "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Telmessos
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Telmessos "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Telmessos
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Telmessos "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Telmessos
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Telmessos "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Teyma
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Teyma "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Teyma
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Teyma "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Teyma
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Teyma "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Thebai
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Thebai "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Thebai
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Thebai "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Thebai
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Thebai "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Thyssagetis
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Thyssagetis "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Thyssagetis
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Thyssagetis "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Thyssagetis
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Thyssagetis "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Trapezous
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Trapezous "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Trapezous
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Trapezous "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Trapezous
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Trapezous "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Tushpa
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Tushpa "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Tushpa
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Tushpa "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Tushpa
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Tushpa "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Tyras
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Tyras "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Tyras
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Tyras "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Tyras
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Tyras "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Ubar
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Ubar "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Ubar
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Ubar "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Ubar
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Ubar "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Ujjajni
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Ujjajni "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Ujjajni
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Ujjajni "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Ujjajni
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Ujjajni "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Ur
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Ur "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Ur
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Ur "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Ur
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Ur "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Vispauzâtis
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Vispauzâtis "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Vispauzâtis
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Vispauzâtis "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Vispauzâtis
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Vispauzâtis "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Yerushalaim
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Yerushalaim "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Yerushalaim
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Yerushalaim "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Yerushalaim
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Yerushalaim "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Ysatis
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Ysatis "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Ysatis
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Ysatis "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Ysatis
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Ysatis "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Zadrakarta
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Zadrakarta "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Zadrakarta
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Zadrakarta "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Zadrakarta
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Zadrakarta "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Zankle
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Zankle "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Zankle
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Zankle "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Zankle
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Zankle "preq_gov_democracy"
+	
+end_monitor
+
+;;Three new regions
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Siskia
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Siskia "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Siskia
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Siskia "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Siskia
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Siskia "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Meteon
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Meteon "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Meteon
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Meteon "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Meteon
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Meteon "preq_gov_democracy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Epidauros
+and GovernorInResidence
+and Trait Oligarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_oligarchy
+and RandomPercentage > 20
+
+	console_command create_building Epidauros "preq_gov_oligarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Epidauros
+and GovernorInResidence
+and Trait Monarchy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_monarchy
+and RandomPercentage > 20
+
+	console_command create_building Epidauros "preq_gov_monarchy"
+	
+end_monitor
+
+monitor_event GovernorBuildingCompleted TrueCondition
+and SettlementName Epidauros
+and GovernorInResidence
+and Trait Democracy > 0
+and not FactionType slave
+and SettlementBuildingExists >= governors_house
+and not SettlementBuildingExists >= preq_gov_democracy
+and RandomPercentage > 20
+
+	console_command create_building Epidauros "preq_gov_democracy"
+	
+end_monitor
+
+;---------------------------------
+;-----------4tpy script-----------
+;---------------------------------
+	suspend_during_battle on
+	console_command date -559
+	console_command season summer
+	while I_TurnNumber = 0
+	end_while
+
+	console_command date -559
+	console_command season summer
+	while I_TurnNumber = 1
+	end_while
+
+	console_command date -559
+	console_command season summer
+	while I_TurnNumber = 2
+	end_while
+
+	console_command date -559
+	console_command season winter
+	while I_TurnNumber = 3
+	end_while
+
+	console_command date -558
+	console_command season summer
+	while I_TurnNumber = 4
+	end_while
+
+	console_command date -558
+	console_command season summer
+	while I_TurnNumber = 5
+	end_while
+
+	console_command date -558
+	console_command season summer
+	while I_TurnNumber = 6
+	end_while
+
+	console_command date -558
+	console_command season winter
+	while I_TurnNumber = 7
+	end_while
+
+	console_command date -557
+	console_command season summer
+	while I_TurnNumber = 8
+	end_while
+
+	console_command date -557
+	console_command season summer
+	while I_TurnNumber = 9
+	end_while
+
+	console_command date -557
+	console_command season summer
+	while I_TurnNumber = 10
+	end_while
+
+	console_command date -557
+	console_command season winter
+	while I_TurnNumber = 11
+	end_while
+
+	console_command date -556
+	console_command season summer
+	while I_TurnNumber = 12
+	end_while
+
+	console_command date -556
+	console_command season summer
+	while I_TurnNumber = 13
+	end_while
+
+	console_command date -556
+	console_command season summer
+	while I_TurnNumber = 14
+	end_while
+
+	console_command date -556
+	console_command season winter
+	while I_TurnNumber = 15
+	end_while
+
+	console_command date -555
+	console_command season summer
+	while I_TurnNumber = 16
+	end_while
+
+	console_command date -555
+	console_command season summer
+	while I_TurnNumber = 17
+	end_while
+
+	console_command date -555
+	console_command season summer
+	while I_TurnNumber = 18
+	end_while
+
+	console_command date -555
+	console_command season winter
+	while I_TurnNumber = 19
+	end_while
+
+	console_command date -554
+	console_command season summer
+	while I_TurnNumber = 20
+	end_while
+
+	console_command date -554
+	console_command season summer
+	while I_TurnNumber = 21
+	end_while
+
+	console_command date -554
+	console_command season summer
+	while I_TurnNumber = 22
+	end_while
+
+	console_command date -554
+	console_command season winter
+	while I_TurnNumber = 23
+	end_while
+
+	console_command date -553
+	console_command season summer
+	while I_TurnNumber = 24
+	end_while
+
+	console_command date -553
+	console_command season summer
+	while I_TurnNumber = 25
+	end_while
+
+	console_command date -553
+	console_command season summer
+	while I_TurnNumber = 26
+	end_while
+
+	console_command date -553
+	console_command season winter
+	while I_TurnNumber = 27
+	end_while
+
+	console_command date -552
+	console_command season summer
+	while I_TurnNumber = 28
+	end_while
+
+	console_command date -552
+	console_command season summer
+	while I_TurnNumber = 29
+	end_while
+
+	console_command date -552
+	console_command season summer
+	while I_TurnNumber = 30
+	end_while
+
+	console_command date -552
+	console_command season winter
+	while I_TurnNumber = 31
+	end_while
+
+	console_command date -551
+	console_command season summer
+	while I_TurnNumber = 32
+	end_while
+
+	console_command date -551
+	console_command season summer
+	while I_TurnNumber = 33
+	end_while
+
+	console_command date -551
+	console_command season summer
+	while I_TurnNumber = 34
+	end_while
+
+	console_command date -551
+	console_command season winter
+	while I_TurnNumber = 35
+	end_while
+
+	console_command date -550
+	console_command season summer
+	while I_TurnNumber = 36
+	end_while
+
+	console_command date -550
+	console_command season summer
+	while I_TurnNumber = 37
+	end_while
+
+	console_command date -550
+	console_command season summer
+	while I_TurnNumber = 38
+	end_while
+
+	console_command date -550
+	console_command season winter
+	while I_TurnNumber = 39
+	end_while
+
+	console_command date -549
+	console_command season summer
+	while I_TurnNumber = 40
+	end_while
+
+	console_command date -549
+	console_command season summer
+	while I_TurnNumber = 41
+	end_while
+
+	console_command date -549
+	console_command season summer
+	while I_TurnNumber = 42
+	end_while
+
+	console_command date -549
+	console_command season winter
+	while I_TurnNumber = 43
+	end_while
+
+	console_command date -548
+	console_command season summer
+	while I_TurnNumber = 44
+	end_while
+
+	console_command date -548
+	console_command season summer
+	while I_TurnNumber = 45
+	end_while
+
+	console_command date -548
+	console_command season summer
+	while I_TurnNumber = 46
+	end_while
+
+	console_command date -548
+	console_command season winter
+	while I_TurnNumber = 47
+	end_while
+
+	console_command date -547
+	console_command season summer
+	while I_TurnNumber = 48
+	end_while
+
+	console_command date -547
+	console_command season summer
+	while I_TurnNumber = 49
+	end_while
+
+	console_command date -547
+	console_command season summer
+	while I_TurnNumber = 50
+	end_while
+
+	console_command date -547
+	console_command season winter
+	while I_TurnNumber = 51
+	end_while
+
+	console_command date -546
+	console_command season summer
+	while I_TurnNumber = 52
+	end_while
+
+	console_command date -546
+	console_command season summer
+	while I_TurnNumber = 53
+	end_while
+
+	console_command date -546
+	console_command season summer
+	while I_TurnNumber = 54
+	end_while
+
+	console_command date -546
+	console_command season winter
+	while I_TurnNumber = 55
+	end_while
+
+	console_command date -545
+	console_command season summer
+	while I_TurnNumber = 56
+	end_while
+
+	console_command date -545
+	console_command season summer
+	while I_TurnNumber = 57
+	end_while
+
+	console_command date -545
+	console_command season summer
+	while I_TurnNumber = 58
+	end_while
+
+	console_command date -545
+	console_command season winter
+	while I_TurnNumber = 59
+	end_while
+
+	console_command date -544
+	console_command season summer
+	while I_TurnNumber = 60
+	end_while
+
+	console_command date -544
+	console_command season summer
+	while I_TurnNumber = 61
+	end_while
+
+	console_command date -544
+	console_command season summer
+	while I_TurnNumber = 62
+	end_while
+
+	console_command date -544
+	console_command season winter
+	while I_TurnNumber = 63
+	end_while
+
+	console_command date -543
+	console_command season summer
+	while I_TurnNumber = 64
+	end_while
+
+	console_command date -543
+	console_command season summer
+	while I_TurnNumber = 65
+	end_while
+
+	console_command date -543
+	console_command season summer
+	while I_TurnNumber = 66
+	end_while
+
+	console_command date -543
+	console_command season winter
+	while I_TurnNumber = 67
+	end_while
+
+	console_command date -542
+	console_command season summer
+	while I_TurnNumber = 68
+	end_while
+
+	console_command date -542
+	console_command season summer
+	while I_TurnNumber = 69
+	end_while
+
+	console_command date -542
+	console_command season summer
+	while I_TurnNumber = 70
+	end_while
+
+	console_command date -542
+	console_command season winter
+	while I_TurnNumber = 71
+	end_while
+
+	console_command date -541
+	console_command season summer
+	while I_TurnNumber = 72
+	end_while
+
+	console_command date -541
+	console_command season summer
+	while I_TurnNumber = 73
+	end_while
+
+	console_command date -541
+	console_command season summer
+	while I_TurnNumber = 74
+	end_while
+
+	console_command date -541
+	console_command season winter
+	while I_TurnNumber = 75
+	end_while
+
+	console_command date -540
+	console_command season summer
+	while I_TurnNumber = 76
+	end_while
+
+	console_command date -540
+	console_command season summer
+	while I_TurnNumber = 77
+	end_while
+
+	console_command date -540
+	console_command season summer
+	while I_TurnNumber = 78
+	end_while
+
+	console_command date -540
+	console_command season winter
+	while I_TurnNumber = 79
+	end_while
+
+	console_command date -539
+	console_command season summer
+	while I_TurnNumber = 80
+	end_while
+
+	console_command date -539
+	console_command season summer
+	while I_TurnNumber = 81
+	end_while
+
+	console_command date -539
+	console_command season summer
+	while I_TurnNumber = 82
+	end_while
+
+	console_command date -539
+	console_command season winter
+	while I_TurnNumber = 83
+	end_while
+
+	console_command date -538
+	console_command season summer
+	while I_TurnNumber = 84
+	end_while
+
+	console_command date -538
+	console_command season summer
+	while I_TurnNumber = 85
+	end_while
+
+	console_command date -538
+	console_command season summer
+	while I_TurnNumber = 86
+	end_while
+
+	console_command date -538
+	console_command season winter
+	while I_TurnNumber = 87
+	end_while
+
+	console_command date -537
+	console_command season summer
+	while I_TurnNumber = 88
+	end_while
+
+	console_command date -537
+	console_command season summer
+	while I_TurnNumber = 89
+	end_while
+
+	console_command date -537
+	console_command season summer
+	while I_TurnNumber = 90
+	end_while
+
+	console_command date -537
+	console_command season winter
+	while I_TurnNumber = 91
+	end_while
+
+	console_command date -536
+	console_command season summer
+	while I_TurnNumber = 92
+	end_while
+
+	console_command date -536
+	console_command season summer
+	while I_TurnNumber = 93
+	end_while
+
+	console_command date -536
+	console_command season summer
+	while I_TurnNumber = 94
+	end_while
+
+	console_command date -536
+	console_command season winter
+	while I_TurnNumber = 95
+	end_while
+
+	console_command date -535
+	console_command season summer
+	while I_TurnNumber = 96
+	end_while
+
+	console_command date -535
+	console_command season summer
+	while I_TurnNumber = 97
+	end_while
+
+	console_command date -535
+	console_command season summer
+	while I_TurnNumber = 98
+	end_while
+
+	console_command date -535
+	console_command season winter
+	while I_TurnNumber = 99
+	end_while
+
+	console_command date -534
+	console_command season summer
+	while I_TurnNumber = 100
+	end_while
+
+	console_command date -534
+	console_command season summer
+	while I_TurnNumber = 101
+	end_while
+
+	console_command date -534
+	console_command season summer
+	while I_TurnNumber = 102
+	end_while
+
+	console_command date -534
+	console_command season winter
+	while I_TurnNumber = 103
+	end_while
+
+	console_command date -533
+	console_command season summer
+	while I_TurnNumber = 104
+	end_while
+
+	console_command date -533
+	console_command season summer
+	while I_TurnNumber = 105
+	end_while
+
+	console_command date -533
+	console_command season summer
+	while I_TurnNumber = 106
+	end_while
+
+	console_command date -533
+	console_command season winter
+	while I_TurnNumber = 107
+	end_while
+
+	console_command date -532
+	console_command season summer
+	while I_TurnNumber = 108
+	end_while
+
+	console_command date -532
+	console_command season summer
+	while I_TurnNumber = 109
+	end_while
+
+	console_command date -532
+	console_command season summer
+	while I_TurnNumber = 110
+	end_while
+
+	console_command date -532
+	console_command season winter
+	while I_TurnNumber = 111
+	end_while
+
+	console_command date -531
+	console_command season summer
+	while I_TurnNumber = 112
+	end_while
+
+	console_command date -531
+	console_command season summer
+	while I_TurnNumber = 113
+	end_while
+
+	console_command date -531
+	console_command season summer
+	while I_TurnNumber = 114
+	end_while
+
+	console_command date -531
+	console_command season winter
+	while I_TurnNumber = 115
+	end_while
+
+	console_command date -530
+	console_command season summer
+	while I_TurnNumber = 116
+	end_while
+
+	console_command date -530
+	console_command season summer
+	while I_TurnNumber = 117
+	end_while
+
+	console_command date -530
+	console_command season summer
+	while I_TurnNumber = 118
+	end_while
+
+	console_command date -530
+	console_command season winter
+	while I_TurnNumber = 119
+	end_while
+
+	console_command date -529
+	console_command season summer
+	while I_TurnNumber = 120
+	end_while
+
+	console_command date -529
+	console_command season summer
+	while I_TurnNumber = 121
+	end_while
+
+	console_command date -529
+	console_command season summer
+	while I_TurnNumber = 122
+	end_while
+
+	console_command date -529
+	console_command season winter
+	while I_TurnNumber = 123
+	end_while
+
+	console_command date -528
+	console_command season summer
+	while I_TurnNumber = 124
+	end_while
+
+	console_command date -528
+	console_command season summer
+	while I_TurnNumber = 125
+	end_while
+
+	console_command date -528
+	console_command season summer
+	while I_TurnNumber = 126
+	end_while
+
+	console_command date -528
+	console_command season winter
+	while I_TurnNumber = 127
+	end_while
+
+	console_command date -527
+	console_command season summer
+	while I_TurnNumber = 128
+	end_while
+
+	console_command date -527
+	console_command season summer
+	while I_TurnNumber = 129
+	end_while
+
+	console_command date -527
+	console_command season summer
+	while I_TurnNumber = 130
+	end_while
+
+	console_command date -527
+	console_command season winter
+	while I_TurnNumber = 131
+	end_while
+
+	console_command date -526
+	console_command season summer
+	while I_TurnNumber = 132
+	end_while
+
+	console_command date -526
+	console_command season summer
+	while I_TurnNumber = 133
+	end_while
+
+	console_command date -526
+	console_command season summer
+	while I_TurnNumber = 134
+	end_while
+
+	console_command date -526
+	console_command season winter
+	while I_TurnNumber = 135
+	end_while
+
+	console_command date -525
+	console_command season summer
+	while I_TurnNumber = 136
+	end_while
+
+	console_command date -525
+	console_command season summer
+	while I_TurnNumber = 137
+	end_while
+
+	console_command date -525
+	console_command season summer
+	while I_TurnNumber = 138
+	end_while
+
+	console_command date -525
+	console_command season winter
+	while I_TurnNumber = 139
+	end_while
+
+	console_command date -524
+	console_command season summer
+	while I_TurnNumber = 140
+	end_while
+
+	console_command date -524
+	console_command season summer
+	while I_TurnNumber = 141
+	end_while
+
+	console_command date -524
+	console_command season summer
+	while I_TurnNumber = 142
+	end_while
+
+	console_command date -524
+	console_command season winter
+	while I_TurnNumber = 143
+	end_while
+
+	console_command date -523
+	console_command season summer
+	while I_TurnNumber = 144
+	end_while
+
+	console_command date -523
+	console_command season summer
+	while I_TurnNumber = 145
+	end_while
+
+	console_command date -523
+	console_command season summer
+	while I_TurnNumber = 146
+	end_while
+
+	console_command date -523
+	console_command season winter
+	while I_TurnNumber = 147
+	end_while
+
+	console_command date -522
+	console_command season summer
+	while I_TurnNumber = 148
+	end_while
+
+	console_command date -522
+	console_command season summer
+	while I_TurnNumber = 149
+	end_while
+
+	console_command date -522
+	console_command season summer
+	while I_TurnNumber = 150
+	end_while
+
+	console_command date -522
+	console_command season winter
+	while I_TurnNumber = 151
+	end_while
+
+	console_command date -521
+	console_command season summer
+	while I_TurnNumber = 152
+	end_while
+
+	console_command date -521
+	console_command season summer
+	while I_TurnNumber = 153
+	end_while
+
+	console_command date -521
+	console_command season summer
+	while I_TurnNumber = 154
+	end_while
+
+	console_command date -521
+	console_command season winter
+	while I_TurnNumber = 155
+	end_while
+
+	console_command date -520
+	console_command season summer
+	while I_TurnNumber = 156
+	end_while
+
+	console_command date -520
+	console_command season summer
+	while I_TurnNumber = 157
+	end_while
+
+	console_command date -520
+	console_command season summer
+	while I_TurnNumber = 158
+	end_while
+
+	console_command date -520
+	console_command season winter
+	while I_TurnNumber = 159
+	end_while
+
+	console_command date -519
+	console_command season summer
+	while I_TurnNumber = 160
+	end_while
+
+	console_command date -519
+	console_command season summer
+	while I_TurnNumber = 161
+	end_while
+
+	console_command date -519
+	console_command season summer
+	while I_TurnNumber = 162
+	end_while
+
+	console_command date -519
+	console_command season winter
+	while I_TurnNumber = 163
+	end_while
+
+	console_command date -518
+	console_command season summer
+	while I_TurnNumber = 164
+	end_while
+
+	console_command date -518
+	console_command season summer
+	while I_TurnNumber = 165
+	end_while
+
+	console_command date -518
+	console_command season summer
+	while I_TurnNumber = 166
+	end_while
+
+	console_command date -518
+	console_command season winter
+	while I_TurnNumber = 167
+	end_while
+
+	console_command date -517
+	console_command season summer
+	while I_TurnNumber = 168
+	end_while
+
+	console_command date -517
+	console_command season summer
+	while I_TurnNumber = 169
+	end_while
+
+	console_command date -517
+	console_command season summer
+	while I_TurnNumber = 170
+	end_while
+
+	console_command date -517
+	console_command season winter
+	while I_TurnNumber = 171
+	end_while
+
+	console_command date -516
+	console_command season summer
+	while I_TurnNumber = 172
+	end_while
+
+	console_command date -516
+	console_command season summer
+	while I_TurnNumber = 173
+	end_while
+
+	console_command date -516
+	console_command season summer
+	while I_TurnNumber = 174
+	end_while
+
+	console_command date -516
+	console_command season winter
+	while I_TurnNumber = 175
+	end_while
+
+	console_command date -515
+	console_command season summer
+	while I_TurnNumber = 176
+	end_while
+
+	console_command date -515
+	console_command season summer
+	while I_TurnNumber = 177
+	end_while
+
+	console_command date -515
+	console_command season summer
+	while I_TurnNumber = 178
+	end_while
+
+	console_command date -515
+	console_command season winter
+	while I_TurnNumber = 179
+	end_while
+
+	console_command date -514
+	console_command season summer
+	while I_TurnNumber = 180
+	end_while
+
+	console_command date -514
+	console_command season summer
+	while I_TurnNumber = 181
+	end_while
+
+	console_command date -514
+	console_command season summer
+	while I_TurnNumber = 182
+	end_while
+
+	console_command date -514
+	console_command season winter
+	while I_TurnNumber = 183
+	end_while
+
+	console_command date -513
+	console_command season summer
+	while I_TurnNumber = 184
+	end_while
+
+	console_command date -513
+	console_command season summer
+	while I_TurnNumber = 185
+	end_while
+
+	console_command date -513
+	console_command season summer
+	while I_TurnNumber = 186
+	end_while
+
+	console_command date -513
+	console_command season winter
+	while I_TurnNumber = 187
+	end_while
+
+	console_command date -512
+	console_command season summer
+	while I_TurnNumber = 188
+	end_while
+
+	console_command date -512
+	console_command season summer
+	while I_TurnNumber = 189
+	end_while
+
+	console_command date -512
+	console_command season summer
+	while I_TurnNumber = 190
+	end_while
+
+	console_command date -512
+	console_command season winter
+	while I_TurnNumber = 191
+	end_while
+
+	console_command date -511
+	console_command season summer
+	while I_TurnNumber = 192
+	end_while
+
+	console_command date -511
+	console_command season summer
+	while I_TurnNumber = 193
+	end_while
+
+	console_command date -511
+	console_command season summer
+	while I_TurnNumber = 194
+	end_while
+
+	console_command date -511
+	console_command season winter
+	while I_TurnNumber = 195
+	end_while
+
+	console_command date -510
+	console_command season summer
+	while I_TurnNumber = 196
+	end_while
+
+	console_command date -510
+	console_command season summer
+	while I_TurnNumber = 197
+	end_while
+
+	console_command date -510
+	console_command season summer
+	while I_TurnNumber = 198
+	end_while
+
+	console_command date -510
+	console_command season winter
+	while I_TurnNumber = 199
+	end_while
+
+	console_command date -509
+	console_command season summer
+	while I_TurnNumber = 200
+	end_while
+
+	console_command date -509
+	console_command season summer
+	while I_TurnNumber = 201
+	end_while
+
+	console_command date -509
+	console_command season summer
+	while I_TurnNumber = 202
+	end_while
+
+	console_command date -509
+	console_command season winter
+	while I_TurnNumber = 203
+	end_while
+
+	console_command date -508
+	console_command season summer
+	while I_TurnNumber = 204
+	end_while
+
+	console_command date -508
+	console_command season summer
+	while I_TurnNumber = 205
+	end_while
+
+	console_command date -508
+	console_command season summer
+	while I_TurnNumber = 206
+	end_while
+
+	console_command date -508
+	console_command season winter
+	while I_TurnNumber = 207
+	end_while
+
+	console_command date -507
+	console_command season summer
+	while I_TurnNumber = 208
+	end_while
+
+	console_command date -507
+	console_command season summer
+	while I_TurnNumber = 209
+	end_while
+
+	console_command date -507
+	console_command season summer
+	while I_TurnNumber = 210
+	end_while
+
+	console_command date -507
+	console_command season winter
+	while I_TurnNumber = 211
+	end_while
+
+	console_command date -506
+	console_command season summer
+	while I_TurnNumber = 212
+	end_while
+
+	console_command date -506
+	console_command season summer
+	while I_TurnNumber = 213
+	end_while
+
+	console_command date -506
+	console_command season summer
+	while I_TurnNumber = 214
+	end_while
+
+	console_command date -506
+	console_command season winter
+	while I_TurnNumber = 215
+	end_while
+
+	console_command date -505
+	console_command season summer
+	while I_TurnNumber = 216
+	end_while
+
+	console_command date -505
+	console_command season summer
+	while I_TurnNumber = 217
+	end_while
+
+	console_command date -505
+	console_command season summer
+	while I_TurnNumber = 218
+	end_while
+
+	console_command date -505
+	console_command season winter
+	while I_TurnNumber = 219
+	end_while
+
+	console_command date -504
+	console_command season summer
+	while I_TurnNumber = 220
+	end_while
+
+	console_command date -504
+	console_command season summer
+	while I_TurnNumber = 221
+	end_while
+
+	console_command date -504
+	console_command season summer
+	while I_TurnNumber = 222
+	end_while
+
+	console_command date -504
+	console_command season winter
+	while I_TurnNumber = 223
+	end_while
+
+	console_command date -503
+	console_command season summer
+	while I_TurnNumber = 224
+	end_while
+
+	console_command date -503
+	console_command season summer
+	while I_TurnNumber = 225
+	end_while
+
+	console_command date -503
+	console_command season summer
+	while I_TurnNumber = 226
+	end_while
+
+	console_command date -503
+	console_command season winter
+	while I_TurnNumber = 227
+	end_while
+
+	console_command date -502
+	console_command season summer
+	while I_TurnNumber = 228
+	end_while
+
+	console_command date -502
+	console_command season summer
+	while I_TurnNumber = 229
+	end_while
+
+	console_command date -502
+	console_command season summer
+	while I_TurnNumber = 230
+	end_while
+
+	console_command date -502
+	console_command season winter
+	while I_TurnNumber = 231
+	end_while
+
+	console_command date -501
+	console_command season summer
+	while I_TurnNumber = 232
+	end_while
+
+	console_command date -501
+	console_command season summer
+	while I_TurnNumber = 233
+	end_while
+
+	console_command date -501
+	console_command season summer
+	while I_TurnNumber = 234
+	end_while
+
+	console_command date -501
+	console_command season winter
+	while I_TurnNumber = 235
+	end_while
+
+	console_command date -500
+	console_command season summer
+	while I_TurnNumber = 236
+	end_while
+
+	console_command date -500
+	console_command season summer
+	while I_TurnNumber = 237
+	end_while
+
+	console_command date -500
+	console_command season summer
+	while I_TurnNumber = 238
+	end_while
+
+	console_command date -500
+	console_command season winter
+	while I_TurnNumber = 239
+	end_while
+
+	console_command date -499
+	console_command season summer
+	while I_TurnNumber = 240
+	end_while
+
+	console_command date -499
+	console_command season summer
+	while I_TurnNumber = 241
+	end_while
+
+	console_command date -499
+	console_command season summer
+	while I_TurnNumber = 242
+	end_while
+
+	console_command date -499
+	console_command season winter
+	while I_TurnNumber = 243
+	end_while
+
+	console_command date -498
+	console_command season summer
+	while I_TurnNumber = 244
+	end_while
+
+	console_command date -498
+	console_command season summer
+	while I_TurnNumber = 245
+	end_while
+
+	console_command date -498
+	console_command season summer
+	while I_TurnNumber = 246
+	end_while
+
+	console_command date -498
+	console_command season winter
+	while I_TurnNumber = 247
+	end_while
+
+	console_command date -497
+	console_command season summer
+	while I_TurnNumber = 248
+	end_while
+
+	console_command date -497
+	console_command season summer
+	while I_TurnNumber = 249
+	end_while
+
+	console_command date -497
+	console_command season summer
+	while I_TurnNumber = 250
+	end_while
+
+	console_command date -497
+	console_command season winter
+	while I_TurnNumber = 251
+	end_while
+
+	console_command date -496
+	console_command season summer
+	while I_TurnNumber = 252
+	end_while
+
+	console_command date -496
+	console_command season summer
+	while I_TurnNumber = 253
+	end_while
+
+	console_command date -496
+	console_command season summer
+	while I_TurnNumber = 254
+	end_while
+
+	console_command date -496
+	console_command season winter
+	while I_TurnNumber = 255
+	end_while
+
+	console_command date -495
+	console_command season summer
+	while I_TurnNumber = 256
+	end_while
+
+	console_command date -495
+	console_command season summer
+	while I_TurnNumber = 257
+	end_while
+
+	console_command date -495
+	console_command season summer
+	while I_TurnNumber = 258
+	end_while
+
+	console_command date -495
+	console_command season winter
+	while I_TurnNumber = 259
+	end_while
+
+	console_command date -494
+	console_command season summer
+	while I_TurnNumber = 260
+	end_while
+
+	console_command date -494
+	console_command season summer
+	while I_TurnNumber = 261
+	end_while
+
+	console_command date -494
+	console_command season summer
+	while I_TurnNumber = 262
+	end_while
+
+	console_command date -494
+	console_command season winter
+	while I_TurnNumber = 263
+	end_while
+
+	console_command date -493
+	console_command season summer
+	while I_TurnNumber = 264
+	end_while
+
+	console_command date -493
+	console_command season summer
+	while I_TurnNumber = 265
+	end_while
+
+	console_command date -493
+	console_command season summer
+	while I_TurnNumber = 266
+	end_while
+
+	console_command date -493
+	console_command season winter
+	while I_TurnNumber = 267
+	end_while
+
+	console_command date -492
+	console_command season summer
+	while I_TurnNumber = 268
+	end_while
+
+	console_command date -492
+	console_command season summer
+	while I_TurnNumber = 269
+	end_while
+
+	console_command date -492
+	console_command season summer
+	while I_TurnNumber = 270
+	end_while
+
+	console_command date -492
+	console_command season winter
+	while I_TurnNumber = 271
+	end_while
+
+	console_command date -491
+	console_command season summer
+	while I_TurnNumber = 272
+	end_while
+
+	console_command date -491
+	console_command season summer
+	while I_TurnNumber = 273
+	end_while
+
+	console_command date -491
+	console_command season summer
+	while I_TurnNumber = 274
+	end_while
+
+	console_command date -491
+	console_command season winter
+	while I_TurnNumber = 275
+	end_while
+
+	console_command date -490
+	console_command season summer
+	while I_TurnNumber = 276
+	end_while
+
+end_script

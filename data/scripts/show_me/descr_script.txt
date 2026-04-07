@@ -1,0 +1,1391 @@
+script	;ROP background script
+
+
+;4tpy script
+	suspend_during_battle on
+	console_command date -559
+	console_command season summer
+	while I_TurnNumber = 0
+	end_while
+
+	console_command date -559
+	console_command season summer
+	while I_TurnNumber = 1
+	end_while
+
+	console_command date -559
+	console_command season summer
+	while I_TurnNumber = 2
+	end_while
+
+	console_command date -559
+	console_command season winter
+	while I_TurnNumber = 3
+	end_while
+
+	console_command date -558
+	console_command season summer
+	while I_TurnNumber = 4
+	end_while
+
+	console_command date -558
+	console_command season summer
+	while I_TurnNumber = 5
+	end_while
+
+	console_command date -558
+	console_command season summer
+	while I_TurnNumber = 6
+	end_while
+
+	console_command date -558
+	console_command season winter
+	while I_TurnNumber = 7
+	end_while
+
+	console_command date -557
+	console_command season summer
+	while I_TurnNumber = 8
+	end_while
+
+	console_command date -557
+	console_command season summer
+	while I_TurnNumber = 9
+	end_while
+
+	console_command date -557
+	console_command season summer
+	while I_TurnNumber = 10
+	end_while
+
+	console_command date -557
+	console_command season winter
+	while I_TurnNumber = 11
+	end_while
+
+	console_command date -556
+	console_command season summer
+	while I_TurnNumber = 12
+	end_while
+
+	console_command date -556
+	console_command season summer
+	while I_TurnNumber = 13
+	end_while
+
+	console_command date -556
+	console_command season summer
+	while I_TurnNumber = 14
+	end_while
+
+	console_command date -556
+	console_command season winter
+	while I_TurnNumber = 15
+	end_while
+
+	console_command date -555
+	console_command season summer
+	while I_TurnNumber = 16
+	end_while
+
+	console_command date -555
+	console_command season summer
+	while I_TurnNumber = 17
+	end_while
+
+	console_command date -555
+	console_command season summer
+	while I_TurnNumber = 18
+	end_while
+
+	console_command date -555
+	console_command season winter
+	while I_TurnNumber = 19
+	end_while
+
+	console_command date -554
+	console_command season summer
+	while I_TurnNumber = 20
+	end_while
+
+	console_command date -554
+	console_command season summer
+	while I_TurnNumber = 21
+	end_while
+
+	console_command date -554
+	console_command season summer
+	while I_TurnNumber = 22
+	end_while
+
+	console_command date -554
+	console_command season winter
+	while I_TurnNumber = 23
+	end_while
+
+	console_command date -553
+	console_command season summer
+	while I_TurnNumber = 24
+	end_while
+
+	console_command date -553
+	console_command season summer
+	while I_TurnNumber = 25
+	end_while
+
+	console_command date -553
+	console_command season summer
+	while I_TurnNumber = 26
+	end_while
+
+	console_command date -553
+	console_command season winter
+	while I_TurnNumber = 27
+	end_while
+
+	console_command date -552
+	console_command season summer
+	while I_TurnNumber = 28
+	end_while
+
+	console_command date -552
+	console_command season summer
+	while I_TurnNumber = 29
+	end_while
+
+	console_command date -552
+	console_command season summer
+	while I_TurnNumber = 30
+	end_while
+
+	console_command date -552
+	console_command season winter
+	while I_TurnNumber = 31
+	end_while
+
+	console_command date -551
+	console_command season summer
+	while I_TurnNumber = 32
+	end_while
+
+	console_command date -551
+	console_command season summer
+	while I_TurnNumber = 33
+	end_while
+
+	console_command date -551
+	console_command season summer
+	while I_TurnNumber = 34
+	end_while
+
+	console_command date -551
+	console_command season winter
+	while I_TurnNumber = 35
+	end_while
+
+	console_command date -550
+	console_command season summer
+	while I_TurnNumber = 36
+	end_while
+
+	console_command date -550
+	console_command season summer
+	while I_TurnNumber = 37
+	end_while
+
+	console_command date -550
+	console_command season summer
+	while I_TurnNumber = 38
+	end_while
+
+	console_command date -550
+	console_command season winter
+	while I_TurnNumber = 39
+	end_while
+
+	console_command date -549
+	console_command season summer
+	while I_TurnNumber = 40
+	end_while
+
+	console_command date -549
+	console_command season summer
+	while I_TurnNumber = 41
+	end_while
+
+	console_command date -549
+	console_command season summer
+	while I_TurnNumber = 42
+	end_while
+
+	console_command date -549
+	console_command season winter
+	while I_TurnNumber = 43
+	end_while
+
+	console_command date -548
+	console_command season summer
+	while I_TurnNumber = 44
+	end_while
+
+	console_command date -548
+	console_command season summer
+	while I_TurnNumber = 45
+	end_while
+
+	console_command date -548
+	console_command season summer
+	while I_TurnNumber = 46
+	end_while
+
+	console_command date -548
+	console_command season winter
+	while I_TurnNumber = 47
+	end_while
+
+	console_command date -547
+	console_command season summer
+	while I_TurnNumber = 48
+	end_while
+
+	console_command date -547
+	console_command season summer
+	while I_TurnNumber = 49
+	end_while
+
+	console_command date -547
+	console_command season summer
+	while I_TurnNumber = 50
+	end_while
+
+	console_command date -547
+	console_command season winter
+	while I_TurnNumber = 51
+	end_while
+
+	console_command date -546
+	console_command season summer
+	while I_TurnNumber = 52
+	end_while
+
+	console_command date -546
+	console_command season summer
+	while I_TurnNumber = 53
+	end_while
+
+	console_command date -546
+	console_command season summer
+	while I_TurnNumber = 54
+	end_while
+
+	console_command date -546
+	console_command season winter
+	while I_TurnNumber = 55
+	end_while
+
+	console_command date -545
+	console_command season summer
+	while I_TurnNumber = 56
+	end_while
+
+	console_command date -545
+	console_command season summer
+	while I_TurnNumber = 57
+	end_while
+
+	console_command date -545
+	console_command season summer
+	while I_TurnNumber = 58
+	end_while
+
+	console_command date -545
+	console_command season winter
+	while I_TurnNumber = 59
+	end_while
+
+	console_command date -544
+	console_command season summer
+	while I_TurnNumber = 60
+	end_while
+
+	console_command date -544
+	console_command season summer
+	while I_TurnNumber = 61
+	end_while
+
+	console_command date -544
+	console_command season summer
+	while I_TurnNumber = 62
+	end_while
+
+	console_command date -544
+	console_command season winter
+	while I_TurnNumber = 63
+	end_while
+
+	console_command date -543
+	console_command season summer
+	while I_TurnNumber = 64
+	end_while
+
+	console_command date -543
+	console_command season summer
+	while I_TurnNumber = 65
+	end_while
+
+	console_command date -543
+	console_command season summer
+	while I_TurnNumber = 66
+	end_while
+
+	console_command date -543
+	console_command season winter
+	while I_TurnNumber = 67
+	end_while
+
+	console_command date -542
+	console_command season summer
+	while I_TurnNumber = 68
+	end_while
+
+	console_command date -542
+	console_command season summer
+	while I_TurnNumber = 69
+	end_while
+
+	console_command date -542
+	console_command season summer
+	while I_TurnNumber = 70
+	end_while
+
+	console_command date -542
+	console_command season winter
+	while I_TurnNumber = 71
+	end_while
+
+	console_command date -541
+	console_command season summer
+	while I_TurnNumber = 72
+	end_while
+
+	console_command date -541
+	console_command season summer
+	while I_TurnNumber = 73
+	end_while
+
+	console_command date -541
+	console_command season summer
+	while I_TurnNumber = 74
+	end_while
+
+	console_command date -541
+	console_command season winter
+	while I_TurnNumber = 75
+	end_while
+
+	console_command date -540
+	console_command season summer
+	while I_TurnNumber = 76
+	end_while
+
+	console_command date -540
+	console_command season summer
+	while I_TurnNumber = 77
+	end_while
+
+	console_command date -540
+	console_command season summer
+	while I_TurnNumber = 78
+	end_while
+
+	console_command date -540
+	console_command season winter
+	while I_TurnNumber = 79
+	end_while
+
+	console_command date -539
+	console_command season summer
+	while I_TurnNumber = 80
+	end_while
+
+	console_command date -539
+	console_command season summer
+	while I_TurnNumber = 81
+	end_while
+
+	console_command date -539
+	console_command season summer
+	while I_TurnNumber = 82
+	end_while
+
+	console_command date -539
+	console_command season winter
+	while I_TurnNumber = 83
+	end_while
+
+	console_command date -538
+	console_command season summer
+	while I_TurnNumber = 84
+	end_while
+
+	console_command date -538
+	console_command season summer
+	while I_TurnNumber = 85
+	end_while
+
+	console_command date -538
+	console_command season summer
+	while I_TurnNumber = 86
+	end_while
+
+	console_command date -538
+	console_command season winter
+	while I_TurnNumber = 87
+	end_while
+
+	console_command date -537
+	console_command season summer
+	while I_TurnNumber = 88
+	end_while
+
+	console_command date -537
+	console_command season summer
+	while I_TurnNumber = 89
+	end_while
+
+	console_command date -537
+	console_command season summer
+	while I_TurnNumber = 90
+	end_while
+
+	console_command date -537
+	console_command season winter
+	while I_TurnNumber = 91
+	end_while
+
+	console_command date -536
+	console_command season summer
+	while I_TurnNumber = 92
+	end_while
+
+	console_command date -536
+	console_command season summer
+	while I_TurnNumber = 93
+	end_while
+
+	console_command date -536
+	console_command season summer
+	while I_TurnNumber = 94
+	end_while
+
+	console_command date -536
+	console_command season winter
+	while I_TurnNumber = 95
+	end_while
+
+	console_command date -535
+	console_command season summer
+	while I_TurnNumber = 96
+	end_while
+
+	console_command date -535
+	console_command season summer
+	while I_TurnNumber = 97
+	end_while
+
+	console_command date -535
+	console_command season summer
+	while I_TurnNumber = 98
+	end_while
+
+	console_command date -535
+	console_command season winter
+	while I_TurnNumber = 99
+	end_while
+
+	console_command date -534
+	console_command season summer
+	while I_TurnNumber = 100
+	end_while
+
+	console_command date -534
+	console_command season summer
+	while I_TurnNumber = 101
+	end_while
+
+	console_command date -534
+	console_command season summer
+	while I_TurnNumber = 102
+	end_while
+
+	console_command date -534
+	console_command season winter
+	while I_TurnNumber = 103
+	end_while
+
+	console_command date -533
+	console_command season summer
+	while I_TurnNumber = 104
+	end_while
+
+	console_command date -533
+	console_command season summer
+	while I_TurnNumber = 105
+	end_while
+
+	console_command date -533
+	console_command season summer
+	while I_TurnNumber = 106
+	end_while
+
+	console_command date -533
+	console_command season winter
+	while I_TurnNumber = 107
+	end_while
+
+	console_command date -532
+	console_command season summer
+	while I_TurnNumber = 108
+	end_while
+
+	console_command date -532
+	console_command season summer
+	while I_TurnNumber = 109
+	end_while
+
+	console_command date -532
+	console_command season summer
+	while I_TurnNumber = 110
+	end_while
+
+	console_command date -532
+	console_command season winter
+	while I_TurnNumber = 111
+	end_while
+
+	console_command date -531
+	console_command season summer
+	while I_TurnNumber = 112
+	end_while
+
+	console_command date -531
+	console_command season summer
+	while I_TurnNumber = 113
+	end_while
+
+	console_command date -531
+	console_command season summer
+	while I_TurnNumber = 114
+	end_while
+
+	console_command date -531
+	console_command season winter
+	while I_TurnNumber = 115
+	end_while
+
+	console_command date -530
+	console_command season summer
+	while I_TurnNumber = 116
+	end_while
+
+	console_command date -530
+	console_command season summer
+	while I_TurnNumber = 117
+	end_while
+
+	console_command date -530
+	console_command season summer
+	while I_TurnNumber = 118
+	end_while
+
+	console_command date -530
+	console_command season winter
+	while I_TurnNumber = 119
+	end_while
+
+	console_command date -529
+	console_command season summer
+	while I_TurnNumber = 120
+	end_while
+
+	console_command date -529
+	console_command season summer
+	while I_TurnNumber = 121
+	end_while
+
+	console_command date -529
+	console_command season summer
+	while I_TurnNumber = 122
+	end_while
+
+	console_command date -529
+	console_command season winter
+	while I_TurnNumber = 123
+	end_while
+
+	console_command date -528
+	console_command season summer
+	while I_TurnNumber = 124
+	end_while
+
+	console_command date -528
+	console_command season summer
+	while I_TurnNumber = 125
+	end_while
+
+	console_command date -528
+	console_command season summer
+	while I_TurnNumber = 126
+	end_while
+
+	console_command date -528
+	console_command season winter
+	while I_TurnNumber = 127
+	end_while
+
+	console_command date -527
+	console_command season summer
+	while I_TurnNumber = 128
+	end_while
+
+	console_command date -527
+	console_command season summer
+	while I_TurnNumber = 129
+	end_while
+
+	console_command date -527
+	console_command season summer
+	while I_TurnNumber = 130
+	end_while
+
+	console_command date -527
+	console_command season winter
+	while I_TurnNumber = 131
+	end_while
+
+	console_command date -526
+	console_command season summer
+	while I_TurnNumber = 132
+	end_while
+
+	console_command date -526
+	console_command season summer
+	while I_TurnNumber = 133
+	end_while
+
+	console_command date -526
+	console_command season summer
+	while I_TurnNumber = 134
+	end_while
+
+	console_command date -526
+	console_command season winter
+	while I_TurnNumber = 135
+	end_while
+
+	console_command date -525
+	console_command season summer
+	while I_TurnNumber = 136
+	end_while
+
+	console_command date -525
+	console_command season summer
+	while I_TurnNumber = 137
+	end_while
+
+	console_command date -525
+	console_command season summer
+	while I_TurnNumber = 138
+	end_while
+
+	console_command date -525
+	console_command season winter
+	while I_TurnNumber = 139
+	end_while
+
+	console_command date -524
+	console_command season summer
+	while I_TurnNumber = 140
+	end_while
+
+	console_command date -524
+	console_command season summer
+	while I_TurnNumber = 141
+	end_while
+
+	console_command date -524
+	console_command season summer
+	while I_TurnNumber = 142
+	end_while
+
+	console_command date -524
+	console_command season winter
+	while I_TurnNumber = 143
+	end_while
+
+	console_command date -523
+	console_command season summer
+	while I_TurnNumber = 144
+	end_while
+
+	console_command date -523
+	console_command season summer
+	while I_TurnNumber = 145
+	end_while
+
+	console_command date -523
+	console_command season summer
+	while I_TurnNumber = 146
+	end_while
+
+	console_command date -523
+	console_command season winter
+	while I_TurnNumber = 147
+	end_while
+
+	console_command date -522
+	console_command season summer
+	while I_TurnNumber = 148
+	end_while
+
+	console_command date -522
+	console_command season summer
+	while I_TurnNumber = 149
+	end_while
+
+	console_command date -522
+	console_command season summer
+	while I_TurnNumber = 150
+	end_while
+
+	console_command date -522
+	console_command season winter
+	while I_TurnNumber = 151
+	end_while
+
+	console_command date -521
+	console_command season summer
+	while I_TurnNumber = 152
+	end_while
+
+	console_command date -521
+	console_command season summer
+	while I_TurnNumber = 153
+	end_while
+
+	console_command date -521
+	console_command season summer
+	while I_TurnNumber = 154
+	end_while
+
+	console_command date -521
+	console_command season winter
+	while I_TurnNumber = 155
+	end_while
+
+	console_command date -520
+	console_command season summer
+	while I_TurnNumber = 156
+	end_while
+
+	console_command date -520
+	console_command season summer
+	while I_TurnNumber = 157
+	end_while
+
+	console_command date -520
+	console_command season summer
+	while I_TurnNumber = 158
+	end_while
+
+	console_command date -520
+	console_command season winter
+	while I_TurnNumber = 159
+	end_while
+
+	console_command date -519
+	console_command season summer
+	while I_TurnNumber = 160
+	end_while
+
+	console_command date -519
+	console_command season summer
+	while I_TurnNumber = 161
+	end_while
+
+	console_command date -519
+	console_command season summer
+	while I_TurnNumber = 162
+	end_while
+
+	console_command date -519
+	console_command season winter
+	while I_TurnNumber = 163
+	end_while
+
+	console_command date -518
+	console_command season summer
+	while I_TurnNumber = 164
+	end_while
+
+	console_command date -518
+	console_command season summer
+	while I_TurnNumber = 165
+	end_while
+
+	console_command date -518
+	console_command season summer
+	while I_TurnNumber = 166
+	end_while
+
+	console_command date -518
+	console_command season winter
+	while I_TurnNumber = 167
+	end_while
+
+	console_command date -517
+	console_command season summer
+	while I_TurnNumber = 168
+	end_while
+
+	console_command date -517
+	console_command season summer
+	while I_TurnNumber = 169
+	end_while
+
+	console_command date -517
+	console_command season summer
+	while I_TurnNumber = 170
+	end_while
+
+	console_command date -517
+	console_command season winter
+	while I_TurnNumber = 171
+	end_while
+
+	console_command date -516
+	console_command season summer
+	while I_TurnNumber = 172
+	end_while
+
+	console_command date -516
+	console_command season summer
+	while I_TurnNumber = 173
+	end_while
+
+	console_command date -516
+	console_command season summer
+	while I_TurnNumber = 174
+	end_while
+
+	console_command date -516
+	console_command season winter
+	while I_TurnNumber = 175
+	end_while
+
+	console_command date -515
+	console_command season summer
+	while I_TurnNumber = 176
+	end_while
+
+	console_command date -515
+	console_command season summer
+	while I_TurnNumber = 177
+	end_while
+
+	console_command date -515
+	console_command season summer
+	while I_TurnNumber = 178
+	end_while
+
+	console_command date -515
+	console_command season winter
+	while I_TurnNumber = 179
+	end_while
+
+	console_command date -514
+	console_command season summer
+	while I_TurnNumber = 180
+	end_while
+
+	console_command date -514
+	console_command season summer
+	while I_TurnNumber = 181
+	end_while
+
+	console_command date -514
+	console_command season summer
+	while I_TurnNumber = 182
+	end_while
+
+	console_command date -514
+	console_command season winter
+	while I_TurnNumber = 183
+	end_while
+
+	console_command date -513
+	console_command season summer
+	while I_TurnNumber = 184
+	end_while
+
+	console_command date -513
+	console_command season summer
+	while I_TurnNumber = 185
+	end_while
+
+	console_command date -513
+	console_command season summer
+	while I_TurnNumber = 186
+	end_while
+
+	console_command date -513
+	console_command season winter
+	while I_TurnNumber = 187
+	end_while
+
+	console_command date -512
+	console_command season summer
+	while I_TurnNumber = 188
+	end_while
+
+	console_command date -512
+	console_command season summer
+	while I_TurnNumber = 189
+	end_while
+
+	console_command date -512
+	console_command season summer
+	while I_TurnNumber = 190
+	end_while
+
+	console_command date -512
+	console_command season winter
+	while I_TurnNumber = 191
+	end_while
+
+	console_command date -511
+	console_command season summer
+	while I_TurnNumber = 192
+	end_while
+
+	console_command date -511
+	console_command season summer
+	while I_TurnNumber = 193
+	end_while
+
+	console_command date -511
+	console_command season summer
+	while I_TurnNumber = 194
+	end_while
+
+	console_command date -511
+	console_command season winter
+	while I_TurnNumber = 195
+	end_while
+
+	console_command date -510
+	console_command season summer
+	while I_TurnNumber = 196
+	end_while
+
+	console_command date -510
+	console_command season summer
+	while I_TurnNumber = 197
+	end_while
+
+	console_command date -510
+	console_command season summer
+	while I_TurnNumber = 198
+	end_while
+
+	console_command date -510
+	console_command season winter
+	while I_TurnNumber = 199
+	end_while
+
+	console_command date -509
+	console_command season summer
+	while I_TurnNumber = 200
+	end_while
+
+	console_command date -509
+	console_command season summer
+	while I_TurnNumber = 201
+	end_while
+
+	console_command date -509
+	console_command season summer
+	while I_TurnNumber = 202
+	end_while
+
+	console_command date -509
+	console_command season winter
+	while I_TurnNumber = 203
+	end_while
+
+	console_command date -508
+	console_command season summer
+	while I_TurnNumber = 204
+	end_while
+
+	console_command date -508
+	console_command season summer
+	while I_TurnNumber = 205
+	end_while
+
+	console_command date -508
+	console_command season summer
+	while I_TurnNumber = 206
+	end_while
+
+	console_command date -508
+	console_command season winter
+	while I_TurnNumber = 207
+	end_while
+
+	console_command date -507
+	console_command season summer
+	while I_TurnNumber = 208
+	end_while
+
+	console_command date -507
+	console_command season summer
+	while I_TurnNumber = 209
+	end_while
+
+	console_command date -507
+	console_command season summer
+	while I_TurnNumber = 210
+	end_while
+
+	console_command date -507
+	console_command season winter
+	while I_TurnNumber = 211
+	end_while
+
+	console_command date -506
+	console_command season summer
+	while I_TurnNumber = 212
+	end_while
+
+	console_command date -506
+	console_command season summer
+	while I_TurnNumber = 213
+	end_while
+
+	console_command date -506
+	console_command season summer
+	while I_TurnNumber = 214
+	end_while
+
+	console_command date -506
+	console_command season winter
+	while I_TurnNumber = 215
+	end_while
+
+	console_command date -505
+	console_command season summer
+	while I_TurnNumber = 216
+	end_while
+
+	console_command date -505
+	console_command season summer
+	while I_TurnNumber = 217
+	end_while
+
+	console_command date -505
+	console_command season summer
+	while I_TurnNumber = 218
+	end_while
+
+	console_command date -505
+	console_command season winter
+	while I_TurnNumber = 219
+	end_while
+
+	console_command date -504
+	console_command season summer
+	while I_TurnNumber = 220
+	end_while
+
+	console_command date -504
+	console_command season summer
+	while I_TurnNumber = 221
+	end_while
+
+	console_command date -504
+	console_command season summer
+	while I_TurnNumber = 222
+	end_while
+
+	console_command date -504
+	console_command season winter
+	while I_TurnNumber = 223
+	end_while
+
+	console_command date -503
+	console_command season summer
+	while I_TurnNumber = 224
+	end_while
+
+	console_command date -503
+	console_command season summer
+	while I_TurnNumber = 225
+	end_while
+
+	console_command date -503
+	console_command season summer
+	while I_TurnNumber = 226
+	end_while
+
+	console_command date -503
+	console_command season winter
+	while I_TurnNumber = 227
+	end_while
+
+	console_command date -502
+	console_command season summer
+	while I_TurnNumber = 228
+	end_while
+
+	console_command date -502
+	console_command season summer
+	while I_TurnNumber = 229
+	end_while
+
+	console_command date -502
+	console_command season summer
+	while I_TurnNumber = 230
+	end_while
+
+	console_command date -502
+	console_command season winter
+	while I_TurnNumber = 231
+	end_while
+
+	console_command date -501
+	console_command season summer
+	while I_TurnNumber = 232
+	end_while
+
+	console_command date -501
+	console_command season summer
+	while I_TurnNumber = 233
+	end_while
+
+	console_command date -501
+	console_command season summer
+	while I_TurnNumber = 234
+	end_while
+
+	console_command date -501
+	console_command season winter
+	while I_TurnNumber = 235
+	end_while
+
+	console_command date -500
+	console_command season summer
+	while I_TurnNumber = 236
+	end_while
+
+	console_command date -500
+	console_command season summer
+	while I_TurnNumber = 237
+	end_while
+
+	console_command date -500
+	console_command season summer
+	while I_TurnNumber = 238
+	end_while
+
+	console_command date -500
+	console_command season winter
+	while I_TurnNumber = 239
+	end_while
+
+	console_command date -499
+	console_command season summer
+	while I_TurnNumber = 240
+	end_while
+
+	console_command date -499
+	console_command season summer
+	while I_TurnNumber = 241
+	end_while
+
+	console_command date -499
+	console_command season summer
+	while I_TurnNumber = 242
+	end_while
+
+	console_command date -499
+	console_command season winter
+	while I_TurnNumber = 243
+	end_while
+
+	console_command date -498
+	console_command season summer
+	while I_TurnNumber = 244
+	end_while
+
+	console_command date -498
+	console_command season summer
+	while I_TurnNumber = 245
+	end_while
+
+	console_command date -498
+	console_command season summer
+	while I_TurnNumber = 246
+	end_while
+
+	console_command date -498
+	console_command season winter
+	while I_TurnNumber = 247
+	end_while
+
+	console_command date -497
+	console_command season summer
+	while I_TurnNumber = 248
+	end_while
+
+	console_command date -497
+	console_command season summer
+	while I_TurnNumber = 249
+	end_while
+
+	console_command date -497
+	console_command season summer
+	while I_TurnNumber = 250
+	end_while
+
+	console_command date -497
+	console_command season winter
+	while I_TurnNumber = 251
+	end_while
+
+	console_command date -496
+	console_command season summer
+	while I_TurnNumber = 252
+	end_while
+
+	console_command date -496
+	console_command season summer
+	while I_TurnNumber = 253
+	end_while
+
+	console_command date -496
+	console_command season summer
+	while I_TurnNumber = 254
+	end_while
+
+	console_command date -496
+	console_command season winter
+	while I_TurnNumber = 255
+	end_while
+
+	console_command date -495
+	console_command season summer
+	while I_TurnNumber = 256
+	end_while
+
+	console_command date -495
+	console_command season summer
+	while I_TurnNumber = 257
+	end_while
+
+	console_command date -495
+	console_command season summer
+	while I_TurnNumber = 258
+	end_while
+
+	console_command date -495
+	console_command season winter
+	while I_TurnNumber = 259
+	end_while
+
+	console_command date -494
+	console_command season summer
+	while I_TurnNumber = 260
+	end_while
+
+	console_command date -494
+	console_command season summer
+	while I_TurnNumber = 261
+	end_while
+
+	console_command date -494
+	console_command season summer
+	while I_TurnNumber = 262
+	end_while
+
+	console_command date -494
+	console_command season winter
+	while I_TurnNumber = 263
+	end_while
+
+	console_command date -493
+	console_command season summer
+	while I_TurnNumber = 264
+	end_while
+
+	console_command date -493
+	console_command season summer
+	while I_TurnNumber = 265
+	end_while
+
+	console_command date -493
+	console_command season summer
+	while I_TurnNumber = 266
+	end_while
+
+	console_command date -493
+	console_command season winter
+	while I_TurnNumber = 267
+	end_while
+
+	console_command date -492
+	console_command season summer
+	while I_TurnNumber = 268
+	end_while
+
+	console_command date -492
+	console_command season summer
+	while I_TurnNumber = 269
+	end_while
+
+	console_command date -492
+	console_command season summer
+	while I_TurnNumber = 270
+	end_while
+
+	console_command date -492
+	console_command season winter
+	while I_TurnNumber = 271
+	end_while
+
+	console_command date -491
+	console_command season summer
+	while I_TurnNumber = 272
+	end_while
+
+	console_command date -491
+	console_command season summer
+	while I_TurnNumber = 273
+	end_while
+
+	console_command date -491
+	console_command season summer
+	while I_TurnNumber = 274
+	end_while
+
+	console_command date -491
+	console_command season winter
+	while I_TurnNumber = 275
+	end_while
+
+	console_command date -490
+	console_command season summer
+	while I_TurnNumber = 276
+	end_while
+
+end_script
