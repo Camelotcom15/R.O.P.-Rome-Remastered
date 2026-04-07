@@ -1,0 +1,88 @@
+{
+	"Water": [
+		{
+			"[Sea] Deep extinction color": [
+				0.1756536,
+				0.678588,
+				0.8333333
+			]
+		},
+		{
+			"[Sea] Min/Max depth range": [
+				0.2,
+				20
+			]
+		},
+		{
+			"[Sea] Min/Max extinction transition range": [
+				0,
+				0.15
+			]
+		},
+		{
+			"[Sea] Sky reflection strength": [
+				0.5
+			]
+		},
+		{
+			"[Sea] Specular strength": [
+				0.8
+			]
+		},
+		{
+			"[Sea] Ambient strength": [
+				0.25
+			]
+		},
+		{
+			"[Sea] Shallow fresnel strength": [
+				0.6
+			]
+		},
+		{
+			"[Sea] Ambient backscatter strength": [
+				0.125
+			]
+		},
+		{
+			"[Sea] Displacement strength": [
+				20
+			]
+		},
+		{
+			"[Sea] Deep extinction strength": [
+				8
+			]
+		},
+		{
+			"[Sea] Detail normal tiling": [
+				0.15
+			]
+		},
+		{
+			"[Sea] Base normal tiling": [
+				0.3
+			]
+		},
+		{
+			"[Sea] SSR strength": [
+				1
+			]
+		},
+		{
+			"[Sea] SSR fade amoount": [
+				1
+			]
+		},
+		{
+			"[Sea] Deep fresnel strength": [
+				2
+			]
+		},
+		{
+			"[Sea] Flow speed": [
+				1.5
+			]
+		},
+	]
+}

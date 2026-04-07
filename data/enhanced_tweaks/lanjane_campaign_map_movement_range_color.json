@@ -1,0 +1,67 @@
+{
+	"Campaign Map Extents": [
+		{
+			"[CME] Extents Strength (Day)": [
+				0.9
+			]
+		},
+		{
+			"[CME] Extents Strength (Night)": [
+				0.3
+			]
+		},
+		{
+			"[CME] Movement extent colour": [
+				0.201461,
+				0.6421568,
+				0.201461
+			]
+		},
+		{
+			"[CME] Movement extent opacity": [
+				0.5
+			]
+		},
+		{
+			"[CME] ZoC extent colour": [
+				0.8480392,
+				0.228638,
+				0.228638
+			]
+		},
+		{
+			"[CME] ZoC extent opacity": [
+				0.5
+			]
+		},
+		{
+			"[CME] Ambush extent colour": [
+				0.01883891,
+				0.2745098,
+				0.09206501
+			]
+		},
+		{
+			"[CME] Ambush extent opacity": [
+				0.9
+			]
+		},
+		{
+			"[CME] Enemy movement extent colour": [
+				0.7941176,
+				0.7941174,
+				0.2452422
+			]
+		},
+		{
+			"[CME] Enemy movement extent opacity": [
+				0.5
+			]
+		}
+	],
+	"UI Sprites": [
+		{
+			"[UIS] enable pixel-perfect render": true
+		}
+	],
+}

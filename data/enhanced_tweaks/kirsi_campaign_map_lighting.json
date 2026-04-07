@@ -1,0 +1,41 @@
+{
+	"Campaign Map": [
+		{
+			"[CM] Light strength": [
+				1.1
+			]
+		},
+		{
+			"[CM] Ambient strength": [
+				1.1
+			]
+		},
+		{
+			"[CM] Albedo strength": [
+				1.3
+			]
+		},
+		{
+			"[CM] Normal strength": [
+				0.7
+			]
+		},
+	],
+	"SSAO": [
+		{
+			"[SSAO] Shadow Clamp": [
+				1
+			]
+		},
+		{
+			"[SSAO] Horizon Angle Threshold": [
+				0
+			]
+		},
+		{
+			"[SSAO] Detail Shadow Strength": [
+				10.5
+			]
+		},
+	],
+}
