@@ -1,0 +1,122 @@
+{
+	"list": [
+		{
+			"name": "loading_bar",
+			"x": 0,
+			"y": -65,
+			"size": {
+				"width" : 675,
+				"height" : 60
+			},
+			"align": "C",
+			"anchor": "BC",
+			"ignore_scale":true
+		},
+		{
+			"name": "logo",
+			"x": -9999,
+			"y": -9999,
+			"size": {
+				"width" : 270,
+				"height": 170
+			},
+            "bi_override":{
+                "x": -9999,
+                "y": -9999,
+                "size": {
+                    "width" : 270,
+                    "height": 170
+                },
+            },
+            "alex_override":{
+                "x": -9999,
+                "y": -9999,
+                "size": {
+                    "width" : 270,
+                    "height": 170
+                },
+            },
+			"align": "BR",
+			"anchor": "BR",
+			"ignore_scale":true
+		},
+		{
+			"name": "faction_symbol",
+			"x": 30,
+			"y": -30,
+			"size": {
+				"width" : 120,
+				"height" : 120
+			},
+			"align": "BL",
+			"anchor": "BL",
+			"ignore_scale":true
+		},
+		{
+			"name": "loading_text",
+            "x": 150,
+            "y": -90,
+            "align" : "BL",
+            "anchor": "BL",
+			"font"
+            : "verdana_med",
+			"ignore_scale":true
+		},
+		{
+			"name": "faction_symbol",
+			"x": 0,
+			"y": 0,
+			"size": {
+				"width" : 240,
+				"height" : 240
+			},
+			"align": "C",
+			"anchor": "C",
+			"ignore_scale":true
+		},
+		{
+			"name": "loading_text",
+            "x": -104,
+            "y": 164,
+            "align" : "C",
+            "anchor": "C",
+			"font"
+            : "verdana_lrg",
+			"ignore_scale":false
+		},
+		{
+			"name": "loading_year_text",
+			"x": 16,
+			"y": 164,
+            "align" : "C",
+			"anchor": "C",
+			"font": "verdana_lrg",
+			"ignore_scale":false
+		},
+		{
+			"name": "loading_quote",
+			"x": 0,
+			"y": -132,
+			"size": {
+				"width" : 600
+			},
+			"scale_width": true,
+			"anchor": "BC",
+			"font": "verdana_med_bold_italic",
+			"ignore_scale":true
+		},
+		{
+			"name": "loading_tip",
+			"x": -9999,
+			"y": -9999,
+			"size": {
+				"width" : 600
+			},
+			"scale_width": true,
+            "align": "BC",
+			"anchor": "BC",
+			"font": "verdana_med",
+			"ignore_scale":true
+		}
+	]
+}
