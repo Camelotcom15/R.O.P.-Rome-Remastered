@@ -1,0 +1,8 @@
+WARNING at line 12: Trait Immobile does not have any corresponding triggers
+WARNING at line 867: Trait FearsSlaves does not have any corresponding triggers
+WARNING at line 2703: Trait Divorced does not have any corresponding triggers
+WARNING at line 6609: Trait ForeignTastesRomanVice does not have any corresponding triggers
+WARNING at line 6649: Trait GoodRiskyAttacker does not have any corresponding triggers
+WARNING at line 6677: Trait BadRiskyAttacker does not have any corresponding triggers
+WARNING at line 6705: Trait GoodRiskyDefender does not have any corresponding triggers
+WARNING at line 6734: Trait BadRiskyDefender does not have any corresponding triggers

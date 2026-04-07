@@ -1,0 +1,24 @@
+v1.2.2 (8.05.24)
+------
+- Fixed missing model and texture for unit Kush Royal Chariots.
+
+v1.2.1 (5.17.24)
+------
+- Fixed an issue with Argead Cavalry unit (Makedonia) causing a CTD due to missing fs_hc_javelinman skeleton in DMB.
+- Added recruitable unit to Kyrene - Kyrenian Elite Cavalry.
+- Kyrene can now recruit Lybian Archers and Lybian Infantry.
+
+v1.2 (5.17.24)
+------
+- Added the following recruitable units for Taras: Syracusan Cavalry, Sikani Spearmen, and Hellenic Marines.
+- Added AOR for Osca and Campania in the Italian regions of Apoulia and Kampania.
+- Added the following units recruitable by Taras in AOR Osca: Oscan Infantry, Campanian Cavalry, Etruscan Axemen, Etruscan Archers, Etruscan Hoplites, and Etruscan Noble Infantry.
+
+v1.1 (5.15.24)
+------
+- Added the following recruitable units for Lydia: Cilician Infantry, Lycian Marines, Cappadocian Cavalry, and Lydian Noble Cavalry.
+
+v1.0.1 (5.15.24)
+------
+- Fixed issue with Indian elephant mount crashing when attacking due to invalid skeleton. Fix = replaced Indian elephant OG RTW skeleton with Remastered skeleton and repackaging skeletons.
+- Added an extra unit to Lydia faction.

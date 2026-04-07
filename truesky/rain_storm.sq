@@ -1,0 +1,193 @@
+{
+	"cloudKeyframer 1":
+	{
+		"CloudClass": "0",
+		"DayLoop": "true",
+		"Enabled": "true",
+		"ExplicitOffsets": "false",
+		"GridHeight": "8",
+		"GridWidth": "64",
+		"LoopRange": "1",
+		"LoopStart": "0",
+		"MapTexture": "",
+		"NoisePeriod": "4",
+		"NoiseResolution": "8",
+		"OverrideWind": "false",
+		"PrecipitationThresholdKm": "0.20",
+		"Viscosity": "0",
+		"VorticityConfinement": "0",
+		"Wrap": "true",
+		"keyframes":
+		[
+		{
+			"EdgeWorleyNoise": "0.25",
+			"WorleyNoise": "0.20",
+			"WorleyScale": "1.0",
+			"baseNoiseFactor": "0.25",
+			"churn": "1",
+			"cloud_base_km": "2",
+			"cloud_height_km": "4",
+			"cloud_width_km": "40",
+			"cloudiness": "0.62",
+			"diffusivity": "0.75",
+			"distributionBaseLayer": "1.50",
+			"distributionTransition": "0.75",
+			"edgeSharpness": "0.25",
+			"fractal_amplitude": "1.25",
+			"maxDensityGm3": "0.5",
+			"octaves": "3",
+			"offsetKmx": "0",
+			"offsetKmy": "0",
+			"origin": "0.7071067690849304,0,0,0.7071067690849304",
+			"persistence": "0.1",
+			"precipitation": "0.015",
+			"rain_to_snow": "0",
+			"scalekm": "200,200,10",
+			"simulation": "0",
+			"time": "0.354",
+			"upperDensity": "0.25",
+			"wind_direction": "0",
+			"wind_speed": "25",
+			"volumeStates":
+			[
+			]
+		}
+		],
+		"storms":
+		[
+		],
+		"volumes":
+		[
+		]
+	},
+	"cloudKeyframer 2":
+	{
+		"CloudClass": "1",
+		"DayLoop": "true",
+		"Enabled": "true",
+		"ExplicitOffsets": "false",
+		"GridHeight": "8",
+		"GridWidth": "64",
+		"LoopRange": "1",
+		"LoopStart": "0",
+		"MapTexture": "",
+		"NoisePeriod": "4",
+		"NoiseResolution": "8",
+		"OverrideWind": "false",
+		"PrecipitationThresholdKm": "0.20",
+		"Viscosity": "0",
+		"VorticityConfinement": "0",
+		"Wrap": "true",
+		"keyframes":
+		[
+		{
+			"EdgeWorleyNoise": "0.25",
+			"WorleyNoise": "0.30",
+			"WorleyScale": "1.75",
+			"baseNoiseFactor": "0.20",
+			"churn": "1",
+			"cloud_base_km": "5.5",
+			"cloud_height_km": "2",
+			"cloud_width_km": "25",
+			"cloudiness": "0.95",
+			"diffusivity": "0.90",
+			"distributionBaseLayer": "0.65",
+			"distributionTransition": "0.25",
+			"edgeSharpness": "0.25",
+			"fractal_amplitude": "2.5",
+			"maxDensityGm3": "0.5",
+			"octaves": "3",
+			"offsetKmx": "0",
+			"offsetKmy": "0",
+			"origin": "0.7071067690849304,0,0,0.7071067690849304",
+			"persistence": "0.1",
+			"precipitation": "0.015",
+			"precipitationRegion.base_radial_km": "6378",
+			"precipitationRegion.edge": "0.1000000014901161",
+			"precipitationRegion.lockToClouds": "true",
+			"precipitationRegion.rainCentreS": "0.7071067657322372",
+			"precipitationRegion.rainCentreX": "0.7071067966408575",
+			"precipitationRegion.rainCentreY": "0",
+			"precipitationRegion.rainCentreZ": "0",
+			"precipitationRegion.rainEffectStrength": "0",
+			"precipitationRegion.rainRadiusKm": "50",
+			"precipitationRegion.regional": "false",
+			"rain_to_snow": "0",
+			"scalekm": "200,200,10",
+			"simulation": "0",
+			"time": "0.354",
+			"upperDensity": "0.65",
+			"wind_direction": "0",
+			"wind_speed": "35",
+			"volumeStates":
+			[
+			]
+		}
+		],
+		"storms":
+		[
+		],
+		"volumes":
+		[
+		]
+	},
+	"skyKeyframer":
+	{
+		"BackgroundBrightness": "0.0005",
+		"BackgroundTexture": "milkyway.tga.dds",
+		"BaseOzone": "0.05999999865889549,0.03999999910593033,0.009999999776482582,0",
+		"BrightnessPower": "0.25",
+		"ColourWavelengthsNm": "630,540,450,0",
+		"DayLoop": "true",
+		"Emissivity": "0.000005",
+		"LatitudeRadians": "0.001286099792626352",
+		"LinkKeyframeTimeAndDaytime": "true",
+		"LongitudeRadians": "-0.003123532254836258",
+		"LoopRange": "1",
+		"LoopStart": "0",
+		"MaxAltitudeKm": "15",
+		"MaxDistanceKm": "500",
+		"MaxStarMagnitude": "6",
+		"MaxSunRadiance": "1000",
+		"MoonAlbedo": "2.0",
+		"MoonColour": "0.953,0.945,0.785",
+		"MoonRadiusArcMinutes": "90",
+		"MoonTexture": "Moon.png",
+		"NumAltitudes": "4",
+		"NumDistances": "64",
+		"NumElevations": "128",
+		"OzoneStrength": "0.25",
+		"Rayleigh": "0.007127305958420038,0.01320421323180199,0.02738025225698948",
+		"StartDayNumber": "0",
+		"SunIrradiance": "1,1,1",
+		"SunRadiusArcMinutes": "45",
+		"SunTexture": "Sun.png",
+		"TimezoneHours": "0",
+		"atmosphereThicknessKm": "64",
+		"planetRadiusKm": "6378",
+		"FeralDepthBoost": "0.05,2.0",
+		"keyframes":
+		[
+		{
+			"AutoMie": "true",
+			"FogCeilingKm": "2.5",
+			"GroundFog": "0.1",
+			"Haze": "10",
+			"HazeBaseKm": "0.0",
+			"HazeEccentricity": "0",
+			"HazeScaleKm": "1.0",
+			"Horizon": "0,0,0",
+			"Mie": "0.006106851156800985,0.00817577913403511,0.01170013099908829,0",
+			"MoonAzimuth": "0",
+			"MoonElevation": "0",
+			"SeaLevelTemperatureK": "288",
+			"StoreAsColours": "false",
+			"SunAzimuth": "0",
+			"SunElevation": "0",
+			"Zenith": "0,0,0",
+			"automaticMoonPosition": "true",
+			"automaticSunPosition": "true"
+		}
+		]
+	}
+}

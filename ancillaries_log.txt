@@ -1,0 +1,1 @@
+ERROR at line 2027: If ancillary 'iunius_pennus' is unique, its own name must be included in its own ExcludedAncillaries line

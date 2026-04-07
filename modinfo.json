@@ -1,0 +1,15 @@
+{
+	"Description": "This is a port of the original RTW mod Rise of Persia v2.2, which takes place between the years 559BC and 490BC. This timeframe represent the decline of Lydia, Media, Babylon and the rise of the Persian Achaemenid Empire. The latter year (490BC) historically culminates with the defeat of the Persians at the battle of Marathon during the first Persian invasion of Greece.",
+	"Mod Name": "Rise of Persia (Beta)",
+	"Preview Image": "previewimage.png",
+	"Supports Alex": false,
+	"Supports BI": false,
+	"Supports Rome": true,
+	"Tags": [
+		"Battle",
+		"Campaign",
+		"Units"
+	],
+	"Visibility": 0,
+	"Workshop ID": 3244219738
+}
