@@ -1,0 +1,7 @@
+albedos .tga files
+albedos winter .tga files
+coastline .cas
+frame .tga files and 1 .cas
+heightmap .bin files
+materials .tga files
+pieces .cas files
